@@ -1,123 +1,134 @@
 {
   "questions": [
     {
-      "question": "Which statement best describes the purpose of the Systems Development Life Cycle (SDLC)?",
+      "question": "Forms of worldview",
       "options": [
-        "It defines AWS pricing and billing models",
-        "It provides a structured process for planning, developing, testing, and deploying software systems",
-        "It is used only for managing AWS accounts and IAM roles",
-        "It defines network communication protocols for cloud infrastructure"
+        "Consciousness, thinking, mind",
+        "Myth, religion, philosophy",
+        "God, nature, society",
+        "Ontology, epistemology, axiology",
+        "Man, person, individual"
       ],
       "correctOption": 1,
       "points": 10,
-      "explanation": "The SDLC is a framework that guides the entire software development process—from planning and analysis to development, testing, and deployment. It has nothing to do with AWS billing, IAM, or networking protocols."
+      "explanation": "These are the main historical forms through which humans understand the world and their place in it."
     },
     {
-      "question": "In Agile development, short iterative work cycles are called:",
-      "options": ["Phases", "Iterations", "Sprints", "Pipelines"],
-      "correctOption": 2,
-      "points": 10,
-      "explanation": "In Agile (especially Scrum), a short, time-boxed development cycle is called a Sprint. Phases belong to Waterfall, iterations are a general concept, and pipelines are CI/CD processes."
-    },
-    {
-      "question": "Which AWS tool provides a cloud-based integrated development environment (IDE)?",
-      "options": ["AWS Cloud9", "AWS CLI", "AWS CodeBuild", "AWS Lambda"],
-      "correctOption": 0,
-      "points": 10,
-      "explanation": "AWS Cloud9 is a browser-based IDE. CLI is a command tool, CodeBuild compiles code, and Lambda runs serverless functions but is not an IDE."
-    },
-    {
-      "question": "Under the AWS Shared Responsibility Model, which of the following is the customer responsible for?",
+      "question": "Philosophical direction, recognizing one beginning of the world",
       "options": [
-        "Physical security of data centers",
-        "Network maintenance of AWS Regions",
-        "Encrypting sensitive data and managing IAM policies",
-        "Ensuring hardware redundancy in Availability Zones"
+        "dualism",
+        "Agnosticism",
+        "mechanism",
+        "Monism",
+        "Pluralism"
       ],
-      "correctOption": 2,
+      "correctOption": 3,
       "points": 10,
-      "explanation": "Customers must protect their data, configure IAM policies, manage encryption, and secure workloads. AWS handles data center security, hardware, and regional infrastructure."
+      "explanation": "Monism claims that everything in existence comes from one fundamental principle — either matter or spirit."
     },
     {
-      "question": "Which IAM entity is best suited to grant temporary access for an EC2 instance to read data from S3?",
-      "options": ["IAM Group", "IAM Role", "IAM User", "Access Key"],
-      "correctOption": 1,
-      "points": 10,
-      "explanation": "EC2 instances should use IAM Roles to obtain temporary credentials securely. IAM Users and Access Keys are permanent and insecure for EC2, and Groups cannot be attached to EC2 instances."
-    },
-    {
-      "question": "Which of the following best describes the Principle of Least Privilege?",
+      "question": "Philosophical doctrine that denies the fundamental possibility of knowing the world",
       "options": [
-        "Give each user full access to AWS services",
-        "Allow users to manage their own permissions",
-        "Grant users only the permissions necessary to perform their job",
-        "Apply global access policies to simplify configuration"
-      ],
-      "correctOption": 2,
-      "points": 10,
-      "explanation": "Least Privilege means giving users the minimum permissions required. Full access, self-managed permissions, or broad global policies violate this principle."
-    },
-    {
-      "question": "Which service logs all API calls made within your AWS account for auditing and security purposes?",
-      "options": [
-        "AWS Config",
-        "AWS CloudTrail",
-        "Amazon GuardDuty",
-        "AWS Inspector"
+        "skepticism",
+        "Agnosticism",
+        "sensationalism",
+        "Anthropologism",
+        "Atheism"
       ],
       "correctOption": 1,
       "points": 10,
-      "explanation": "AWS CloudTrail logs API calls across AWS services. Config tracks configuration changes, GuardDuty detects threats, and Inspector scans for vulnerabilities."
+      "explanation": "Agnostics believe that the true nature of things is unknowable to the human mind."
     },
     {
-      "question": "In Amazon S3, what uniquely identifies an object within a bucket?",
-      "options": ["File name", "Object key", "Version ID", "Path variable"],
-      "correctOption": 1,
-      "points": 10,
-      "explanation": "The object key is the full path to the object inside the bucket. File names alone are not unique, version IDs are optional, and S3 doesn't use path variables like web servers."
-    },
-    {
-      "question": "Which S3 feature helps protect against accidental overwriting or deletion of objects?",
-      "options": ["Encryption", "Versioning", "Access Logging", "Replication"],
-      "correctOption": 1,
-      "points": 10,
-      "explanation": "S3 Versioning keeps multiple versions of an object, allowing recovery from accidental deletes or overwrites. Encryption protects data, logging records access, and replication copies objects but doesn't prevent deletion."
-    },
-    {
-      "question": "Which S3 storage class is best suited for long-term archival data that is rarely accessed?",
+      "question": "What is the meaning of the term Philosophy?",
       "options": [
-        "S3 Standard",
-        "S3 One Zone-IA",
-        "S3 Glacier Deep Archive",
-        "S3 Intelligent-Tiering"
-      ],
-      "correctOption": 2,
-      "points": 10,
-      "explanation": "S3 Glacier Deep Archive is the lowest-cost storage class designed for long-term archival data accessed once or twice a year. Standard and IA are for active or infrequent access, and Intelligent-Tiering adjusts storage classes automatically."
-    },
-    {
-      "question": "How does Amazon S3 ensure durability of stored data?",
-      "options": [
-        "It stores data redundantly across multiple devices and Availability Zones",
-        "It automatically replicates data to CloudFront edge locations",
-        "It performs hourly backups to EC2 instances",
-        "It maintains a single copy for performance optimization"
+        "Love of wisdom",
+        "Love of Idea",
+        "Love of thinking",
+        "Love of Science",
+        "Love of Truth"
       ],
       "correctOption": 0,
       "points": 10,
-      "explanation": "S3 automatically replicates your data across multiple devices and Availability Zones, giving it 11 nines of durability. It does not rely on CloudFront, EC2, or single copies."
+      "explanation": "The term comes from Greek “philo” (love) and “sophia” (wisdom)."
     },
     {
-      "question": "Which command uploads a local file to an S3 bucket using the AWS CLI?",
+      "question": "The first form of worldview",
       "options": [
-        "aws s3 push",
-        "aws s3 upload-file",
-        "aws s3 cp myfile.txt s3://mybucket/",
-        "aws s3 move myfile.txt s3://mybucket/"
+        "Religion",
+        "Mythology",
+        "Philosophy",
+        "Art",
+        "Morality"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Mythology was humanity’s earliest attempt to explain natural and social phenomena through stories."
+    },
+    {
+      "question": "Teachings about Being",
+      "options": [
+        "Epistemology",
+        "Axiology",
+        "Anthology",
+        "Anthropology",
+        "Ontology"
+      ],
+      "correctOption": 4,
+      "points": 10,
+      "explanation": "Ontology studies the nature of existence and what it means to be."
+    },
+    {
+      "question": "What philosophical direction 'Space and time are forms of our perception' belongs to",
+      "options": [
+        "Materialism",
+        "Objective idealism",
+        "Subjective idealism",
+        "Dialectical materialism",
+        "Mechanistic materialism"
       ],
       "correctOption": 2,
       "points": 10,
-      "explanation": "The command for uploading a file to S3 is 'aws s3 cp'. There is no 'push' or 'upload-file' command, and 'move' would delete the local file."
+      "explanation": "Subjective idealists, like Berkeley, argue that reality exists only as it is perceived by the mind."
+    },
+    {
+      "question": "Two main sides of main question of philosophy",
+      "options": [
+        "Sophistry, eclecticism, dogmatism",
+        "Monism, dualism, pluralism",
+        "Sociology, political science, cultural studies",
+        "Ontology, Gnoseology",
+        "Mythology, religion, philosophy"
+      ],
+      "correctOption": 3,
+      "points": 10,
+      "explanation": "These concern the nature of being (ontology) and the nature of knowledge (gnoseology)."
+    },
+    {
+      "question": "Teaching about knowledge",
+      "options": [
+        "Ontology",
+        "Gnoseology",
+        "Metaphysics",
+        "Axiology",
+        "Anthropology"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Gnoseology (epistemology) explores how humans know and understand reality."
+    },
+    {
+      "question": "Recognition of two substances at the foundation of being",
+      "options": [
+        "Pluralism",
+        "Dualism",
+        "Monism",
+        "Conventionalism",
+        "Parallelism"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Dualism states that two independent substances — material and spiritual — exist."
     }
   ]
 }
