@@ -6,18 +6,19 @@ export default function ReviewModal({ questions, userAnswers, dispatch }) {
 
         <div className="review-list">
           {questions.map((q, i) => {
-            const answerObj = userAnswers.find(a => a.questionIndex === i);
+            const answerObj = userAnswers.find((a) => a.questionIndex === i);
+            if (!answerObj) return null;
             return (
               <div key={i} className="review-item">
-                <h3>{i + 1}. {q.question}</h3>
+                <h3>
+                  {i + 1}. {q.question}
+                </h3>
 
                 <p>
                   <strong>Correct Answer:</strong> {q.options[q.correctOption]}
                 </p>
 
-                <p className="explanation">
-                  {q.explanation}
-                </p>
+                <p className="explanation">{q.explanation}</p>
               </div>
             );
           })}
