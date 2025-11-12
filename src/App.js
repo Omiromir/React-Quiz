@@ -24,6 +24,7 @@ const initialState = {
   secondsRemaining: null,
   userAnswers: [],
   reviewMode: false,
+  hasStarted: false,
 };
 
 const reducer = (state, action) => {
@@ -38,7 +39,18 @@ const reducer = (state, action) => {
       return {
         ...state,
         status: "active",
+        hasStarted: true,
         secondsRemaining: state.questions.length * SECS_PER_QUESTION,
+      };
+    case "resume":
+      return {
+        ...state,
+        status: "active",
+      };
+    case "loadState":
+      return {
+        ...state,
+        ...action.payload,
       };
     case "dataFailed":
       return {
@@ -89,6 +101,7 @@ const reducer = (state, action) => {
 
     case "closeReview":
       return { ...state, reviewMode: false };
+
     default:
       throw new Error(`Action type ${action.type} is not supported`);
   }
@@ -96,7 +109,18 @@ const reducer = (state, action) => {
 
 export default function App() {
   const [
-    { questions, status, index, answer, points, highscore, secondsRemaining, reviewMode, userAnswers },
+    {
+      questions,
+      status,
+      index,
+      answer,
+      points,
+      highscore,
+      secondsRemaining,
+      reviewMode,
+      userAnswers,
+      hasStarted
+    },
     dispatch,
   ] = useReducer(reducer, initialState);
 
@@ -108,11 +132,52 @@ export default function App() {
   );
 
   useEffect(() => {
+    const savedState = localStorage.getItem("quizState");
+    if (savedState) {
+      dispatch({
+        type: "loadState",
+        payload: JSON.parse(savedState),
+      });
+    }
+
     fetch("./questions.json")
       .then((response) => response.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data.questions }))
+      .then((data) =>
+        dispatch({ type: "dataReceived", payload: data.questions })
+      )
       .catch((error) => dispatch({ type: "dataFailed" }));
   }, []);
+
+  useEffect(() => {
+    if (status === "loading" || status === "error") return;
+
+    const stateToSave = {
+      questions,
+      status,
+      index,
+      answer,
+      points,
+      highscore,
+      secondsRemaining,
+      userAnswers,
+      reviewMode,
+      hasStarted
+    };
+
+    console.log("Saving state to localStorage");
+    localStorage.setItem("quizState", JSON.stringify(stateToSave));
+  }, [
+    questions,
+    status,
+    index,
+    answer,
+    points,
+    highscore,
+    secondsRemaining,
+    userAnswers,
+    reviewMode,
+    hasStarted
+  ]);
 
   return (
     <div className="app">
@@ -121,7 +186,7 @@ export default function App() {
         {status === "loading" && <Loader />}
         {status === "error" && <Error />}
         {status === "ready" && (
-          <StartScreen numQuestions={numQuestions} dispatch={dispatch} />
+          <StartScreen numQuestions={numQuestions} dispatch={dispatch} hasStarted={hasStarted}/>
         )}
         {status === "active" && (
           <>
@@ -163,7 +228,6 @@ export default function App() {
             dispatch={dispatch}
           />
         )}
-
       </Main>
     </div>
   );

@@ -15,13 +15,7 @@
     },
     {
       "question": "Philosophical direction recognizing one beginning of the world",
-      "options": [
-        "Dualism",
-        "Agnosticism",
-        "Mechanism",
-        "Monism",
-        "Pluralism"
-      ],
+      "options": ["Dualism", "Agnosticism", "Mechanism", "Monism", "Pluralism"],
       "correctOption": 3,
       "points": 10,
       "explanation": "Monism claims that all existence arises from a single fundamental principle."
@@ -54,13 +48,7 @@
     },
     {
       "question": "The first form of worldview",
-      "options": [
-        "Religion",
-        "Mythology",
-        "Philosophy",
-        "Art",
-        "Morality"
-      ],
+      "options": ["Religion", "Mythology", "Philosophy", "Art", "Morality"],
       "correctOption": 1,
       "points": 10,
       "explanation": "Mythology was the earliest form humans used to explain natural and social phenomena."
@@ -314,78 +302,42 @@
     },
     {
       "question": "The term \"Culture\" originated from",
-      "options": [
-        "Being",
-        "Natural",
-        "Nature",
-        "Civilization",
-        "Cultivate"
-      ],
+      "options": ["Being", "Natural", "Nature", "Civilization", "Cultivate"],
       "correctOption": 4,
       "points": 10,
       "explanation": "The Latin cultura means “to cultivate,” referring to human development and refinement."
     },
     {
       "question": "\"Ontos\" means",
-      "options": [
-        "Essence",
-        "Existence",
-        "Nature",
-        "Being",
-        "Truth"
-      ],
+      "options": ["Essence", "Existence", "Nature", "Being", "Truth"],
       "correctOption": 3,
       "points": 10,
       "explanation": "From Greek ontos (ὄντος), meaning “being,” the root of the term ontology."
     },
     {
       "question": "To be \"Outside, otherworldly\" means",
-      "options": [
-        "Transcendental",
-        "Existence",
-        "Nature",
-        "Being",
-        "Truth"
-      ],
+      "options": ["Transcendental", "Existence", "Nature", "Being", "Truth"],
       "correctOption": 0,
       "points": 10,
       "explanation": "“Transcendental” denotes what lies beyond or outside ordinary reality."
     },
     {
       "question": "The \"Ability of an entity to interact with physical or mental reality\" is",
-      "options": [
-        "Existence",
-        "Being",
-        "Consciousness",
-        "Truth",
-        "Nature"
-      ],
+      "options": ["Existence", "Being", "Consciousness", "Truth", "Nature"],
       "correctOption": 0,
       "points": 10,
       "explanation": "Existence implies actual presence and the capacity to engage with reality."
     },
     {
       "question": "What is the opposite of Being?",
-      "options": [
-        "Nothingness",
-        "Absurd",
-        "Consciousness",
-        "Truth",
-        "Nature"
-      ],
+      "options": ["Nothingness", "Absurd", "Consciousness", "Truth", "Nature"],
       "correctOption": 0,
       "points": 10,
       "explanation": "Nothingness represents the absence of being, a key idea in existential and metaphysical philosophy."
     },
     {
       "question": "What is the opposite to Culture?",
-      "options": [
-        "Existence",
-        "Being",
-        "Consciousness",
-        "Truth",
-        "Nature"
-      ],
+      "options": ["Existence", "Being", "Consciousness", "Truth", "Nature"],
       "correctOption": 4,
       "points": 10,
       "explanation": "Culture refers to what humans create; nature refers to what exists independently of human influence."
@@ -418,13 +370,7 @@
     },
     {
       "question": "Which philosopher proposed a three-level model of the soul (vegetative, animal, rational)?",
-      "options": [
-        "Plato",
-        "Augustine",
-        "Aristotle",
-        "Descartes",
-        "Freud"
-      ],
+      "options": ["Plato", "Augustine", "Aristotle", "Descartes", "Freud"],
       "correctOption": 2,
       "points": 10,
       "explanation": "Aristotle described the soul as the form of a living body with hierarchical functions."
@@ -483,26 +429,14 @@
     },
     {
       "question": "The “rectification of names” is central to",
-      "options": [
-        "Taoism",
-        "Buddhism",
-        "Sufism",
-        "Confucianism",
-        "Hinduism"
-      ],
+      "options": ["Taoism", "Buddhism", "Sufism", "Confucianism", "Hinduism"],
       "correctOption": 3,
       "points": 10,
       "explanation": "Confucius taught that proper language maintains moral and social order."
     },
     {
       "question": "In Sufism, intuitive spiritual knowledge of God is called",
-      "options": [
-        "Pramana",
-        "Wu-wei",
-        "Ma'rifa",
-        "Maya",
-        "Anumana"
-      ],
+      "options": ["Pramana", "Wu-wei", "Ma'rifa", "Maya", "Anumana"],
       "correctOption": 2,
       "points": 10,
       "explanation": "Ma’rifa is direct experiential knowledge of the divine."
@@ -639,26 +573,14 @@
     },
     {
       "question": "The highest individual subjective principle in Ancient Indian Philosophy is",
-      "options": [
-        "Brahman",
-        "Atman",
-        "Samsara",
-        "Karma",
-        "Nirvana"
-      ],
+      "options": ["Brahman", "Atman", "Samsara", "Karma", "Nirvana"],
       "correctOption": 1,
       "points": 10,
       "explanation": "Atman is the individual soul — the true essence of a person in Indian philosophy."
     },
     {
       "question": "The law of retribution is",
-      "options": [
-        "Brahman",
-        "Atman",
-        "Samsara",
-        "Karma",
-        "Nirvana"
-      ],
+      "options": ["Brahman", "Atman", "Samsara", "Karma", "Nirvana"],
       "correctOption": 3,
       "points": 10,
       "explanation": "Karma is the moral law of cause and effect: actions determine outcomes in this and future lives."
@@ -678,26 +600,14 @@
     },
     {
       "question": "The main principle of Abai’s philosophy is",
-      "options": [
-        "Be fair",
-        "Be moral",
-        "Be human",
-        "Be good",
-        "Be beautiful"
-      ],
+      "options": ["Be fair", "Be moral", "Be human", "Be good", "Be beautiful"],
       "correctOption": 2,
       "points": 10,
       "explanation": "Abai emphasized humanity, compassion, and moral self-improvement as the foundation of life."
     },
     {
       "question": "The words \"Man is the measure of all things\" belong to",
-      "options": [
-        "Socrates",
-        "Plato",
-        "Aristotle",
-        "Pythagoras",
-        "Protagoras"
-      ],
+      "options": ["Socrates", "Plato", "Aristotle", "Pythagoras", "Protagoras"],
       "correctOption": 4,
       "points": 10,
       "explanation": "Protagoras’ statement reflects relativism — truth is dependent on human perception."
@@ -847,13 +757,7 @@
     },
     {
       "question": "A trait or quality that is morally good and valued as a foundation of moral character",
-      "options": [
-        "Charity",
-        "Dignity",
-        "Virtue",
-        "Prudence",
-        "Justice"
-      ],
+      "options": ["Charity", "Dignity", "Virtue", "Prudence", "Justice"],
       "correctOption": 2,
       "points": 10,
       "explanation": "Virtue is a core concept in virtue ethics, signifying moral excellence."
@@ -964,13 +868,7 @@
     },
     {
       "question": "The principle that people get what they deserve",
-      "options": [
-        "Tolerance",
-        "Justice",
-        "Sympathy",
-        "Empathy",
-        "Propensity"
-      ],
+      "options": ["Tolerance", "Justice", "Sympathy", "Empathy", "Propensity"],
       "correctOption": 1,
       "points": 10,
       "explanation": "Justice links moral desert with fairness and equality."
@@ -1975,6 +1873,223 @@
       "correctOption": 1,
       "points": 10,
       "explanation": "Secularization is the weakening of religious authority in society."
+    },
+    {
+      "question": "According to the text, theology deals with:",
+      "options": [
+        "Rejecting all forms of faith",
+        "Thinking about religious beliefs without reason",
+        "Thinking about religious beliefs in a rational manner but presuming faith",
+        "Critically analyzing all assumptions of religion",
+        "Avoiding the use of faith and reason altogether"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "heology deals with thinking about religious beliefs in a rational manner but presuming faith. It is the academic discipline of studying religious beliefs from a religious perspective, which requires a rational approach but is founded on a prior act of faith"
+    },
+    {
+      "question": "What do theologians aim to achieve by employing reason?",
+      "options": [
+        "To disprove religious beliefs",
+        "To make their beliefs clearer and consistent with reason",
+        "To replace faith with logic",
+        "To analyze all ideas without any presuppositions",
+        "To remove foundational beliefs entirely"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Theologians use reason to make their beliefs clearer and to ensure they align with logical consistency."
+    },
+    {
+      "question": "How do philosophers differ from theologians according to the text?",
+      "options": [
+        "Philosophers start from faith, while theologians start from reason",
+        "Philosophers accept religious beliefs as foundational",
+        "Philosophers examine all assumptions without accepting anything on faith",
+        "Philosophers try to justify faith through reason",
+        "Philosophers refuse to analyze beliefs critically"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Philosophers typically examine all assumptions critically without accepting anything on faith, whereas theologians may begin with presupposed religious beliefs."
+    },
+    {
+      "question": "What is the main focus of Western Philosophy of Religion?",
+      "options": [
+        "The study of religious rituals and traditions",
+        "Arguments or proofs for the existence of God and resolving inconsistencies about God's nature",
+        "Promoting faith-based acceptance of religious doctrines",
+        "Rejecting all discussions about the existence of a deity",
+        "Comparing different religious practices across cultures"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Western Philosophy of Religion focuses primarily on arguments and proofs for the existence of God, as well as addressing inconsistencies about God's nature."
+    },
+    {
+      "question": "According to Tylor, what was the earliest form of religion in the evolution of human thought?",
+      "options": [
+        "Monotheism",
+        "Polytheism",
+        "Animism",
+        "Totemism",
+        "Spiritualism"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "According to Edward Tylor, Animism was the earliest form of religion in the evolution of human thought."
+    },
+    {
+      "question": "According to Lévi-Strauss, what do myths and religious ideas primarily express?",
+      "options": [
+        "The historical evolution of religion from primitive to advanced forms",
+        "The moral superiority of certain cultures over others",
+        "The universal structures and binary oppositions of the human mind",
+        "The literal truth of divine revelation",
+        "The rejection of symbolic thinking in human culture"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Lévi-Strauss argued that myths and religious ideas express the universal structures and binary oppositions of the human mind."
+    },
+    {
+      "question": "Design Argument can be divided into which two parts?",
+      "options": [
+        "The argument for moral order and the argument for human purpose",
+        "The argument for evolution and the argument for creationism",
+        "The argument for a Theistic God and the argument for a Cosmic Design",
+        "The argument for divine revelation and the argument for reason",
+        "The argument for faith and the argument for logic"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "The Design Argument is typically divided into the argument for a Theistic God and the argument for a Cosmic Design."
+    },
+    {
+      "question": "According to the Cosmological Argument, which of the following is not one of its main principles?",
+      "options": [
+        "Something cannot be the cause of itself.",
+        "Something cannot come from nothing.",
+        "There cannot be an infinite series of causes and effects.",
+        "Everything happens by random chance without a cause.",
+        "Every effect must have an efficient cause."
+      ],
+      "correctOption": 3,
+      "points": 10,
+      "explanation": "The Cosmological Argument denies that everything happens by random chance without a cause. It asserts that there must be a first cause."
+    },
+    {
+      "question": "The five elements listed — Argument from Motion, Efficient Cause, Possibility and Necessity, Gradation in things, and Governance of things — are associated with which philosopher’s proofs for the existence of God?",
+      "options": [
+        "Plato",
+        "Aristotle",
+        "Thomas Aquinas",
+        "René Descartes",
+        "Immanuel Kant"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "These five elements are central to Thomas Aquinas' proofs for the existence of God, particularly his Five Ways."
+    },
+    {
+      "question": "Saint Anselm’s argument for the existence of God is best described as:",
+      "options": [
+        "A Cosmological Argument based on cause and effect",
+        "A Teleological Argument based on design and purpose",
+        "An Ontological Argument based on the concept of God’s existence in thought and reality",
+        "A Moral Argument based on human conscience",
+        "A Pragmatic Argument based on practical belief in God"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Saint Anselm’s Ontological Argument posits that the concept of God’s existence in thought necessarily implies its existence in reality."
+    },
+    {
+      "question": "The work 'Sum of Theology' and 'Sum against the Gentiles' was written by:",
+      "options": ["St. Augustine", "St. Aquinas", "Plato", "Descartes", "Kant"],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "'Sum of Theology' and 'Sum against the Gentiles' were written by St. Thomas Aquinas, key works in medieval Christian philosophy."
+    },
+    {
+      "question": "Ontological arguments for God’s existence are:",
+      "options": [
+        "Empirical",
+        "Non-empirical",
+        "Scientific",
+        "Ethical",
+        "Experimental"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Ontological arguments are non-empirical, as they are based on the concept of God rather than sensory experience or empirical evidence."
+    },
+    {
+      "question": "The Summa Theologica is the work of:",
+      "options": [
+        "St. Augustine",
+        "St. Thomas Aquinas",
+        "Plato",
+        "Aristotle",
+        "Descartes"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "The 'Summa Theologica' is a major work of theology and philosophy written by St. Thomas Aquinas."
+    },
+    {
+      "question": "St. Anselm's ontological argument proceeds from the idea of God to:",
+      "options": [
+        "God as a myth",
+        "God as a concept",
+        "God as a reality",
+        "God as imagination",
+        "God as an illusion"
+      ],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "St. Anselm's Ontological Argument proceeds from the concept of God to argue for God's reality."
+    },
+    {
+      "question": "The belief in the existence of one God who created and governs the universe is called:",
+      "options": ["Pantheism", "Deism", "Theism", "Polytheism", "Atheism"],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Theism is the belief in one God who created and governs the universe."
+    },
+    {
+      "question": "The belief that God and the universe are identical — that everything collectively is divine — is known as:",
+      "options": ["Theism", "Pantheism", "Deism", "Polytheism", "Agnosticism"],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Pantheism is the belief that God and the universe are identical, and everything in the universe is divine."
+    },
+    {
+      "question": "The view that God is greater than the universe and includes and interpenetrates it is called:",
+      "options": ["Theism", "Pantheism", "Panentheism", "Deism", "Atheism"],
+      "correctOption": 2,
+      "points": 10,
+      "explanation": "Panentheism is the belief that God includes and interpenetrates the universe but also transcends it."
+    },
+    {
+      "question": "The belief that multiple gods exist and influence the world is called:",
+      "options": ["Theism", "Polytheism", "Deism", "Agnosticism", "Retheism"],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Polytheism is the belief in the existence of multiple gods who influence the world."
+    },
+    {
+      "question": "Thomas Aquinas’s cosmological arguments argue for:",
+      "options": [
+        "The immortality of soul",
+        "The existence of God",
+        "The essence of matter",
+        "The reality of forms",
+        "The plurality of worlds"
+      ],
+      "correctOption": 1,
+      "points": 10,
+      "explanation": "Thomas Aquinas’ cosmological arguments argue for the existence of God, particularly through the principles of cause and effect."
     }
   ]
 }
