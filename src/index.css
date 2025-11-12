@@ -30,6 +30,7 @@ body {
 }
 
 .app {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,6 +49,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.app-header button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
 }
 
 .error {

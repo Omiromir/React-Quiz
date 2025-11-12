@@ -82,6 +82,7 @@ const reducer = (state, action) => {
           state.points > state.highscore ? state.points : state.highscore,
       };
     case "restart":
+      localStorage.removeItem("quizState");
       return {
         ...state,
         answer: null,
@@ -89,6 +90,9 @@ const reducer = (state, action) => {
         index: 0,
         secondsRemaining: 10,
         status: "ready",
+        userAnswers: [], 
+        reviewMode: false, 
+        hasStarted: false,
       };
     case "tick":
       return {
@@ -119,7 +123,7 @@ export default function App() {
       secondsRemaining,
       reviewMode,
       userAnswers,
-      hasStarted
+      hasStarted,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -161,7 +165,7 @@ export default function App() {
       secondsRemaining,
       userAnswers,
       reviewMode,
-      hasStarted
+      hasStarted,
     };
 
     console.log("Saving state to localStorage");
@@ -176,17 +180,21 @@ export default function App() {
     secondsRemaining,
     userAnswers,
     reviewMode,
-    hasStarted
+    hasStarted,
   ]);
 
   return (
     <div className="app">
-      <Header />
+      <Header dispatch={dispatch} hasStarted={hasStarted}/>
       <Main>
         {status === "loading" && <Loader />}
         {status === "error" && <Error />}
         {status === "ready" && (
-          <StartScreen numQuestions={numQuestions} dispatch={dispatch} hasStarted={hasStarted}/>
+          <StartScreen
+            numQuestions={numQuestions}
+            dispatch={dispatch}
+            hasStarted={hasStarted}
+          />
         )}
         {status === "active" && (
           <>
