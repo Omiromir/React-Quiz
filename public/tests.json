@@ -2265,6 +2265,258 @@
           "correctOption": 0,
           "points": 10,
           "explanation": "A paradigm (Kuhn) represents a framework of accepted theories and methods within a scientific community."
+        },
+        {
+          "question": "The author of 3 laws of dialectics:",
+          "options": ["G. Hegel"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Hegel systematized dialectics — the triadic process of thesis, antithesis, and synthesis — describing how reality and ideas evolve."
+        },
+        {
+          "question": "'Man is a wolf to man' — idea of:",
+          "options": ["Hobbes"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Thomas Hobbes viewed humans as naturally self-interested and competitive without social order (Leviathan)."
+        },
+        {
+          "question": "'Nothing is morally right or wrong...' — describes:",
+          "options": ["moral nihilism"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Moral nihilism denies any objective moral truths — morality is an illusion or human construct."
+        },
+        {
+          "question": "Class of meta-ethical theories denying moral knowledge:",
+          "options": ["moral skepticism"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Moral skeptics argue it’s impossible to know any moral facts with certainty."
+        },
+        {
+          "question": "The main task of philosophy is the construction of a new method of science, believed:",
+          "options": ["Francis Bacon"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Bacon founded empiricism, emphasizing observation and experiment as the basis of knowledge."
+        },
+        {
+          "question": "The concept of an 'open society' was developed by:",
+          "options": ["Popper"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Karl Popper advocated for societies open to criticism, freedom, and reform, opposing totalitarianism."
+        },
+        {
+          "question": "The idea of 'revaluation of all values' came from:",
+          "options": ["F. Nietzsche"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Nietzsche called for rethinking moral values imposed by religion and tradition to create life-affirming ones."
+        },
+        {
+          "question": "The main function of science is:",
+          "options": ["The search and production of new knowledge"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Science aims to expand understanding of reality through systematic investigation and discovery."
+        },
+        {
+          "question": "The main purpose of science is:",
+          "options": ["Achieve the truth"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The ultimate goal of science is to find truth and explain natural phenomena objectively."
+        },
+        {
+          "question": "'If existence precedes essence...' characterizes:",
+          "options": ["existentialism"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Existentialists like Sartre believed individuals define their essence through free choices and actions."
+        },
+        {
+          "question": "What principle is opposite to verification?",
+          "options": ["falsification"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Karl Popper proposed falsification — scientific theories must be testable and refutable, not just verified."
+        },
+        {
+          "question": "Prerequisites of the experimental method were obtained in the era of:",
+          "options": ["Renaissance"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The Renaissance revived empirical observation and experimentation, leading to modern science."
+        },
+        {
+          "question": "'Man is the measure of all things' — believes:",
+          "options": ["Protagoras"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Protagoras’ relativism claimed that truth depends on individual perception — what is true for one may not be for another."
+        },
+        {
+          "question": "Invisible, omnipresent law of nature and behavior — the path:",
+          "options": ["Tao"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "In Taoism, Tao means 'the Way' — the natural order and flow of the universe."
+        },
+        {
+          "question": "Meaning of Taoist principle 'Wu-wei':",
+          "options": ["Non-action"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Wu-wei teaches effortless harmony with nature — acting without force or resistance."
+        },
+        {
+          "question": "What does humanism mean?:",
+          "options": ["philanthropy"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Humanism values human dignity, rationality, and moral improvement — hence linked with love for humanity."
+        },
+        {
+          "question": "‘Don’t harm living beings’ is the commandment of:",
+          "options": ["ahimsa"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Ahimsa (non-violence) is a key moral principle in Hinduism, Buddhism, and Jainism."
+        },
+        {
+          "question": "Confucius and Mencius believed human nature is:",
+          "options": ["Inherently good"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Mencius taught that people are born good, and morality develops naturally if cultivated."
+        },
+        {
+          "question": "The highest individual subjective principle in Ancient Indian philosophy is:",
+          "options": ["Atman"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Atman means the inner self or soul — the true essence of an individual in Indian philosophy."
+        },
+        {
+          "question": "Direction of Aristotle’s followers in Medieval Arab-Muslim philosophy:",
+          "options": ["Peripateticism"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Peripatetic philosophers (like Avicenna, Averroes) adapted Aristotle’s ideas into Islamic thought."
+        },
+        {
+          "question": "In what period was Man seen as the image and likeness of God?",
+          "options": ["Medieval Philosophy"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Medieval thought placed humans within God’s divine plan, emphasizing their spiritual likeness to Him."
+        },
+        {
+          "question": "Anthropocentrism and humanism are inherent in the epoch of:",
+          "options": ["Renaissance Philosophy"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The Renaissance revived focus on human potential, art, and reason — shifting from God-centered to human-centered worldview."
+        },
+        {
+          "question": "The purification and purgation of emotions through dramatic art, which results in renewal and restoration",
+          "options": ["Catharsis"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Aristotle used catharsis to describe emotional cleansing experienced through art, especially tragedy."
+        },
+        {
+          "question": "The term 'axial time' was proposed by",
+          "options": ["Karl Jaspers"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Jaspers introduced the concept of the Axial Age, a pivotal era (8th–3rd centuries BCE) of spiritual and philosophical awakening."
+        },
+        {
+          "question": "Thinker who linked the origin of capitalism with the Protestant ethics",
+          "options": ["Max Weber"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Weber argued that Protestant values like discipline and hard work fostered the rise of capitalism."
+        },
+        {
+          "question": "Western attitude towards Middle Eastern, Asian, and African societies that characterizes them as static and undeveloped",
+          "options": ["Orientalism"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Edward Said’s Orientalism criticizes how the West stereotyped Eastern cultures as exotic and inferior."
+        },
+        {
+          "question": "Which is the branch of philosophy that studies issues concerning art and beauty?",
+          "options": ["Aesthetics"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Aesthetics explores the nature of beauty, art, and taste in human experience."
+        },
+        {
+          "question": "Who said: 'There is beauty in everything, but not everyone will see?'",
+          "options": ["Confucius"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Confucius emphasized moral perception and the inner ability to recognize beauty and goodness."
+        },
+        {
+          "question": "An ancient Egyptian text is",
+          "options": ["The Book of the Dead"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "This funerary text guided souls through the afterlife in ancient Egyptian religion."
+        },
+        {
+          "question": "The sacred book of Zoroastrianism is",
+          "options": ["Avesta"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The Avesta contains the teachings of the prophet Zoroaster and Zoroastrian hymns."
+        },
+        {
+          "question": "Those who called themselves 'citizens of the world' and introduced the term 'cosmopolitan' were",
+          "options": ["Cynics"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The Cynics, led by Diogenes, rejected local ties and viewed all humanity as their home."
+        },
+        {
+          "question": "The main principle of Jainism, the non-harming of living beings (the principle of 'do no harm'), is called",
+          "options": ["Ahimsa"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Ahimsa is the central Jain doctrine of non-violence toward all living beings."
+        },
+        {
+          "question": "A utopian program for universal social transformation based on communal ownership was presented by",
+          "options": ["Karl Marx"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Marx proposed a classless, communal society achieved through revolutionary socialism."
+        },
+        {
+          "question": "In his study of history, Oswald Spengler applied the method of",
+          "options": ["Comparative (morphological) method"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Spengler compared civilizations biologically, viewing their life cycles as cultural 'organisms.'"
+        },
+        {
+          "question": "If faith helps in practical life, then believe in God, but if not, then do not believe, thought",
+          "options": ["William James"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "James’ pragmatism valued beliefs based on their practical effects and usefulness in life."
+        },
+        {
+          "question": "One-dimensionality as a result of 'massification' of humans is examined by",
+          "options": ["Herbert Marcuse"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Marcuse’s One-Dimensional Man critiques modern society for suppressing individuality through consumerism."
         }
       ]
     }
