@@ -1,4 +1,8 @@
 function StartScreen({ numQuestions, dispatch, hasStarted }) {
+  const handleBackToMenu = () => {
+    dispatch({ type: "BackMenu" });
+  };
+
   return (
     <div className="start">
       <h2>Welcome to the React Quiz!</h2>
@@ -9,6 +13,7 @@ function StartScreen({ numQuestions, dispatch, hasStarted }) {
       >
         {!hasStarted ? "Let's start" : "Resume the test"}
       </button>
+      <button className="btn btn-ui" onClick={handleBackToMenu}>Back to Menu</button>
     </div>
   );
 }

@@ -11,13 +11,16 @@ import FinishScreen from "./Components/FinishScreen";
 import Footer from "./Components/Footer";
 import Timer from "./Components/Timer";
 import ReviewModal from "./Components/ReviewModal";
+import TestSelectionScreen from "./Components/TestSelectionScreen";
 
 const SECS_PER_QUESTION = 60;
 
 const initialState = {
+  tests: [],
   questions: [],
   status: "loading",
   index: 0,
+  selectedTest: null,
   answer: null,
   points: 0,
   highscore: 0,
@@ -29,10 +32,19 @@ const initialState = {
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case "dataReceived":
+    case "loadTests":
       return {
         ...state,
-        questions: action.payload,
+        tests: action.tests,
+      };
+    case "startTest":
+      const selectedTest = state.tests.find(
+        (test) => test.id === action.testId
+      );
+      return {
+        ...state,
+        selectedTest,
+        questions: selectedTest.questions,
         status: "ready",
       };
     case "start":
@@ -81,6 +93,12 @@ const reducer = (state, action) => {
         highscore:
           state.points > state.highscore ? state.points : state.highscore,
       };
+    case "BackMenu":
+      return {
+        ...state,
+        selectedTest: null,
+        status: "ready",
+      }
     case "restart":
       localStorage.removeItem("quizState");
       return {
@@ -90,9 +108,10 @@ const reducer = (state, action) => {
         index: 0,
         secondsRemaining: 10,
         status: "ready",
-        userAnswers: [], 
-        reviewMode: false, 
+        userAnswers: [],
+        reviewMode: false,
         hasStarted: false,
+        selectedTest: null,
       };
     case "tick":
       return {
@@ -124,6 +143,8 @@ export default function App() {
       reviewMode,
       userAnswers,
       hasStarted,
+      selectedTest,
+      tests,
     },
     dispatch,
   ] = useReducer(reducer, initialState);
@@ -144,17 +165,18 @@ export default function App() {
       });
     }
 
-    fetch("./questions.json")
+    fetch("./tests.json")
       .then((response) => response.json())
-      .then((data) =>
-        dispatch({ type: "dataReceived", payload: data.questions })
-      )
-      .catch((error) => dispatch({ type: "dataFailed" }));
+      .then((data) => {
+        dispatch({ type: "loadTests", tests: data.tests });
+      })
+      .catch((error) => console.error("Error loading tests:", error));
   }, []);
 
   useEffect(() => {
     if (status === "loading" || status === "error") return;
 
+    if (!hasStarted) return
     const stateToSave = {
       questions,
       status,
@@ -183,9 +205,15 @@ export default function App() {
     hasStarted,
   ]);
 
+  
+
+  if (!selectedTest ) {
+    return <TestSelectionScreen tests={tests} dispatch={dispatch} />;
+  }
+
   return (
     <div className="app">
-      <Header dispatch={dispatch} hasStarted={hasStarted}/>
+      <Header dispatch={dispatch} hasStarted={hasStarted} />
       <Main>
         {status === "loading" && <Loader />}
         {status === "error" && <Error />}
