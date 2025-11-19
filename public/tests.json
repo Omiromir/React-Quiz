@@ -2048,6 +2048,423 @@
           "explanation": "A cybersecurity specialist needs to be familiar with the characteristics of the different types of malware and attacks that threaten an organization."
         }
       ]
+    },
+    {
+      "id": "Computer Networking Final Test",
+      "name": "Computer Networking Final Test",
+      "description": "Final assessment for Computer Networking course.",
+      "questions": [
+        {
+          "question": "A network administrator has configured the following commands on a Layer 2 switch to enable remote management via SSH, but it is unsuccessful. Which additional configuration element is required?",
+          "options": [
+            "ip ssh enable",
+            "Configuring the enable secret password",
+            "Assigning an IP address to a VLAN interface",
+            "Enabling SSH version 2"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "For remote SSH management, the switch must have a reachable IP address on the network, which is typically assigned to a Switch Virtual Interface (SVI) like interface vlan 1."
+        },
+        {
+          "question": "A Layer-2 switch has: interface vlan 1 - ip address 192.168.1.10 255.255.255.0 and default-gateway 192.168.2.1. Which is true?",
+          "options": [
+            "The switch will not reach remote networks",
+            "The switch will ignore the gateway and use VLAN1 IP",
+            "The switch will NAT traffic automatically",
+            "The switch will still reach all networks"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The default gateway (192.168.2.1) is on a different subnet than the switch's IP (192.168.1.0/24), so the switch cannot communicate with its gateway and cannot reach remote networks."
+        },
+        {
+          "question": "What is the command to save configuration on a Cisco device?",
+          "options": [
+            "write run",
+            "copy run start",
+            "save config",
+            "write erase"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The Cisco command to save the running configuration to the startup configuration is copy running-config startup-config. A common shortcut for this command is write memory or wr mem. For Cisco Nexus devices, you may need to use copy run start."
+        },
+        {
+          "question": "What is the default port of Telnet?",
+          "options": ["20", "22", "23", "80"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Telnet uses TCP port 23 by definition."
+        },
+        {
+          "question": "What does the command 'show run' display?",
+          "options": [
+            "Routing table",
+            "Saved config",
+            "Current config",
+            "Interfaces only"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "The 'show running-config' command displays the current, active configuration in the device's RAM."
+        },
+        {
+          "question": "What is the correct command to assign an IPv6 address on a Cisco interface?",
+          "options": [
+            "ipv6 address 2001:db8::1/64",
+            "ip6 2001:db8::/",
+            "IPv6 add 2001:db8::/",
+            "ip v6 address 2001:db8::/64"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The correct syntax for assigning an IPv6 address is 'ipv6 address <address>/<prefix-length>'."
+        },
+        {
+          "question": "A host is configured with IP 172.20.55.144 and Mask 255.255.255.240. Which is a valid default gateway?",
+          "options": [
+            "172.20.55.144",
+            "172.20.55.145",
+            "172.20.55.158",
+            "172.20.55.159"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "With IP 172.20.55.144/28, the usable host range is 172.20.55.145-172.20.55.158. The default gateway must be a valid host address in this range."
+        },
+        {
+          "question": "What is the class of the IPv4 address 225.16.4.10?",
+          "options": ["Class A", "Class B", "Class C", "Class D"],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Class D addresses (224.0.0.0-239.255.255.255) are reserved for multicast. 225.16.4.10 falls within this range."
+        },
+        {
+          "question": "An admin can ping a switch from its local subnet but not from a different subnet. Which command is most likely missing?",
+          "options": [
+            "ip default-gateway 192.168.5.1",
+            "ip route 0.0.0.0 0.0.0.0 192.168.5.1",
+            "ip routing",
+            "spanning-tree enable"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "A Layer 2 switch uses the 'ip default-gateway' command to define where to send traffic for remote networks."
+        },
+        {
+          "question": "Which command sets a default route on a Cisco router for IPv4?",
+          "options": [
+            "ipv6 route ::0 <next-hop>",
+            "ip route 0.0.0.0 0.0.0.0 <next-hop>",
+            "ipv6 default <next-hop>",
+            "ipv6 route 0.0.0.0 <next-hop>"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The correct syntax for an IPv4 default route is 'ip route 0.0.0.0 0.0.0.0 <next-hop>'."
+        },
+        {
+          "question": "Which subnet correctly fits 50 hosts and avoids overlap in the 10.5.0.0/24 block?",
+          "options": [
+            "10.5.0.0/27",
+            "10.5.0.0/27",
+            "10.5.0.0/26",
+            "10.5.0.1/28/26"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "A /26 subnet provides 62 usable hosts, which meets the requirement for 50 hosts."
+        },
+        {
+          "question": "Which option best explains the difference between a physical interface and a logical interface on a router?",
+          "options": [
+            "Physical interfaces carry traffic over cables, while logical interfaces exist in software and can represent VLANs, tunnels, or subinterfaces",
+            "Logical interfaces are always faster than physical interfaces",
+            "Physical interfaces support IPv4, while logical interfaces only support IPv6",
+            "Logical interfaces do not require IP addresses"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Physical interfaces are hardware ports, while logical interfaces are software-based constructs."
+        },
+        {
+          "question": "What is the key difference between a virus and a worm?",
+          "options": [
+            "A virus requires user action to spread, whereas a worm spreads automatically",
+            "A virus is designed to cause network congestion, whereas a worm is designed to delete files",
+            "A worm disguises itself as legitimate software, while a virus injects code into other files",
+            "A virus only affects Windows systems, while a worm affects all operating systems"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "A virus requires user intervention to execute and spread, while a worm is self-replicating and can spread without user action."
+        },
+        {
+          "question": "An email warns that a limited-edition product is almost sold out and a special discount expires in one hour. Which two psychological tactics are being combined?",
+          "options": [
+            "Scarcity and Urgency",
+            "Consensus and Quid Pro Quo",
+            "Familiarity and Trust",
+            "Authority and Intimidation"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "'Almost sold out' creates scarcity, while 'expires in one hour' creates urgency."
+        },
+        {
+          "question": "A device sends data starting from Layer 7 to Layer 1. Which sequence shows the correct PDU names during encapsulation?",
+          "options": [
+            "Bits → Packet → Segment → Frame",
+            "Segment → Packet → Frame → Bits",
+            "Frame → Packet → Segment → Bits",
+            "Packet → Segment → Frame → Bits"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "During encapsulation: Transport Layer = Segment, Network Layer = Packet, Data Link Layer = Frame, Physical Layer = Bits."
+        },
+        {
+          "question": "What is the name of the third layer of the OSI model from top to bottom?",
+          "options": ["Transport", "Network", "Session", "Presentation"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "From top down: Application (7), Presentation (6), Session (5), Transport (4), Network (3), Data Link (2), Physical (1)."
+        },
+        {
+          "question": "Find the MOST important (core) protocol in the Network Layer (OSI Layer 3)",
+          "options": ["TCP", "IP", "HTTP", "Ethernet"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "IP (Internet Protocol) is the fundamental protocol for logical addressing and routing at the Network Layer."
+        },
+        {
+          "question": "Which protocol sends Hello packets to form adjacency?",
+          "options": ["EIGRP", "RIP", "OSPF", "BGP"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "OSPF uses Hello packets to discover neighbors and form adjacencies."
+        },
+        {
+          "question": "What is the default OSPF Hello interval on Ethernet?",
+          "options": ["5 s", "10 s", "20 s", "30 s"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "On broadcast networks like Ethernet, the default OSPF Hello interval is 10 seconds."
+        },
+        {
+          "question": "In the TCP/IP model, what is the correct name of the PDU (Protocol Data Unit) at the Transport layer?",
+          "options": ["Packet", "Frame", "Segment", "Bit"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "The Transport Layer PDU is called a Segment (TCP) or Datagram (UDP)."
+        },
+        {
+          "question": "Which of the following is a primary function of the Session Layer?",
+          "options": [
+            "Token management",
+            "Connection multiplexing",
+            "Path selection",
+            "Data encapsulation"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The Session Layer manages dialogs between systems, including token management for controlling communications."
+        },
+        {
+          "question": "Which of the following BEST describes the Session Layer's role in RPC (Remote Procedure Call) operations?",
+          "options": [
+            "It provides hop-to-hop reliability",
+            "It manages request/response dialogs",
+            "It encrypts RPC packets",
+            "It assigns RPC port numbers"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The Session Layer manages the dialog control and synchronization between the client and server in RPC operations."
+        },
+        {
+          "question": "Which of the following formats is MOST handled by the Presentation Layer?",
+          "options": [
+            "IP addressing",
+            "JPEG image encoding",
+            "TCP segmentation",
+            "VLAN tagging"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The Presentation Layer handles data translation, encryption, and compression, including image formats like JPEG."
+        },
+        {
+          "question": "TLS and SSL operate at the Presentation Layer because they:",
+          "options": [
+            "Add physical signal encoding",
+            "Set up communication sessions",
+            "Handle data encryption and formatting",
+            "Route packets between networks"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "TLS/SSL provide encryption and data formatting services, which are Presentation Layer functions."
+        },
+        {
+          "question": "The Data Link Layer is divided into two sublayers: LLC and:",
+          "options": ["IP", "MAC", "DHCP", "ARP"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The Data Link Layer is divided into Logical Link Control (LLC) and Media Access Control (MAC) sublayers."
+        },
+        {
+          "question": "What is the purpose of the MAC address table on a switch?",
+          "options": [
+            "Routing packets",
+            "Mapping IP addresses",
+            "Mapping MAC addresses to switch ports",
+            "Encrypting data"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "The MAC address table maps MAC addresses to physical switch ports for efficient frame forwarding."
+        },
+        {
+          "question": "Which Physical Layer specification defines connector and pinout types?",
+          "options": [
+            "IEEE 802.3",
+            "IEEE 802.1Q",
+            "IEEE 802.11",
+            "IEEE 802.1X"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "IEEE 802.3 (Ethernet) defines Physical Layer specifications including connectors and pinouts."
+        },
+        {
+          "question": "What type of signal does fiber optic cable use?",
+          "options": [
+            "Electrical signals",
+            "Infrared waves",
+            "Light pulses",
+            "Radio frequency"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Fiber optic cables transmit data using light pulses through glass or plastic fibers."
+        },
+        {
+          "question": "A user is sending email but can retrieve email using different protocol. Which architecture does this describe?",
+          "options": ["Peer-to-Peer", "Client-Server", "Hybrid", "Mesh"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "This describes client-server architecture where different protocols (SMTP for sending, POP3/IMAP for retrieving) are used for different functions."
+        },
+        {
+          "question": "Which Application Layer protocol supports remote logins but does NOT provide encryption?",
+          "options": ["SSL", "Telnet", "HTTPS", "RDP"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Telnet provides remote login capabilities but transmits all data in plaintext without encryption."
+        },
+        {
+          "question": "In SLAAC, which device provides the IPv6 prefix to a host?",
+          "options": [
+            "DNS Server",
+            "DHCP Server",
+            "IPv6 Router (Router Advertisement)",
+            "AAA Server"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "In Stateless Address Autoconfiguration (SLAAC), IPv6 routers send Router Advertisement messages containing the network prefix."
+        },
+        {
+          "question": "OSI Model was developed by which organization?",
+          "options": ["IEEE", "ISO", "IETF", "ITU-T"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The OSI model was developed by the International Organization for Standardization (ISO)."
+        },
+        {
+          "question": "Which IEEE standard provides port-based authentication (e.g., used in network access control)?",
+          "options": ["802.1D", "802.1Q", "802.1X", "802.3u"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "IEEE 802.1X provides port-based Network Access Control (NAC)."
+        },
+        {
+          "question": "What is the number of host bits in the subnet mask 255.255.255.250?",
+          "options": ["3", "4", "5", "8"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "255.255.255.248 in binary has 3 host bits (11111000 in the last octet)."
+        },
+        {
+          "question": "What is the number of host bits in the subnet mask 255.255.255.128?",
+          "options": ["7", "6", "5", "8"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "255.255.255.128 in binary has 7 host bits (10000000 in the last octet)."
+        },
+        {
+          "question": "Which statement BEST describes a network switch?",
+          "options": [
+            "A device that protects the network by blocking unwanted traffic",
+            "A device that connects multiple devices within a LAN and forwards frames based on MAC addresses",
+            "A device that assigns IP addresses to clients",
+            "A device used to translate domain names into IP addresses"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "A switch connects devices within a LAN and forwards frames based on MAC addresses."
+        },
+        {
+          "question": "Which definition accurately describes a router?",
+          "options": [
+            "A device that broadcasts all traffic to every port",
+            "A device that filters traffic based on MAC addresses",
+            "A device that forwards packets between different networks based on IP addresses",
+            "A device that stores data and applications for users"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "A router forwards packets between different networks using IP addresses for routing decisions."
+        },
+        {
+          "question": "What is the primary function of a firewall?",
+          "options": [
+            "To connect LAN devices at high speeds",
+            "To secure the network by filtering traffic based on rules",
+            "To provide cloud storage services",
+            "To route traffic between VLANs"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "A firewall's primary function is to secure the network by filtering traffic based on predefined security rules."
+        },
+        {
+          "question": "Which statement BEST defines a server?",
+          "options": [
+            "A device that provides access to a LAN",
+            "A device that provides services such as file sharing, web hosting, or email",
+            "A device that provides wireless connectivity",
+            "A device used to create data using ACLs"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "A server provides services and resources to other computers (clients) over a network."
+        },
+        {
+          "question": "Which cable should be used to connect a switch to a PC?",
+          "options": [
+            "Crossover cable",
+            "Straight-through cable",
+            "Console cable",
+            "Fiber patch cable"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "A straight-through cable is used to connect dissimilar devices like a switch and a PC."
+        }
+      ]
     }
   ]
 }
