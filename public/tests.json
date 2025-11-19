@@ -2463,6 +2463,111 @@
           "correctOption": 1,
           "points": 10,
           "explanation": "A straight-through cable is used to connect dissimilar devices like a switch and a PC."
+        },
+        {
+          "question": "What is the primary purpose of a MAC flooding attack?",
+          "options": [
+            "To encrypt network traffic",
+            "To overwhelm a network switch's MAC table, forcing it to broadcast traffic to all ports",
+            "To block specific IP addresses",
+            "To increase switch performance"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Floods switch with fake MAC addresses until CAM table fills up, causing switch to broadcast all traffic - enabling eavesdropping."
+        },
+        {
+          "question": "Which Transport Layer protocol provides reliable, connection-oriented delivery?",
+          "options": ["UDP", "IP", "TCP", "ICMP"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "TCP uses acknowledgments, sequencing, and retransmissions to guarantee delivery, unlike connectionless UDP."
+        },
+        {
+          "question": "STP prevents:",
+          "options": [
+            "Viruses in L3",
+            "Loops in L2",
+            "Packet loss in L4",
+            "Encryption breaks in L7"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Spanning Tree Protocol blocks redundant paths in switched networks to prevent broadcast storms and loops."
+        },
+        {
+          "question": "Which feature is provided by TCP but NOT by UDP?",
+          "options": [
+            "Faster transmission",
+            "Error recovery and reliability",
+            "Connectionless communication",
+            "Lower overhead"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "TCP provides error recovery through ACKs and retransmissions; UDP is 'fire-and-forget' with no delivery guarantees."
+        },
+        {
+          "question": "During a video conference, multiple independent audio and video streams must remain logically separated. Which OSI layer supports this separation?",
+          "options": [
+            "Transport Layer",
+            "Network Layer",
+            "Session Layer",
+            "Application Layer"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Transport Layer uses port numbers to multiplex/demultiplex different data streams between the same hosts."
+        },
+        {
+          "question": "What is a primary requirement for Session Layer re-synchronization points?",
+          "options": [
+            "They encrypt the data stream",
+            "They allow rollback without retransmitting the entire data stream",
+            "They compress data for faster transmission",
+            "They route packets between networks"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Synchronization points let sessions restart from checkpoints instead of beginning, saving bandwidth and time."
+        },
+        {
+          "question": "Data encryption (like TLS/SSL) is considered primarily a function of which OSI layer?",
+          "options": ["Layer 4", "Layer 6", "Layer 3", "Layer 7"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Presentation Layer (6) handles data translation, encryption, and compression services."
+        },
+        {
+          "question": "A disgruntled employee embeds malicious code that deletes files if their employee ID is removed. What malware type?",
+          "options": ["Ransomware", "Trojan Horse", "Logic Bomb", "Spyware"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Logic bomb remains dormant until specific trigger condition occurs, then executes malicious payload."
+        },
+        {
+          "question": "Which scenario BEST describes a Presentation Layer function?",
+          "options": [
+            "IP addressing",
+            "Converting audio formats during VoIP communication",
+            "TCP segmentation",
+            "VLAN tagging"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Presentation Layer translates between data formats (codecs, encryption, compression) for application compatibility."
+        },
+        {
+          "question": "A DNS server returns a 'CNAME' record. What does this indicate?",
+          "options": [
+            "The IP address of a mail server",
+            "A permanent redirect to an alias hostname",
+            "The start of authority for a domain",
+            "An IPv6 address record"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "CNAME record creates an alias that points one domain name to another canonical name."
         }
       ]
     }

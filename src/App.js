@@ -30,6 +30,16 @@ const initialState = {
   hasStarted: false,
 };
 
+const shuffleArray = (array) => {
+  if (!array) return [];
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 const reducer = (state, action) => {
   switch (action.type) {
     case "loadTests":
@@ -41,10 +51,14 @@ const reducer = (state, action) => {
       const selectedTest = state.tests.find(
         (test) => test.id === action.testId
       );
+
+      localStorage.removeItem("quizState");
+      const shuffledQuestions = shuffleArray(selectedTest.questions);
+
       return {
         ...state,
         selectedTest,
-        questions: selectedTest.questions,
+        questions: shuffledQuestions,
         status: "ready",
       };
     case "start":
@@ -63,6 +77,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         ...action.payload,
+        status: "ready",
       };
     case "dataFailed":
       return {
@@ -98,7 +113,7 @@ const reducer = (state, action) => {
         ...state,
         selectedTest: null,
         status: "ready",
-      }
+      };
     case "restart":
       localStorage.removeItem("quizState");
       return {
@@ -176,7 +191,7 @@ export default function App() {
   useEffect(() => {
     if (status === "loading" || status === "error") return;
 
-    if (!hasStarted) return
+    if (!hasStarted) return;
     const stateToSave = {
       questions,
       status,
@@ -188,6 +203,7 @@ export default function App() {
       userAnswers,
       reviewMode,
       hasStarted,
+      selectedTest
     };
 
     console.log("Saving state to localStorage");
@@ -203,11 +219,10 @@ export default function App() {
     userAnswers,
     reviewMode,
     hasStarted,
+    selectedTest
   ]);
 
-  
-
-  if (!selectedTest ) {
+  if (!selectedTest) {
     return <TestSelectionScreen tests={tests} dispatch={dispatch} />;
   }
 
