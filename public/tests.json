@@ -2392,10 +2392,10 @@
         },
         {
           "question": "What is the number of host bits in the subnet mask 255.255.255.250?",
-          "options": ["3", "4", "5", "8"],
-          "correctOption": 0,
+          "options": ["3", "No correct options", "5", "8"],
+          "correctOption": 1,
           "points": 10,
-          "explanation": "255.255.255.248 in binary has 3 host bits (11111000 in the last octet)."
+          "explanation": "255.255.255.250 in binary has 3 host bits (11111000 in the last octet)."
         },
         {
           "question": "What is the number of host bits in the subnet mask 255.255.255.128?",
