@@ -1250,6 +1250,762 @@
           "explanation": "CloudFront uses AWS Edge Locations - points of presence globally distributed - to cache content closer to users, reducing latency for content delivery."
         }
       ]
+    },
+    {
+      "id": "Aws Cloud Bacics and Developing combined",
+      "name": "AWS Cloud Basics and Developing",
+      "description": "A combined test on AWS Cloud Basics and Developing on AWS.",
+      "questions": [
+        {
+          "question": "What are the advantages of cloud computing over computing on-premises?",
+          "options": [
+            "Avoid large capital purchases",
+            "Use on-demand capacity",
+            "Go global in minutes",
+            "Increase speed and agility",
+            "All of the above"
+          ],
+          "correctOption": 4,
+          "points": 10,
+          "explanation": "All of the above are key advantages of cloud computing. Cloud computing eliminates large upfront capital expenses, allows using capacity as needed, enables global deployment quickly, and increases business agility."
+        },
+        {
+          "question": "What is the pricing model that enables AWS customers to pay for resources on an as needed basis?",
+          "options": [
+            "Pay as you decommission",
+            "Pay as you go",
+            "Pay as you buy",
+            "Pay as you reserve"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Pay as you go is AWS's fundamental pricing model where customers only pay for the resources they actually use, without long-term commitments or upfront fees."
+        },
+        {
+          "question": "Which of these is NOT a cloud computing model?",
+          "options": [
+            "Platform as a service",
+            "Infrastructure as a service",
+            "System administration as a service",
+            "Software as a service"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "System administration as a service is not a recognized cloud computing model. The main cloud service models are IaaS, PaaS, and SaaS."
+        },
+        {
+          "question": "True or False? AWS owns and maintains the network-connected hardware required for application services, while you provision and use what you need.",
+          "options": ["True", "False"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "True. This is part of the shared responsibility model - AWS manages the underlying infrastructure and hardware, while customers manage what they provision on top of it."
+        },
+        {
+          "question": "Which of these is NOT a benefit of cloud computing over on-premises computing?",
+          "options": [
+            "Increase speed and agility",
+            "Pay for racking, stacking, and powering servers",
+            "Eliminate guessing on your infrastructure capacity needs",
+            "Trade capital expense for variable expense",
+            "Benefit from massive economies of scale"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Paying for racking, stacking, and powering servers is actually a characteristic of on-premises computing, not a benefit of cloud computing. In the cloud, AWS handles all the physical infrastructure management."
+        },
+        {
+          "question": "Which of the following are NOT benefits of AWS Cloud computing? (Choose two)",
+          "options": [
+            "Multiple procurement cycles and High latency",
+            "Pay-as-you-go pricing and Scalability",
+            "Global infrastructure and Security",
+            "Auto scaling and Elasticity"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Multiple procurement cycles and high latency are NOT benefits of AWS cloud computing. AWS eliminates long procurement cycles and provides low-latency access through global infrastructure."
+        },
+        {
+          "question": "Which of the following is a compute service?",
+          "options": [
+            "Amazon VPC",
+            "Amazon S3",
+            "Amazon EC2",
+            "Amazon CloudFront",
+            "Amazon Redshift"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Amazon EC2 (Elastic Compute Cloud) is AWS's primary compute service that provides virtual servers in the cloud."
+        },
+        {
+          "question": "True or False? Cloud computing provides a simple way to access servers, storage, databases, and a broad set of application services over the internet. You own the network-connected hardware required for these services and Amazon Web Services provisions what you need.",
+          "options": ["True", "False"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "False. In cloud computing, you do NOT own the network-connected hardware. AWS owns and maintains the hardware, and you provision and use what you need as a service."
+        },
+        {
+          "question": "Economies of scale result from",
+          "options": [
+            "having many different cloud providers",
+            "having hundreds of thousands of customers aggregated in the cloud",
+            "having hundreds of cloud services available over the internet",
+            "having to invest heavily in data centers and servers"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Economies of scale result from having hundreds of thousands of customers aggregated in the cloud, which allows AWS to achieve lower per-unit costs and pass those savings to customers."
+        },
+        {
+          "question": "Which of these are ways to access AWS core services? (Choose three)",
+          "options": [
+            "AWS Management Console, AWS CLI, and SDKs",
+            "Technical support calls and AWS Marketplace",
+            "AWS CLI, SDKs, and Technical support",
+            "AWS Marketplace, Management Console, and Support calls"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The three primary ways to access AWS services are through the AWS Management Console (web interface), AWS Command Line Interface (CLI), and Software Development Kits (SDKs) for various programming languages."
+        },
+        {
+          "question": "For certain services like Amazon EC2 and Amazon RDS, you can invest in reserved capacity. What options are available for Reserved Instances? (Choose three)",
+          "options": [
+            "AURI, NURI, and PURI",
+            "MURI, DURI, and AURI",
+            "NURI, PURI, and DURI",
+            "All URI options available"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The three Reserved Instance payment options are All Upfront (AURI), No Upfront (NURI), and Partial Upfront (PURI), which provide different levels of upfront payment versus hourly rates."
+        },
+        {
+          "question": "Where can a customer go to get more details about Amazon EC2 billing activity that took place 3 months ago?",
+          "options": [
+            "Amazon EC2 dashboard",
+            "AWS Cost Explorer",
+            "AWS Trusted Advisor dashboard",
+            "AWS CloudTrail logs stored in Amazon S3"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "AWS Cost Explorer provides detailed historical billing data and cost analysis, making it the best tool for reviewing past billing activity from several months ago."
+        },
+        {
+          "question": "True or false? To receive the discounted rate associated with Reserved Instances, you must make a full, upfront payment for the term of the agreement.",
+          "options": ["True", "False"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "False. While All Upfront Reserved Instances require full payment, there are also Partial Upfront and No Upfront options that provide discounts with different payment structures."
+        },
+        {
+          "question": "Which statement is true about the pricing model on AWS?",
+          "options": [
+            "In most cases, there is a per gigabyte charge for inbound data transfer",
+            "Storage is typically charged per gigabyte",
+            "Compute is typically charged as a monthly fee based on instance type",
+            "Outbound charges are free up to a per account limit"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Storage on AWS is typically charged per gigabyte per month, with different rates for different storage classes and access patterns."
+        },
+        {
+          "question": "What are the four support plans offered by AWS Support?",
+          "options": [
+            "Basic, Developer, Business, Enterprise",
+            "Basic, Startup, Business, Enterprise",
+            "Free, Bronze, Silver, Gold",
+            "All support is free"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "AWS offers four support plans: Basic (free), Developer, Business, and Enterprise, each with increasing levels of support and features."
+        },
+        {
+          "question": "Which AWS tool lets you explore AWS services and create an estimate for the cost of your use cases on AWS?",
+          "options": [
+            "AWS Pricing Calculator",
+            "AWS Budgets",
+            "AWS Cost and Usage Report",
+            "AWS Billing Dashboard"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "AWS Pricing Calculator allows you to explore AWS services and configure them to create detailed cost estimates for your specific use cases."
+        },
+        {
+          "question": "As AWS grows, the cost of doing business is reduced and savings are passed back to the customer with lower pricing. What is this optimization called?",
+          "options": [
+            "Expenditure awareness",
+            "Economies of scale",
+            "Matching supply and demand",
+            "EC2 Right Sizing"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Economies of scale refers to the cost advantages that AWS achieves due to its scale of operations, which are then passed on to customers through lower prices."
+        },
+        {
+          "question": "True or false? AWS offers some services at no charge, such as Amazon VPC, AWS IAM, Consolidated Billing, AWS Elastic Beanstalk, automatic scaling, AWS OpsWorks and AWS CloudFormation. However, you might be charged for other AWS services that you use in conjunction with these services.",
+          "options": ["True", "False"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "True. While these specific services are offered at no additional charge, you still pay for the underlying resources you provision through them (like EC2 instances, storage, etc.)."
+        },
+        {
+          "question": "What are benefits of using AWS Organizations? (Choose two)",
+          "options": [
+            "Group account management and API automation",
+            "Replaces IAM policies with SCPs",
+            "Unlimited OUs and root user protection",
+            "Simplifies billing and replaces IAM"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "AWS Organizations provides the ability to create groups of accounts and attach policies to groups, and simplifies automating account creation and management using APIs."
+        },
+        {
+          "question": "True or false? Unlimited services are available with the AWS Free Tier to new AWS customers for 12 months following their AWS sign-up date.",
+          "options": ["True", "False"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "False. The AWS Free Tier has specific limits on services and usage. It's not unlimited - there are constraints on the amount of resources you can use for free within the first 12 months."
+        },
+        {
+          "question": "Which component of the AWS Global Infrastructure does Amazon CloudFront use to ensure low-latency delivery?",
+          "options": [
+            "AWS Regions",
+            "AWS edge locations",
+            "AWS Availability Zones",
+            "Amazon Virtual Private Cloud (Amazon VPC)"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Amazon CloudFront uses AWS edge locations, which are distributed globally, to cache content closer to users and ensure low-latency content delivery."
+        },
+        {
+          "question": "You can run applications and workloads from a region closer to the end users to _________ latency.",
+          "options": ["Increase", "Decrease"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Decrease. Running applications from regions closer to end users reduces the distance data must travel, thereby decreasing latency and improving performance."
+        },
+        {
+          "question": "True / False? Networking, storage, compute and databases are examples of service categories that AWS offers.",
+          "options": ["True", "False"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "True. These are fundamental service categories offered by AWS, along with many others like security, analytics, machine learning, and application integration."
+        },
+        {
+          "question": "Which of these statements about Availability Zones is not true?",
+          "options": [
+            "Availability Zones are designed for fault isolation",
+            "Availability Zones are made up of one or more data centers",
+            "Availability zones are connected to each other using high-speed private links",
+            "A data center can be used for more than one availability zone"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "A data center cannot be used for more than one Availability Zone. Each Availability Zone is a distinct physical location with one or more data centers, but a single data center doesn't serve multiple AZs."
+        },
+        {
+          "question": "What is true about Regions? (Choose two)",
+          "options": [
+            "They are physical locations with multiple AZs in separate geographic areas",
+            "They are the physical locations of your customers",
+            "All regions are located in one specific geographic area",
+            "A region has multiple AZs and each region is geographically separate"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "A region is a physical location that has multiple Availability Zones, and each region is located in a separate geographic area to provide geographic diversity and disaster recovery capabilities."
+        },
+        {
+          "question": "_________ means the infrastructure has built-in component redundancy and _________ means that resources dynamically adjust to increases or decreases in capacity requirements.",
+          "options": [
+            "No human intervention, fault-tolerant",
+            "Fault-tolerant, no human intervention",
+            "Elastic and scalable, fault-tolerant",
+            "Fault-tolerant, elastic and scalable"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Fault-tolerant means the infrastructure has built-in component redundancy to withstand failures, while elastic and scalable means resources can dynamically adjust to changing capacity requirements."
+        },
+        {
+          "question": "True or False? Availability Zones within a region are connected through low-latency links.",
+          "options": ["True", "False"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "True. Availability Zones within a region are connected through high-bandwidth, low-latency networking, enabling synchronous replication and fast failover between zones."
+        },
+        {
+          "question": "AWS highly recommends provisioning your compute resources across _________ availability zones.",
+          "options": ["All", "No", "Multiple", "Single"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Multiple. Distributing resources across multiple Availability Zones provides high availability and fault tolerance, protecting against failures in a single zone."
+        },
+        {
+          "question": "True or False? Edge locations are only located in the same general area as regions.",
+          "options": ["True", "False"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "False. Edge locations are distributed globally in many more locations than regions, often in major population centers to provide low-latency access to users worldwide."
+        },
+        {
+          "question": "In the shared responsibility model, AWS is responsible for providing what?",
+          "options": [
+            "Security of the cloud",
+            "Security to the cloud",
+            "Security for the cloud",
+            "Security in the cloud"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Security of the cloud refers to AWS's responsibility to protect the infrastructure that runs all the services offered in the AWS Cloud."
+        },
+        {
+          "question": "In the shared responsibility model, which of the following are examples of 'Security in the cloud'? (Choose two)",
+          "options": [
+            "Security group configurations and Data encryption",
+            "Compliance standards and Physical security",
+            "Physical security and Global infrastructure protection",
+            "Data encryption and Physical facility security"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Security group configurations and encryption of data at rest and in transit are customer responsibilities under 'Security in the cloud', while AWS handles 'Security of the cloud' including physical security and infrastructure protection."
+        },
+        {
+          "question": "Which AWS networking service enables a company to create a virtual network within AWS?",
+          "options": [
+            "AWS Config",
+            "Amazon Route 53",
+            "AWS Direct Connect",
+            "Amazon VPC"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Amazon VPC (Virtual Private Cloud) enables you to provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define."
+        },
+        {
+          "question": "With Amazon VPC, what is the smallest size subnet you can have in a VPC?",
+          "options": ["/28", "/30", "/24", "/26"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "/28 is the smallest subnet size in Amazon VPC, providing 16 IP addresses (11 usable after AWS reserves 5)."
+        },
+        {
+          "question": "With Amazon VPC, what is the maximum size IP address range you can have in a VPC?",
+          "options": ["/28", "/16", "/30", "/24"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "/16 is the maximum CIDR block size for a VPC, providing 65,536 IP addresses (65,531 usable after AWS reserves 5)."
+        },
+        {
+          "question": "You need to allow resources in a private subnet to access the internet. Which of the following must be present to enable this access?",
+          "options": [
+            "Network access control lists",
+            "Security groups",
+            "NAT gateway",
+            "Route tables"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "A NAT (Network Address Translation) gateway allows instances in a private subnet to connect to the internet or other AWS services, while preventing the internet from initiating connections with those instances."
+        },
+        {
+          "question": "True/False, Private subnets have direct access to the internet.",
+          "options": ["True", "False"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "False. Private subnets do not have direct internet access. They require a NAT gateway or NAT instance to access the internet, which provides outbound-only internet connectivity."
+        },
+        {
+          "question": "Which of the following is an optional security control that can be applied at the subnet layer of a VPC?",
+          "options": [
+            "Network ACL",
+            "Security group",
+            "Web application firewall",
+            "Firewall"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Network ACLs (Access Control Lists) are optional security controls that operate at the subnet level, providing stateless filtering of traffic entering and leaving subnets."
+        },
+        {
+          "question": "What happens when you use Amazon VPC to create a new VPC?",
+          "options": [
+            "Three subnets are created by default in one Availability Zone",
+            "A main route table is created by default",
+            "Three subnets are created by default: one for each Availability Zone",
+            "An internet gateway is created by default"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "When you create a new VPC, AWS automatically creates a main route table for it. Subnets and internet gateways must be created separately."
+        },
+        {
+          "question": "Which of the following can be used to protect Amazon EC2 instances hosted in AWS?",
+          "options": [
+            "Internet Gateway",
+            "All of the above",
+            "AMI",
+            "Security group"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Security groups act as virtual firewalls for EC2 instances to control inbound and outbound traffic at the instance level."
+        },
+        {
+          "question": "Why is AWS more economical than traditional data centers for applications with varying compute workloads?",
+          "options": [
+            "Amazon EC2 Costs are billed on a monthly basis",
+            "Customers retain full administrative access to their Amazon EC2 instances",
+            "Customers can permanently run enough instances to handle peak workloads",
+            "Amazon EC2 instances can be launched on-demand when needed"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "AWS is more economical for variable workloads because you can launch EC2 instances on-demand when needed and terminate them when not needed, avoiding the cost of maintaining idle capacity."
+        },
+        {
+          "question": "If your project requires monthly reports that iterate through very large amounts of data, which Amazon EC2 purchasing option should you consider?",
+          "options": [
+            "Spot Instances",
+            "Scheduled Reserved Instances",
+            "Dedicated Hosts",
+            "On-Demand Instances"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Scheduled Reserved Instances are ideal for predictable recurring workloads like monthly reports, as they provide capacity reservations that recur on a daily, weekly, or monthly basis."
+        },
+        {
+          "question": "What is included in an Amazon Machine Image (AMI)?",
+          "options": [
+            "A template for the root volume for the instance",
+            "Launch permissions that control which AWS accounts can use the AMI to launch instances",
+            "A block device mapping that specifies the volumes to attach to the instance when it's launched",
+            "All of the above"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "An AMI includes all of these components: template for the root volume, launch permissions, and block device mapping, providing everything needed to launch an instance."
+        },
+        {
+          "question": "Which Amazon EC2 feature ensures your instances will not share a physical host with instances from any other AWS customer?",
+          "options": [
+            "Amazon VPC",
+            "Placement Groups",
+            "Dedicated Instances",
+            "Reserved Instances"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Dedicated Instances run on hardware dedicated to a single AWS customer, ensuring no other customers' instances share the same physical host."
+        },
+        {
+          "question": "Which of the following services is a serverless compute service in AWS?",
+          "options": ["AWS Config", "AWS Lambda", "AWS OpsWork", "Amazon EC2"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "AWS Lambda is a serverless compute service that runs code in response to events without requiring you to provision or manage servers."
+        },
+        {
+          "question": "What is the service provided by AWS that enables developers to easily deploy and manage applications in the cloud?",
+          "options": [
+            "Amazon Elastic Container Service",
+            "AWS Elastic Beanstalk",
+            "AWS OpsWork",
+            "AWS CloudFormation"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services without needing to understand the underlying infrastructure."
+        },
+        {
+          "question": "Your web application needs four instances to support steady traffic all of the time. On the last day of the month, the traffic triples. What is the most cost-effective way to handle this pattern?",
+          "options": [
+            "Run 12 reserved instances all of the time",
+            "Run four On-demand Instances constantly, then add eight more On-Demand on the last day of each month",
+            "Run four Reserved Instances constantly, then add eight On-Demand Instances on the last day of each month",
+            "Run four On-Demand Instances constantly, then add eight Reserved Instances on the last day of each month"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Using Reserved Instances for baseline capacity and On-Demand Instances for predictable spikes is the most cost-effective approach for this usage pattern."
+        },
+        {
+          "question": "True or false? Containers contain an entire operating system.",
+          "options": ["True", "False"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "False. Containers share the host system's operating system kernel and contain only the application and its dependencies, making them much lighter than virtual machines."
+        },
+        {
+          "question": "Which Amazon EC2 option is best for long-term workload with predictable usage patterns?",
+          "options": [
+            "Spot Instances",
+            "On-Demand Instances",
+            "Reserved Instances"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Reserved Instances provide significant cost savings (up to 75% compared to On-Demand) for steady-state, predictable workloads with long-term commitments."
+        },
+        {
+          "question": "True or false. Amazon S3 is an object storage suitable for the storage of flat files like Microsoft Word documents, photos, etc.",
+          "options": ["True", "False"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "True. Amazon S3 is object storage designed to store and retrieve any amount of data from anywhere, making it ideal for documents, images, videos, and other unstructured data."
+        },
+        {
+          "question": "Amazon S3 replicates all objects _________.",
+          "options": [
+            "On multiple volumes within an availability zone",
+            "In multiple Availability zones within the same region",
+            "Across multiple regions for higher durability",
+            "On multiple S3 buckets"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Amazon S3 Standard storage automatically replicates data across multiple Availability Zones within the same region to provide 99.999999999% (11 9's) of durability."
+        },
+        {
+          "question": "The name of an S3 bucket must be unique.",
+          "options": [
+            "Worldwide across all AWS accounts",
+            "Within a region",
+            "Across all your AWS accounts",
+            "Within your AWS account"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "S3 bucket names must be globally unique across all AWS accounts and regions, as they are part of the URL used to access objects in the bucket."
+        },
+        {
+          "question": "You can use Amazon Elastic File System (EFS) to:",
+          "options": [
+            "Provide simple, scalable, elastic file storage for use only within AWS",
+            "Implement storage for Amazon EC2 instances that multiple virtual machines can access at the same time",
+            "Host a robust CDN to deliver entire web sites with dynamic, static, and streaming content",
+            "Generate user specific content"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Amazon EFS provides scalable, elastic file storage that can be accessed concurrently by multiple EC2 instances across multiple Availability Zones."
+        },
+        {
+          "question": "Amazon Elastic Block Storage (EBS) is recommended when data _________ and _________ (Choose two)",
+          "options": [
+            "Requires object level storage and Must be quickly accessible",
+            "Must be quickly accessible and Requires encryption",
+            "Requires encryption and Needs cross-AZ storage",
+            "Needs cross-AZ storage and Requires object storage"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "EBS is ideal for data that must be quickly accessible with low latency and requires persistence, and it supports transparent encryption for data at rest."
+        },
+        {
+          "question": "True or false, by default all data stored in Amazon S3 is viewable by the public.",
+          "options": ["True", "False"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "False. By default, all S3 buckets and objects are private. Only the bucket and object owners have access until they explicitly grant permissions to others."
+        },
+        {
+          "question": "Regarding Amazon S3 Glacier, what is a vault?",
+          "options": [
+            "The rules that determine who may (or may not) access archives",
+            "An object (photos, videos, files, or documents)",
+            "A container for storing archives",
+            "A policy that identifies who can access content stored in Glacier"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "A vault is a container for storing archives in Amazon S3 Glacier, similar to how a bucket is a container for objects in Amazon S3."
+        },
+        {
+          "question": "True or false. When you create a bucket in Amazon S3, it is associated with a specific AWS region.",
+          "options": ["True", "False"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "True. When creating an S3 bucket, you must choose the AWS region where the bucket will reside, which determines the physical location where your data is stored."
+        },
+        {
+          "question": "You are designing an ecommerce web application that will scale to hundreds of thousands of concurrent users. Which database technology is best suited to hold the session state in this example?",
+          "options": [
+            "Amazon Relational Database Service (RDS)",
+            "Amazon DynamoDB",
+            "Amazon RedShift",
+            "Amazon Simple Storage (S3)"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Amazon DynamoDB is ideal for session state management due to its fast, predictable performance at any scale, single-digit millisecond latency, and automatic scaling capabilities."
+        },
+        {
+          "question": "You need to find an item in Amazon DynamoDB table using an attribute other than item's primary key. Which operation should you use?",
+          "options": ["Put Item", "Scan", "Query", "Get Item"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Scan operations examine every item in the table and return all items that match the filter criteria, but they are less efficient than queries and should be used sparingly on large tables."
+        },
+        {
+          "question": "Which AWS Cloud service is best suited for analyzing your data by using standard SQL and your existing business intelligence (BI) tools?",
+          "options": [
+            "Amazon Relational Database (RDS)",
+            "Amazon Simple Storage Simple Glacier",
+            "Amazon Dynamo DB",
+            "Amazon Redshift"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Amazon Redshift is a fast, fully managed data warehouse that makes it simple and cost-effective to analyze all your data using standard SQL and existing BI tools."
+        },
+        {
+          "question": "Which of the following use cases is appropriate for using Amazon RDS?",
+          "options": [
+            "Massive read / write rates",
+            "Simple Gets or Put Requests",
+            "Complex Transactions",
+            "All the Above"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Amazon RDS is ideal for applications that require complex transactions with ACID properties, such as OLTP workloads, financial systems, and inventory management."
+        },
+        {
+          "question": "If you are developing an application that requires a database with extremely fast performance, fast scalability, and flexibility in the database schema, which service would you consider?",
+          "options": [
+            "Amazon Relational Database (RDS)",
+            "Amazon Elastic Cache",
+            "Amazon Dynamo DB",
+            "Amazon Redshift"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Amazon DynamoDB provides single-digit millisecond performance at any scale, automatic scaling, and schema flexibility as a NoSQL database service."
+        },
+        {
+          "question": "True of false? Amazon RDS automatically patches the database software and backs up your database, storing the backups for a user-defined retention period and enabling point-in-time recovery",
+          "options": ["True", "False"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "True. Amazon RDS automates common administrative tasks like backups, software patching, and point-in-time recovery, making database management much simpler."
+        },
+        {
+          "question": "Which of the following is not one of the four areas of the Performance Efficiency pillar of the AWS Well-Architected Framework?",
+          "options": ["Tradeoffs", "Selection", "Traceability", "Monitoring"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Traceability is not one of the four areas. The Performance Efficiency pillar focuses on Selection, Review, Monitoring, and Tradeoffs to ensure efficient use of computing resources."
+        },
+        {
+          "question": "Which of the following is a principle when designing cloud-based systems?",
+          "options": [
+            "Build tightly - coupled components",
+            "Make infrequent , large batch changes",
+            "Assume Everything will fail",
+            "Use as many services as possible"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Assuming everything will fail is a key design principle for cloud systems, encouraging the design of resilient architectures that can withstand component failures."
+        },
+        {
+          "question": "Which of the following are pillars of the AWS Well-Architected Framework? (Choose three)",
+          "options": [
+            "Security, Operational Excellence, and Cost Optimization",
+            "Persistence, Security, and Operational Excellence",
+            "Operational Excellence, Cost Optimization, and Persistence",
+            "Security, Cost Optimization, and Persistence"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The five pillars of the Well-Architected Framework are Operational Excellence, Security, Reliability, Performance Efficiency, and Cost Optimization."
+        },
+        {
+          "question": "AWS Trusted Advisor provides insight regarding which five categories of an AWS account?",
+          "options": [
+            "Performance, cost optimization, security, fault tolerance, service limits",
+            "Security, Fault tolerance, high availability, connectivity, service limits",
+            "Performance, cost optimization, access control, connectivity, security",
+            "Security, access control, high availability, performance, service limits"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "AWS Trusted Advisor provides best practice checks and recommendations in five categories: cost optimization, performance, security, fault tolerance, and service limits."
+        },
+        {
+          "question": "What is the focus of the sustainability pillar of the well-architected framework?",
+          "options": [
+            "Designing workloads that recover quickly from failures",
+            "Minimize the environmental impacts of the running cloud networks",
+            "Avoid unnecessary cost in cloud networks",
+            "Automating updates to cloud networks"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The sustainability pillar focuses on minimizing the environmental impacts of cloud workloads by maximizing energy efficiency and reducing resource consumption."
+        },
+        {
+          "question": "Which AWS tools help your application scale up or down based on demand? (Choose two)",
+          "options": [
+            "Amazon EC2 Auto Scaling and Elastic Load Balancing",
+            "Availability Zones and AWS CloudFormation",
+            "AWS CloudFormation and Elastic Load Balancing",
+            "Availability Zones and Amazon EC2 Auto Scaling"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Amazon EC2 Auto Scaling automatically adds or removes EC2 instances based on demand, while Elastic Load Balancing distributes traffic across multiple targets to handle varying loads."
+        },
+        {
+          "question": "Which service would you use to send alerts based on Amazon CloudWatch alarms?",
+          "options": [
+            "Amazon Simple Notification Service (SNS)",
+            "AWS Cloud Trail",
+            "AWS Trusted Advisor",
+            "Amazon Route 53"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Amazon SNS is used to send notifications and alerts based on CloudWatch alarms, supporting multiple delivery protocols including email, SMS, and HTTP/HTTPS endpoints."
+        },
+        {
+          "question": "Which of the following must be configured on an Elastic Load Balancing load balancer to expect incoming traffic?",
+          "options": [
+            "A Port",
+            "A Network Interface",
+            "A Listener",
+            "An Instance"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "A listener is a process that checks for connection requests using the protocol and port you configure, and is required for a load balancer to accept incoming traffic."
+        },
+        {
+          "question": "There is an audit at your company and they need to have a big log of all access to AWS resources in the account. Which service can assist in providing these details?",
+          "options": [
+            "Amazon CloudWatch",
+            "AWS CloudTrail",
+            "Amazon Elastic Compute Cloud (EC2)",
+            "Amazon Simple Notification Service (SNS)"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "AWS CloudTrail enables governance, compliance, and operational and risk auditing of your AWS account by logging API calls and related events."
+        }
+      ]
     }
   ]
 }
