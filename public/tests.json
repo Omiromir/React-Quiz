@@ -1,2457 +1,628 @@
 {
   "tests": [
     {
-      "id": "Aws cloud final test",
-      "name": "AWS Cloud  Final Test",
-      "description": "This test is designed to assess your knowledge of AWS Cloud concepts, services, pricing models, security practices, and best practices. It covers a range of topics including core AWS services, cloud computing benefits, AWS shared responsibility model, and more.",
+      "id": "Software Architecture",
+      "name": "Software Architecture Final Test",
+      "description": "A comprehensive test covering key concepts in software architecture, including quality attributes, architectural patterns, and design principles.",
       "questions": [
         {
-          "question": "Which of the following are NOT benefits of AWS Cloud computing? (Choose 2)",
+          "question": "In architectural partitioning, what is the primary criterion for determining how to 'sensibly' divide an application into components?",
           "options": [
-            "Multiple procurement cycles and High latency",
-            "Pay-as-you-go pricing and Scalability",
-            "Global infrastructure and Security",
-            "Auto scaling and Elasticity"
+            "The personal preferences of the development team",
+            "Meeting specific application requirements and constraints",
+            "Following the latest industry trends regardless of context",
+            "Maximizing the number of components for better granularity"
           ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Multiple procurement cycles and high latency are NOT benefits of AWS cloud computing. AWS eliminates long procurement cycles and provides low-latency access through global infrastructure."
-        },
-        {
-          "question": "True or False: Cloud computing provides a simple way to access servers, storage, databases, and application services over the internet, but you own the network-connected hardware.",
-          "options": ["True", "False"],
           "correctOption": 1,
           "points": 10,
-          "explanation": "False. In cloud computing, AWS owns and maintains the hardware. Customers provision and use what they need without owning the underlying infrastructure."
+          "explanation": "Architectural partitioning must be driven by the specific requirements and constraints of the application itself, not by trends or preferences. Different applications with different requirements will have different sensible partitions."
         },
         {
-          "question": "Which of these is NOT a benefit of cloud computing over on-premises computing?",
+          "question": "Which statement best describes the relationship between quality attributes and system architecture?",
           "options": [
-            "Pay for racking, stacking, and powering servers",
-            "Pay-as-you-go pricing",
-            "Global deployment in minutes",
-            "No upfront capital expenses"
+            "Quality attributes are secondary concerns that can be addressed after functional requirements are implemented",
+            "Architecture exists primarily to satisfy quality attributes, not just functional requirements",
+            "Quality attributes only affect the user interface layer of the system",
+            "Each quality attribute can be maximized independently without affecting others"
           ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Paying for racking, stacking, and powering servers is NOT a benefit - AWS handles these infrastructure tasks, eliminating the need for customers to manage them."
-        },
-        {
-          "question": "Which of the following is a compute service?",
-          "options": ["Amazon EC2", "Amazon S3", "Amazon RDS", "Amazon VPC"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon EC2 (Elastic Compute Cloud) is AWS's primary compute service that provides virtual servers in the cloud."
-        },
-        {
-          "question": "Economies of scale result from _________.",
-          "options": [
-            "Having hundreds of thousands of customers aggregated in the cloud",
-            "Using larger instance types",
-            "Long-term contracts with AWS",
-            "Running applications in multiple regions"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS achieves economies of scale by aggregating hundreds of thousands of customers, which reduces costs that are passed back to customers through lower pricing."
-        },
-        {
-          "question": "Which of these are ways to access AWS core services? (Choose 3)",
-          "options": [
-            "AWS Management Console, AWS CLI, and SDKs",
-            "AWS Management Console, Email requests, and Phone support",
-            "SDKs, REST APIs, and Email interface",
-            "AWS CLI, Phone support, and Management Console"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS provides three main access methods: AWS Management Console (web interface), AWS Command Line Interface (CLI), and Software Development Kits (SDKs) for various programming languages."
-        },
-        {
-          "question": "What are the advantages of cloud computing over computing on-premises?",
-          "options": [
-            "All of the above",
-            "Avoid large capital purchases",
-            "Use on-demand capacity",
-            "Go global in minutes and Increase speed and agility"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "All options listed are advantages of cloud computing: avoiding capital expenses, using on-demand capacity, global deployment in minutes, and increased speed and agility."
-        },
-        {
-          "question": "What is the pricing model that enables AWS customers to pay for resources on an as-needed basis?",
-          "options": [
-            "Pay as you go",
-            "Reserved instances",
-            "Spot pricing",
-            "Enterprise agreement"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Pay-as-you-go pricing allows customers to pay only for the resources they actually use, without long-term commitments or upfront fees."
-        },
-        {
-          "question": "Which of these is NOT a cloud computing model?",
-          "options": [
-            "System administration as a service",
-            "Infrastructure as a Service (IaaS)",
-            "Platform as a Service (PaaS)",
-            "Software as a Service (SaaS)"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The three main cloud computing models are IaaS, PaaS, and SaaS. 'System administration as a service' is not a recognized cloud computing model."
-        },
-        {
-          "question": "True or False: AWS owns and maintains the network-connected hardware required for application services, while you provision and use what you need.",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. This is the fundamental concept of cloud computing - AWS manages the underlying infrastructure while customers consume services as needed."
-        },
-        {
-          "question": "Where can a customer go to get more details about Amazon EC2 billing activity that took place 3 months ago?",
-          "options": [
-            "AWS Cost Explorer",
-            "AWS Trusted Advisor",
-            "AWS CloudTrail",
-            "AWS Budgets"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS Cost Explorer provides detailed historical cost and usage data, allowing customers to analyze spending patterns over time, including past months."
-        },
-        {
-          "question": "True or False: To receive the discounted rate associated with Reserved Instances, you must make a full, upfront payment.",
-          "options": ["True", "False"],
           "correctOption": 1,
           "points": 10,
-          "explanation": "False. AWS offers three Reserved Instance payment options: All Upfront (AURI), Partial Upfront (PURI), and No Upfront (NURI), providing flexibility in payment terms."
+          "explanation": "Architecture fundamentally exists to satisfy quality attributes (performance, security, maintainability, etc.). Functional requirements define what the system does, but quality attributes define how well it does it and directly shape architectural decisions."
         },
         {
-          "question": "What options are available for reserved instances? (Choose 3)",
+          "question": "What is the key difference between non-functional requirements and quality attributes?",
           "options": [
-            "AURI, NURI, PURI",
-            "On-demand, Spot, Reserved",
-            "Standard, Convertible, Scheduled",
-            "Dedicated, Shared, Host"
+            "Non-functional requirements are technical while quality attributes are business-oriented",
+            "Non-functional requirements are vague statements while quality attributes are measurable characteristics",
+            "They are synonymous terms for the same concept",
+            "Non-functional requirements apply to the development process while quality attributes apply to the final product"
           ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The three Reserved Instance payment options are: AURI (All Upfront), NURI (No Upfront), and PURI (Partial Upfront), referring to how the reservation is paid for."
-        },
-        {
-          "question": "Which statement is true about the pricing model on AWS?",
-          "options": [
-            "Storage is typically charged per gigabyte",
-            "All services have fixed monthly pricing",
-            "Compute costs are the same across all regions",
-            "Data transfer inbound is always charged"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS storage services like S3 and EBS are typically charged based on the amount of gigabytes used, often with tiered pricing where cost per GB decreases with higher usage."
-        },
-        {
-          "question": "What are the four support plans offered by AWS Support?",
-          "options": [
-            "Basic, Developer, Business, Enterprise",
-            "Starter, Professional, Business, Enterprise",
-            "Free, Standard, Professional, Premium",
-            "Basic, Standard, Professional, Enterprise"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS offers four support plans: Basic (free), Developer, Business, and Enterprise, each with increasing levels of support and features."
-        },
-        {
-          "question": "What AWS tool lets you explore AWS services and create an estimate for the cost of your use cases on AWS?",
-          "options": [
-            "AWS Pricing Calculator",
-            "AWS Cost Explorer",
-            "AWS Budgets",
-            "AWS Trusted Advisor"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS Pricing Calculator allows you to model your solutions, explore price points, and create cost estimates for your AWS use cases before building them."
-        },
-        {
-          "question": "As AWS grows, the cost of doing business is reduced and savings are passed back to the customer with lower pricing. What is this optimization called?",
-          "options": [
-            "Economies of Scale",
-            "Volume Discounts",
-            "Reserved Pricing",
-            "Cost Optimization"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Economies of scale occur when AWS's large customer base and infrastructure investments allow them to reduce costs, which are then passed to customers through lower prices."
-        },
-        {
-          "question": "True or False: AWS offers a variety of services at no charge including Amazon VPC, IAM, Consolidated Billing, AWS Elastic Beanstalk, AWS Auto Scaling, AWS OpsWorks, and AWS CloudFormation.",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. These AWS services are available at no additional charge, though you may be charged for other AWS services used in conjunction with them."
-        },
-        {
-          "question": "What are the benefits of using AWS Organizations? (Choose 2)",
-          "options": [
-            "Create groups of accounts with attached policies and Automate account creation with APIs",
-            "Reduce costs and Improve performance",
-            "Enhance security and Monitor compliance",
-            "Manage users and Assign permissions"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS Organizations helps manage multiple AWS accounts by creating groups with policies and automating account management through APIs."
-        },
-        {
-          "question": "True or False: Unlimited services are available with the AWS Free Tier to new AWS customers for 12 months.",
-          "options": ["True", "False"],
           "correctOption": 1,
           "points": 10,
-          "explanation": "False. The AWS Free Tier applies only to certain services with specific usage limits, not unlimited access to all services."
+          "explanation": "Non-functional requirements are often stated informally (e.g., 'system must be fast'), while quality attributes turn these into measurable, actionable characteristics (e.g., 'response time under 2 seconds') that can drive architectural decisions."
         },
         {
-          "question": "Amazon Simple Storage Service (Amazon S3) provide a good solution for which of the following use cases?",
+          "question": "Which architectural tactic would MOST directly address reliability concerns?",
           "options": [
-            "An internet accessible storage location for video files that an external website accesses",
-            "A relational database for transaction processing",
-            "In-memory caching for web applications",
-            "Real-time message queuing"
+            "Implementing a comprehensive logging framework",
+            "Adding redundancy and failover mechanisms",
+            "Using the latest programming language features",
+            "Creating detailed documentation"
           ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon S3 is ideal for storing and serving static content like video files to external websites due to its durability, scalability, and web accessibility."
-        },
-        {
-          "question": "A company is using Amazon S3 alone to host their website. Which types of content does Amazon S3 support for static web hosting? (Select THREE)",
-          "options": [
-            "HTML files, image files, client-side scripts, video and sound files",
-            "Server-side scripts, database files, and executable programs",
-            "Dynamic PHP pages and Java applications",
-            "Windows executables and system libraries"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "S3 static web hosting supports HTML, images, client-side scripts (JavaScript), videos, and audio files - all static content that doesn't require server-side processing."
-        },
-        {
-          "question": "Which scenarios represent a good use for Amazon S3? (Select TWO)",
-          "options": [
-            "Backing up critical data and Storing computation and analytics data",
-            "Running web applications and Processing real-time transactions",
-            "Hosting databases and Managing user sessions",
-            "Caching frequently accessed data and Load balancing"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "S3 is excellent for data backup and storing large datasets for computation/analytics due to its durability, scalability, and cost-effectiveness."
-        },
-        {
-          "question": "A company wants to use an S3 bucket to store sensitive data. Which actions can they take to protect their data? (Select TWO)",
-          "options": [
-            "Enabling server-side encryption and Using client-side encryption for data in transit",
-            "Disabling versioning and Making the bucket public",
-            "Using only HTTP and Disabling logging",
-            "Storing encryption keys in the bucket and Using weak passwords"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Server-side encryption protects data at rest, while client-side encryption protects data during transmission to/from S3."
-        },
-        {
-          "question": "A company must create a common place to store shared files. Which requirements does Amazon S3 support? (Select TWO)",
-          "options": [
-            "Recover deleted files and Maintain different versions of files",
-            "Real-time file locking and Automatic file compression",
-            "File system mounting and Direct OS integration",
-            "Automatic file conversion and Real-time collaboration"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "S3 supports versioning to maintain file history and can recover deleted files (if versioning is enabled), making it suitable for shared file storage."
-        },
-        {
-          "question": "A customer service team accesses case data daily for up to 30 days. Cases can be reopened and require immediate access for 1 year after they are closed. Which solution is most cost-efficient?",
-          "options": [
-            "Store case data in S3 Intelligent-Tiering to automatically move data between tiers based on access frequency",
-            "Store all data in S3 Standard storage class",
-            "Use S3 Glacier for all data storage",
-            "Store data in EBS volumes and take daily snapshots"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "S3 Intelligent-Tiering automatically moves data between frequent and infrequent access tiers based on usage patterns, optimizing costs for data with changing access patterns."
-        },
-        {
-          "question": "Which Amazon S3 unaccelerated data transfers have an associated cost? (Select TWO)",
-          "options": [
-            "Out to the internet and Out to other AWS Regions",
-            "In from the internet and In from other AWS Regions",
-            "Between S3 buckets in the same region",
-            "Within the same Availability Zone"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS charges for data transfer OUT from S3 to the internet and between AWS Regions. Data transfer IN to S3 is typically free."
-        },
-        {
-          "question": "A company is migrating 100 terabytes of data from on-premises to Amazon S3 using a single 155 Mbps internet connection. Which data transfer option is the fastest and most cost-effective?",
-          "options": [
-            "AWS Snowball",
-            "Internet transfer directly to S3",
-            "AWS Direct Connect",
-            "AWS VPN"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS Snowball is designed for petabyte-scale data transfer, bypassing internet bandwidth limitations and providing faster, more secure large-scale data migration."
-        },
-        {
-          "question": "A video producer must regularly transfer several video files (100-700 MB) to Amazon S3 with unreliable internet causing upload failures. Which solution provides the fastest, most reliable transfer?",
-          "options": [
-            "Amazon S3 multipart uploads",
-            "Single PUT operations",
-            "AWS Snowmobile",
-            "Amazon S3 Transfer Acceleration"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "S3 multipart uploads allow parallel upload of file parts, improving transfer reliability and speed, with the ability to resume failed uploads."
-        },
-        {
-          "question": "Which qualities vary by AWS Region? (Select TWO)",
-          "options": [
-            "Cost-effectiveness of workloads and Service/feature availability",
-            "Security standards and Compliance certifications",
-            "API endpoints and SDK compatibility",
-            "User interface and Management console"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Pricing and service availability can vary by region due to local infrastructure costs and regional service rollouts, while security and compliance standards are consistent globally."
-        },
-        {
-          "question": "In the shared responsibility model, AWS is responsible for providing what?",
-          "options": [
-            "Security of the cloud",
-            "Security in the cloud",
-            "Application security",
-            "Data encryption"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS is responsible for 'security of the cloud' - protecting the infrastructure that runs AWS services. Customers are responsible for 'security in the cloud' - how they configure and use AWS services."
-        },
-        {
-          "question": "In the shared responsibility model, which are examples of 'security in the cloud'? (Choose 2)",
-          "options": [
-            "Security group configurations and Encryption of data at rest and in transit",
-            "Physical data center security and Network infrastructure",
-            "Hardware maintenance and Facility access control",
-            "Server operating systems and Hypervisor security"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Security group configurations and data encryption are customer responsibilities ('security in the cloud'), while AWS handles physical security and infrastructure ('security of the cloud')."
-        },
-        {
-          "question": "Which of the following is the responsibility of AWS under the AWS shared responsibility model?",
-          "options": [
-            "Maintaining physical hardware",
-            "Configuring security groups",
-            "Managing IAM users",
-            "Encrypting customer data"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS is responsible for maintaining the physical hardware, facilities, network infrastructure, and hypervisor. Customers manage their data, applications, and configurations."
-        },
-        {
-          "question": "When creating an IAM policy, what are the two types of access that can be granted to a user? (Choose two)",
-          "options": [
-            "Programmatic Access and AWS Management Console Access",
-            "Read Access and Write Access",
-            "Admin Access and User Access",
-            "Public Access and Private Access"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "IAM users can be granted programmatic access (for API/CLI/SDK) and/or AWS Management Console access (web interface) with appropriate permissions."
-        },
-        {
-          "question": "True or false? AWS Organizations enables you to consolidate multiple AWS accounts so that you centrally manage them.",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. AWS Organizations allows you to centrally manage billing, control access, compliance, and security across multiple AWS accounts."
-        },
-        {
-          "question": "Which of the following are best practices to secure your account using IAM? (Choose two)",
-          "options": [
-            "Manage access to AWS resources and Define fine-grained access rights",
-            "Use root user for daily tasks and Share access keys",
-            "Create one admin user for everyone and Use simple passwords",
-            "Disable MFA and Use access keys in source code"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Best IAM practices include managing resource access through policies and implementing fine-grained permissions following the principle of least privilege."
-        },
-        {
-          "question": "Which of the following should be done by the AWS account root user?",
-          "options": [
-            "Change the AWS support plan",
-            "Daily administrative tasks",
-            "Running applications",
-            "Creating IAM users"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The root user should only be used for tasks that require root-level access, such as changing support plans, closing accounts, or modifying account settings."
-        },
-        {
-          "question": "After initial login, what does AWS recommend as the best practice for the AWS account root user?",
-          "options": [
-            "Delete the access keys of the AWS account root user",
-            "Use root user for all daily operations",
-            "Share root credentials with team members",
-            "Create access keys for automated scripts"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS recommends deleting root access keys and using IAM users for daily tasks to minimize security risks associated with root account compromise."
-        },
-        {
-          "question": "How would a system administrator add an additional layer of login security to a user's AWS Management Console?",
-          "options": [
-            "Enable multi-factor authentication",
-            "Use longer passwords",
-            "Enable single sign-on",
-            "Use API keys only"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Multi-factor authentication (MFA) adds an extra security layer by requiring users to provide a time-based one-time password in addition to their regular credentials."
-        },
-        {
-          "question": "True or false? AWS Key Management Service (AWS KMS) enables you to assess, audit, and evaluate the configurations of your AWS resources.",
-          "options": ["True", "False"],
           "correctOption": 1,
           "points": 10,
-          "explanation": "False. AWS KMS is for creating and managing encryption keys. AWS Config is the service that assesses, audits, and evaluates resource configurations."
+          "explanation": "Reliability focuses on correct performance over time, availability, and fault tolerance. Redundancy and failover mechanisms directly address these by ensuring continued operation even when components fail."
         },
         {
-          "question": "With Amazon VPC, what is the smallest size subnet you can have?",
-          "options": ["/28", "/16", "/24", "/32"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The smallest subnet size in Amazon VPC is /28, which provides 16 IP addresses (11 usable for instances after AWS reserves 5)."
-        },
-        {
-          "question": "With Amazon VPC, what is the maximum size IP address range you can have?",
-          "options": ["/16", "/28", "/8", "/24"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The largest CIDR block you can create for a VPC is /16, which provides 65,536 IP addresses (65,531 usable)."
-        },
-        {
-          "question": "You need to allow resources in a private subnet to access the internet. Which must be present?",
+          "question": "What is the fundamental purpose of creating multiple architectural models for the same system?",
           "options": [
-            "NAT gateway",
-            "Internet Gateway",
-            "Virtual Private Gateway",
-            "Direct Connect"
+            "To increase documentation workload for developers",
+            "To satisfy different stakeholder concerns and viewpoints",
+            "To demonstrate the architect's versatility in modeling techniques",
+            "To provide backup options if one model proves incorrect"
           ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "A NAT (Network Address Translation) gateway allows instances in private subnets to connect to the internet or other AWS services while preventing the internet from initiating connections with those instances."
-        },
-        {
-          "question": "Which AWS networking service enables a company to create a virtual network within AWS?",
-          "options": [
-            "Amazon VPC",
-            "Amazon CloudFront",
-            "AWS Direct Connect",
-            "Amazon Route 53"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon Virtual Private Cloud (VPC) lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define."
-        },
-        {
-          "question": "True or false? Private subnets have direct access to the internet.",
-          "options": ["True", "False"],
           "correctOption": 1,
           "points": 10,
-          "explanation": "False. Private subnets do not have direct internet access. They require a NAT gateway or NAT instance to access the internet while remaining protected from inbound connections."
+          "explanation": "Different stakeholders (business users, developers, operations) have different concerns. No single model can address all viewpoints effectively, so multiple models following the principle of separation of concerns are necessary."
         },
         {
-          "question": "Which component of AWS Global Infrastructure does Amazon CloudFront use to ensure low-latency delivery?",
+          "question": "In the context of ISO/IEC 25010, which quality characteristic would be MOST compromised by choosing a monolithic architecture over microservices?",
           "options": [
-            "AWS Edge Locations",
-            "AWS Availability Zones",
-            "AWS Regions",
-            "AWS Local Zones"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "CloudFront uses AWS Edge Locations - points of presence globally distributed - to cache content closer to users, reducing latency for content delivery."
-        },
-        {
-          "question": "Which of the following is an optional security control that can be applied at the subnet layer of a VPC?",
-          "options": ["Network ACL", "Security Group", "IAM Policy", "KMS Key"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Network ACLs are optional stateless firewalls that operate at the subnet level, controlling traffic in and out of subnets."
-        },
-        {
-          "question": "What happens when you use Amazon VPC to create a new VPC?",
-          "options": [
-            "A main route table is created by default",
-            "All subnets are created automatically",
-            "Internet Gateway is attached by default",
-            "NAT gateway is provisioned automatically"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "When creating a VPC, AWS automatically creates a main route table, but you need to manually create subnets, attach internet gateways, and configure routing."
-        },
-        {
-          "question": "Which of the following can be used to protect Amazon EC2 instances hosted in AWS?",
-          "options": [
-            "Security group",
-            "Network ACL",
-            "Both security group and network ACL",
-            "Neither security group nor network ACL"
+            "Functional Suitability",
+            "Performance Efficiency",
+            "Scalability and Maintainability",
+            "Security"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Both security groups (instance-level stateful firewall) and network ACLs (subnet-level stateless firewall) can be used together to protect EC2 instances."
+          "explanation": "While monolithic architectures can have advantages, microservices typically offer better scalability (part of Performance Efficiency) and maintainability due to independent deployability and clearer component boundaries."
         },
         {
-          "question": "You create a VPC with CIDR block 10.0.1.0/24. How many IP addresses are available?",
-          "options": ["251", "256", "254", "255"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "A /24 CIDR provides 256 total IP addresses. AWS reserves 5 IP addresses per subnet (network, broadcast, AWS services), leaving 251 available for instances."
-        },
-        {
-          "question": "Why is AWS more economical than traditional data centers for applications with varying compute workloads?",
+          "question": "Which element should NEVER appear in a Context Diagram?",
           "options": [
-            "Amazon EC2 instances can be launched on-demand when needed",
-            "AWS offers unlimited free resources",
-            "All AWS services are free for the first year",
-            "AWS has lower hardware costs"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The on-demand nature of EC2 instances allows businesses to scale up during peak times and scale down during low usage, paying only for what they use rather than maintaining expensive idle capacity."
-        },
-        {
-          "question": "If your project requires monthly reports that iterate through very large amounts of data, which EC2 purchasing option should you consider?",
-          "options": [
-            "Scheduled Reserved Instances",
-            "On-Demand Instances",
-            "Spot Instances",
-            "Dedicated Hosts"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Scheduled Reserved Instances are ideal for predictable periodic workloads that run on a regular schedule, like monthly reporting jobs."
-        },
-        {
-          "question": "What is included in an Amazon Machine Image (AMI)?",
-          "options": [
-            "All of the above",
-            "Template for the root volume",
-            "Launch permissions",
-            "Block device mapping"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "An AMI includes all the information required to launch an instance: template for root volume, launch permissions, block device mapping, and other configuration details."
-        },
-        {
-          "question": "Which EC2 feature ensures your instances will not share a physical host with instances from any other AWS customer?",
-          "options": [
-            "Dedicated Instances",
-            "Reserved Instances",
-            "Spot Instances",
-            "On-Demand Instances"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Dedicated Instances run on hardware dedicated to a single AWS customer, providing isolation from other customers' instances for regulatory or security requirements."
-        },
-        {
-          "question": "Which of the following services is a serverless compute service in AWS?",
-          "options": [
-            "AWS Lambda",
-            "Amazon EC2",
-            "AWS Elastic Beanstalk",
-            "Amazon ECS"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS Lambda is a serverless compute service that runs code in response to events without requiring you to provision or manage servers."
-        },
-        {
-          "question": "What is the service provided by AWS that enables developers to easily deploy and manage applications in the cloud?",
-          "options": [
-            "AWS Elastic Beanstalk",
-            "AWS Lambda",
-            "Amazon EC2",
-            "AWS OpsWorks"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS Elastic Beanstalk is a Platform-as-a-Service (PaaS) that handles deployment, capacity provisioning, load balancing, and automatic scaling."
-        },
-        {
-          "question": "Your web application needs four instances to support steady traffic. On the last day of the month, traffic triples. What is the most cost-effective way to handle this?",
-          "options": [
-            "Run four Reserved Instances constantly, then add eight On-Demand Instances on the last day",
-            "Run twelve Reserved Instances constantly",
-            "Run twelve On-Demand Instances constantly",
-            "Use only Spot Instances with auto-scaling"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Reserved Instances for baseline load with On-Demand for predictable spikes provides the best cost optimization for predictable variable workloads."
-        },
-        {
-          "question": "True or false? Containers contain an entire operating system.",
-          "options": ["True", "False"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "False. Containers share the host operating system kernel and contain only the application and its dependencies, making them much lighter than virtual machines."
-        },
-        {
-          "question": "Which Amazon EC2 option is best for long-term workload with predictable usage patterns?",
-          "options": [
-            "Reserved Instances",
-            "On-Demand Instances",
-            "Spot Instances",
-            "Dedicated Hosts"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Reserved Instances provide significant cost savings (up to 75%) for predictable, steady-state workloads with 1- or 3-year commitments."
-        },
-        {
-          "question": "Which must be specified when launching a new Amazon EC2 Windows instance? (Choose two)",
-          "options": [
-            "Amazon EC2 instance type and Amazon Machine Image (AMI)",
-            "Security group and Key pair",
-            "VPC and Subnet",
-            "Storage type and Network interface"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Instance type (determines hardware capabilities) and AMI (contains the operating system and configuration) are required to launch any EC2 instance."
-        },
-        {
-          "question": "True or false. Amazon S3 is an object storage suitable for the storage of flat files like Microsoft Word documents, photos, etc.",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. Amazon S3 is object storage designed for storing and retrieving any amount of data from anywhere, perfect for documents, images, videos, and other unstructured data."
-        },
-        {
-          "question": "Amazon S3 replicates all objects _________.",
-          "options": [
-            "In multiple Availability Zones within the same region",
-            "Across all AWS regions globally",
-            "Only in the primary Availability Zone",
-            "In a single data center for security"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "By default, Amazon S3 Standard storage replicates data across a minimum of three Availability Zones within an AWS Region, providing 99.999999999% durability."
-        },
-        {
-          "question": "Which of the following can be used as a storage class for an S3 object lifecycle policy?",
-          "options": [
-            "Glacier, S3 Infrequent Access, and S3 Standard",
-            "Only S3 Standard and S3 Glacier",
-            "S3 Standard and Amazon EBS only",
-            "S3 Intelligent-Tiering and Amazon EFS only"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "S3 Lifecycle policies can transition objects between S3 Standard, S3 Standard-IA, S3 One Zone-IA, S3 Intelligent-Tiering, and S3 Glacier storage classes."
-        },
-        {
-          "question": "The name of an S3 bucket must be unique _________.",
-          "options": [
-            "Worldwide across all AWS accounts",
-            "Within your AWS account",
-            "Within the AWS region",
-            "Within your VPC"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "S3 bucket names must be globally unique across all AWS accounts and regions because they're part of the DNS hostname used to access objects in the bucket."
-        },
-        {
-          "question": "You can use Amazon Elastic File System (EFS) to:",
-          "options": [
-            "Implement storage for EC2 instances that multiple virtual machines can access at the same time",
-            "Store database files for high-performance applications",
-            "Cache frequently accessed web content",
-            "Back up entire operating systems"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon EFS provides scalable, shared file storage that can be accessed concurrently by multiple EC2 instances across multiple Availability Zones."
-        },
-        {
-          "question": "Amazon Elastic Block Storage (EBS) is recommended when data _________ and _________.",
-          "options": [
-            "Must be quickly accessible, requiring long-term persistence, and requires encryption",
-            "Is rarely accessed and can tolerate retrieval delays",
-            "Needs to be shared across multiple instances simultaneously",
-            "Is temporary and doesn't require persistence"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "EBS is ideal for data that needs fast access, persistence beyond instance lifetime, and built-in encryption capabilities for sensitive data."
-        },
-        {
-          "question": "True or false. By default all data stored in Amazon S3 is viewable by the public.",
-          "options": ["True", "False"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "False. By default, all S3 buckets and objects are private. Only the bucket owner has access unless explicitly granted through bucket policies or ACLs."
-        },
-        {
-          "question": "Regarding Amazon S3 Glacier, what is a vault?",
-          "options": [
-            "A container for storing archives",
-            "A physical storage location",
-            "A type of encryption key",
-            "A backup scheduling policy"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "In S3 Glacier, a vault is a container for storing archives (data objects). You can create multiple vaults to organize your archives."
-        },
-        {
-          "question": "True or false. When you create a bucket in Amazon S3, it is associated with a specific AWS region.",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. S3 buckets are created in a specific AWS region you choose, which determines the physical location where your data is stored."
-        },
-        {
-          "question": "Which of the following are features of Amazon Elastic Block Store (EBS)? (Choose two)",
-          "options": [
-            "EBS volumes can be encrypted transparently and Data is automatically replicated within an Availability Zone",
-            "EBS volumes can be shared across multiple instances simultaneously and Data is replicated across regions",
-            "EBS provides object storage and Charges are based on requests",
-            "EBS is serverless and Scales automatically"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "EBS volumes support transparent encryption and automatically replicate data within the same Availability Zone for high availability, but are limited to single-instance attachment."
-        },
-        {
-          "question": "You are designing an ecommerce web application that will scale to hundreds of thousands of concurrent users. What database technology is best suited to hold session state?",
-          "options": [
-            "Amazon DynamoDB",
-            "Amazon RDS",
-            "Amazon Redshift",
-            "Amazon Aurora"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon DynamoDB is ideal for session state management because it provides single-digit millisecond latency at any scale and automatically scales to handle traffic spikes."
-        },
-        {
-          "question": "Amazon RDS automatically patches the database software and backs up your database, storing the backups for a user-defined retention period.",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. Amazon RDS automates routine database tasks including software patching, backups, and point-in-time recovery based on user-configured retention periods."
-        },
-        {
-          "question": "You need to find an item in an Amazon DynamoDB table using an attribute other than the item's primary key.",
-          "options": ["Scan", "Query", "GetItem", "BatchGetItem"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Scan operations examine every item in a table and return items that match filter conditions, but are less efficient than Query for large datasets."
-        },
-        {
-          "question": "In Amazon DynamoDB, what does the Query operation enable you to do?",
-          "options": [
-            "All of the above",
-            "Query a table using the partition key and optional sort key filter",
-            "Query secondary indexes",
-            "Efficiently retrieve items from a table or index"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "DynamoDB Query operation allows you to efficiently retrieve multiple items with the same partition key, optionally filter by sort key, query secondary indexes, and is more efficient than Scan for targeted retrievals."
-        },
-        {
-          "question": "Which AWS cloud service is best suited for analyzing your data by using standard SQL and existing business intelligence tools?",
-          "options": [
-            "Amazon Redshift",
-            "Amazon DynamoDB",
-            "Amazon RDS",
-            "Amazon ElastiCache"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon Redshift is a data warehouse service optimized for analytical queries using standard SQL and integrates with popular BI tools like Tableau and QuickSight."
-        },
-        {
-          "question": "In Amazon DynamoDB, an attribute is _________.",
-          "options": [
-            "A fundamental data element",
-            "A table partition key",
-            "A secondary index",
-            "A query parameter"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "In DynamoDB, an attribute is a fundamental data element, similar to a field or column in other database systems, that doesn't need to be predefined."
-        },
-        {
-          "question": "If you are developing an application that requires a database with extremely fast performance, fast scalability, and flexibility in database schema, which service should you consider?",
-          "options": [
-            "Amazon DynamoDB",
-            "Amazon RDS",
-            "Amazon Redshift",
-            "Amazon Neptune"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "DynamoDB provides single-digit millisecond performance, automatic scaling, and schema flexibility, making it ideal for high-performance applications with variable workloads."
-        },
-        {
-          "question": "Which of the following use cases is appropriate for using Amazon RDS?",
-          "options": [
-            "Complex transactions",
-            "Session storage",
-            "Real-time analytics",
-            "Graph databases"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon RDS is ideal for online transaction processing (OLTP) workloads that require complex transactions, ACID compliance, and relational data modeling."
-        },
-        {
-          "question": "What should you consider when choosing a database type?",
-          "options": [
-            "All of the above",
-            "Data size and data access patterns",
-            "Query frequency and high availability requirements",
-            "Consistency requirements and scalability needs"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Database selection should consider multiple factors including data characteristics, access patterns, performance requirements, scalability, availability, and consistency needs."
-        },
-        {
-          "question": "A company has an application with .NET layer connecting to MySQL database. They want to move to AWS with high availability and automated backups. Which database is ideal?",
-          "options": [
-            "Amazon Aurora",
-            "Amazon DynamoDB",
-            "Amazon Redshift",
-            "Amazon DocumentDB"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon Aurora provides MySQL compatibility with better performance, automatic backups, high availability across multiple AZs, and automated failover."
-        },
-        {
-          "question": "A developer is asked whether caching might improve performance of their online bidding application. How should they answer?",
-          "options": [
-            "Using different types of caching at each application layer might improve both frontend and backend performance",
-            "Caching only helps with database performance",
-            "Caching is only useful for static content",
-            "Caching will not help real-time applications"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Strategic caching at multiple layers (CDN, application, database) can significantly improve performance for various types of applications, including real-time systems."
-        },
-        {
-          "question": "An architect suggests implementing caching to address performance issues. What should developers consider when deciding where to add caching?",
-          "options": [
-            "Consider the tolerance for stale data in each context where the data is used",
-            "Only cache data that never changes",
-            "Cache everything for maximum performance",
-            "Caching location doesn't matter as long as it's fast"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The key consideration for caching is data freshness requirements - some data can tolerate being stale while other data must be real-time."
-        },
-        {
-          "question": "A developer needs an in-memory key-value store that supports read replicas and wants to keep it simple. Which option should they choose?",
-          "options": [
-            "Amazon ElastiCache for Redis",
-            "Amazon ElastiCache for Memcached",
-            "Amazon DynamoDB Accelerator",
-            "Amazon S3 with CloudFront"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "ElastiCache for Redis supports read replicas, persistence, and advanced data structures, making it suitable for most caching scenarios requiring high availability."
-        },
-        {
-          "question": "Amazon ElastiCache is added to improve response times and alleviate database pressure with RDS backend. What is the application developer's responsibility?",
-          "options": [
-            "Writing code that looks for requested data in cache first, then requests from origin if not found",
-            "Configuring ElastiCache cluster settings and security groups",
-            "Managing ElastiCache node failures and backups",
-            "Monitoring ElastiCache performance metrics"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Application developers must implement cache logic (cache-aside pattern) in their code to check cache first before querying the database."
-        },
-        {
-          "question": "Which statement about Amazon ElastiCache is true?",
-          "options": [
-            "Your application connects to an ElastiCache node using a unique endpoint address",
-            "ElastiCache automatically integrates with RDS without code changes",
-            "ElastiCache uses the same connection string as your database",
-            "ElastiCache requires no application modifications"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "ElastiCache provides unique endpoint addresses that applications use to connect to cache nodes, requiring explicit integration in application code."
-        },
-        {
-          "question": "Customers in London complain about performance of a web application hosted in New York. What might the developer implement?",
-          "options": [
-            "Set up CloudFront distribution to serve static content from edge locations closer to UK users",
-            "Move the entire application to the London region",
-            "Increase instance sizes in New York",
-            "Implement database caching with ElastiCache"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "CloudFront's global edge locations cache static content closer to end users, reducing latency for geographically distributed users without moving the entire application."
-        },
-        {
-          "question": "A developer wants to increase cache hit ratio for their CloudFront distribution. What should they try?",
-          "options": [
-            "Include only the minimum necessary values in the cache key",
-            "Increase the cache TTL to maximum",
-            "Cache all content regardless of size",
-            "Disable cache compression"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Optimizing cache keys by including only essential parameters increases cache hit rates by reducing unnecessary cache variations of the same content."
-        },
-        {
-          "question": "Which statement about Amazon CloudFront cached file expiration is true?",
-          "options": [
-            "After a file expires, the next request forwards to the origin server",
-            "Files never expire in CloudFront cache",
-            "Expired files are automatically deleted from origin",
-            "File expiration is managed by the client browser"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "When a cached object expires (based on TTL), CloudFront forwards subsequent requests to the origin to fetch a fresh version and update the cache."
-        },
-        {
-          "question": "Which use case suggests the use of Amazon CloudFront Functions?",
-          "options": [
-            "A function that redirects to a different URL and adds a custom response header",
-            "Processing large video files for streaming",
-            "Running machine learning inference",
-            "Executing complex database queries"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "CloudFront Functions are lightweight JavaScript functions that run at edge locations for simple tasks like URL rewrites, header manipulation, and request validation."
-        },
-        {
-          "question": "Which statement reflects a benefit of lazy loading as a caching strategy?",
-          "options": [
-            "Lazy loading avoids filling up the cache with data that is not requested",
-            "Lazy loading pre-warms the cache for better performance",
-            "Lazy loading ensures all data is always available in cache",
-            "Lazy loading reduces cache miss penalties"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Lazy loading only caches data when it's actually requested, preventing cache bloat with unused data and optimizing cache utilization."
-        },
-        {
-          "question": "Which of the following AWS tools help your application scale up or down based on demand?",
-          "options": [
-            "Amazon EC2 Auto Scaling and Elastic Load Balancing",
-            "AWS CloudFormation and AWS OpsWorks",
-            "AWS Config and AWS CloudTrail",
-            "Amazon CloudWatch and AWS X-Ray"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "EC2 Auto Scaling automatically adjusts capacity based on demand, while Elastic Load Balancing distributes traffic across multiple targets, together enabling automatic scaling of applications."
-        },
-        {
-          "question": "Which service would you use to send alerts based on Amazon CloudWatch alarms?",
-          "options": [
-            "Amazon Simple Notification Service (SNS)",
-            "Amazon Simple Email Service (SES)",
-            "Amazon CloudWatch Logs",
-            "AWS Lambda"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon SNS integrates with CloudWatch alarms to send notifications via email, SMS, or other protocols when alarms change state, enabling real-time alerting."
-        },
-        {
-          "question": "Which of the following are characteristics of Amazon EC2 Auto Scaling? (Choose three)",
-          "options": [
-            "Responds to changing conditions by adding/terminating instances, Launches instances from specified AMI, Enforces minimum number of running instances",
-            "Manages database connections, Optimizes network routing, Reduces storage costs",
-            "Provides DNS management, Offers SSL certificates, Manages domain registration",
-            "Encrypts data at rest, Controls access permissions, Monitors compliance"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Auto Scaling maintains desired capacity, scales based on policies, uses AMIs for instance launches, and ensures minimum/maximum instance counts are maintained."
-        },
-        {
-          "question": "Which of the following must be configured on an Elastic Load Balancing load balancer to expect incoming traffic?",
-          "options": [
-            "A listener",
-            "A target group",
-            "A security group",
-            "A route table"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Listeners check for connection requests on specific ports and protocols, defining how the load balancer receives and routes incoming traffic."
-        },
-        {
-          "question": "Which elements are used to create an Amazon EC2 Auto Scaling launch configuration?",
-          "options": [
-            "Amazon Machine Image, Instance Type, and EBS volumes",
-            "Security groups, VPC, and Subnets",
-            "Load balancer, Target groups, and Health checks",
-            "CloudWatch alarms, SNS topics, and IAM roles"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Launch configurations specify the AMI, instance type, storage, and other parameters used when Auto Scaling launches new EC2 instances."
-        },
-        {
-          "question": "Which service can help you collect important metrics from Amazon RDS and Amazon EC2 instances?",
-          "options": [
-            "Amazon CloudWatch",
-            "AWS CloudTrail",
-            "AWS Config",
-            "AWS Trusted Advisor"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon CloudWatch collects and tracks metrics, collects and monitors log files, and sets alarms for AWS resources like EC2 and RDS."
-        },
-        {
-          "question": "Which of the following are elements of an Auto Scaling group? (Choose three)",
-          "options": [
-            "Maximum size, Desired capacity, and Minimum size",
-            "Launch configuration, Load balancer, and Scaling policies",
-            "Security groups, VPC, and Availability Zones",
-            "CloudWatch alarms, SNS topics, and IAM roles"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Auto Scaling groups define the minimum, desired, and maximum number of instances, controlling the scaling boundaries for the application."
-        },
-        {
-          "question": "An auditor needs logs of all access to AWS resources in the account. Which service can assist?",
-          "options": [
-            "AWS CloudTrail",
-            "Amazon CloudWatch",
-            "AWS Config",
-            "AWS X-Ray"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS CloudTrail records API calls and account activity, providing event history of actions taken through the AWS Management Console, SDKs, and CLI."
-        },
-        {
-          "question": "In Elastic Load Balancing, when the load balancer detects an unhealthy target, which are true? (Choose three)",
-          "options": [
-            "Stops routing traffic to that target, Resumes routing when target is healthy again, Routes traffic to healthy targets",
-            "Terminates the unhealthy instance, Creates a new instance, Updates the DNS records",
-            "Sends notifications to administrators, Creates CloudWatch events, Updates security groups",
-            "Changes the instance type, Modifies the AMI, Updates the launch configuration"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "ELB automatically stops routing to unhealthy targets, continues monitoring their health, and resumes routing when they become healthy, while distributing traffic to healthy targets."
-        },
-        {
-          "question": "What are the three types of load balancers that Elastic Load Balancing offers? (Choose three)",
-          "options": [
-            "Application Load Balancer, Network Load Balancer, and Classic Load Balancer",
-            "Global Load Balancer, Regional Load Balancer, and Edge Load Balancer",
-            "HTTP Load Balancer, TCP Load Balancer, and UDP Load Balancer",
-            "Internal Load Balancer, External Load Balancer, and Cross-region Load Balancer"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "ELB offers Application Load Balancer (Layer 7), Network Load Balancer (Layer 4), and Classic Load Balancer (previous generation) for different use cases."
-        },
-        {
-          "question": "Before changing the instance type from t2.micro to t2.small, what must you do?",
-          "options": [
-            "Stop the instance",
-            "Take a snapshot",
-            "Modify the security group",
-            "Change the AMI"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "You must stop an EC2 instance before changing its instance type. AWS doesn't allow instance type modifications while the instance is running."
-        },
-        {
-          "question": "What is the primary function of an Amazon EBS Snapshot?",
-          "options": [
-            "To create a point-in-time, incremental backup of the EBS volume",
-            "To increase the size of an EBS volume",
-            "To migrate an EBS volume to another region",
-            "To convert between EBS volume types"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "EBS snapshots are incremental backups that only save the blocks that have changed since the last snapshot, stored in Amazon S3 for durability and cost-effectiveness."
-        },
-        {
-          "question": "What are the specs of t2.micro instance?",
-          "options": [
-            "1 vCPU, 1 GiB RAM",
-            "2 vCPU, 1 GiB RAM",
-            "1 vCPU, 2 GiB RAM",
-            "2 vCPU, 2 GiB RAM"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The t2.micro instance type provides 1 virtual CPU and 1 GiB of memory, making it suitable for low-traffic websites, development environments, and small applications."
-        },
-        {
-          "question": "Which of the following is a compute service?",
-          "options": ["Amazon EC2", "Amazon S3", "Amazon RDS", "Amazon VPC"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon EC2 (Elastic Compute Cloud) is AWS's primary compute service that provides virtual servers in the cloud."
-        },
-        {
-          "question": "What are these? (Referring to Availability Zones in an AWS Region)",
-          "options": [
-            "Region availability zones",
-            "Edge locations",
-            "Local zones",
-            "Wavelength zones"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Availability Zones are isolated locations within AWS regions that contain one or more data centers, providing high availability and fault tolerance."
-        },
-        {
-          "question": "What is NOT true about Amazon S3?",
-          "options": [
-            "You are billed only for what you use",
-            "It provides 99.999999999% durability",
-            "It offers multiple storage classes",
-            "It can host static websites"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "This IS true about S3. All options listed are actually true features of Amazon S3, so this question seems to have an error in the original document."
-        },
-        {
-          "question": "What is this? (Referring to a NAT gateway in a VPC)",
-          "options": [
-            "NAT gateway",
-            "Internet Gateway",
-            "Virtual Private Gateway",
-            "Transit Gateway"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "A NAT gateway enables instances in private subnets to connect to the internet or other AWS services while preventing inbound connections from the internet."
-        },
-        {
-          "question": "Your organization in Account A wants to allow developers in Account B to access an S3 bucket in Account A. What should you configure?",
-          "options": [
-            "Use an IAM role in Account A with a trust policy for Account B",
-            "Create IAM users in Account A for each developer in Account B",
-            "Share the S3 bucket publicly with proper permissions",
-            "Use S3 cross-region replication to copy data to Account B"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "IAM roles with cross-account trust policies allow users from one AWS account to assume roles in another account, providing secure cross-account access."
-        },
-        {
-          "question": "Your team has 10 EC2 instances running in the same VPC. You need shared storage that all instances can read and write to at the same time. Which storage option fits best?",
-          "options": [
-            "Amazon EFS",
-            "Amazon EBS",
-            "Amazon S3",
-            "Amazon EC2 Instance Store"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon EFS provides shared file storage that can be accessed concurrently by multiple EC2 instances across multiple Availability Zones."
-        },
-        {
-          "question": "Your ALB has 4 targets in AZ-1 and 2 targets in AZ-2. Without cross-zone balancing, how is traffic routed?",
-          "options": [
-            "Evenly across all 6 targets",
-            "Only to targets in AZ-1",
-            "50% to AZ-1 and 50% to AZ-2",
-            "Based on target health checks only"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Without cross-zone load balancing, the ALB distributes traffic evenly across all registered targets regardless of their Availability Zone."
-        },
-        {
-          "question": "A media company needs significant computational power and hardware accelerators for rendering complex visual effects. Which EC2 instance type is BEST?",
-          "options": [
-            "Accelerated computing",
-            "General purpose",
-            "Memory optimized",
-            "Storage optimized"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Accelerated computing instances (P3, P4, G4) provide GPUs and other hardware accelerators ideal for graphics rendering, machine learning, and other compute-intensive workloads."
-        },
-        {
-          "question": "Which component of AWS Global Infrastructure does Amazon CloudFront use to ensure low-latency delivery?",
-          "options": [
-            "AWS edge locations",
-            "AWS Availability Zones",
-            "AWS Regions",
-            "AWS Local Zones"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "CloudFront uses AWS Edge Locations - points of presence globally distributed - to cache content closer to users, reducing latency for content delivery."
-        },
-        {
-          "question": "A student is learning about Amazon Simple Storage Service (Amazon S3). During an interview, a potential employer asks the student to explain how Amazon S3 can be used as a storage solution. Which option is a use case for Amazon S3?",
-          "options": [
-            "Shared file systems",
-            "Data lake",
-            "Block-level storage",
-            "Hosting active databases"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Amazon S3 is ideal for data lakes because it provides scalable, durable object storage that can handle massive amounts of unstructured data from various sources, making it perfect for analytics and big data workloads."
-        },
-        {
-          "question": "A _________ organizes the Amazon Simple Storage Service (Amazon S3) namespace at the highest level.",
-          "options": ["Group", "Bucket", "Region", "Container"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "A bucket is the fundamental container in Amazon S3 that stores objects. Bucket names must be globally unique and form the top level of the S3 namespace hierarchy."
-        },
-        {
-          "question": "A developer wants to store image files in a bucket that is called images-bucket, but receives the error BucketAlreadyExists. Which action must the developer take to resolve this error?",
-          "options": [
-            "The developer must contact AWS Support to request approval to use the same bucket name",
-            "Bucket names are unique to the Region that they are created in. If the requested bucket name is not available, the developer must create the images-bucket in a different Region",
-            "Bucket names go to the highest bidder. The developer must outbid the current bucket owner",
-            "Bucket names are globally unique. If the requested bucket name is not available, the developer must rename the bucket"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "S3 bucket names must be globally unique across all AWS accounts worldwide. If a bucket name is already taken, the developer must choose a different, unique name for their bucket."
-        },
-        {
-          "question": "A developer is using Amazon Simple Storage Service (Amazon S3) to host a static website in a bucket that is called frank-martha-cafe. This bucket is in the us-east-1 Region. Which URL is the virtual-hosted-style URL for the website?",
-          "options": [
-            "https://s3-website-us-east-1.amazonaws.com/frank-martha-cafe",
-            "https://www.frank-martha-cafe.s3-website-us-east-1.amazonaws.com",
-            "https://frank-martha-cafe.s3-website-us-east-1.amazonaws.com",
-            "https://frank-martha-cafe.s3-us-east-1.amazonaws.com"
+            "External user roles",
+            "Interaction flows with external systems",
+            "Internal service components",
+            "System boundary definition"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "The virtual-hosted-style URL for S3 static websites follows the format: https://bucket-name.s3-website-region.amazonaws.com. This provides a more user-friendly URL that includes the bucket name as a subdomain."
+          "explanation": "A Context Diagram shows the system as a single black box interacting with its external environment. Showing internal components violates its purpose and turns it into a different type of diagram."
         },
         {
-          "question": "After versioning is enabled on an Amazon Simple Storage Service (Amazon S3) bucket, it can be disabled.",
-          "options": ["True", "False"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "False. Once versioning is enabled on an S3 bucket, it cannot be disabled. However, you can suspend versioning, which stops creating new versions but preserves existing versions."
-        },
-        {
-          "question": "What is the largest size of an object that a user can upload to Amazon Simple Storage Service (Amazon S3) in a single PUT operation?",
-          "options": ["5 GB", "5 TB", "1 GB", "100 MB"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The maximum object size for a single PUT operation in S3 is 5 GB. For larger objects, you must use the multipart upload API to upload the object in parts."
-        },
-        {
-          "question": "A developer uses an Amazon Simple Storage Service (Amazon S3) bucket. They want to allow a certain AWS Identity and Access Management (IAM) user to perform any S3 operations on the bucket and its objects. They also want to follow AWS recommendations for granting permissions. Which mechanism should the developer apply to the bucket?",
+          "question": "What is the primary risk of NOT documenting architectural design decisions?",
           "options": [
-            "Bucket access control list (ACL)",
-            "IAM policy",
-            "Cross-Origin resource Sharing (CORS)",
-            "Bucket policy"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Bucket policies are the recommended way to manage bucket-level permissions in S3. They provide fine-grained control and can specify conditions, principals, and actions more comprehensively than other methods."
-        },
-        {
-          "question": "A developer wants to allow a user to download private objects directly from an Amazon Simple Storage Service (Amazon S3) bucket without needing AWS security credentials or permissions. What can the developer share with the user to grant them time-limited access to the objects?",
-          "options": [
-            "A temporary token",
-            "A presigned URL",
-            "Their AWS account root user credentials",
-            "The bucket endpoint URL"
+            "Increased initial development cost",
+            "Loss of rationale and context for future maintainers",
+            "Immediate system failure",
+            "Violation of coding standards"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Presigned URLs provide temporary, time-limited access to private S3 objects without requiring the user to have AWS credentials. The URL includes authentication information and expires after a specified period."
+          "explanation": "Architectural decisions represent trade-offs made based on specific constraints and requirements. Without documenting the rationale (why certain options were chosen over others), future maintainers may misunderstand the architecture or make changes that violate original assumptions."
         },
         {
-          "question": "Which method can be used to encrypt Amazon Simple Storage Service (Amazon S3) objects in transit?",
+          "question": "Which quality attribute trade-off is most commonly encountered when implementing extensive caching strategies?",
           "options": [
-            "Secure Sockets Layer/Transport Layer Security (SSL/TLS)",
-            "Server-Side Encryption with Customer-Provided Keys (SSE-C)",
-            "Server-Side Encryption with Amazon S3-Managed Keys (SSE-S3)",
-            "Server-Side Encryption with AWS KMS-Managed Keys (SSE-KMS)"
+            "Security vs Usability",
+            "Performance vs Data Consistency",
+            "Portability vs Functionality",
+            "Reliability vs Cost"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Caching improves performance (response time, throughput) but introduces complexity around cache invalidation and data consistency, potentially leading to stale data being served."
+        },
+        {
+          "question": "What distinguishes a Domain Model from a Design Model?",
+          "options": [
+            "Domain Models use UML while Design Models use pseudocode",
+            "Domain Models describe business concepts while Design Models describe technical implementation",
+            "Domain Models are created by developers while Design Models are created by business analysts",
+            "Domain Models focus on performance while Design Models focus on functionality"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "A Domain Model captures business concepts, relationships, and rules in business language, independent of technology. A Design Model translates these into technical components, services, and implementation structures."
+        },
+        {
+          "question": "Why is it particularly challenging to validate architectural decisions early in a project lifecycle?",
+          "options": [
+            "Stakeholders are unavailable for consultation early on",
+            "Many decisions cannot be fully tested until parts of the system are built",
+            "Architects lack sufficient information to make any decisions early on",
+            "Early validation requires complete system specification"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architectural decisions involve system-wide concerns that often depend on interactions between components. These interactions and their consequences may only become apparent when significant portions of the system are implemented and integrated."
+        },
+        {
+          "question": "Which of the following is a key benefit of using architectural patterns?",
+          "options": [
+            "They eliminate the need for custom design work",
+            "They provide proven solutions with known engineering trade-offs",
+            "They guarantee optimal performance for any application",
+            "They automatically generate implementation code"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architectural patterns encode proven solutions to common problems, along with their known benefits and trade-offs. This allows architects to leverage collective experience rather than inventing solutions from scratch."
+        },
+        {
+          "question": "What role does a 'marketeecture' play in the architectural process?",
+          "options": [
+            "It serves as the final technical specification for developers",
+            "It facilitates stakeholder communication and high-level understanding",
+            "It replaces the need for detailed architectural documentation",
+            "It provides performance benchmarks for the system"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "A marketeecture is a simplified, high-level visualization that helps non-technical stakeholders understand the system's value proposition and basic structure, facilitating discussion and alignment."
+        },
+        {
+          "question": "Which quality attribute would be MOST directly improved by implementing an API-first design approach?",
+          "options": [
+            "Reliability",
+            "Compatibility",
+            "Security",
+            "Portability"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "API-first design, with stable contracts and versioning strategies, directly improves compatibility by ensuring clear, consistent interfaces for system interaction and data exchange."
+        },
+        {
+          "question": "What is the primary purpose of hierarchical decomposition in architectural description?",
+          "options": [
+            "To hide complexity by revealing details only at appropriate abstraction levels",
+            "To create more documentation than necessary",
+            "To demonstrate all possible implementation paths",
+            "To eliminate the need for multiple architectural views"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "SSL/TLS encryption protects data in transit between clients and S3. The other options (SSE-C, SSE-S3, SSE-KMS) are for encrypting data at rest, not in transit."
+          "explanation": "Hierarchical decomposition allows architects to manage complexity by presenting the architecture at different levels of detail. High-level views show major components and relationships, while lower levels reveal internal structures only when necessary."
         },
         {
-          "question": "A developer hosts a static website in an Amazon Simple Storage Service (Amazon S3) bucket. The website references image objects in another S3 bucket. However, these images do not display on the website. What could be the problem?",
+          "question": "Which architectural view would be MOST useful for infrastructure teams planning server deployment?",
           "options": [
-            "The bucket does not include an inbound rule",
-            "Cross-Region Replication (CRR) has not been enabled on the bucket where the assets are stored",
-            "Cross-Origin Resource Sharing (CORS) has not been enabled on the bucket where the assets are stored",
-            "Amazon S3 does not support object sharing between buckets"
+            "Logical View",
+            "Process View",
+            "Physical View",
+            "Development View"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "When a web page served from one origin (S3 bucket) tries to access resources from another origin (different S3 bucket), CORS must be configured on the resource bucket to allow cross-origin requests."
+          "explanation": "The Physical View shows how software components are mapped to hardware resources, which is essential for infrastructure teams responsible for deployment, scaling, and hardware provisioning."
         },
         {
-          "question": "Which option is the Amazon Web Services (AWS) customer responsible for under the AWS shared responsibility model? (Select TWO)",
+          "question": "What distinguishes responsibility-driven design from other component identification approaches?",
           "options": [
-            "Security group configuration and Client-side data",
-            "Physical servers and Edge location infrastructure",
-            "Availability Zone security and Physical servers",
-            "Edge location infrastructure and Security group configuration"
+            "It focuses on assigning specific tasks and behaviors to components",
+            "It prioritizes minimizing the number of components above all else",
+            "It requires components to be implemented in object-oriented languages only",
+            "It emphasizes data structures over component behavior"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Under the shared responsibility model, customers are responsible for security IN the cloud (security groups, IAM, data encryption) while AWS is responsible for security OF the cloud (physical infrastructure, regions, availability zones)."
+          "explanation": "Responsibility-driven design focuses on what each component should be responsible for—what tasks it performs and what behaviors it exhibits—which helps create cohesive, well-defined components with clear purposes."
         },
         {
-          "question": "Which AWS Identity and Access Management (IAM) resource explicitly grants or denies permissions to a user or group of users?",
-          "options": ["IAM roles", "IAM users", "IAM groups", "IAM policies"],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "IAM policies are JSON documents that define permissions by specifying what actions are allowed or denied on which resources for which principals."
-        },
-        {
-          "question": "What is the correct term for the process of verifying a user's identity as a developer?",
+          "question": "Which statement BEST describes the relationship between functional requirements and quality attributes?",
           "options": [
-            "Endorsement",
-            "Authentication",
-            "Confirmation",
-            "Authorization"
+            "Functional requirements are more important than quality attributes",
+            "Quality attributes constrain how functional requirements are implemented",
+            "They are independent concerns that can be addressed separately",
+            "Quality attributes are only relevant after functional requirements are satisfied"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Authentication is the process of verifying identity (who you are), while authorization determines what you're allowed to do after you're authenticated."
+          "explanation": "Quality attributes (performance, security, etc.) dictate constraints on how functional requirements are implemented. For example, a 'place order' function must be implemented securely, performantly, and reliably."
         },
         {
-          "question": "Which statements about IAM user authentication are true? (Select TWO)",
+          "question": "What is the primary value of creating an Informational Model separate from a Domain Model?",
           "options": [
-            "AWS credentials and Console username/password are required",
-            "Console access only requires username/password",
-            ".pem files are used for console authentication",
-            "Root user should be used for programmatic access"
+            "It focuses purely on data structures independently of business meaning",
+            "It serves as a technical database schema for implementation",
+            "It replaces the need for database administrators",
+            "It ensures all business rules are encoded in the data layer"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "IAM users need AWS credentials (access keys) for programmatic access to AWS services and a username/password combination for console access. Using root user credentials for programmatic access is not a best practice."
+          "explanation": "An Informational Model focuses on the structure, relationships, and integrity of data itself, separate from the business semantics captured in the Domain Model. This separation allows clearer thinking about data design."
         },
         {
-          "question": "Which suggestion is an Amazon Web Services (AWS) recommendation for securing AWS credentials for applications that run on Amazon Elastic Compute Cloud (Amazon EC2) instances?",
+          "question": "Which architectural decision would MOST significantly impact system portability?",
           "options": [
-            "Embed AWS credentials in the software development kit (SDK) client code",
-            "Store credentials in local AWS configuration files",
-            "Create an AWS Identity and Access Management (IAM) role and attach it to the EC2 instance",
-            "Create an AWS Identity and Access Management (IAM) user and attach it to the EC2 instance"
+            "Choosing a specific cloud provider's proprietary services",
+            "Implementing comprehensive error logging",
+            "Using design patterns in the codebase",
+            "Creating detailed API documentation"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Portability refers to the ease of moving the system between environments. Vendor lock-in through proprietary services severely reduces portability, while containerization and abstraction layers enhance it."
+        },
+        {
+          "question": "What is the fundamental purpose of architectural validation?",
+          "options": [
+            "To ensure the architecture will satisfy quality attributes before major implementation",
+            "To eliminate all risks from the development process",
+            "To create perfect documentation for all stakeholders",
+            "To guarantee the project will be delivered on time"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Architectural validation techniques (prototyping, analysis, simulation) aim to verify that the chosen architecture will meet critical quality requirements before substantial resources are committed to implementation."
+        },
+        {
+          "question": "Which quality attribute is MOST directly addressed by implementing authentication, authorization, and encryption?",
+          "options": [
+            "Reliability",
+            "Security",
+            "Usability",
+            "Maintainability"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "These are core security mechanisms that address confidentiality (encryption), authenticity (authentication), and authorization (access control)—all sub-characteristics of Security in ISO 25010."
+        },
+        {
+          "question": "What is the key insight behind using metrics for quality attributes?",
+          "options": [
+            "Metrics make abstract quality attributes measurable and comparable",
+            "Metrics eliminate the need for architectural expertise",
+            "All quality attributes can be reduced to a single metric",
+            "Metrics are only useful for performance-related attributes"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Metrics transform vague quality goals (e.g., 'good performance') into measurable targets (e.g., '95th percentile response time < 200ms'), enabling objective evaluation, comparison, and trade-off analysis."
+        },
+        {
+          "question": "Which scenario BEST illustrates a business constraint (as opposed to a technical constraint)?",
+          "options": [
+            "The application must use Java because the team only has Java expertise",
+            "The database must run on Linux for security reasons",
+            "The system must integrate with a specific partner's API to access their customer base",
+            "The server must have at least 16GB RAM for adequate performance"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "IAM roles are the recommended way to grant permissions to EC2 instances. They provide temporary credentials that are automatically rotated and don't require storing long-term access keys."
+          "explanation": "Business constraints arise from commercial, strategic, or operational business decisions rather than technical limitations. Integration for market access is a business-driven constraint."
         },
         {
-          "question": "What is the format of AWS Identity and Access Management (IAM) policies that define the allowable API calls an entity can invoke?",
+          "question": "What is the primary danger of treating quality attributes as afterthoughts in architecture?",
           "options": [
-            "YAML Ain't Markup Language (YAML)",
-            "Security Assertion Markup Language (SAML)",
-            "Comma-separated values (CSV)",
-            "JavaScript Object Notation (JSON)"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "IAM policies are written in JSON format and consist of statements that define the effect (allow/deny), actions (API operations), resources, and optional conditions."
-        },
-        {
-          "question": "An administrator created an AWS Identity and Access Management (IAM) group called managers within an AWS account. A policy is attached to the managers group. It allows managers to read from and write to an Amazon Simple Storage Service (Amazon S3) bucket in the same AWS account. What is this type of policy?",
-          "options": [
-            "Identity-based",
-            "Resource-based",
-            "Cross-account access",
-            "AdministratorAccess managed"
+            "They can become impossible or extremely costly to add later",
+            "They only affect non-critical parts of the system",
+            "They are easily retrofitted into any existing architecture",
+            "They primarily impact only the user interface layer"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Identity-based policies are attached to IAM identities (users, groups, roles) and define what actions those identities can perform on which resources."
+          "explanation": "Quality attributes like scalability, security, and maintainability often require fundamental architectural decisions. Retrofitting them later can require major rework, if it's possible at all."
         },
         {
-          "question": "Which statement reflects best practices when granting permissions to users, groups, roles, and resources?",
+          "question": "Which architectural style would be MOST appropriate for a system requiring independent scalability of different functional areas?",
           "options": [
-            "Create policies that allow broad access and then limit permissions as needed, based on usage",
-            "Use the account root user for routine tasks that the administrator performs",
-            "Create policies that follow the principle of least privilege",
-            "Do not set policies for individual resources"
+            "Monolithic Architecture",
+            "Layered Architecture",
+            "Microservices Architecture",
+            "Client-Server Architecture"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "The principle of least privilege means granting only the permissions required to perform a task. This minimizes security risks by limiting access to only what's necessary."
+          "explanation": "Microservices allow individual services to be scaled independently based on their specific load requirements, unlike monolithic architectures where the entire application scales together."
         },
         {
-          "question": "What is the effect of a policy statement with 'Effect': 'Deny' and 'NotResource' element?",
+          "question": "What is the key characteristic of the Process View in architectural modeling?",
           "options": [
-            "Denies actions on all resources except those listed in NotResource",
-            "Denies the ability to write to specific resources",
-            "Denies the ability to read from specific buckets",
-            "Denies actions only on the resources listed in NotResource"
+            "It focuses on concurrency, communication, and runtime behavior",
+            "It shows the mapping of software to hardware resources",
+            "It describes the static structure using class-like elements",
+            "It organizes code in development environments"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "The NotResource element in a deny statement means the policy denies the specified actions on all resources EXCEPT those listed in the NotResource element."
+          "explanation": "The Process View addresses runtime concerns: how components execute (threads, processes), how they communicate (synchronously/asynchronously), and how they handle concurrency."
         },
         {
-          "question": "Which statements are true about evaluation logic for AWS Identity and Access Management (IAM) policies? (Select TWO)",
+          "question": "Which practice would MOST improve system maintainability?",
           "options": [
-            "Explicit deny overrides explicit allow and Default deny",
-            "Explicit allow overrides explicit deny and Default allow",
-            "You cannot have deny and allow statements in the same policy",
-            "By default, all requests are allowed"
+            "Implementing tight coupling between components for simplicity",
+            "Creating clear component boundaries with low coupling and high cohesion",
+            "Using the fewest possible components regardless of responsibility",
+            "Writing all code in a single programming language"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Maintainability depends on how easily the system can be modified. Clear boundaries with low coupling (minimal dependencies) and high cohesion (related functionality together) make changes more localized and predictable."
+        },
+        {
+          "question": "What is the fundamental purpose of stakeholder requirements analysis?",
+          "options": [
+            "To create technical specifications for developers",
+            "To align development with business goals and user needs before building",
+            "To eliminate all communication with non-technical stakeholders",
+            "To produce marketing materials for the product"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Stakeholder requirements capture the needs, expectations, and constraints of all parties involved. This alignment ensures the resulting system delivers real value and meets actual needs."
+        },
+        {
+          "question": "Which architectural consideration is MOST critical when designing for high availability?",
+          "options": [
+            "Minimizing the number of external dependencies",
+            "Eliminating all single points of failure",
+            "Using the fastest available hardware",
+            "Implementing the most sophisticated algorithms"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "High availability requires that no single component failure can bring down the entire system. This typically involves redundancy, failover mechanisms, and distributed architectures."
+        },
+        {
+          "question": "What distinguishes explicit requirements from implicit requirements?",
+          "options": [
+            "Explicit requirements are documented while implicit ones are assumed",
+            "Explicit requirements are technical while implicit ones are business-related",
+            "Explicit requirements change frequently while implicit ones are stable",
+            "Explicit requirements are optional while implicit ones are mandatory"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "In IAM policy evaluation: an explicit deny always overrides any allows, and by default (if no policies apply), requests are denied. This is known as the 'default deny' principle."
+          "explanation": "Explicit requirements are formally stated and documented. Implicit requirements are unstated assumptions or expectations that stakeholders believe are obvious but may not be captured formally, leading to potential misunderstandings."
         },
         {
-          "question": "Which statement best describes Amazon DynamoDB?",
+          "question": "Which factor MOST influences the choice between synchronous and asynchronous communication between components?",
           "options": [
-            "An in-memory data store that can boost the performance of databases",
-            "A graph database engine that is optimized for storing billions of relationships",
-            "A relational database that is built for the cloud and is compatible with MySQL and PostgreSQL",
-            "A key-value and document database that scales horizontally and works well for internet-scale applications"
+            "The programming language used for implementation",
+            "Performance requirements and coupling tolerance",
+            "The preferences of the development team",
+            "The cost of development tools"
           ],
-          "correctOption": 3,
+          "correctOption": 1,
           "points": 10,
-          "explanation": "Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability, making it ideal for internet-scale applications."
+          "explanation": "Synchronous communication (tight coupling, simpler) vs asynchronous (looser coupling, more complex) involves trade-offs between performance, reliability, and system complexity that must align with quality requirements."
         },
         {
-          "question": "Which component is part of an Amazon DynamoDB table?",
+          "question": "What is the primary purpose of architectural prototyping?",
           "options": [
-            "Predefined schema",
-            "SQL-based queries",
-            "Attributes",
-            "Columns"
+            "To create a fully functional version of the system",
+            "To validate technical risks and architectural hypotheses",
+            "To replace the need for requirements analysis",
+            "To serve as the final production system"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architectural prototypes focus on validating specific high-risk aspects of the architecture (performance, integration, etc.) rather than building complete functionality."
+        },
+        {
+          "question": "Which quality attribute would be MOST affected by implementing a Backend-for-Frontend (BFF) pattern?",
+          "options": ["Security", "Usability", "Portability", "Reliability"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "BFF creates separate backend services tailored to specific frontend needs, improving usability by optimizing data delivery and interactions for each user interface context."
+        },
+        {
+          "question": "What is the key benefit of using Commercial Off-The-Shelf (COTS) technologies that implement architectural patterns?",
+          "options": [
+            "They eliminate all customization needs",
+            "They provide proven implementations of architectural approaches",
+            "They guarantee the best performance for any use case",
+            "They reduce the need for architectural design altogether"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "COTS technologies (like message brokers, application servers) provide ready-made, tested implementations of common architectural patterns, reducing development risk and effort."
+        },
+        {
+          "question": "Which practice would MOST improve system analysability (ease of understanding the system)?",
+          "options": [
+            "Using short, cryptic variable names to save space",
+            "Creating complex, deeply nested component hierarchies",
+            "Implementing clear module decomposition with meaningful names",
+            "Minimizing documentation to avoid outdated information"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "In DynamoDB, attributes are the fundamental data elements that make up an item. Unlike relational databases, DynamoDB is schemaless except for the primary key attributes."
+          "explanation": "Analysability, a sub-characteristic of Maintainability, is improved by clear organization, meaningful naming, and logical decomposition that helps developers understand system structure and behavior."
         },
         {
-          "question": "An Amazon DynamoDB table called SensorReadings captures sensor readings. These readings include a sensor ID attribute that acts as the partition key, and a timestamp attribute that is the sort key. Which statement is true?",
+          "question": "What is the fundamental challenge in balancing security and usability?",
           "options": [
-            "The sensor ID together with the timestamp represent a simple primary key",
-            "It is impossible for two items in the SensorReadings table to have the same partition key",
-            "It is impossible for two items in the SensorReadings table to have the same sort key",
-            "It is impossible for two items in the SensorReadings table to have the same primary key"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "In a DynamoDB table with a composite primary key (partition key + sort key), the combination of both keys must be unique for each item, ensuring no two items have the same primary key."
-        },
-        {
-          "question": "Suppose that a developer has a restaurants database table that can be queried by name (the partition key), or by name and location (the sort key). What should the developer do if they also want to query by type of cuisine and average customer rating?",
-          "options": [
-            "Set up a local secondary index on cuisine and customer rating",
-            "Set up a global secondary index on cuisine and customer rating",
-            "Change the primary key on the restaurant table to be a complex primary key based on cuisine and customer rating",
-            "Perform a query that uses the cuisine and average customer rating attributes"
+            "They are mutually exclusive and cannot coexist",
+            "Increased security measures often create user friction",
+            "Usability always compromises security effectiveness",
+            "Security is only relevant for administrative users"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Global Secondary Indexes (GSIs) allow querying on attributes other than the primary key. They have their own partition and sort keys and can be created at any time without affecting the base table."
+          "explanation": "Strong security (multi-factor authentication, frequent re-authentication, complex passwords) can hinder usability. Architects must find balanced solutions that provide adequate security without excessive user burden."
         },
         {
-          "question": "A video game developer who uses Amazon DynamoDB wants to ensure that players' profiles are updated correctly when they make in-game purchases. This process requires multiple updates as part of a single user action. What is the best choice to write this developer's application to manage these complex, all-or-nothing changes?",
+          "question": "Which architectural decision would MOST directly address scalability concerns?",
           "options": [
-            "Add an Amazon DynamoDB Accelerator (DAX) cluster",
-            "Implement global tables",
-            "Create application code to check that all parts of the transaction were written successfully, and then roll back the update if any part failed",
-            "Use DynamoDB transactions"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "DynamoDB transactions provide atomicity, consistency, isolation, and durability (ACID) across one or more tables, ensuring that either all operations in a transaction succeed or all fail."
-        },
-        {
-          "question": "Which scenarios are example use cases for Amazon DynamoDB Streams? (Select TWO)",
-          "options": [
-            "Real-time bidding and Mobile notifications",
-            "Mobile notifications and Change monitoring",
-            "Change monitoring and In-memory caching",
-            "In-memory caching and Real-time bidding"
+            "Implementing comprehensive audit logging",
+            "Using stateless services with horizontal scaling",
+            "Choosing a specific programming language",
+            "Creating detailed user documentation"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "DynamoDB Streams capture time-ordered sequences of item-level modifications, making them ideal for use cases like sending mobile notifications when data changes or monitoring tables for specific value thresholds."
+          "explanation": "Stateless services can be easily replicated across multiple servers (horizontal scaling), allowing the system to handle increased load by adding more instances rather than upgrading single servers."
         },
         {
-          "question": "Which statement about global tables is true?",
+          "question": "What is the primary value of the ISO/IEC 25010 quality model?",
           "options": [
-            "Global tables provide a managed solution for replicating tables within a single AWS Region",
-            "Global tables use Amazon Simple Storage Service (Amazon S3) to propagate changes between replicas",
-            "When a global table is created, Amazon DynamoDB performs all necessary tasks to create identical tables and propagate ongoing data changes to specified Regions",
-            "With a global table, Amazon DynamoDB supports partial replication of some of the items in a table"
+            "It provides a complete checklist of all possible system features",
+            "It offers a standardized vocabulary for discussing system quality",
+            "It eliminates the need for architectural decision-making",
+            "It guarantees specific performance levels for any system"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "ISO 25010 provides a shared, standardized framework for discussing, specifying, and evaluating software quality characteristics, enabling clearer communication between stakeholders."
+        },
+        {
+          "question": "Which factor is MOST critical when evaluating architectural alternatives?",
+          "options": [
+            "The popularity of each alternative in the industry",
+            "How well each addresses the specific quality attribute priorities",
+            "The complexity of implementation for each alternative",
+            "The personal preferences of the architect"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architectural decisions should be driven by how well alternatives satisfy the prioritized quality attributes for the specific system context, not by general popularity or personal preference."
+        },
+        {
+          "question": "What is the key insight about system failures according to the quality attributes lecture?",
+          "options": [
+            "Most failures are caused by missing features rather than quality issues",
+            "Quality issues cause more system failures than missing functionality",
+            "Failures are evenly distributed between functional and quality issues",
+            "Failures are primarily caused by hardware rather than software issues"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The lecture emphasizes that systems with identical features can have very different success based on quality attributes, and that quality issues (performance, reliability, security) often cause more problems than missing features."
+        },
+        {
+          "question": "Which architectural approach would BEST support fault tolerance?",
+          "options": [
+            "Implementing circuit breakers and graceful degradation",
+            "Using the fastest available algorithms",
+            "Minimizing the number of external dependencies",
+            "Creating comprehensive user manuals"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Circuit breakers prevent cascading failures by isolating failing components, while graceful degradation allows the system to continue providing reduced functionality during partial failures."
+        },
+        {
+          "question": "What is the primary risk of over-optimizing for a single quality attribute?",
+          "options": [
+            "It may negatively impact other important quality attributes",
+            "It guarantees optimal system performance overall",
+            "It simplifies the architectural decision process",
+            "It eliminates the need for trade-off analysis"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Quality attributes often involve trade-offs. Over-optimizing one (e.g., extreme performance) may severely degrade others (e.g., maintainability, security, or cost)."
+        },
+        {
+          "question": "Which practice would MOST improve system testability?",
+          "options": [
+            "Creating tightly coupled components for simplicity",
+            "Implementing complex, interdependent business logic",
+            "Designing components with clear interfaces and minimal dependencies",
+            "Using global variables for data sharing between components"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "DynamoDB Global Tables automatically replicate data across multiple AWS regions, handle all the replication tasks, and provide multi-master capabilities with typically under one second replication latency."
+          "explanation": "Testability is improved when components have clear boundaries, well-defined interfaces, and minimal external dependencies, allowing them to be tested in isolation with appropriate test doubles."
         },
         {
-          "question": "How far back in days can an Amazon DynamoDB table be restored by using point-in-time recovery?",
+          "question": "What distinguishes the Development View from other architectural views?",
           "options": [
-            "The last week",
-            "The last 10 days",
-            "The last 35 days",
-            "The last calendar month"
+            "It focuses on how code is organized in development environments",
+            "It shows runtime process interactions and communications",
+            "It maps software components to physical hardware",
+            "It describes business concepts and their relationships"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The Development View addresses development-time concerns: source code organization, module structure, build dependencies, and configuration management—how developers work with the codebase."
+        },
+        {
+          "question": "Which factor is MOST important when selecting architectural tactics for quality attributes?",
+          "options": [
+            "The tactics' popularity in recent blog posts",
+            "How well tactics address specific, measurable quality goals",
+            "The simplicity of implementing each tactic",
+            "Whether the team has previously used the tactics"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architectural tactics should be chosen based on their effectiveness in achieving specific, measurable quality attribute targets identified for the system, not general popularity or familiarity."
+        },
+        {
+          "question": "What is the fundamental purpose of architecture validation and verification?",
+          "options": [
+            "To ensure the architecture meets stakeholder needs and is correctly implemented",
+            "To eliminate all defects from the final system",
+            "To create perfect architectural documentation",
+            "To guarantee the project will finish early"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Validation ensures the architecture meets stakeholder requirements (building the right thing). Verification ensures the implementation correctly follows the architecture (building it right)."
+        },
+        {
+          "question": "Which architectural concern would be MOST relevant for a system requiring frequent business rule changes?",
+          "options": [
+            "Maximizing raw computational performance",
+            "Minimizing hardware resource usage",
+            "Ensuring high modifiability and low change cost",
+            "Optimizing for minimal development time"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "DynamoDB Point-in-Time Recovery (PITR) provides continuous backups and allows you to restore your table to any point in time within the last 35 days."
+          "explanation": "Frequent business rule changes demand high modifiability—the ease of making changes. This requires architectural decisions that localize business logic and minimize ripple effects from changes."
         },
         {
-          "question": "Which statement describes Amazon DynamoDB application programming interface (API) control operations that can be invoked by an application?",
+          "question": "What is the key characteristic of a well-defined component interface?",
           "options": [
-            "Create and manage DynamoDB tables",
-            "Create, read, update, and delete data in a table",
-            "Get and write batches of items in a DynamoDB table",
-            "Make coordinated, all-or-nothing changes to multiple items both within and across tables"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Control plane operations manage DynamoDB resources (tables, indexes, streams), while data plane operations handle the actual data (CRUD operations, queries, scans)."
-        },
-        {
-          "question": "Which phrase best describes a RESTful API?",
-          "options": [
-            "An API that uses HTTP to communicate between client and server",
-            "A proxy that exists between client and server to handle common problems that occur with API-driven applications",
-            "An API that follows the principles of the Representational State Transfer style",
-            "An API that resides on the web server"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "RESTful APIs adhere to REST architectural principles, including statelessness, cacheability, layered system, uniform interface, and code on demand."
-        },
-        {
-          "question": "Which option suggests the use of WebSocket APIs?",
-          "options": [
-            "An order processing application returns an order number to each customer when they submit an order",
-            "A batch process bundles orders and sends them to a fulfillment center application",
-            "A real-time chat application lets customers talk to customer support about their orders",
-            "A reporting application gives the sales team access to static daily reports from their phones"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "WebSocket APIs maintain persistent, bidirectional connections between clients and servers, making them ideal for real-time applications like chat, gaming, and live data feeds."
-        },
-        {
-          "question": "Which use case suggests using Amazon API Gateway HTTP APIs?",
-          "options": [
-            "An application needs an API proxy in front of an AWS Lambda function",
-            "An application must transform a response from an AWS Lambda function before returning the response to the client",
-            "A developer wants to use mock endpoints to test their API",
-            "A developer wants to assign different API quotas by client"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "HTTP APIs are optimized for serverless workloads and proxy integrations, providing a lightweight, low-cost option for connecting clients to Lambda functions and other HTTP endpoints."
-        },
-        {
-          "question": "Which statement about Amazon API Gateway integrations is true?",
-          "options": [
-            "A first-class integration connects an API Gateway HTTP API route to an external third-party service API",
-            "A developer can use HTTP proxy integrations to direct a route to a resource on the internet",
-            "API Gateway cannot access resources within a virtual private cloud (VPC)",
-            "An API integration request encapsulates an HTTP request that the backend receives and is always different from the method request that the client submits"
+            "It exposes all internal implementation details for flexibility",
+            "It provides a clear, stable contract while hiding implementation",
+            "It changes frequently to accommodate evolving needs",
+            "It maximizes the number of parameters for completeness"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "HTTP proxy integrations in API Gateway can route requests to any HTTP endpoint, including resources on the internet, making it versatile for various integration scenarios."
+          "explanation": "Good interfaces provide stable, well-documented contracts that specify what services are provided while hiding how they're implemented, enabling independent evolution of components."
         },
         {
-          "question": "An application that uses Amazon API Gateway must capture contact information from a third-party client application. The client application sends given name, surname, business phone, and cell phone. The backend application database has only two fields: name and mobile phone. Which option requires the fewest application changes?",
+          "question": "Which quality attribute would be MOST impacted by implementing a comprehensive monitoring and alerting system?",
           "options": [
-            "Export the API definition and use it to update the client",
-            "Use a mapping template to transform the request before it is sent to the database",
-            "Create a usage plan that describes the fields and applies only to this client",
-            "Use a first-class integration to connect the client to the database"
+            "Functional Suitability",
+            "Reliability (specifically recoverability)",
+            "Portability",
+            "Compatibility"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Mapping templates in API Gateway can transform request and response payloads without requiring changes to the backend application or client, making them ideal for data format conversions."
+          "explanation": "Monitoring and alerting directly support reliability by enabling faster detection of issues (improving MTTR - Mean Time To Recovery) and providing data for root cause analysis."
         },
         {
-          "question": "Which elements are part of the base URI that AWS generates for an Amazon API Gateway API?",
+          "question": "What is the primary value of documenting architectural decisions as Architecture Decision Records (ADRs)?",
           "options": [
-            "Region and stage name",
-            "API identifier and version",
-            "Account ID and stage name",
-            "Region and version"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "API Gateway base URIs include the region and stage name (e.g., https://api-id.execute-api.region.amazonaws.com/stage), which helps organize and version API deployments."
-        },
-        {
-          "question": "Given the AWS CLI command to create an API route, which option creates a route that returns an individual product value from an online catalog?",
-          "options": [
-            "route-key 'GET /products/{product_id}'",
-            "route-key 'PUT /products'",
-            "route-selection-expression '$GET/product'",
-            "route-selection-expression 'PUT /products/{proxy+}'"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The route-key 'GET /products/{product_id}' defines a route that handles GET requests for individual products, where {product_id} is a path parameter that can capture specific product identifiers."
-        },
-        {
-          "question": "Which statement about Amazon API Gateway stages is true?",
-          "options": [
-            "Stage names are sequentially assigned based on the API version",
-            "Any stage on any API type can be set to autodeploy",
-            "Developers can use stage variables to connect different stages to different backends",
-            "Developers should avoid creating different stages for each development environment"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Stage variables are name-value pairs that can be used to configure stage-specific settings, such as connecting different stages (dev, test, prod) to different backend endpoints."
-        },
-        {
-          "question": "A security team wants to know how to protect APIs in their internet application from common web exploits, like SQL injection or cross-site scripting. Which solution most directly addresses their specific concern?",
-          "options": [
-            "Set throttling limits on their API methods in Amazon API Gateway",
-            "Set all of their APIs to use private endpoints",
-            "Configure a JSON Web Token (JWT) based authorizer for Amazon API Gateway",
-            "Use AWS WAF with Amazon API Gateway"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "AWS WAF (Web Application Firewall) specifically protects against common web exploits like SQL injection, cross-site scripting, and other OWASP Top 10 security risks when integrated with API Gateway."
-        },
-        {
-          "question": "What does the Amazon API Gateway integration Latency metric tell the user?",
-          "options": [
-            "Frequency of server-side errors that affect latency",
-            "Speed of the API response back to the client",
-            "Responsiveness of the backend",
-            "How often requests are throttled"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Integration Latency measures the time between when API Gateway relays a request to the backend and when it receives the response, indicating the backend's responsiveness independent of network latency."
-        }
-      ]
-    },
-    {
-      "id": "Aws Cloud Bacics and Developing combined",
-      "name": "AWS Cloud Basics and Developing",
-      "description": "A combined test on AWS Cloud Basics and Developing on AWS.",
-      "questions": [
-        {
-          "question": "What are the advantages of cloud computing over computing on-premises?",
-          "options": [
-            "Avoid large capital purchases",
-            "Use on-demand capacity",
-            "Go global in minutes",
-            "Increase speed and agility",
-            "All of the above"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "All of the above are key advantages of cloud computing. Cloud computing eliminates large upfront capital expenses, allows using capacity as needed, enables global deployment quickly, and increases business agility."
-        },
-        {
-          "question": "What is the pricing model that enables AWS customers to pay for resources on an as needed basis?",
-          "options": [
-            "Pay as you decommission",
-            "Pay as you go",
-            "Pay as you buy",
-            "Pay as you reserve"
+            "They eliminate the need for other architectural documentation",
+            "They capture the rationale and context behind design choices",
+            "They serve as detailed implementation specifications",
+            "They replace the need for code comments"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Pay as you go is AWS's fundamental pricing model where customers only pay for the resources they actually use, without long-term commitments or upfront fees."
+          "explanation": "ADRs capture not just what was decided, but why—the context, alternatives considered, trade-offs, and consequences. This preserves crucial reasoning that would otherwise be lost."
         },
         {
-          "question": "Which of these is NOT a cloud computing model?",
+          "question": "Which architectural consideration is MOST critical for systems with stringent data privacy requirements?",
           "options": [
-            "Platform as a service",
-            "Infrastructure as a service",
-            "System administration as a service",
-            "Software as a service"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "System administration as a service is not a recognized cloud computing model. The main cloud service models are IaaS, PaaS, and SaaS."
-        },
-        {
-          "question": "True or False? AWS owns and maintains the network-connected hardware required for application services, while you provision and use what you need.",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. This is part of the shared responsibility model - AWS manages the underlying infrastructure and hardware, while customers manage what they provision on top of it."
-        },
-        {
-          "question": "Which of these is NOT a benefit of cloud computing over on-premises computing?",
-          "options": [
-            "Increase speed and agility",
-            "Pay for racking, stacking, and powering servers",
-            "Eliminate guessing on your infrastructure capacity needs",
-            "Trade capital expense for variable expense",
-            "Benefit from massive economies of scale"
+            "Maximizing development velocity",
+            "Ensuring data encryption both in transit and at rest",
+            "Using the simplest possible architecture",
+            "Minimizing the number of database tables"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Paying for racking, stacking, and powering servers is actually a characteristic of on-premises computing, not a benefit of cloud computing. In the cloud, AWS handles all the physical infrastructure management."
-        },
-        {
-          "question": "Which of the following are NOT benefits of AWS Cloud computing? (Choose two)",
-          "options": [
-            "Multiple procurement cycles and High latency",
-            "Pay-as-you-go pricing and Scalability",
-            "Global infrastructure and Security",
-            "Auto scaling and Elasticity"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Multiple procurement cycles and high latency are NOT benefits of AWS cloud computing. AWS eliminates long procurement cycles and provides low-latency access through global infrastructure."
-        },
-        {
-          "question": "Which of the following is a compute service?",
-          "options": [
-            "Amazon VPC",
-            "Amazon S3",
-            "Amazon EC2",
-            "Amazon CloudFront",
-            "Amazon Redshift"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Amazon EC2 (Elastic Compute Cloud) is AWS's primary compute service that provides virtual servers in the cloud."
-        },
-        {
-          "question": "True or False? Cloud computing provides a simple way to access servers, storage, databases, and a broad set of application services over the internet. You own the network-connected hardware required for these services and Amazon Web Services provisions what you need.",
-          "options": ["True", "False"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "False. In cloud computing, you do NOT own the network-connected hardware. AWS owns and maintains the hardware, and you provision and use what you need as a service."
-        },
-        {
-          "question": "Economies of scale result from",
-          "options": [
-            "having many different cloud providers",
-            "having hundreds of thousands of customers aggregated in the cloud",
-            "having hundreds of cloud services available over the internet",
-            "having to invest heavily in data centers and servers"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Economies of scale result from having hundreds of thousands of customers aggregated in the cloud, which allows AWS to achieve lower per-unit costs and pass those savings to customers."
-        },
-        {
-          "question": "Which of these are ways to access AWS core services? (Choose three)",
-          "options": [
-            "AWS Management Console, AWS CLI, and SDKs",
-            "Technical support calls and AWS Marketplace",
-            "AWS CLI, SDKs, and Technical support",
-            "AWS Marketplace, Management Console, and Support calls"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The three primary ways to access AWS services are through the AWS Management Console (web interface), AWS Command Line Interface (CLI), and Software Development Kits (SDKs) for various programming languages."
-        },
-        {
-          "question": "For certain services like Amazon EC2 and Amazon RDS, you can invest in reserved capacity. What options are available for Reserved Instances? (Choose three)",
-          "options": [
-            "AURI, NURI, and PURI",
-            "MURI, DURI, and AURI",
-            "NURI, PURI, and DURI",
-            "All URI options available"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The three Reserved Instance payment options are All Upfront (AURI), No Upfront (NURI), and Partial Upfront (PURI), which provide different levels of upfront payment versus hourly rates."
-        },
-        {
-          "question": "Where can a customer go to get more details about Amazon EC2 billing activity that took place 3 months ago?",
-          "options": [
-            "Amazon EC2 dashboard",
-            "AWS Cost Explorer",
-            "AWS Trusted Advisor dashboard",
-            "AWS CloudTrail logs stored in Amazon S3"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "AWS Cost Explorer provides detailed historical billing data and cost analysis, making it the best tool for reviewing past billing activity from several months ago."
-        },
-        {
-          "question": "True or false? To receive the discounted rate associated with Reserved Instances, you must make a full, upfront payment for the term of the agreement.",
-          "options": ["True", "False"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "False. While All Upfront Reserved Instances require full payment, there are also Partial Upfront and No Upfront options that provide discounts with different payment structures."
-        },
-        {
-          "question": "Which statement is true about the pricing model on AWS?",
-          "options": [
-            "In most cases, there is a per gigabyte charge for inbound data transfer",
-            "Storage is typically charged per gigabyte",
-            "Compute is typically charged as a monthly fee based on instance type",
-            "Outbound charges are free up to a per account limit"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Storage on AWS is typically charged per gigabyte per month, with different rates for different storage classes and access patterns."
-        },
-        {
-          "question": "What are the four support plans offered by AWS Support?",
-          "options": [
-            "Basic, Developer, Business, Enterprise",
-            "Basic, Startup, Business, Enterprise",
-            "Free, Bronze, Silver, Gold",
-            "All support is free"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS offers four support plans: Basic (free), Developer, Business, and Enterprise, each with increasing levels of support and features."
-        },
-        {
-          "question": "Which AWS tool lets you explore AWS services and create an estimate for the cost of your use cases on AWS?",
-          "options": [
-            "AWS Pricing Calculator",
-            "AWS Budgets",
-            "AWS Cost and Usage Report",
-            "AWS Billing Dashboard"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS Pricing Calculator allows you to explore AWS services and configure them to create detailed cost estimates for your specific use cases."
-        },
-        {
-          "question": "As AWS grows, the cost of doing business is reduced and savings are passed back to the customer with lower pricing. What is this optimization called?",
-          "options": [
-            "Expenditure awareness",
-            "Economies of scale",
-            "Matching supply and demand",
-            "EC2 Right Sizing"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Economies of scale refers to the cost advantages that AWS achieves due to its scale of operations, which are then passed on to customers through lower prices."
-        },
-        {
-          "question": "True or false? AWS offers some services at no charge, such as Amazon VPC, AWS IAM, Consolidated Billing, AWS Elastic Beanstalk, automatic scaling, AWS OpsWorks and AWS CloudFormation. However, you might be charged for other AWS services that you use in conjunction with these services.",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. While these specific services are offered at no additional charge, you still pay for the underlying resources you provision through them (like EC2 instances, storage, etc.)."
-        },
-        {
-          "question": "What are benefits of using AWS Organizations? (Choose two)",
-          "options": [
-            "Group account management and API automation",
-            "Replaces IAM policies with SCPs",
-            "Unlimited OUs and root user protection",
-            "Simplifies billing and replaces IAM"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS Organizations provides the ability to create groups of accounts and attach policies to groups, and simplifies automating account creation and management using APIs."
-        },
-        {
-          "question": "True or false? Unlimited services are available with the AWS Free Tier to new AWS customers for 12 months following their AWS sign-up date.",
-          "options": ["True", "False"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "False. The AWS Free Tier has specific limits on services and usage. It's not unlimited - there are constraints on the amount of resources you can use for free within the first 12 months."
-        },
-        {
-          "question": "Which component of the AWS Global Infrastructure does Amazon CloudFront use to ensure low-latency delivery?",
-          "options": [
-            "AWS Regions",
-            "AWS edge locations",
-            "AWS Availability Zones",
-            "Amazon Virtual Private Cloud (Amazon VPC)"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Amazon CloudFront uses AWS edge locations, which are distributed globally, to cache content closer to users and ensure low-latency content delivery."
-        },
-        {
-          "question": "You can run applications and workloads from a region closer to the end users to _________ latency.",
-          "options": ["Increase", "Decrease"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Decrease. Running applications from regions closer to end users reduces the distance data must travel, thereby decreasing latency and improving performance."
-        },
-        {
-          "question": "True / False? Networking, storage, compute and databases are examples of service categories that AWS offers.",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. These are fundamental service categories offered by AWS, along with many others like security, analytics, machine learning, and application integration."
-        },
-        {
-          "question": "Which of these statements about Availability Zones is not true?",
-          "options": [
-            "Availability Zones are designed for fault isolation",
-            "Availability Zones are made up of one or more data centers",
-            "Availability zones are connected to each other using high-speed private links",
-            "A data center can be used for more than one availability zone"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "A data center cannot be used for more than one Availability Zone. Each Availability Zone is a distinct physical location with one or more data centers, but a single data center doesn't serve multiple AZs."
-        },
-        {
-          "question": "What is true about Regions? (Choose two)",
-          "options": [
-            "They are physical locations with multiple AZs in separate geographic areas",
-            "They are the physical locations of your customers",
-            "All regions are located in one specific geographic area",
-            "A region has multiple AZs and each region is geographically separate"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "A region is a physical location that has multiple Availability Zones, and each region is located in a separate geographic area to provide geographic diversity and disaster recovery capabilities."
-        },
-        {
-          "question": "_________ means the infrastructure has built-in component redundancy and _________ means that resources dynamically adjust to increases or decreases in capacity requirements.",
-          "options": [
-            "No human intervention, fault-tolerant",
-            "Fault-tolerant, no human intervention",
-            "Elastic and scalable, fault-tolerant",
-            "Fault-tolerant, elastic and scalable"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Fault-tolerant means the infrastructure has built-in component redundancy to withstand failures, while elastic and scalable means resources can dynamically adjust to changing capacity requirements."
-        },
-        {
-          "question": "True or False? Availability Zones within a region are connected through low-latency links.",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. Availability Zones within a region are connected through high-bandwidth, low-latency networking, enabling synchronous replication and fast failover between zones."
-        },
-        {
-          "question": "AWS highly recommends provisioning your compute resources across _________ availability zones.",
-          "options": ["All", "No", "Multiple", "Single"],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Multiple. Distributing resources across multiple Availability Zones provides high availability and fault tolerance, protecting against failures in a single zone."
-        },
-        {
-          "question": "True or False? Edge locations are only located in the same general area as regions.",
-          "options": ["True", "False"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "False. Edge locations are distributed globally in many more locations than regions, often in major population centers to provide low-latency access to users worldwide."
-        },
-        {
-          "question": "In the shared responsibility model, AWS is responsible for providing what?",
-          "options": [
-            "Security of the cloud",
-            "Security to the cloud",
-            "Security for the cloud",
-            "Security in the cloud"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Security of the cloud refers to AWS's responsibility to protect the infrastructure that runs all the services offered in the AWS Cloud."
-        },
-        {
-          "question": "In the shared responsibility model, which of the following are examples of 'Security in the cloud'? (Choose two)",
-          "options": [
-            "Security group configurations and Data encryption",
-            "Compliance standards and Physical security",
-            "Physical security and Global infrastructure protection",
-            "Data encryption and Physical facility security"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Security group configurations and encryption of data at rest and in transit are customer responsibilities under 'Security in the cloud', while AWS handles 'Security of the cloud' including physical security and infrastructure protection."
-        },
-        {
-          "question": "Which AWS networking service enables a company to create a virtual network within AWS?",
-          "options": [
-            "AWS Config",
-            "Amazon Route 53",
-            "AWS Direct Connect",
-            "Amazon VPC"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Amazon VPC (Virtual Private Cloud) enables you to provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define."
-        },
-        {
-          "question": "With Amazon VPC, what is the smallest size subnet you can have in a VPC?",
-          "options": ["/28", "/30", "/24", "/26"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "/28 is the smallest subnet size in Amazon VPC, providing 16 IP addresses (11 usable after AWS reserves 5)."
-        },
-        {
-          "question": "With Amazon VPC, what is the maximum size IP address range you can have in a VPC?",
-          "options": ["/28", "/16", "/30", "/24"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "/16 is the maximum CIDR block size for a VPC, providing 65,536 IP addresses (65,531 usable after AWS reserves 5)."
-        },
-        {
-          "question": "You need to allow resources in a private subnet to access the internet. Which of the following must be present to enable this access?",
-          "options": [
-            "Network access control lists",
-            "Security groups",
-            "NAT gateway",
-            "Route tables"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "A NAT (Network Address Translation) gateway allows instances in a private subnet to connect to the internet or other AWS services, while preventing the internet from initiating connections with those instances."
-        },
-        {
-          "question": "True/False, Private subnets have direct access to the internet.",
-          "options": ["True", "False"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "False. Private subnets do not have direct internet access. They require a NAT gateway or NAT instance to access the internet, which provides outbound-only internet connectivity."
-        },
-        {
-          "question": "Which of the following is an optional security control that can be applied at the subnet layer of a VPC?",
-          "options": [
-            "Network ACL",
-            "Security group",
-            "Web application firewall",
-            "Firewall"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Network ACLs (Access Control Lists) are optional security controls that operate at the subnet level, providing stateless filtering of traffic entering and leaving subnets."
-        },
-        {
-          "question": "What happens when you use Amazon VPC to create a new VPC?",
-          "options": [
-            "Three subnets are created by default in one Availability Zone",
-            "A main route table is created by default",
-            "Three subnets are created by default: one for each Availability Zone",
-            "An internet gateway is created by default"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "When you create a new VPC, AWS automatically creates a main route table for it. Subnets and internet gateways must be created separately."
-        },
-        {
-          "question": "Which of the following can be used to protect Amazon EC2 instances hosted in AWS?",
-          "options": [
-            "Internet Gateway",
-            "All of the above",
-            "AMI",
-            "Security group"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Security groups act as virtual firewalls for EC2 instances to control inbound and outbound traffic at the instance level."
-        },
-        {
-          "question": "Why is AWS more economical than traditional data centers for applications with varying compute workloads?",
-          "options": [
-            "Amazon EC2 Costs are billed on a monthly basis",
-            "Customers retain full administrative access to their Amazon EC2 instances",
-            "Customers can permanently run enough instances to handle peak workloads",
-            "Amazon EC2 instances can be launched on-demand when needed"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "AWS is more economical for variable workloads because you can launch EC2 instances on-demand when needed and terminate them when not needed, avoiding the cost of maintaining idle capacity."
-        },
-        {
-          "question": "If your project requires monthly reports that iterate through very large amounts of data, which Amazon EC2 purchasing option should you consider?",
-          "options": [
-            "Spot Instances",
-            "Scheduled Reserved Instances",
-            "Dedicated Hosts",
-            "On-Demand Instances"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Scheduled Reserved Instances are ideal for predictable recurring workloads like monthly reports, as they provide capacity reservations that recur on a daily, weekly, or monthly basis."
-        },
-        {
-          "question": "What is included in an Amazon Machine Image (AMI)?",
-          "options": [
-            "A template for the root volume for the instance",
-            "Launch permissions that control which AWS accounts can use the AMI to launch instances",
-            "A block device mapping that specifies the volumes to attach to the instance when it's launched",
-            "All of the above"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "An AMI includes all of these components: template for the root volume, launch permissions, and block device mapping, providing everything needed to launch an instance."
-        },
-        {
-          "question": "Which Amazon EC2 feature ensures your instances will not share a physical host with instances from any other AWS customer?",
-          "options": [
-            "Amazon VPC",
-            "Placement Groups",
-            "Dedicated Instances",
-            "Reserved Instances"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Dedicated Instances run on hardware dedicated to a single AWS customer, ensuring no other customers' instances share the same physical host."
-        },
-        {
-          "question": "Which of the following services is a serverless compute service in AWS?",
-          "options": ["AWS Config", "AWS Lambda", "AWS OpsWork", "Amazon EC2"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "AWS Lambda is a serverless compute service that runs code in response to events without requiring you to provision or manage servers."
-        },
-        {
-          "question": "What is the service provided by AWS that enables developers to easily deploy and manage applications in the cloud?",
-          "options": [
-            "Amazon Elastic Container Service",
-            "AWS Elastic Beanstalk",
-            "AWS OpsWork",
-            "AWS CloudFormation"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services without needing to understand the underlying infrastructure."
-        },
-        {
-          "question": "Your web application needs four instances to support steady traffic all of the time. On the last day of the month, the traffic triples. What is the most cost-effective way to handle this pattern?",
-          "options": [
-            "Run 12 reserved instances all of the time",
-            "Run four On-demand Instances constantly, then add eight more On-Demand on the last day of each month",
-            "Run four Reserved Instances constantly, then add eight On-Demand Instances on the last day of each month",
-            "Run four On-Demand Instances constantly, then add eight Reserved Instances on the last day of each month"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Using Reserved Instances for baseline capacity and On-Demand Instances for predictable spikes is the most cost-effective approach for this usage pattern."
-        },
-        {
-          "question": "True or false? Containers contain an entire operating system.",
-          "options": ["True", "False"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "False. Containers share the host system's operating system kernel and contain only the application and its dependencies, making them much lighter than virtual machines."
-        },
-        {
-          "question": "Which Amazon EC2 option is best for long-term workload with predictable usage patterns?",
-          "options": [
-            "Spot Instances",
-            "On-Demand Instances",
-            "Reserved Instances"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Reserved Instances provide significant cost savings (up to 75% compared to On-Demand) for steady-state, predictable workloads with long-term commitments."
-        },
-        {
-          "question": "True or false. Amazon S3 is an object storage suitable for the storage of flat files like Microsoft Word documents, photos, etc.",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. Amazon S3 is object storage designed to store and retrieve any amount of data from anywhere, making it ideal for documents, images, videos, and other unstructured data."
-        },
-        {
-          "question": "Amazon S3 replicates all objects _________.",
-          "options": [
-            "On multiple volumes within an availability zone",
-            "In multiple Availability zones within the same region",
-            "Across multiple regions for higher durability",
-            "On multiple S3 buckets"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Amazon S3 Standard storage automatically replicates data across multiple Availability Zones within the same region to provide 99.999999999% (11 9's) of durability."
-        },
-        {
-          "question": "The name of an S3 bucket must be unique.",
-          "options": [
-            "Worldwide across all AWS accounts",
-            "Within a region",
-            "Across all your AWS accounts",
-            "Within your AWS account"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "S3 bucket names must be globally unique across all AWS accounts and regions, as they are part of the URL used to access objects in the bucket."
-        },
-        {
-          "question": "You can use Amazon Elastic File System (EFS) to:",
-          "options": [
-            "Provide simple, scalable, elastic file storage for use only within AWS",
-            "Implement storage for Amazon EC2 instances that multiple virtual machines can access at the same time",
-            "Host a robust CDN to deliver entire web sites with dynamic, static, and streaming content",
-            "Generate user specific content"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Amazon EFS provides scalable, elastic file storage that can be accessed concurrently by multiple EC2 instances across multiple Availability Zones."
-        },
-        {
-          "question": "Amazon Elastic Block Storage (EBS) is recommended when data _________ and _________ (Choose two)",
-          "options": [
-            "Requires object level storage and Must be quickly accessible",
-            "Must be quickly accessible and Requires encryption",
-            "Requires encryption and Needs cross-AZ storage",
-            "Needs cross-AZ storage and Requires object storage"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "EBS is ideal for data that must be quickly accessible with low latency and requires persistence, and it supports transparent encryption for data at rest."
-        },
-        {
-          "question": "True or false, by default all data stored in Amazon S3 is viewable by the public.",
-          "options": ["True", "False"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "False. By default, all S3 buckets and objects are private. Only the bucket and object owners have access until they explicitly grant permissions to others."
-        },
-        {
-          "question": "Regarding Amazon S3 Glacier, what is a vault?",
-          "options": [
-            "The rules that determine who may (or may not) access archives",
-            "An object (photos, videos, files, or documents)",
-            "A container for storing archives",
-            "A policy that identifies who can access content stored in Glacier"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "A vault is a container for storing archives in Amazon S3 Glacier, similar to how a bucket is a container for objects in Amazon S3."
-        },
-        {
-          "question": "True or false. When you create a bucket in Amazon S3, it is associated with a specific AWS region.",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. When creating an S3 bucket, you must choose the AWS region where the bucket will reside, which determines the physical location where your data is stored."
-        },
-        {
-          "question": "You are designing an ecommerce web application that will scale to hundreds of thousands of concurrent users. Which database technology is best suited to hold the session state in this example?",
-          "options": [
-            "Amazon Relational Database Service (RDS)",
-            "Amazon DynamoDB",
-            "Amazon RedShift",
-            "Amazon Simple Storage (S3)"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Amazon DynamoDB is ideal for session state management due to its fast, predictable performance at any scale, single-digit millisecond latency, and automatic scaling capabilities."
-        },
-        {
-          "question": "You need to find an item in Amazon DynamoDB table using an attribute other than item's primary key. Which operation should you use?",
-          "options": ["Put Item", "Scan", "Query", "Get Item"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Scan operations examine every item in the table and return all items that match the filter criteria, but they are less efficient than queries and should be used sparingly on large tables."
-        },
-        {
-          "question": "Which AWS Cloud service is best suited for analyzing your data by using standard SQL and your existing business intelligence (BI) tools?",
-          "options": [
-            "Amazon Relational Database (RDS)",
-            "Amazon Simple Storage Simple Glacier",
-            "Amazon Dynamo DB",
-            "Amazon Redshift"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Amazon Redshift is a fast, fully managed data warehouse that makes it simple and cost-effective to analyze all your data using standard SQL and existing BI tools."
-        },
-        {
-          "question": "Which of the following use cases is appropriate for using Amazon RDS?",
-          "options": [
-            "Massive read / write rates",
-            "Simple Gets or Put Requests",
-            "Complex Transactions",
-            "All the Above"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Amazon RDS is ideal for applications that require complex transactions with ACID properties, such as OLTP workloads, financial systems, and inventory management."
-        },
-        {
-          "question": "If you are developing an application that requires a database with extremely fast performance, fast scalability, and flexibility in the database schema, which service would you consider?",
-          "options": [
-            "Amazon Relational Database (RDS)",
-            "Amazon Elastic Cache",
-            "Amazon Dynamo DB",
-            "Amazon Redshift"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Amazon DynamoDB provides single-digit millisecond performance at any scale, automatic scaling, and schema flexibility as a NoSQL database service."
-        },
-        {
-          "question": "True of false? Amazon RDS automatically patches the database software and backs up your database, storing the backups for a user-defined retention period and enabling point-in-time recovery",
-          "options": ["True", "False"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "True. Amazon RDS automates common administrative tasks like backups, software patching, and point-in-time recovery, making database management much simpler."
-        },
-        {
-          "question": "Which of the following is not one of the four areas of the Performance Efficiency pillar of the AWS Well-Architected Framework?",
-          "options": ["Tradeoffs", "Selection", "Traceability", "Monitoring"],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Traceability is not one of the four areas. The Performance Efficiency pillar focuses on Selection, Review, Monitoring, and Tradeoffs to ensure efficient use of computing resources."
-        },
-        {
-          "question": "Which of the following is a principle when designing cloud-based systems?",
-          "options": [
-            "Build tightly - coupled components",
-            "Make infrequent , large batch changes",
-            "Assume Everything will fail",
-            "Use as many services as possible"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Assuming everything will fail is a key design principle for cloud systems, encouraging the design of resilient architectures that can withstand component failures."
-        },
-        {
-          "question": "Which of the following are pillars of the AWS Well-Architected Framework? (Choose three)",
-          "options": [
-            "Security, Operational Excellence, and Cost Optimization",
-            "Persistence, Security, and Operational Excellence",
-            "Operational Excellence, Cost Optimization, and Persistence",
-            "Security, Cost Optimization, and Persistence"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The five pillars of the Well-Architected Framework are Operational Excellence, Security, Reliability, Performance Efficiency, and Cost Optimization."
-        },
-        {
-          "question": "AWS Trusted Advisor provides insight regarding which five categories of an AWS account?",
-          "options": [
-            "Performance, cost optimization, security, fault tolerance, service limits",
-            "Security, Fault tolerance, high availability, connectivity, service limits",
-            "Performance, cost optimization, access control, connectivity, security",
-            "Security, access control, high availability, performance, service limits"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "AWS Trusted Advisor provides best practice checks and recommendations in five categories: cost optimization, performance, security, fault tolerance, and service limits."
-        },
-        {
-          "question": "What is the focus of the sustainability pillar of the well-architected framework?",
-          "options": [
-            "Designing workloads that recover quickly from failures",
-            "Minimize the environmental impacts of the running cloud networks",
-            "Avoid unnecessary cost in cloud networks",
-            "Automating updates to cloud networks"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "The sustainability pillar focuses on minimizing the environmental impacts of cloud workloads by maximizing energy efficiency and reducing resource consumption."
-        },
-        {
-          "question": "Which AWS tools help your application scale up or down based on demand? (Choose two)",
-          "options": [
-            "Amazon EC2 Auto Scaling and Elastic Load Balancing",
-            "Availability Zones and AWS CloudFormation",
-            "AWS CloudFormation and Elastic Load Balancing",
-            "Availability Zones and Amazon EC2 Auto Scaling"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon EC2 Auto Scaling automatically adds or removes EC2 instances based on demand, while Elastic Load Balancing distributes traffic across multiple targets to handle varying loads."
-        },
-        {
-          "question": "Which service would you use to send alerts based on Amazon CloudWatch alarms?",
-          "options": [
-            "Amazon Simple Notification Service (SNS)",
-            "AWS Cloud Trail",
-            "AWS Trusted Advisor",
-            "Amazon Route 53"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Amazon SNS is used to send notifications and alerts based on CloudWatch alarms, supporting multiple delivery protocols including email, SMS, and HTTP/HTTPS endpoints."
-        },
-        {
-          "question": "Which of the following must be configured on an Elastic Load Balancing load balancer to expect incoming traffic?",
-          "options": [
-            "A Port",
-            "A Network Interface",
-            "A Listener",
-            "An Instance"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "A listener is a process that checks for connection requests using the protocol and port you configure, and is required for a load balancer to accept incoming traffic."
-        },
-        {
-          "question": "There is an audit at your company and they need to have a big log of all access to AWS resources in the account. Which service can assist in providing these details?",
-          "options": [
-            "Amazon CloudWatch",
-            "AWS CloudTrail",
-            "Amazon Elastic Compute Cloud (EC2)",
-            "Amazon Simple Notification Service (SNS)"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "AWS CloudTrail enables governance, compliance, and operational and risk auditing of your AWS account by logging API calls and related events."
+          "explanation": "Data privacy requires strong security measures, with encryption being fundamental for protecting sensitive data both during transmission and while stored."
         }
       ]
     }
