@@ -625,6 +625,522 @@
           "explanation": "Data privacy requires strong security measures, with encryption being fundamental for protecting sensitive data both during transmission and while stored."
         }
       ]
+    },
+    {
+      "id": "Infobez variant 1",
+      "name": "Infobez variant 1",
+      "description": "A quiz on infobez",
+      "questions": [
+        {
+          "question": "Which security objective focuses on preventing unauthorized disclosure of information?",
+          "options": [
+            "Availability",
+            "Confidentiality",
+            "Nonrepudiation",
+            "Auditability",
+            "Resilience"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Confidentiality ensures that information is not disclosed to unauthorized individuals, entities, or processes. It's one of the three core security principles in the CIA triad (Confidentiality, Integrity, Availability)."
+        },
+        {
+          "question": "Which term best describes data stored on a disk that is not currently being transmitted?",
+          "options": [
+            "Data in transit",
+            "Data in process",
+            "Data at rest",
+            "Ephemeral data",
+            "Streaming data"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Data at rest refers to data that is stored physically in any digital form (disks, databases, backups) and is not actively moving between systems. This requires encryption and access controls for protection."
+        },
+        {
+          "question": "Which technology most directly protects data confidentiality when employees access internal resources over the Internet?",
+          "options": ["VPN", "VLAN", "NAT", "DNS", "ARP"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "VPN (Virtual Private Network) creates an encrypted tunnel between the user and the corporate network, ensuring that data transmitted over the public internet remains confidential and protected from eavesdropping."
+        },
+        {
+          "question": "What is the main advantage of Network Attached Storage (NAS) compared to direct-attached storage for multiple users?",
+          "options": [
+            "It cannot be shared",
+            "It is accessible over a network for authorized users",
+            "It requires no authentication",
+            "It replaces encryption",
+            "It eliminates backups"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "NAS provides centralized storage that can be accessed over a network by multiple authorized users, enabling file sharing, collaboration, and centralized backup/management compared to direct-attached storage which is limited to a single system."
+        },
+        {
+          "question": "Which principle says users should be granted only the permissions necessary to do their job?",
+          "options": [
+            "Fail-open design",
+            "Least privilege",
+            "Default allow",
+            "Obscurity",
+            "Single point of control"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The principle of least privilege minimizes security risks by ensuring users and systems have only the minimum access rights needed to perform their functions, reducing the attack surface and potential damage from compromised accounts."
+        },
+        {
+          "question": "In an access control list (ACL), why is rule order important?",
+          "options": [
+            "Rules are evaluated from top to bottom and the first match is applied",
+            "Routers ignore the first rule",
+            "Only the last rule is enforced",
+            "Order matters only for NAT",
+            "Order matters only on switches"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "ACLs are processed sequentially from the first rule to the last, and the first matching rule determines the action (permit/deny). This makes rule order critical, as an overly permissive early rule can override more restrictive later rules."
+        },
+        {
+          "question": "What is the typical default behavior at the end of a Cisco ACL if no rule matches?",
+          "options": [
+            "Implicit permit",
+            "Implicit deny",
+            "Automatic NAT",
+            "Automatic encryption",
+            "Automatic logging"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Cisco ACLs include an implicit deny any rule at the end of every ACL, which denies all traffic not explicitly permitted by previous rules. This follows the security best practice of 'deny by default'."
+        },
+        {
+          "question": "An ACL applied in the 'out' direction on an interface filters packets that are:",
+          "options": [
+            "Entering the interface",
+            "Leaving the interface",
+            "Only broadcast packets",
+            "Only multicast packets",
+            "Only management traffic"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Outbound ACLs filter packets as they leave the interface (egress traffic). This allows control over what traffic exits a network segment, which is useful for filtering internal traffic before it reaches external networks."
+        },
+        {
+          "question": "Which command is commonly used to display configured ACLs on a Cisco IOS router?",
+          "options": [
+            "show access-lists",
+            "show arp",
+            "show vlan brief",
+            "show cdp neighbors",
+            "show controllers"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The 'show access-lists' command displays all configured ACLs, their rules, and hit counts (packet matches), which is essential for troubleshooting and verifying ACL configurations."
+        },
+        {
+          "question": "Which Linux file typically contains password hashes (and is readable only by privileged users)?",
+          "options": [
+            "/etc/passwd",
+            "/etc/group",
+            "/etc/shadow",
+            "/etc/hosts",
+            "/etc/resolv.conf"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "/etc/shadow stores password hashes with additional security information (password aging, expiration) and is readable only by root, while /etc/passwd contains basic user information that's world-readable."
+        },
+        {
+          "question": "What is the primary purpose of password hashing for stored credentials?",
+          "options": [
+            "To make passwords reversible for admins",
+            "To store a one-way representation of the password",
+            "To compress passwords to save space",
+            "To convert passwords to Base64",
+            "To enable faster login without security checks"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Hashing converts passwords into fixed-size, irreversible representations. This prevents attackers (and even administrators) from recovering the original password while allowing the system to verify passwords by comparing hashes."
+        },
+        {
+          "question": "Which is a key difference between encryption and hashing?",
+          "options": [
+            "Encryption is one-way; hashing is reversible",
+            "Encryption is reversible with a key; hashing is designed to be one-way",
+            "Hashing requires a private key; encryption does not",
+            "Hashing guarantees confidentiality; encryption does not",
+            "They are the same concept"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Encryption is a two-way process that requires a key to both encrypt and decrypt data, while hashing is a one-way function that produces a fixed-size output (hash) that cannot be reversed to obtain the original input."
+        },
+        {
+          "question": "Base64 is best described as:",
+          "options": [
+            "A strong encryption algorithm",
+            "A compression algorithm",
+            "An encoding method to represent binary data as text",
+            "A hashing algorithm",
+            "A VPN protocol"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Base64 is an encoding scheme that converts binary data into ASCII text format, making it suitable for transmission over text-based protocols like email or embedding in web pages. It provides no security - it's not encryption."
+        },
+        {
+          "question": "Which property is primarily provided by a cryptographic hash in secure communications?",
+          "options": [
+            "Confidentiality",
+            "Integrity",
+            "Availability",
+            "Routing",
+            "Load balancing"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Cryptographic hashes verify data integrity by producing a unique fingerprint of data. Any alteration to the data changes the hash, allowing detection of tampering or corruption during transmission or storage."
+        },
+        {
+          "question": "In symmetric encryption, the sender and receiver typically use:",
+          "options": [
+            "Different keys",
+            "The same shared secret key",
+            "Only public keys",
+            "Only certificates",
+            "No keys"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Symmetric encryption uses a single shared secret key for both encryption and decryption. It's faster than asymmetric encryption but requires secure key distribution since both parties must have the same key."
+        },
+        {
+          "question": "Why is adding a salt (or random value) helpful when protecting stored passwords?",
+          "options": [
+            "It makes passwords shorter",
+            "It prevents two identical passwords from having identical hashes",
+            "It disables brute-force attempts permanently",
+            "It replaces the need for hashing",
+            "It increases network bandwidth"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Salting adds random data to each password before hashing, ensuring that identical passwords produce different hashes. This prevents rainbow table attacks and makes precomputed attacks impractical since each hash is unique."
+        },
+        {
+          "question": "Which is the best example of a control that helps detect unauthorized changes to critical records?",
+          "options": [
+            "Turning off logs",
+            "Audit logging and change tracking",
+            "Removing access control",
+            "Using default passwords",
+            "Disabling backups"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Audit logging creates detailed records of who accessed what data, when, and what changes were made. This enables detection of unauthorized modifications and supports forensic investigations after security incidents."
+        },
+        {
+          "question": "What does strong authentication most directly improve?",
+          "options": [
+            "The number of available IP addresses",
+            "Confidence that a user is who they claim to be",
+            "The physical durability of disks",
+            "The speed of encryption",
+            "The size of backups"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Strong authentication mechanisms (multi-factor, biometrics, hardware tokens) increase assurance that users are genuine, reducing the risk of unauthorized access from stolen credentials or identity spoofing."
+        },
+        {
+          "question": "Which statement about password strength is most accurate?",
+          "options": [
+            "Length and unpredictability generally increase resistance to guessing attacks",
+            "Short passwords with symbols are always strongest",
+            "Using a common word is fine if it is capitalized",
+            "Reusing passwords reduces risk",
+            "Passwords do not need to be changed"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Longer, complex passwords with random character combinations are more resistant to brute-force and dictionary attacks. Modern guidelines emphasize length over complexity, with passphrases being more secure than short complex passwords."
+        },
+        {
+          "question": "A role-based access control (RBAC) model assigns permissions primarily based on:",
+          "options": [
+            "Physical location",
+            "User roles or job functions",
+            "Browser type",
+            "Time of day only",
+            "IP address only"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "RBAC assigns permissions to roles rather than individual users, and users are assigned to roles based on their job functions. This simplifies administration, ensures consistency, and makes it easier to enforce least privilege."
+        }
+      ]
+    },
+    {
+      "id": "Infobez variant 2",
+      "name": "Infobez variant 2",
+      "description": "A quiz on infobez",
+      "questions": [
+        {
+          "question": "Which term describes information being actively handled by an application (e.g., in RAM or CPU during computation)?",
+          "options": [
+            "Data at rest",
+            "Data in transit",
+            "Data in process",
+            "Archived data",
+            "Cold data"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Data in process (or data in use) refers to data currently being processed by applications in memory or CPU. This is one of the three states of digital data (at rest, in transit, in process) that require different security protections."
+        },
+        {
+          "question": "Which control best reduces the risk of unauthorized access if a laptop is lost?",
+          "options": [
+            "Disk encryption",
+            "Disabling updates",
+            "Using default admin accounts",
+            "Turning off the firewall",
+            "Sharing passwords"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Full disk encryption (FDE) protects data at rest by encrypting the entire storage drive. Even if a laptop is lost or stolen, the data remains inaccessible without the encryption key or password, preventing unauthorized access to sensitive information."
+        },
+        {
+          "question": "Which concept refers to proving that a specific action was performed by a particular user and cannot be denied later?",
+          "options": [
+            "Availability",
+            "Nonrepudiation",
+            "Confidentiality",
+            "Steganography",
+            "Load balancing"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Nonrepudiation provides proof of the origin and integrity of data, ensuring that a party cannot deny having performed an action. This is typically achieved through digital signatures, audit trails, and logging mechanisms in secure systems."
+        },
+        {
+          "question": "What is the main purpose of an Initialization Vector (IV) in many encryption modes?",
+          "options": [
+            "To replace the key",
+            "To add randomness so identical plaintext blocks encrypt differently",
+            "To compress the ciphertext",
+            "To verify user identity",
+            "To disable replay protection"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "An Initialization Vector is a random or pseudo-random value used to ensure that identical plaintext blocks produce different ciphertext blocks when encrypted. This prevents pattern recognition attacks and adds semantic security to encryption."
+        },
+        {
+          "question": "Which of the following most directly provides confidentiality for a file stored on disk?",
+          "options": [
+            "Symmetric encryption (e.g., AES)",
+            "Hashing (e.g., SHA-256)",
+            "Encoding (Base64)",
+            "Routing",
+            "DHCP"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Symmetric encryption like AES (Advanced Encryption Standard) directly provides confidentiality by transforming plaintext into ciphertext using a secret key, ensuring that only authorized parties with the key can access the original data."
+        },
+        {
+          "question": "Which statement about ACLs is correct?",
+          "options": [
+            "ACLs can be used to permit or deny traffic based on defined criteria",
+            "ACLs automatically encrypt traffic",
+            "ACLs replace routing protocols",
+            "ACLs work only on end-user PCs",
+            "ACLs are the same as backups"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Access Control Lists (ACLs) are rule-based security mechanisms that filter network traffic by permitting or denying packets based on criteria like source/destination IP addresses, ports, and protocols. They don't encrypt traffic or replace routing."
+        },
+        {
+          "question": "A 'standard' IPv4 ACL in Cisco IOS typically filters traffic based on:",
+          "options": [
+            "Source IP address only",
+            "Destination port only",
+            "Application layer payload",
+            "MAC address only",
+            "Wireless SSID"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Standard ACLs in Cisco IOS (numbered 1-99, 1300-1999) filter based solely on source IP address. Extended ACLs (100-199, 2000-2699) can filter on source/destination IP, ports, protocols, and other criteria."
+        },
+        {
+          "question": "When troubleshooting why traffic is blocked, which step is most relevant?",
+          "options": [
+            "Check ACL rule order and interface direction",
+            "Increase screen brightness",
+            "Disable routing",
+            "Delete DNS records",
+            "Turn off logging"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "ACL troubleshooting involves verifying rule order (first match applies), direction (inbound/outbound), interface application, and specific permit/deny statements. These factors determine which traffic is allowed or blocked."
+        },
+        {
+          "question": "Which Linux command is commonly used to display the contents of a text file to the terminal?",
+          "options": ["cat", "mv", "chmod", "grep -v", "sudoers"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The 'cat' (concatenate) command reads files sequentially and writes their contents to standard output. It's one of the most basic and frequently used commands for viewing file contents in Linux/Unix systems."
+        },
+        {
+          "question": "Which statement about OpenSSL usage is most accurate?",
+          "options": [
+            "OpenSSL can encrypt and decrypt data from the command line",
+            "OpenSSL is only for routing configuration",
+            "OpenSSL automatically guarantees integrity in all modes",
+            "OpenSSL replaces access control",
+            "OpenSSL is a file compression tool"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "OpenSSL is a robust, full-featured toolkit implementing SSL/TLS protocols and general-purpose cryptography. It provides command-line tools for encryption, decryption, certificate management, and cryptographic operations."
+        },
+        {
+          "question": "What does the -d option indicate in many command-line encryption tools (including typical OpenSSL usage)?",
+          "options": ["Decrypt", "Delete", "Download", "Duplicate", "Diagnose"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "In encryption tools like OpenSSL, the '-d' flag typically stands for 'decrypt,' instructing the tool to perform decryption rather than encryption. This convention is common across many cryptographic utilities."
+        },
+        {
+          "question": "Which is the best description of Base64 output when encrypting a file?",
+          "options": [
+            "It makes ciphertext human-readable for transport, but does not add security",
+            "It is stronger than AES",
+            "It converts ciphertext into plaintext",
+            "It disables passwords",
+            "It guarantees integrity"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Base64 encoding converts binary data (like encrypted ciphertext) into ASCII text format, making it safe for transmission through text-based systems. It provides no cryptographic security—it's purely an encoding scheme."
+        },
+        {
+          "question": "Which is a common reason to keep encrypted outputs ASCII-friendly?",
+          "options": [
+            "To safely copy/paste or transmit through text-only channels",
+            "To reduce CPU usage to zero",
+            "To disable authentication",
+            "To increase Wi-Fi range",
+            "To bypass permissions"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "ASCII-friendly formats (like Base64) allow encrypted data to be safely embedded in emails, web forms, configuration files, and other text-based systems without corruption from binary characters that might be misinterpreted."
+        },
+        {
+          "question": "Which pair correctly matches purpose to tool?",
+          "options": [
+            "Encryption – confidentiality",
+            "Encoding – confidentiality",
+            "Hashing – confidentiality",
+            "Routing – integrity",
+            "DNS – nonrepudiation"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Encryption specifically provides confidentiality by making data unreadable without proper authorization. Hashing provides integrity, encoding enables compatibility, routing directs network traffic, and DNS resolves domain names—none provide confidentiality."
+        },
+        {
+          "question": "What is the main security drawback of encryption without integrity checks (e.g., no MAC/authenticated mode)?",
+          "options": [
+            "Ciphertext could be modified without detection",
+            "It uses too much disk space",
+            "It prevents backups",
+            "It cannot be decrypted",
+            "It forces password reuse"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Encryption without integrity protection (like AES in ECB or CBC mode without HMAC) is vulnerable to tampering. Attackers can modify ciphertext, potentially altering the decrypted plaintext without the recipient detecting the changes."
+        },
+        {
+          "question": "Which answer best describes why long passwords are harder to guess?",
+          "options": [
+            "They increase the search space (entropy)",
+            "They always contain symbols",
+            "They disable brute-force tools",
+            "They remove the need for a key",
+            "They reduce encryption strength"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Password length exponentially increases the possible combinations (entropy), making brute-force attacks computationally impractical. Each additional character multiplies the search space, significantly increasing the time required to guess the password."
+        },
+        {
+          "question": "Which practice best helps prevent credential exposure across multiple services?",
+          "options": [
+            "Reuse the same password everywhere",
+            "Use unique passwords per service",
+            "Store passwords in plain text",
+            "Disable two-factor authentication",
+            "Share passwords with colleagues"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Using unique passwords for each service limits damage from credential stuffing attacks and data breaches. If one service is compromised, attackers cannot reuse those credentials to access other accounts (password reuse is a major security risk)."
+        },
+        {
+          "question": "Which statement about /etc/passwd is generally correct?",
+          "options": [
+            "It contains user account info; hashes are stored elsewhere on modern systems",
+            "It stores Wi-Fi keys",
+            "It stores router ACLs",
+            "It stores only encrypted zip archives",
+            "It is a log file"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "On modern Unix/Linux systems, /etc/passwd stores user account information (username, UID, GID, home directory, shell) but not password hashes, which are moved to /etc/shadow for enhanced security (shadow password suite)."
+        },
+        {
+          "question": "Which control most directly supports accountability in systems handling sensitive changes?",
+          "options": [
+            "Audit logs with user identity and timestamps",
+            "Turning off authentication",
+            "Anonymous shared accounts",
+            "Removing approvals",
+            "Disabling backups"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Comprehensive audit logging that records who performed what action, when, and from where establishes accountability. This enables tracing actions to specific individuals, supporting investigations, compliance, and deterring malicious activity."
+        },
+        {
+          "question": "Which of these is a typical secure practice for remote administrative access?",
+          "options": [
+            "Use SSH with strong authentication",
+            "Use Telnet in plaintext",
+            "Use shared root passwords",
+            "Disable logging",
+            "Use open Wi-Fi without encryption"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "SSH (Secure Shell) with strong authentication (key-based, multi-factor) provides encrypted remote administration, protecting credentials and data from eavesdropping. Telnet sends credentials in plaintext and should never be used for administrative access."
+        }
+      ]
     }
   ]
 }
