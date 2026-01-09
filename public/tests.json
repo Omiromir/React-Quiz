@@ -632,258 +632,786 @@
       "description": "A quiz on infobez",
       "questions": [
         {
-          "question": "Which security objective focuses on preventing unauthorized disclosure of information?",
+          "question": "A context diagram shows the system:",
           "options": [
-            "Availability",
-            "Confidentiality",
-            "Nonrepudiation",
-            "Auditability",
-            "Resilience"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Confidentiality ensures that information is not disclosed to unauthorized individuals, entities, or processes. It's one of the three core security principles in the CIA triad (Confidentiality, Integrity, Availability)."
-        },
-        {
-          "question": "Which term best describes data stored on a disk that is not currently being transmitted?",
-          "options": [
-            "Data in transit",
-            "Data in process",
-            "Data at rest",
-            "Ephemeral data",
-            "Streaming data"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Data at rest refers to data that is stored physically in any digital form (disks, databases, backups) and is not actively moving between systems. This requires encryption and access controls for protection."
-        },
-        {
-          "question": "Which technology most directly protects data confidentiality when employees access internal resources over the Internet?",
-          "options": ["VPN", "VLAN", "NAT", "DNS", "ARP"],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "VPN (Virtual Private Network) creates an encrypted tunnel between the user and the corporate network, ensuring that data transmitted over the public internet remains confidential and protected from eavesdropping."
-        },
-        {
-          "question": "What is the main advantage of Network Attached Storage (NAS) compared to direct-attached storage for multiple users?",
-          "options": [
-            "It cannot be shared",
-            "It is accessible over a network for authorized users",
-            "It requires no authentication",
-            "It replaces encryption",
-            "It eliminates backups"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "NAS provides centralized storage that can be accessed over a network by multiple authorized users, enabling file sharing, collaboration, and centralized backup/management compared to direct-attached storage which is limited to a single system."
-        },
-        {
-          "question": "Which principle says users should be granted only the permissions necessary to do their job?",
-          "options": [
-            "Fail-open design",
-            "Least privilege",
-            "Default allow",
-            "Obscurity",
-            "Single point of control"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "The principle of least privilege minimizes security risks by ensuring users and systems have only the minimum access rights needed to perform their functions, reducing the attack surface and potential damage from compromised accounts."
-        },
-        {
-          "question": "In an access control list (ACL), why is rule order important?",
-          "options": [
-            "Rules are evaluated from top to bottom and the first match is applied",
-            "Routers ignore the first rule",
-            "Only the last rule is enforced",
-            "Order matters only for NAT",
-            "Order matters only on switches"
+            "As a single unit",
+            "With detailed APIs",
+            "As multiple components",
+            "With internal services"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "ACLs are processed sequentially from the first rule to the last, and the first matching rule determines the action (permit/deny). This makes rule order critical, as an overly permissive early rule can override more restrictive later rules."
+          "explanation": "A context diagram represents the system as a single black box and shows its interactions with external actors, without revealing internal details."
         },
         {
-          "question": "What is the typical default behavior at the end of a Cisco ACL if no rule matches?",
+          "question": "Performance efficiency is concerned with:",
           "options": [
-            "Implicit permit",
-            "Implicit deny",
-            "Automatic NAT",
-            "Automatic encryption",
-            "Automatic logging"
+            "System correctness",
+            "User satisfaction",
+            "Resource usage relative to performance",
+            "Visual design"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Performance efficiency measures how well the system uses resources (CPU, memory, network) relative to its performance metrics like response time and throughput."
+        },
+        {
+          "question": "Stakeholders include:",
+          "options": [
+            "Only developers",
+            "Individuals or groups impacted by the system",
+            "Only project sponsors",
+            "Only end users"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Cisco ACLs include an implicit deny any rule at the end of every ACL, which denies all traffic not explicitly permitted by previous rules. This follows the security best practice of 'deny by default'."
+          "explanation": "Stakeholders are any individuals or groups impacted by or involved in the system, including clients, users, developers, managers, and sponsors."
         },
         {
-          "question": "An ACL applied in the 'out' direction on an interface filters packets that are:",
+          "question": "The need for multiple models follows which principle?",
           "options": [
-            "Entering the interface",
-            "Leaving the interface",
-            "Only broadcast packets",
-            "Only multicast packets",
-            "Only management traffic"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Outbound ACLs filter packets as they leave the interface (egress traffic). This allows control over what traffic exits a network segment, which is useful for filtering internal traffic before it reaches external networks."
-        },
-        {
-          "question": "Which command is commonly used to display configured ACLs on a Cisco IOS router?",
-          "options": [
-            "show access-lists",
-            "show arp",
-            "show vlan brief",
-            "show cdp neighbors",
-            "show controllers"
+            "Separation of Concerns",
+            "Inheritance",
+            "Single Responsibility",
+            "Encapsulation"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "The 'show access-lists' command displays all configured ACLs, their rules, and hit counts (packet matches), which is essential for troubleshooting and verifying ACL configurations."
+          "explanation": "Different stakeholders have different concerns, so multiple models address each concern separately, following the Separation of Concerns principle."
         },
         {
-          "question": "Which Linux file typically contains password hashes (and is readable only by privileged users)?",
-          "options": [
-            "/etc/passwd",
-            "/etc/group",
-            "/etc/shadow",
-            "/etc/hosts",
-            "/etc/resolv.conf"
-          ],
+          "question": "Technical constraints are usually:",
+          "options": ["Optional", "Ignored", "Non-negotiable", "Negotiable"],
           "correctOption": 2,
           "points": 10,
-          "explanation": "/etc/shadow stores password hashes with additional security information (password aging, expiration) and is readable only by root, while /etc/passwd contains basic user information that's world-readable."
+          "explanation": "Technical constraints (like mandated technologies or platforms) are typically non-negotiable requirements that must be adhered to."
         },
         {
-          "question": "What is the primary purpose of password hashing for stored credentials?",
+          "question": "Usability measures:",
           "options": [
-            "To make passwords reversible for admins",
-            "To store a one-way representation of the password",
-            "To compress passwords to save space",
-            "To convert passwords to Base64",
-            "To enable faster login without security checks"
+            "Security level",
+            "Hardware consumption",
+            "Code quality",
+            "Ease and efficiency of system usage"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Usability measures how easily and efficiently users can achieve their goals when using the system, including learnability and operability."
+        },
+        {
+          "question": "Compatibility focuses on the system's ability to:",
+          "options": [
+            "Scale horizontally",
+            "Interact with other systems",
+            "Recover from failure",
+            "Protect data"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Hashing converts passwords into fixed-size, irreversible representations. This prevents attackers (and even administrators) from recovering the original password while allowing the system to verify passwords by comparing hashes."
+          "explanation": "Compatibility addresses the system's ability to interact and exchange data with other systems or components through co-existence and interoperability."
         },
         {
-          "question": "Which is a key difference between encryption and hashing?",
+          "question": "Security ensures all EXCEPT:",
           "options": [
-            "Encryption is one-way; hashing is reversible",
-            "Encryption is reversible with a key; hashing is designed to be one-way",
-            "Hashing requires a private key; encryption does not",
-            "Hashing guarantees confidentiality; encryption does not",
-            "They are the same concept"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Encryption is a two-way process that requires a key to both encrypt and decrypt data, while hashing is a one-way function that produces a fixed-size output (hash) that cannot be reversed to obtain the original input."
-        },
-        {
-          "question": "Base64 is best described as:",
-          "options": [
-            "A strong encryption algorithm",
-            "A compression algorithm",
-            "An encoding method to represent binary data as text",
-            "A hashing algorithm",
-            "A VPN protocol"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Base64 is an encoding scheme that converts binary data into ASCII text format, making it suitable for transmission over text-based protocols like email or embedding in web pages. It provides no security - it's not encryption."
-        },
-        {
-          "question": "Which property is primarily provided by a cryptographic hash in secure communications?",
-          "options": [
+            "Authenticity",
             "Confidentiality",
             "Integrity",
-            "Availability",
-            "Routing",
-            "Load balancing"
+            "Performance"
           ],
-          "correctOption": 1,
+          "correctOption": 3,
           "points": 10,
-          "explanation": "Cryptographic hashes verify data integrity by producing a unique fingerprint of data. Any alteration to the data changes the hash, allowing detection of tampering or corruption during transmission or storage."
+          "explanation": "Security ensures authenticity, confidentiality, integrity, and accountability, but not performance, which is a separate quality attribute."
         },
         {
-          "question": "In symmetric encryption, the sender and receiver typically use:",
+          "question": "Responsibility-driven design is mainly used to:",
           "options": [
-            "Different keys",
-            "The same shared secret key",
-            "Only public keys",
-            "Only certificates",
-            "No keys"
+            "Write test cases",
+            "Manage deployment",
+            "Optimize databases",
+            "Define key components and their roles"
           ],
-          "correctOption": 1,
+          "correctOption": 3,
           "points": 10,
-          "explanation": "Symmetric encryption uses a single shared secret key for both encryption and decryption. It's faster than asymmetric encryption but requires secure key distribution since both parties must have the same key."
+          "explanation": "Responsibility-driven design helps identify and define key components by assigning specific responsibilities and roles to each."
         },
         {
-          "question": "Why is adding a salt (or random value) helpful when protecting stored passwords?",
+          "question": "System models are commonly represented using:",
           "options": [
-            "It makes passwords shorter",
-            "It prevents two identical passwords from having identical hashes",
-            "It disables brute-force attempts permanently",
-            "It replaces the need for hashing",
-            "It increases network bandwidth"
+            "Source repositories",
+            "Flowcharts only",
+            "UML diagrams",
+            "Spreadsheets"
           ],
-          "correctOption": 1,
+          "correctOption": 2,
           "points": 10,
-          "explanation": "Salting adds random data to each password before hashing, ensuring that identical passwords produce different hashes. This prevents rainbow table attacks and makes precomputed attacks impractical since each hash is unique."
+          "explanation": "System models are often visualized using UML (Unified Modeling Language) diagrams, which provide standardized notations for architectural modeling."
         },
         {
-          "question": "Which is the best example of a control that helps detect unauthorized changes to critical records?",
+          "question": "Text-based requirement lists often include:",
           "options": [
-            "Turning off logs",
-            "Audit logging and change tracking",
-            "Removing access control",
-            "Using default passwords",
-            "Disabling backups"
+            "Only diagrams",
+            "Random descriptions",
+            "Unique IDs for traceability",
+            "Source code"
           ],
-          "correctOption": 1,
+          "correctOption": 2,
           "points": 10,
-          "explanation": "Audit logging creates detailed records of who accessed what data, when, and what changes were made. This enables detection of unauthorized modifications and supports forensic investigations after security incidents."
+          "explanation": "Text-based requirement lists typically assign unique identifiers to each requirement for traceability throughout the development lifecycle."
         },
         {
-          "question": "What does strong authentication most directly improve?",
+          "question": "A common communication pattern mentioned is:",
           "options": [
-            "The number of available IP addresses",
-            "Confidence that a user is who they claim to be",
-            "The physical durability of disks",
-            "The speed of encryption",
-            "The size of backups"
+            "Peer-to-peer mining",
+            "Batch processing",
+            "Client-server synchronous request-reply",
+            "File-based polling"
           ],
-          "correctOption": 1,
+          "correctOption": 2,
           "points": 10,
-          "explanation": "Strong authentication mechanisms (multi-factor, biometrics, hardware tokens) increase assurance that users are genuine, reducing the risk of unauthorized access from stolen credentials or identity spoofing."
+          "explanation": "The client-server synchronous request-reply pattern is fundamental where a client sends a request and waits for a reply from the server."
         },
         {
-          "question": "Which statement about password strength is most accurate?",
+          "question": "Use case diagrams are mainly used to:",
           "options": [
-            "Length and unpredictability generally increase resistance to guessing attacks",
-            "Short passwords with symbols are always strongest",
-            "Using a common word is fine if it is capitalized",
-            "Reusing passwords reduces risk",
-            "Passwords do not need to be changed"
+            "Store data",
+            "Define hardware layout",
+            "Control versioning",
+            "Capture functionality"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Use case diagrams are used to capture and visualize functional requirements and interactions between actors and the system."
+        },
+        {
+          "question": "Reliability refers to the system's ability to:",
+          "options": [
+            "Perform correctly over time",
+            "Run on different platforms",
+            "Be easy to modify",
+            "Protect sensitive data"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Longer, complex passwords with random character combinations are more resistant to brute-force and dictionary attacks. Modern guidelines emphasize length over complexity, with passphrases being more secure than short complex passwords."
+          "explanation": "Reliability is the ability of the system to perform correctly and consistently over time under specified conditions."
         },
         {
-          "question": "A role-based access control (RBAC) model assigns permissions primarily based on:",
+          "question": "Process requirements relate to:",
           "options": [
-            "Physical location",
-            "User roles or job functions",
-            "Browser type",
-            "Time of day only",
-            "IP address only"
+            "System output",
+            "User interface design",
+            "Methods and tools used during development",
+            "Functional behavior"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Process requirements define the methods, tools, and constraints used during the development process, not the product itself."
+        },
+        {
+          "question": "Explicit requirements are:",
+          "options": [
+            "Clearly documented",
+            "Assumed by stakeholders",
+            "Always technical",
+            "Not documented"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Explicit requirements are those that are clearly and formally documented, as opposed to implicit ones that are assumed."
+        },
+        {
+          "question": "The informational model focuses primarily on:",
+          "options": [
+            "Data and its structure",
+            "Business meaning",
+            "Technical services",
+            "User interaction"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The informational model focuses on the structure, relationships, and constraints of data, independent of business meaning or technical implementation."
+        },
+        {
+          "question": "The primary criterion for 'sensible' architectural partitioning is:",
+          "options": [
+            "Team preferences",
+            "Meeting specific requirements and constraints",
+            "Following industry trends",
+            "Maximizing component count"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "RBAC assigns permissions to roles rather than individual users, and users are assigned to roles based on their job functions. This simplifies administration, ensures consistency, and makes it easier to enforce least privilege."
+          "explanation": "Architectural partitioning must be driven by the specific requirements and constraints of the application, not by trends or preferences."
+        },
+        {
+          "question": "Quality attributes and system architecture are related such that:",
+          "options": [
+            "Architecture exists primarily to satisfy quality attributes",
+            "Quality attributes are secondary to functional requirements",
+            "Quality attributes only affect the UI",
+            "Each quality attribute can be maximized independently"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Architecture fundamentally exists to satisfy quality attributes (performance, security, etc.) which define how well the system works."
+        },
+        {
+          "question": "Non-functional requirements differ from quality attributes in that:",
+          "options": [
+            "Non-functional requirements are technical, quality attributes are business-oriented",
+            "Non-functional requirements are vague, quality attributes are measurable",
+            "They are the same",
+            "Non-functional requirements apply to process, quality attributes to product"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Non-functional requirements are often informal statements, while quality attributes are measurable characteristics that drive architectural decisions."
+        },
+        {
+          "question": "Which architectural tactic most directly addresses reliability?",
+          "options": [
+            "Comprehensive logging",
+            "Redundancy and failover",
+            "Latest programming language",
+            "Detailed documentation"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Reliability focuses on availability and fault tolerance, which are directly addressed by redundancy and failover mechanisms."
+        },
+        {
+          "question": "The purpose of multiple architectural models is to:",
+          "options": [
+            "Increase documentation workload",
+            "Address different stakeholder concerns",
+            "Demonstrate architect versatility",
+            "Provide backup models"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Different stakeholders have different concerns, so multiple models are needed to address each concern effectively (Separation of Concerns)."
+        },
+        {
+          "question": "Choosing a monolithic architecture over microservices most compromises:",
+          "options": [
+            "Functional Suitability",
+            "Performance Efficiency",
+            "Scalability and Maintainability",
+            "Security"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Monolithic architectures typically compromise scalability and maintainability compared to microservices, which allow independent scaling and deployment."
+        },
+        {
+          "question": "Which element should never appear in a Context Diagram?",
+          "options": [
+            "External user roles",
+            "Interaction flows",
+            "Internal service components",
+            "System boundary"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "A Context Diagram shows the system as a single black box; showing internal components violates its purpose."
+        },
+        {
+          "question": "The primary risk of not documenting architectural decisions is:",
+          "options": [
+            "Increased initial cost",
+            "Loss of rationale for future maintainers",
+            "Immediate system failure",
+            "Violation of coding standards"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Without documented rationale, future maintainers may misunderstand the architecture or make changes that violate original assumptions."
+        },
+        {
+          "question": "Extensive caching strategies commonly involve a trade-off between:",
+          "options": [
+            "Security and Usability",
+            "Performance and Data Consistency",
+            "Portability and Functionality",
+            "Reliability and Cost"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Caching improves performance but introduces complexity around cache invalidation and data consistency, potentially leading to stale data."
+        },
+        {
+          "question": "A Domain Model differs from a Design Model in that:",
+          "options": [
+            "Domain Models use UML, Design Models use pseudocode",
+            "Domain Models describe business concepts, Design Models describe technical implementation",
+            "Domain Models are by developers, Design Models by business analysts",
+            "Domain Models focus on performance, Design Models on functionality"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "A Domain Model captures business concepts and relationships, while a Design Model translates these into technical components and implementation structures."
+        },
+        {
+          "question": "Validating architectural decisions early is challenging because:",
+          "options": [
+            "Stakeholders are unavailable",
+            "Decisions cannot be fully tested until parts are built",
+            "Architects lack information",
+            "Early validation requires complete specification"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architectural decisions involve system-wide concerns that often depend on component interactions, which may only become apparent during implementation."
+        },
+        {
+          "question": "A key benefit of architectural patterns is:",
+          "options": [
+            "Eliminating custom design",
+            "Providing proven solutions with known trade-offs",
+            "Guaranteeing optimal performance",
+            "Automatic code generation"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architectural patterns provide proven solutions to common problems with known engineering trade-offs, reducing risk and effort."
+        },
+        {
+          "question": "A 'marketeecture' is primarily used to:",
+          "options": [
+            "Serve as technical specification",
+            "Facilitate stakeholder communication",
+            "Replace detailed documentation",
+            "Provide performance benchmarks"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "A marketeecture is a simplified, high-level visualization that helps non-technical stakeholders understand the system's value and structure."
+        },
+        {
+          "question": "API-first design most directly improves:",
+          "options": [
+            "Reliability",
+            "Compatibility",
+            "Security",
+            "Portability"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "API-first design, with stable contracts and versioning, directly improves compatibility by ensuring clear, consistent interfaces for system interaction."
+        },
+        {
+          "question": "Hierarchical decomposition is used to:",
+          "options": [
+            "Hide complexity by revealing details at appropriate levels",
+            "Create more documentation",
+            "Demonstrate all implementation paths",
+            "Eliminate the need for multiple views"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Hierarchical decomposition manages complexity by presenting architecture at different detail levels, hiding unnecessary details at higher levels."
+        },
+        {
+          "question": "Infrastructure teams would find which architectural view most useful?",
+          "options": [
+            "Logical View",
+            "Process View",
+            "Physical View",
+            "Development View"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "The Physical View shows how software components map to hardware resources, essential for deployment, scaling, and hardware provisioning."
+        },
+        {
+          "question": "Responsibility-driven design focuses on:",
+          "options": [
+            "Assigning specific tasks and behaviors to components",
+            "Minimizing the number of components",
+            "Requiring object-oriented languages",
+            "Emphasizing data structures"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Responsibility-driven design identifies components based on what tasks they perform and what behaviors they exhibit."
+        },
+        {
+          "question": "Functional requirements and quality attributes are related such that:",
+          "options": [
+            "Functional requirements are more important",
+            "Quality attributes constrain how functional requirements are implemented",
+            "They are independent",
+            "Quality attributes are only relevant after functional requirements"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Quality attributes dictate constraints on how functional requirements are implemented (e.g., securely, performantly, reliably)."
+        },
+        {
+          "question": "An Informational Model is valuable because it focuses on:",
+          "options": [
+            "Data structures independently of business meaning",
+            "Technical database schema",
+            "Eliminating database administrators",
+            "Encoding business rules in the data layer"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "An Informational Model focuses purely on data structures and relationships, separate from business semantics or implementation."
+        },
+        {
+          "question": "System portability is most impacted by:",
+          "options": [
+            "Choosing proprietary cloud services",
+            "Implementing error logging",
+            "Using design patterns",
+            "Creating API documentation"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Vendor lock-in through proprietary services severely reduces portability, while containerization and abstraction layers enhance it."
+        },
+        {
+          "question": "Architectural validation aims to:",
+          "options": [
+            "Ensure the architecture satisfies quality attributes before implementation",
+            "Eliminate all risks",
+            "Create perfect documentation",
+            "Guarantee on-time delivery"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Architectural validation verifies that the chosen architecture will meet critical quality requirements before substantial implementation."
+        },
+        {
+          "question": "Authentication, authorization, and encryption most directly address:",
+          "options": [
+            "Reliability",
+            "Security",
+            "Usability",
+            "Maintainability"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "These are core security mechanisms addressing confidentiality (encryption), authenticity (authentication), and authorization."
+        },
+        {
+          "question": "Metrics for quality attributes are important because they:",
+          "options": [
+            "Make abstract qualities measurable and comparable",
+            "Eliminate the need for architectural expertise",
+            "Reduce all qualities to a single metric",
+            "Are only useful for performance"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Metrics transform vague quality goals into measurable targets, enabling objective evaluation and trade-off analysis."
+        },
+        {
+          "question": "A business constraint is best illustrated by:",
+          "options": [
+            "Must use Java due to team expertise",
+            "Database must run on Linux for security",
+            "Must integrate with a partner's API for market access",
+            "Server must have 16GB RAM for performance"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Business constraints arise from commercial or strategic decisions rather than technical limitations."
+        },
+        {
+          "question": "Treating quality attributes as afterthoughts is dangerous because:",
+          "options": [
+            "They become impossible or costly to add later",
+            "They only affect non-critical parts",
+            "They are easily retrofitted",
+            "They only affect the UI"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Quality attributes often require fundamental architectural decisions; retrofitting them later can require major rework."
+        },
+        {
+          "question": "Independent scalability of functional areas is best supported by:",
+          "options": [
+            "Monolithic Architecture",
+            "Layered Architecture",
+            "Microservices Architecture",
+            "Client-Server Architecture"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Microservices allow individual services to scale independently based on their specific load requirements."
+        },
+        {
+          "question": "The Process View focuses on:",
+          "options": [
+            "Concurrency, communication, and runtime behavior",
+            "Mapping software to hardware",
+            "Static structure using class-like elements",
+            "Code organization in development"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The Process View addresses runtime concerns: how components execute, communicate, and handle concurrency."
+        },
+        {
+          "question": "System maintainability is most improved by:",
+          "options": [
+            "Tight coupling for simplicity",
+            "Clear boundaries with low coupling and high cohesion",
+            "Fewest possible components",
+            "Single programming language"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Clear boundaries with low coupling (minimal dependencies) and high cohesion (related functionality together) make changes more localized."
+        },
+        {
+          "question": "Stakeholder requirements analysis aims to:",
+          "options": [
+            "Create technical specifications",
+            "Align development with business goals and user needs",
+            "Eliminate communication with non-technical stakeholders",
+            "Produce marketing materials"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Stakeholder requirements capture the needs, expectations, and constraints to ensure the system delivers real value."
+        },
+        {
+          "question": "Designing for high availability requires:",
+          "options": [
+            "Minimizing external dependencies",
+            "Eliminating single points of failure",
+            "Fastest hardware",
+            "Most sophisticated algorithms"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "High availability requires that no single component failure can bring down the entire system, typically through redundancy."
+        },
+        {
+          "question": "The choice between synchronous and asynchronous communication is most influenced by:",
+          "options": [
+            "Programming language",
+            "Performance requirements and coupling tolerance",
+            "Team preferences",
+            "Tool cost"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Synchronous vs asynchronous involves trade-offs between performance, reliability, and system complexity aligned with quality requirements."
+        },
+        {
+          "question": "Architectural prototyping is used to:",
+          "options": [
+            "Create a fully functional system",
+            "Validate technical risks and architectural hypotheses",
+            "Replace requirements analysis",
+            "Serve as the final production system"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architectural prototypes validate specific high-risk aspects of the architecture rather than building complete functionality."
+        },
+        {
+          "question": "The Backend-for-Frontend (BFF) pattern most affects:",
+          "options": ["Security", "Usability", "Portability", "Reliability"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "BFF creates separate backend services tailored to specific frontend needs, improving usability by optimizing data delivery."
+        },
+        {
+          "question": "COTS technologies that implement architectural patterns provide:",
+          "options": [
+            "Elimination of customization",
+            "Proven implementations of architectural approaches",
+            "Guaranteed best performance",
+            "No need for architectural design"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "COTS technologies provide ready-made, tested implementations of common patterns, reducing development risk and effort."
+        },
+        {
+          "question": "System analysability is most improved by:",
+          "options": [
+            "Cryptic variable names",
+            "Complex nested hierarchies",
+            "Clear module decomposition with meaningful names",
+            "Minimizing documentation"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Analysability is improved by clear organization, meaningful naming, and logical decomposition that aids understanding."
+        },
+        {
+          "question": "Balancing security and usability is challenging because:",
+          "options": [
+            "They are mutually exclusive",
+            "Increased security often creates user friction",
+            "Usability always compromises security",
+            "Security is only for administrative users"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Strong security measures (multi-factor auth, complex passwords) can hinder usability, requiring balanced solutions."
+        },
+        {
+          "question": "Scalability concerns are most directly addressed by:",
+          "options": [
+            "Comprehensive audit logging",
+            "Stateless services with horizontal scaling",
+            "Specific programming language",
+            "Detailed user documentation"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Stateless services can be easily replicated across multiple servers, allowing horizontal scaling to handle increased load."
+        },
+        {
+          "question": "The ISO/IEC 25010 quality model provides:",
+          "options": [
+            "A complete feature checklist",
+            "Standardized vocabulary for discussing system quality",
+            "Elimination of architectural decisions",
+            "Guaranteed performance levels"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "ISO 25010 provides a shared, standardized framework for discussing, specifying, and evaluating software quality characteristics."
+        },
+        {
+          "question": "When evaluating architectural alternatives, the most critical factor is:",
+          "options": [
+            "Industry popularity",
+            "How well each addresses prioritized quality attributes",
+            "Implementation complexity",
+            "Architect's preference"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architectural decisions should be driven by how well alternatives satisfy the prioritized quality attributes for the specific context."
+        },
+        {
+          "question": "Regarding system failures, the key insight is:",
+          "options": [
+            "Most are caused by missing features",
+            "Quality issues cause more failures than missing functionality",
+            "Failures are evenly distributed",
+            "Failures are primarily hardware issues"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Systems with identical features can have very different success based on quality attributes, and quality issues often cause more problems."
+        },
+        {
+          "question": "Fault tolerance is best supported by:",
+          "options": [
+            "Circuit breakers and graceful degradation",
+            "Fastest algorithms",
+            "Minimizing external dependencies",
+            "Comprehensive user manuals"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Circuit breakers prevent cascading failures by isolating failing components, while graceful degradation allows continued reduced functionality."
+        },
+        {
+          "question": "Over-optimizing for a single quality attribute risks:",
+          "options": [
+            "Negatively impacting other quality attributes",
+            "Guaranteeing optimal system performance",
+            "Simplifying architectural decisions",
+            "Eliminating trade-off analysis"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Quality attributes involve trade-offs; over-optimizing one may severely degrade others (e.g., extreme performance vs maintainability)."
+        },
+        {
+          "question": "System testability is most improved by:",
+          "options": [
+            "Tight coupling for simplicity",
+            "Complex interdependent business logic",
+            "Clear interfaces with minimal dependencies",
+            "Global variables for data sharing"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Testability is improved when components have clear boundaries, well-defined interfaces, and minimal external dependencies."
+        },
+        {
+          "question": "The Development View focuses on:",
+          "options": [
+            "Code organization in development environments",
+            "Runtime process interactions",
+            "Mapping software to hardware",
+            "Business concepts and relationships"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The Development View addresses development-time concerns: source code organization, module structure, build dependencies."
+        },
+        {
+          "question": "Selecting architectural tactics for quality attributes should be based on:",
+          "options": [
+            "Popularity in blogs",
+            "Effectiveness in achieving measurable quality goals",
+            "Implementation simplicity",
+            "Team familiarity"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architectural tactics should be chosen based on effectiveness in achieving specific, measurable quality attribute targets."
+        },
+        {
+          "question": "Architecture validation and verification ensure:",
+          "options": [
+            "The architecture meets stakeholder needs and is correctly implemented",
+            "All defects are eliminated",
+            "Perfect documentation",
+            "Project finishes early"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Validation ensures the architecture meets requirements (right thing). Verification ensures correct implementation (built right)."
+        },
+        {
+          "question": "Frequent business rule changes require high:",
+          "options": [
+            "Computational performance",
+            "Resource usage minimization",
+            "Modifiability and low change cost",
+            "Minimal development time"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Frequent changes demand high modifiability—localized business logic and minimal ripple effects from changes."
+        },
+        {
+          "question": "A well-defined component interface provides:",
+          "options": [
+            "Exposure of all internal details",
+            "A clear, stable contract while hiding implementation",
+            "Frequent changes",
+            "Many parameters for completeness"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Good interfaces provide stable, documented contracts specifying what services are provided while hiding implementation."
+        },
+        {
+          "question": "A comprehensive monitoring and alerting system most impacts:",
+          "options": [
+            "Functional Suitability",
+            "Reliability (specifically recoverability)",
+            "Portability",
+            "Compatibility"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Monitoring and alerting directly support reliability by enabling faster issue detection and providing data for root cause analysis."
         }
       ]
     },
