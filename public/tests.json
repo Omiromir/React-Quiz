@@ -721,6 +721,1247 @@
           "explanation": "SSH (Secure Shell) with strong authentication (key-based, multi-factor) provides encrypted remote administration, protecting credentials and data from eavesdropping. Telnet sends credentials in plaintext and should never be used for administrative access."
         }
       ]
+    },
+    {
+      "id": "Software Architecture lecture 5",
+      "name": "Software Architecture lecture 5",
+      "description": "A quiz on software architecture",
+      "questions": [
+        {
+          "question": "What is the primary role of architectural decisions in the software lifecycle?",
+          "options": [
+            "To define coding standards",
+            "To connect requirements with technical solutions",
+            "To optimize algorithms",
+            "To select UI frameworks",
+            "To replace documentation"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architectural decisions translate business goals, requirements, and quality attributes into concrete technical solutions."
+        },
+        {
+          "question": "Which factors must be understood before making architectural decisions?",
+          "options": [
+            "Programming language syntax only",
+            "Business goals, functional requirements, and quality attributes",
+            "UI design preferences",
+            "Developer personal experience",
+            "Testing tools"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architecture is a direct consequence of business goals, functional requirements, and quality attributes."
+        },
+        {
+          "question": "Why are poor architectural decisions expensive to fix later?",
+          "options": [
+            "They slow down compilers",
+            "They cause vendor lock-in only",
+            "They often lead to technical debt",
+            "They affect only documentation",
+            "They impact only UI components"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Architectural decisions affect the entire system and are hard to reverse, often resulting in long-term technical debt."
+        },
+        {
+          "question": "What best describes architectural decision-making?",
+          "options": [
+            "Choosing technologies randomly",
+            "Implementing features quickly",
+            "Making conscious and justified trade-offs",
+            "Optimizing code performance",
+            "Writing UML diagrams"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Architectural decision-making involves evaluating alternatives and selecting the best option based on constraints and quality attributes."
+        },
+        {
+          "question": "How do architectural decisions differ from implementation decisions?",
+          "options": [
+            "They are easier to change",
+            "They only affect one module",
+            "They influence system behavior at a high level",
+            "They focus on algorithms",
+            "They are undocumented"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Architectural decisions affect the entire system and define its high-level behavior."
+        },
+        {
+          "question": "What should drive technology choices in architecture?",
+          "options": [
+            "Popularity of tools",
+            "Developer preferences",
+            "Quality attribute scenarios",
+            "Vendor recommendations",
+            "Industry trends"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Technology choices must directly support quality attributes such as performance, availability, and modifiability."
+        },
+        {
+          "question": "Which mapping best supports high availability?",
+          "options": [
+            "Caching and indexing",
+            "Replication and failover",
+            "ORM frameworks",
+            "Monolithic deployment",
+            "Synchronous communication"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Replication and failover are architectural techniques that improve system availability."
+        },
+        {
+          "question": "Which of the following is NOT a decision driver in architecture?",
+          "options": [
+            "Business drivers",
+            "Technical drivers",
+            "Organizational drivers",
+            "Constraints",
+            "Code formatting rules"
+          ],
+          "correctOption": 4,
+          "points": 10,
+          "explanation": "Architectural decision drivers include business, technical, organizational factors, and constraints, not coding style rules."
+        },
+        {
+          "question": "What is the key characteristic of a technology stack?",
+          "options": [
+            "Each choice is independent",
+            "Only programming language matters",
+            "Choices are interrelated and affect each other",
+            "It can be changed easily",
+            "It only impacts development speed"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "A technology stack is a system of interrelated choices where changing one element impacts others."
+        },
+        {
+          "question": "Which programming language is best suited for high-load backend services according to the lecture?",
+          "options": ["Python", "JavaScript", "Go or Java", "PHP", "Ruby"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Go and Java are suited for high-load backend systems due to performance and concurrency support."
+        },
+        {
+          "question": "What is a major trade-off when using heavyweight frameworks?",
+          "options": [
+            "Lower productivity",
+            "Loss of control in exchange for speed and consistency",
+            "No community support",
+            "Lack of documentation",
+            "Poor scalability"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Heavyweight frameworks trade flexibility and control for faster development and standardization."
+        },
+        {
+          "question": "Which statement about architectural styles is correct?",
+          "options": [
+            "They are specific technologies",
+            "They solve all problems equally well",
+            "They are high-level solutions to recurring problems",
+            "They are implementation details",
+            "They are optional in architecture"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Architectural styles are proven high-level patterns for structuring systems under specific constraints."
+        },
+        {
+          "question": "What is a key advantage of monolithic architecture?",
+          "options": [
+            "Independent scaling",
+            "High fault isolation",
+            "Low operational overhead",
+            "Loose coupling",
+            "High team autonomy"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Monolithic systems are simple to deploy and operate, resulting in low operational overhead."
+        },
+        {
+          "question": "What is a major risk of microservices architecture?",
+          "options": [
+            "Limited scalability",
+            "High operational complexity",
+            "Strong coupling",
+            "Single point of failure",
+            "Lack of autonomy"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Microservices introduce distributed system complexity and require mature DevOps practices."
+        },
+        {
+          "question": "Which characteristic best defines Event-Driven Architecture?",
+          "options": [
+            "Synchronous request-response communication",
+            "Shared database between services",
+            "Asynchronous communication via events",
+            "Centralized governance",
+            "Tight coupling"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Event-driven architecture uses asynchronous events to decouple producers and consumers."
+        },
+        {
+          "question": "Why are database decisions considered the hardest to change?",
+          "options": [
+            "They affect UI design",
+            "They depend on frameworks",
+            "Data outlives code and migrations are risky",
+            "They are vendor-controlled",
+            "They only impact performance"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Data persists longer than code, and database migrations are expensive and risky."
+        },
+        {
+          "question": "Which database choice best fits a banking system?",
+          "options": [
+            "NoSQL key-value store",
+            "Document database",
+            "SQL database",
+            "Graph database",
+            "In-memory cache"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Banking systems require strong consistency guarantees provided by SQL databases."
+        },
+        {
+          "question": "What is polyglot persistence?",
+          "options": [
+            "Using one database everywhere",
+            "Switching databases frequently",
+            "Using multiple databases for different purposes",
+            "Migrating data continuously",
+            "Avoiding relational databases"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Polyglot persistence means using different databases optimized for different data access patterns."
+        },
+        {
+          "question": "What is a key risk of cloud infrastructure with higher abstraction levels?",
+          "options": [
+            "Lower scalability",
+            "Higher hardware costs",
+            "Vendor lock-in",
+            "Manual deployment",
+            "Lack of automation"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "As abstraction increases (PaaS, SaaS), control decreases and vendor lock-in risk increases."
+        },
+        {
+          "question": "What is the main purpose of Architectural Decision Records (ADR)?",
+          "options": [
+            "To store source code",
+            "To replace UML diagrams",
+            "To document decisions, alternatives, and consequences",
+            "To automate deployment",
+            "To enforce coding standards"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "ADR documents architectural decisions, their context, alternatives, and long-term consequences."
+        }
+      ]
+    },
+    {
+      "id": "Software Architecture lecture 6",
+      "name": "Software Architecture lecture 6",
+      "description": "A quiz on software architecture",
+      "questions": [
+        {
+          "question": "What is the primary purpose of a software interface in system architecture?",
+          "options": [
+            "To define user interface layout",
+            "To act as a contract between system components",
+            "To store implementation logic",
+            "To optimize system performance",
+            "To replace UML diagrams"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "A software interface defines a contract that specifies how components interact, including available operations, inputs, and outputs."
+        },
+        {
+          "question": "At which levels can software interfaces exist?",
+          "options": [
+            "Only user interface level",
+            "Only database level",
+            "APIs, services, and modules",
+            "Only hardware level",
+            "Only class level"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Interfaces exist at multiple levels such as APIs, services, modules, and subsystems to define interaction boundaries."
+        },
+        {
+          "question": "What is the main architectural benefit of clearly defined interfaces?",
+          "options": [
+            "Improved graphical design",
+            "Reduced coupling between components",
+            "Faster coding speed",
+            "Elimination of documentation",
+            "Guaranteed performance"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Clear interfaces reduce coupling, allowing components to evolve independently without affecting others."
+        },
+        {
+          "question": "Which statement best describes UML?",
+          "options": [
+            "A programming language",
+            "A database modeling tool only",
+            "A standardized modeling language for design visualization",
+            "A testing framework",
+            "A runtime execution engine"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "UML is a standardized modeling language used to visualize and communicate system design, independent of programming languages."
+        },
+        {
+          "question": "Which UML diagram category represents static aspects of a system?",
+          "options": [
+            "Behavioral diagrams",
+            "Interaction diagrams",
+            "Structural diagrams",
+            "Dynamic diagrams",
+            "Temporal diagrams"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Structural diagrams show static structure such as components, classes, and deployment."
+        },
+        {
+          "question": "Which UML diagram category focuses on system behavior over time?",
+          "options": [
+            "Structural diagrams",
+            "Behavioral diagrams",
+            "Component diagrams",
+            "Deployment diagrams",
+            "Package diagrams"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Behavioral diagrams model how the system behaves dynamically over time."
+        },
+        {
+          "question": "At which UML abstraction level do architects mainly work?",
+          "options": [
+            "Low-level class implementation",
+            "Algorithmic level",
+            "Architectural and high-level design",
+            "Compiler level",
+            "Hardware circuit level"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Architects focus on architectural and high-level design, avoiding unnecessary implementation detail early."
+        },
+        {
+          "question": "What does a sequence diagram primarily represent?",
+          "options": [
+            "Static system structure",
+            "Database schema",
+            "Ordered interactions between participants in a scenario",
+            "Class inheritance hierarchy",
+            "System deployment topology"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "A sequence diagram shows ordered interactions between participants over time for one specific scenario."
+        },
+        {
+          "question": "What is the key difference between a use case and a scenario?",
+          "options": [
+            "There is no difference",
+            "A scenario includes all possible paths",
+            "A use case represents one execution path",
+            "A scenario is one specific execution path",
+            "A use case is only graphical"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "A scenario represents one concrete execution path, while a use case describes multiple possible paths."
+        },
+        {
+          "question": "Which message type causes the sender to wait until a response is received?",
+          "options": [
+            "Asynchronous message",
+            "Return message",
+            "Lost message",
+            "Synchronous message",
+            "Found message"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Synchronous messages block the caller until the receiver completes processing."
+        },
+        {
+          "question": "Which message type supports loose coupling by not blocking the sender?",
+          "options": [
+            "Synchronous message",
+            "Asynchronous message",
+            "Return message",
+            "Self message",
+            "Destroy message"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Asynchronous messages allow the sender to continue without waiting, supporting loose coupling."
+        },
+        {
+          "question": "What does the 'alt' interaction fragment represent in a sequence diagram?",
+          "options": [
+            "Looping behavior",
+            "Optional behavior",
+            "Conditional branching (if/else)",
+            "Parallel execution",
+            "Error logging"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "The 'alt' fragment models conditional logic similar to if/else branches."
+        },
+        {
+          "question": "What is a common mistake when creating sequence diagrams?",
+          "options": [
+            "Focusing on interfaces",
+            "Keeping diagrams abstract",
+            "Modeling every internal method call",
+            "Using scenarios",
+            "Showing participant interactions"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Modeling every internal method call overcomplicates diagrams and turns them into pseudo-code."
+        },
+        {
+          "question": "What is the main purpose of a component diagram?",
+          "options": [
+            "To show algorithm logic",
+            "To model UI navigation",
+            "To show high-level system structure and interfaces",
+            "To represent database queries",
+            "To describe runtime behavior"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Component diagrams show high-level components and how they interact via interfaces."
+        },
+        {
+          "question": "What does a provided interface represent in a component diagram?",
+          "options": [
+            "A service the component requires",
+            "A service the component offers",
+            "An internal method",
+            "A database connection",
+            "A deployment dependency"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "A provided interface represents functionality that the component guarantees to others."
+        },
+        {
+          "question": "What does a required interface represent in a component diagram?",
+          "options": [
+            "A service the component offers",
+            "An optional feature",
+            "A service the component depends on",
+            "A user action",
+            "A deprecated interface"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "A required interface represents functionality the component needs from another component."
+        },
+        {
+          "question": "What is the role of ports in component diagrams?",
+          "options": [
+            "To store data",
+            "To represent algorithms",
+            "To organize and delegate interfaces",
+            "To replace interfaces",
+            "To show execution order"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Ports organize interactions and clarify how interfaces are delegated within components."
+        }
+      ]
+    },
+    {
+      "id": "Software Architecture lecture 7",
+      "name": "Software Architecture lecture 7",
+      "description": "A quiz on software architecture",
+      "questions": [
+        {
+          "question": "Why is modeling important in software architecture?",
+          "options": [
+            "It replaces source code",
+            "It is mainly for documentation purposes",
+            "It helps reason about complexity before implementation",
+            "It enforces coding standards",
+            "It guarantees system performance"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Modeling is a thinking tool that helps architects reason about complexity, expose gaps, and validate logic before code is written."
+        },
+        {
+          "question": "What is the main difference between business perspective and system perspective in modeling?",
+          "options": [
+            "Business perspective focuses on databases",
+            "System perspective focuses on user roles",
+            "Business perspective describes what needs to happen, system perspective describes how the system behaves",
+            "They are identical perspectives",
+            "System perspective avoids workflows"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Business perspective focuses on goals and processes, while system perspective focuses on internal system behavior."
+        },
+        {
+          "question": "Which notation is primarily used to describe business workflows and roles?",
+          "options": [
+            "UML Class Diagram",
+            "UML State Machine Diagram",
+            "UML Activity Diagram",
+            "BPMN",
+            "Sequence Diagram"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "BPMN is designed to model end-to-end business processes and interactions between roles or organizations."
+        },
+        {
+          "question": "What does BPMN intentionally avoid modeling?",
+          "options": [
+            "Business decisions",
+            "Responsibilities",
+            "Sequence of activities",
+            "Internal algorithms and technical details",
+            "Participants"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "BPMN does not focus on internal algorithms or technical implementation details."
+        },
+        {
+          "question": "What is the core conceptual idea behind BPMN modeling?",
+          "options": [
+            "Object-oriented structure",
+            "State-based behavior",
+            "Process-centric flow with clear start and end",
+            "Database-driven logic",
+            "Class hierarchy"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "BPMN represents business processes as flows that start with a trigger and end with a result."
+        },
+        {
+          "question": "Which BPMN element represents something that happens and affects process flow?",
+          "options": ["Activity", "Gateway", "Event", "Lane", "Subprocess"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Events represent occurrences that trigger, interrupt, or end a process."
+        },
+        {
+          "question": "Which BPMN event type triggers the start of a process?",
+          "options": [
+            "Intermediate Event",
+            "End Event",
+            "Boundary Event",
+            "Start Event",
+            "Signal Event"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "A Start Event initiates a BPMN process."
+        },
+        {
+          "question": "What is the difference between a BPMN task and a subprocess?",
+          "options": [
+            "A task is optional, a subprocess is mandatory",
+            "A task is atomic work, a subprocess groups related tasks",
+            "A subprocess cannot contain decisions",
+            "Tasks represent participants",
+            "Subprocesses replace events"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "A task is an indivisible unit of work, while a subprocess groups multiple related tasks."
+        },
+        {
+          "question": "Which BPMN gateway allows only one outgoing path based on conditions?",
+          "options": [
+            "Parallel (AND)",
+            "Inclusive (OR)",
+            "Exclusive (XOR)",
+            "Event-based",
+            "Complex"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "An Exclusive (XOR) gateway selects exactly one path based on conditions."
+        },
+        {
+          "question": "What is the purpose of BPMN pools?",
+          "options": [
+            "To represent system states",
+            "To group tasks logically",
+            "To represent independent participants",
+            "To show control flow",
+            "To replace gateways"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Pools represent independent participants such as organizations or systems."
+        },
+        {
+          "question": "What do BPMN lanes represent?",
+          "options": [
+            "Independent organizations",
+            "Execution order",
+            "Roles or departments within a participant",
+            "Decision conditions",
+            "Message types"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Lanes show roles or departments within a pool and clarify responsibility."
+        },
+        {
+          "question": "Which is a common BPMN modeling mistake?",
+          "options": [
+            "Using start and end events",
+            "Showing responsibilities",
+            "Modeling internal system logic",
+            "Using pools and lanes",
+            "Using activities"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "BPMN should not be used to model internal technical logic."
+        },
+        {
+          "question": "What is the primary purpose of a UML Activity Diagram?",
+          "options": [
+            "To model business roles",
+            "To describe workflows inside a software system",
+            "To model object lifecycles",
+            "To define system architecture",
+            "To document requirements"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Activity diagrams model system-level workflows and control flow inside software."
+        },
+        {
+          "question": "Which element in an activity diagram represents parallel execution?",
+          "options": [
+            "Decision node",
+            "Merge node",
+            "Fork/Join",
+            "Swimlane",
+            "Action"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Fork and Join nodes represent parallel execution and synchronization."
+        },
+        {
+          "question": "What is the key difference between BPMN and UML Activity Diagrams?",
+          "options": [
+            "BPMN is technical, Activity Diagrams are business-oriented",
+            "They are identical in purpose",
+            "BPMN is business-oriented, Activity Diagrams are system-oriented",
+            "Activity Diagrams replace BPMN",
+            "BPMN cannot show decisions"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "BPMN focuses on business processes, while Activity Diagrams focus on system logic."
+        },
+        {
+          "question": "Which diagram is best suited for modeling an object's lifecycle?",
+          "options": [
+            "BPMN Diagram",
+            "UML Activity Diagram",
+            "UML State Machine Diagram",
+            "Component Diagram",
+            "Sequence Diagram"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "State Machine Diagrams model how an object changes state over time in response to events."
+        },
+        {
+          "question": "What triggers a transition in a state machine diagram?",
+          "options": [
+            "Another state",
+            "A guard only",
+            "An event",
+            "A swimlane",
+            "A subprocess"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Transitions between states are triggered by events."
+        },
+        {
+          "question": "Why is object lifecycle modeling important?",
+          "options": [
+            "It improves UI design",
+            "It prevents invalid operations in wrong states",
+            "It replaces testing",
+            "It reduces database size",
+            "It simplifies BPMN diagrams"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Lifecycle modeling ensures operations are only allowed in valid states."
+        },
+        {
+          "question": "Which guideline helps choose the correct diagram type?",
+          "options": [
+            "Always use BPMN",
+            "Always use UML",
+            "Use BPMN for business, Activity for system workflows, State Machine for object behavior",
+            "Use one diagram for everything",
+            "Choose based on tool availability"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Each diagram type serves a specific purpose and should be chosen accordingly."
+        }
+      ]
+    },
+    {
+      "id": "Software Architecture lecture 8",
+      "name": "Software Architecture lecture 8",
+      "description": "A quiz on software architecture",
+      "questions": [
+        {
+          "question": "Why is formal design quality analysis necessary in software architecture?",
+          "options": [
+            "To replace implementation testing",
+            "To eliminate the need for documentation",
+            "To avoid subjective opinions about good design",
+            "To speed up coding",
+            "To guarantee zero defects"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Without formal evaluation, design quality becomes subjective opinion rather than an evidence-based assessment."
+        },
+        {
+          "question": "What is the main difference between functional requirements and quality attributes?",
+          "options": [
+            "Functional requirements are optional",
+            "Quality attributes define what the system does",
+            "Functional requirements define what the system does, quality attributes define how it behaves",
+            "Quality attributes only apply after deployment",
+            "They are the same concept"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Functional requirements describe system functionality, while quality attributes describe system behavior such as performance or scalability."
+        },
+        {
+          "question": "According to the lecture, what is the architect’s primary focus?",
+          "options": [
+            "Implementing features",
+            "Optimizing algorithms",
+            "Ensuring quality attributes through architecture",
+            "Writing clean code",
+            "Selecting UI frameworks"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Functionality can be achieved in many ways, but quality attributes require the right architectural decisions."
+        },
+        {
+          "question": "Which quality attributes are highlighted as key categories in ISO/IEC 25010 for architects?",
+          "options": [
+            "Usability, Portability, Compatibility",
+            "Reliability, Performance Efficiency, Maintainability, Security",
+            "Scalability, Cost, Time-to-market",
+            "Correctness, Accuracy, Precision",
+            "Availability only"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "ISO/IEC 25010 provides standardized quality categories, with these four being most relevant to architectural decisions."
+        },
+        {
+          "question": "Why are vague quality goals like \"the system should be fast\" problematic?",
+          "options": [
+            "They increase development cost",
+            "They cannot be tested or evaluated",
+            "They reduce flexibility",
+            "They overconstrain the architecture",
+            "They are too technical"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Vague goals cannot be validated; they must be transformed into measurable quality scenarios."
+        },
+        {
+          "question": "What is a quality scenario?",
+          "options": [
+            "A user story",
+            "A use case",
+            "A specific, testable statement describing system response to a stimulus",
+            "A UML diagram",
+            "A non-functional requirement list"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Quality scenarios make abstract quality attributes concrete and testable."
+        },
+        {
+          "question": "How many parts does a professional quality scenario contain?",
+          "options": ["3", "4", "5", "6", "7"],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "A quality scenario consists of Source, Stimulus, Artifact, Environment, Response, and Response Measure."
+        },
+        {
+          "question": "What is the main purpose of a Utility Tree?",
+          "options": [
+            "To model system workflows",
+            "To prioritize quality scenarios based on importance and impact",
+            "To replace ATAM",
+            "To document architecture decisions",
+            "To measure performance"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Utility Trees help prioritize which quality scenarios matter most to the business and architecture."
+        },
+        {
+          "question": "Which scenarios receive the highest priority in a Utility Tree?",
+          "options": [
+            "Low business value, low impact",
+            "High business value, low impact",
+            "Low business value, high impact",
+            "High business value, high architectural impact",
+            "Medium value scenarios"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "High value and high impact scenarios define the core architectural challenges."
+        },
+        {
+          "question": "What was the main focus of the SAAM method?",
+          "options": [
+            "Performance",
+            "Security",
+            "Modifiability",
+            "Reliability",
+            "Scalability"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "SAAM evaluates architecture by analyzing how it handles change scenarios, focusing on modifiability."
+        },
+        {
+          "question": "Why is ATAM considered superior to SAAM?",
+          "options": [
+            "It is faster",
+            "It focuses only on performance",
+            "It evaluates multiple quality attributes and trade-offs",
+            "It requires fewer stakeholders",
+            "It eliminates risks"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "ATAM evaluates trade-offs between multiple quality attributes instead of focusing on only one."
+        },
+        {
+          "question": "What is a trade-off point in ATAM?",
+          "options": [
+            "A decision that has no impact",
+            "A decision that affects multiple quality attributes in opposite ways",
+            "A documented good practice",
+            "A non-risk decision",
+            "A coding guideline"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Trade-off points highlight architectural decisions where improving one attribute degrades another."
+        },
+        {
+          "question": "What does coupling measure in software design?",
+          "options": [
+            "Internal consistency of a module",
+            "Number of methods in a class",
+            "How much one module depends on another",
+            "Execution speed",
+            "Memory usage"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "High coupling increases fragility; architects aim for low coupling using interfaces and encapsulation."
+        },
+        {
+          "question": "What does cohesion measure?",
+          "options": [
+            "How many classes interact",
+            "How focused a module’s responsibilities are",
+            "Runtime performance",
+            "Inheritance depth",
+            "Database complexity"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "High cohesion means a module has a clear, focused responsibility."
+        },
+        {
+          "question": "Which metric identifies \"God Objects\" in object-oriented design?",
+          "options": ["DIT", "CBO", "LCOM", "RFC", "NOC"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "High LCOM indicates low cohesion, often signaling God Objects that should be split."
+        },
+        {
+          "question": "What does Cyclomatic Complexity measure?",
+          "options": [
+            "Class coupling",
+            "Inheritance depth",
+            "Number of decision points in code",
+            "Memory consumption",
+            "Number of classes"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Cyclomatic Complexity counts decision points and indicates testing and maintenance risk."
+        },
+        {
+          "question": "What is design erosion?",
+          "options": [
+            "Loss of performance over time",
+            "Mismatch between intended architecture and actual implementation",
+            "Hardware degradation",
+            "Database fragmentation",
+            "Vendor lock-in"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Design erosion occurs when implementation drifts away from the original architectural vision."
+        },
+        {
+          "question": "What is technical debt?",
+          "options": [
+            "Outdated hardware",
+            "Cost of fixing bugs",
+            "Future cost caused by choosing quick solutions over correct ones",
+            "Licensing fees",
+            "Operational expenses"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Technical debt represents future rework caused by short-term design shortcuts."
+        },
+        {
+          "question": "What is the main difference between static and dynamic analysis?",
+          "options": [
+            "Static analysis runs in production",
+            "Dynamic analysis examines code without execution",
+            "Static analysis examines structure, dynamic analysis examines runtime behavior",
+            "Dynamic analysis is cheaper",
+            "They serve the same purpose"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Static analysis focuses on structural quality, while dynamic analysis evaluates runtime behavior."
+        },
+        {
+          "question": "What is the architect’s long-term goal according to the lecture?",
+          "options": [
+            "Maximize feature count",
+            "Eliminate all risks",
+            "Minimize technical debt and prevent design erosion",
+            "Avoid refactoring",
+            "Choose the most popular tools"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Architects aim to ensure maintainability over years by managing quality, debt, and erosion."
+        }
+      ]
+    },
+    {
+      "id": "Software Architecture lecture 9",
+      "name": "Software Architecture lecture 9",
+      "description": "A quiz on software architecture",
+      "questions": [
+        {
+          "question": "Why are software design notations important in software engineering?",
+          "options": [
+            "They replace source code",
+            "They provide a common language for stakeholders",
+            "They eliminate the need for testing",
+            "They guarantee system performance",
+            "They enforce programming syntax"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Notations provide a shared language that improves communication, collaboration, and understanding among developers, stakeholders, and users."
+        },
+        {
+          "question": "What is the primary purpose of using notations in software design?",
+          "options": [
+            "To generate UI designs",
+            "To simplify compiler optimization",
+            "To understand and document complex systems",
+            "To replace requirements analysis",
+            "To improve runtime performance"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Design notations help visualize, understand, and document complex software systems."
+        },
+        {
+          "question": "What type of systems is UML primarily designed for?",
+          "options": [
+            "Data-intensive systems",
+            "Business process automation",
+            "Object-oriented software systems",
+            "Enterprise governance systems",
+            "Hardware design"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "UML is a standard notation for modeling object-oriented software systems."
+        },
+        {
+          "question": "Which UML diagram is used to represent relationships between classes?",
+          "options": [
+            "Sequence diagram",
+            "Use case diagram",
+            "Class diagram",
+            "Activity diagram",
+            "State machine diagram"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Class diagrams model classes, their attributes, methods, and relationships."
+        },
+        {
+          "question": "What is the main focus of BPMN?",
+          "options": [
+            "System internal logic",
+            "Object inheritance",
+            "Business process modeling",
+            "Data modeling",
+            "Enterprise infrastructure"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "BPMN is designed to model and analyze business processes and workflows."
+        },
+        {
+          "question": "How does BPMN improve collaboration?",
+          "options": [
+            "By generating executable code",
+            "By providing a shared visual language for business and IT",
+            "By replacing UML diagrams",
+            "By enforcing architecture rules",
+            "By simplifying databases"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "BPMN improves communication between business analysts, developers, and stakeholders through clear process visualization."
+        },
+        {
+          "question": "Which IDEF notation is used specifically for data modeling?",
+          "options": ["IDEF0", "IDEF1X", "IDEF3", "IDEF4", "IDEF5"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "IDEF1X focuses on data entities, attributes, and relationships for structured data modeling."
+        },
+        {
+          "question": "What is the main purpose of IDEF0?",
+          "options": [
+            "Modeling data flow",
+            "Modeling system functions and their relationships",
+            "Modeling object behavior",
+            "Modeling enterprise architecture",
+            "Modeling user interfaces"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "IDEF0 models system functions and how they interact within a structured framework."
+        },
+        {
+          "question": "Which notation is best suited for representing data flow in a system?",
+          "options": ["UML", "BPMN", "DFD", "ArchiMate", "IDEF0"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Data Flow Diagrams (DFD) illustrate how data moves through processes, data stores, and external entities."
+        },
+        {
+          "question": "What is a limitation of Data Flow Diagrams (DFD)?",
+          "options": [
+            "They are too complex",
+            "They focus on UI design",
+            "They have limited ability to represent complex logic",
+            "They require object-oriented modeling",
+            "They cannot show data stores"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "DFDs are simple and intuitive but limited when modeling complex logic or behavior."
+        },
+        {
+          "question": "What is the main purpose of ArchiMate?",
+          "options": [
+            "Object-oriented modeling",
+            "Business process automation",
+            "Enterprise architecture modeling",
+            "Low-level system design",
+            "Data structure design"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "ArchiMate provides a comprehensive language for modeling enterprise architecture across business, application, and technology layers."
+        },
+        {
+          "question": "How does ArchiMate support organizations?",
+          "options": [
+            "By replacing UML",
+            "By aligning business and IT strategies",
+            "By generating code automatically",
+            "By modeling only databases",
+            "By enforcing testing rules"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "ArchiMate aligns business goals with IT systems and supports governance of enterprise architecture."
+        },
+        {
+          "question": "Which notation is best for large-scale enterprise systems?",
+          "options": ["DFD", "UML only", "BPMN only", "ArchiMate", "IDEF3"],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "ArchiMate is designed to model complex, large-scale enterprise architectures."
+        },
+        {
+          "question": "What is the main idea behind Model-Driven Development (MDD)?",
+          "options": [
+            "Testing before coding",
+            "Coding without models",
+            "Using models as primary development artifacts",
+            "Focusing only on business rules",
+            "Avoiding documentation"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "MDD prioritizes models as the central artifacts and often generates code from them."
+        },
+        {
+          "question": "What is a key advantage of Model-Driven Development?",
+          "options": [
+            "Eliminates need for architects",
+            "Automates code generation from models",
+            "Removes need for testing",
+            "Avoids domain analysis",
+            "Reduces system scalability"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "MDD automates code generation, reducing manual effort and improving consistency."
+        },
+        {
+          "question": "What is the main focus of Domain-Driven Design (DDD)?",
+          "options": [
+            "Code optimization",
+            "Database modeling",
+            "Understanding and modeling the business domain",
+            "System performance tuning",
+            "UI consistency"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "DDD emphasizes deep understanding of the business domain through collaboration with domain experts."
+        },
+        {
+          "question": "What is a ubiquitous language in Domain-Driven Design?",
+          "options": [
+            "A programming language",
+            "A shared vocabulary between developers and domain experts",
+            "A modeling notation",
+            "A testing framework",
+            "A database schema"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "A ubiquitous language ensures consistent communication and shared understanding of domain concepts."
+        },
+        {
+          "question": "What is the main focus of Behavior-Driven Development (BDD)?",
+          "options": [
+            "Architecture diagrams",
+            "User behavior and system behavior specifications",
+            "Code generation",
+            "Database optimization",
+            "Enterprise governance"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "BDD focuses on defining and validating system behavior from the user’s perspective."
+        },
+        {
+          "question": "How does BDD verify software behavior?",
+          "options": [
+            "Through UML diagrams",
+            "Through manual testing only",
+            "Through automated tests based on behavior specifications",
+            "Through architectural reviews",
+            "Through static analysis"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "BDD uses automated tests written from user stories to ensure expected behavior."
+        },
+        {
+          "question": "What is the key takeaway from the lecture regarding design notations?",
+          "options": [
+            "One notation fits all projects",
+            "Notations are optional in modern development",
+            "Choose the notation that best fits the project needs",
+            "Only UML should be used",
+            "Modeling replaces coding"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Different notations serve different purposes, and the correct choice improves design and communication."
+        }
+      ]
     }
   ]
 }
