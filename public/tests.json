@@ -1962,6 +1962,267 @@
           "explanation": "Different notations serve different purposes, and the correct choice improves design and communication."
         }
       ]
+    },
+    {
+      "id": "Software Architecture lecture 10",
+      "name": "Software Architecture lecture 10",
+      "description": "A quiz on software architecture",
+      "questions": [
+        {
+          "question": "What is the main weakness of a feature-driven approach to software development?",
+          "options": [
+            "It ignores functional requirements",
+            "It focuses on UI instead of backend",
+            "It hides structural quality risks such as security and maintainability",
+            "It slows down development",
+            "It prevents scalability"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "A feature-driven approach often neglects structural quality issues like technical debt, security vulnerabilities, and maintainability risks."
+        },
+        {
+          "question": "What does the quality-driven approach emphasize?",
+          "options": [
+            "Only functional features",
+            "Early testing only",
+            "Structural quality such as reliability, security, and performance",
+            "User interface design",
+            "Database optimization only"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "The quality-driven approach prioritizes structural quality attributes beneath functional features."
+        },
+        {
+          "question": "Which standard defines software product quality characteristics?",
+          "options": ["ISO 9001", "IEEE 830", "ISO/IEC 25010", "CMMI", "ITIL"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "ISO/IEC 25010 (SQuaRE) defines standardized software quality characteristics."
+        },
+        {
+          "question": "Which of the following is NOT a top-level ISO/IEC 25010 quality characteristic?",
+          "options": [
+            "Security",
+            "Maintainability",
+            "Reliability",
+            "Performance Efficiency",
+            "Scalability"
+          ],
+          "correctOption": 4,
+          "points": 10,
+          "explanation": "Scalability is important but not a top-level ISO/IEC 25010 characteristic; it is often treated as part of performance or capacity."
+        },
+        {
+          "question": "Why must quality models often be tailored to context?",
+          "options": [
+            "Standards are outdated",
+            "All systems have identical requirements",
+            "Different domains have different quality priorities",
+            "Tailoring reduces complexity",
+            "Metrics cannot be reused"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Different domains and system contexts prioritize different quality attributes, making tailored models necessary."
+        },
+        {
+          "question": "What is the architect’s dilemma regarding quality attributes?",
+          "options": [
+            "Quality attributes are independent",
+            "Maximizing one attribute often degrades another",
+            "Quality attributes do not affect design",
+            "Only performance matters",
+            "Trade-offs can be avoided"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Architectural design is a zero-sum game where improving one quality attribute often harms another."
+        },
+        {
+          "question": "What does the Pareto Efficient Frontier represent in architecture?",
+          "options": [
+            "Perfect architecture",
+            "Worst design options",
+            "Optimal trade-offs between competing quality attributes",
+            "Only performance optimization",
+            "Legacy systems"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "The Pareto frontier shows designs where improving one attribute would degrade another."
+        },
+        {
+          "question": "Which notation is best suited for high-level architecture communication with non-technical stakeholders?",
+          "options": [
+            "UML",
+            "DFD",
+            "C4 Model",
+            "IDEF",
+            "State Machine Diagram"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "The C4 model provides hierarchical and easy-to-understand architectural views."
+        },
+        {
+          "question": "What is the primary purpose of Architecture Decision Records (ADR)?",
+          "options": [
+            "Visual modeling",
+            "Code generation",
+            "Capturing the rationale behind decisions",
+            "Testing architecture",
+            "Performance measurement"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "ADRs document architectural decisions, alternatives, and their reasoning."
+        },
+        {
+          "question": "Which architectural style typically improves scalability but increases complexity?",
+          "options": [
+            "Layered architecture",
+            "Monolithic architecture",
+            "Microservices",
+            "Client-server",
+            "MVC"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Microservices enable independent scaling but introduce distributed system complexity."
+        },
+        {
+          "question": "What is the main goal of the Architecture Tradeoff Analysis Method (ATAM)?",
+          "options": [
+            "Generate code",
+            "Replace testing",
+            "Evaluate consequences of architectural decisions",
+            "Optimize databases",
+            "Eliminate risks completely"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "ATAM evaluates architectural decisions and their impact on quality attributes before implementation."
+        },
+        {
+          "question": "Which of the following is an output of ATAM?",
+          "options": [
+            "Source code",
+            "Test cases",
+            "Trade-off points",
+            "UML diagrams",
+            "Deployment scripts"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "ATAM identifies trade-off points, sensitivity points, risks, and non-risks."
+        },
+        {
+          "question": "What is a common architectural anti-pattern mentioned in the lecture?",
+          "options": [
+            "Layered architecture",
+            "Event-driven architecture",
+            "God Class",
+            "CQRS",
+            "Hexagonal architecture"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "A God Class has low cohesion and too many responsibilities."
+        },
+        {
+          "question": "What does high coupling indicate?",
+          "options": [
+            "High cohesion",
+            "Good modularity",
+            "Strong dependency between modules",
+            "High performance",
+            "Low complexity"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "High coupling means components are strongly dependent, increasing fragility."
+        },
+        {
+          "question": "What is the base of the Testing Pyramid?",
+          "options": [
+            "Manual testing",
+            "System testing",
+            "Integration testing",
+            "Unit testing",
+            "Acceptance testing"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Unit tests are fast, cheap, and should be the most numerous."
+        },
+        {
+          "question": "Why are preventive quality measures preferred over corrective ones?",
+          "options": [
+            "They eliminate all bugs",
+            "They are cheaper and earlier in the lifecycle",
+            "They require no tools",
+            "They replace CI/CD",
+            "They avoid documentation"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Preventive measures like reviews and static analysis are cheaper than fixing defects later."
+        },
+        {
+          "question": "What does the pASUM framework represent?",
+          "options": [
+            "A coding standard",
+            "A deployment model",
+            "A quality scorecard for key attributes",
+            "A testing framework",
+            "A UML extension"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "pASUM provides a quantitative snapshot of system health across quality attributes."
+        },
+        {
+          "question": "Which metric is commonly associated with maintainability?",
+          "options": [
+            "Response time",
+            "Throughput",
+            "Cyclomatic complexity",
+            "Uptime",
+            "Latency"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Cyclomatic complexity measures code complexity and impacts maintainability."
+        },
+        {
+          "question": "What is technical debt?",
+          "options": [
+            "Outdated documentation",
+            "Unpaid licenses",
+            "Future cost caused by short-term design decisions",
+            "Performance overhead",
+            "Operational expenses"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Technical debt represents future rework caused by quick but suboptimal design choices."
+        },
+        {
+          "question": "According to the lecture, what is the role of the architect?",
+          "options": [
+            "Maximize features",
+            "Eliminate all risks",
+            "Balance functional demands with structural quality",
+            "Focus only on performance",
+            "Avoid trade-offs"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Architects balance feature delivery with long-term structural health and quality."
+        }
+      ]
     }
   ]
 }
