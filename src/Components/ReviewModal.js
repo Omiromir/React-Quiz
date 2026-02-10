@@ -13,7 +13,7 @@ export default function ReviewModal({ questions, userAnswers, dispatch }) {
     modalRef.current?.focus();
 
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, []);
+  }, [close]);
 
   const onOverlayMouseDown = (e) => {
     if (e.target === e.currentTarget) close();
