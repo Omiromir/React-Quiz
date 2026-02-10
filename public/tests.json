@@ -2223,6 +2223,717 @@
           "explanation": "Architects balance feature delivery with long-term structural health and quality."
         }
       ]
+    },
+    {
+      "id": "Infobez Endterm preparation",
+      "name": "Infobez Endterm preparation",
+      "description": "A quiz on software architecture",
+      "questions": [
+        {
+          "question": "What is the primary purpose of a port scanner in network hardening?",
+          "options": [
+            "Encrypt traffic between network devices",
+            "Detect open ports and exposed services",
+            "Assign IP addresses to endpoints",
+            "Verify DNS records with signatures",
+            "Replace passwords with hash values"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Port scanners probe ports and report which are open and what services are exposed."
+        },
+        {
+          "question": "Which control helps stop rogue DHCP servers from handing out IP addresses?",
+          "options": [
+            "DHCP snooping",
+            "DNSSEC validation",
+            "ICMP rate limiting",
+            "NTP time sync",
+            "Zone transfer restriction"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "DHCP snooping validates DHCP messages and blocks untrusted sources."
+        },
+        {
+          "question": "What is the main security mechanism used by DNSSEC?",
+          "options": [
+            "One-time passwords for DNS queries",
+            "Digital signatures for DNS data authenticity",
+            "MAC address filtering for name resolution",
+            "Compression to reduce DNS response size",
+            "Port knocking for recursive queries"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "DNSSEC uses digital signatures so resolvers can verify DNS responses are authentic."
+        },
+        {
+          "question": "Why do many networks filter or restrict ICMP traffic?",
+          "options": [
+            "ICMP is required for VLAN trunking",
+            "ICMP can be abused for recon and DoS",
+            "ICMP prevents ARP table poisoning",
+            "ICMP replaces TLS for encryption",
+            "ICMP is only used by DNS servers"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Attackers can misuse ICMP for reconnaissance, denial-of-service, and covert channels."
+        },
+        {
+          "question": "What is the maximum hop count allowed by RIP?",
+          "options": ["10", "12", "15", "16", "20"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "RIP limits routes to a maximum of 15 hops."
+        },
+        {
+          "question": "Which statement best distinguishes a VLAN from a physical LAN?",
+          "options": [
+            "VLANs are logical groupings; LANs are physical connections",
+            "VLANs require the Internet; LANs do not",
+            "VLANs are only for wireless; LANs are wired",
+            "VLANs encrypt traffic by default; LANs never encrypt",
+            "VLANs replace routers; LANs replace switches"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "VLANs segment devices logically, while a LAN is based on physical connectivity."
+        },
+        {
+          "question": "In VLAN design, what is a trunk port primarily used for?",
+          "options": [
+            "Connect a host to a single VLAN only",
+            "Carry traffic for multiple VLANs between switches",
+            "Convert ICMP traffic into TCP traffic",
+            "Store DHCP logs for later review",
+            "Generate DNS signatures for zone records"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Trunks interconnect switches and can carry multiple VLANs across links."
+        },
+        {
+          "question": "Which pairing matches DMZ and Internet zones correctly (risk vs trust)?",
+          "options": [
+            "DMZ: low risk/high trust; Internet: medium risk/medium trust",
+            "DMZ: medium-high risk/medium-low trust; Internet: high risk/low trust",
+            "DMZ: high risk/high trust; Internet: low risk/low trust",
+            "DMZ: medium-low risk/medium-high trust; Internet: low risk/high trust",
+            "DMZ: low risk/low trust; Internet: medium-high risk/medium-low trust"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "DMZ is typically medium-high risk with medium-low trust; Internet is high risk with low trust."
+        },
+        {
+          "question": "Why is WPS considered a major security risk in wireless networks?",
+          "options": [
+            "It forces the use of outdated WEP encryption",
+            "Its PIN method can be brute-forced",
+            "It disables WPA2 key rotation automatically",
+            "It prevents mutual authentication by design",
+            "It requires plaintext passwords over port 80"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "WPS PINs can be discovered via brute force, so WPS should be disabled."
+        },
+        {
+          "question": "What does N+1 redundancy mean in high availability design?",
+          "options": [
+            "Every server must have two backups",
+            "A system has required components plus one backup",
+            "All components are removed to reduce failures",
+            "Only power systems are duplicated",
+            "Backups are stored only on tape media"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "N+1 means you have the needed components (N) and at least one additional standby component (+1)."
+        },
+        {
+          "question": "Which RAID statement is correct according to the lecture?",
+          "options": [
+            "RAID always guarantees recovery after any two-disk failure",
+            "RAID spreads data across drives; RAID 0 is the exception for recovery",
+            "RAID disables striping to improve confidentiality",
+            "RAID works only as a cloud-managed service",
+            "RAID replaces the need for backups entirely"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "RAID distributes data across multiple disks; except for RAID 0, it is designed to tolerate a disk loss depending on level."
+        },
+        {
+          "question": "Which protocol is the secure replacement for Telnet for remote administration?",
+          "options": ["SNMP", "SSH", "RIP", "ICMP", "FTP"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "SSH provides encrypted remote access; Telnet transmits credentials in plaintext."
+        },
+        {
+          "question": "What is the main difference between a Type 1 and Type 2 hypervisor?",
+          "options": [
+            "Type 1 runs on hardware; Type 2 runs as a host application",
+            "Type 1 is only for containers; Type 2 is only for VMs",
+            "Type 1 requires VPN; Type 2 requires DNSSEC",
+            "Type 1 uses hashing; Type 2 uses encryption",
+            "Type 1 is cloud-only; Type 2 is on-prem only"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Type 1 hypervisors run directly on hardware; Type 2 run on top of a host OS as an application."
+        },
+        {
+          "question": "Which statement best describes a container compared to a virtual machine?",
+          "options": [
+            "A container includes a full guest OS like a VM",
+            "A container is only the application and dependencies",
+            "A container requires dedicated physical hardware",
+            "A container replaces encryption for data in transit",
+            "A container can only run one process per host"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Containers package the application and dependencies, relying on OS-level virtualization rather than a full guest OS."
+        },
+        {
+          "question": "What risk is highlighted if a container has elevated privileges?",
+          "options": [
+            "The container cannot communicate over HTTPS",
+            "The underlying OS may be compromised",
+            "The VM will automatically encrypt all disks",
+            "The DNS server will reject all queries",
+            "The hypervisor becomes unnecessary"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "With elevated privileges, a container breakout can impact the underlying operating system."
+        },
+        {
+          "question": "Which list correctly names the three main cloud service models?",
+          "options": [
+            "LAN, WAN, MAN",
+            "SaaS, PaaS, IaaS",
+            "IDS, IPS, SIEM",
+            "TLS, SSL, SSH",
+            "CVE, CVSS, NVD"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Cloud service models are Software, Platform, and Infrastructure as a Service."
+        },
+        {
+          "question": "Which pairing correctly matches 'data at rest'?",
+          "options": [
+            "Data being transmitted between networks",
+            "Data stored and not being accessed",
+            "Data currently being computed by a process",
+            "Data inside an ICMP echo request",
+            "Data used only in DNS resolution"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Data at rest is stored data that is not actively being transmitted or processed."
+        },
+        {
+          "question": "Which statement correctly defines 'data in process'?",
+          "options": [
+            "Data stored on a disk with no active access",
+            "Data being transmitted between devices",
+            "Data during input, modification, computation, or output",
+            "Data stored in DNS cache only",
+            "Data secured only by VLAN segmentation"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Data in process is being actively handled by an application or system (input/compute/output)."
+        },
+        {
+          "question": "AES is categorized as which type of encryption algorithm in the lecture?",
+          "options": [
+            "Asymmetric encryption",
+            "Symmetric encryption",
+            "Hash-based authentication only",
+            "Certificate signing algorithm",
+            "Key exchange protocol only"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "AES uses the same key to encrypt and decrypt, so it is symmetric encryption."
+        },
+        {
+          "question": "Which set contains only asymmetric algorithms mentioned in the lecture?",
+          "options": [
+            "RSA, Diffie-Hellman, ElGamal, ECC",
+            "AES, RSA, SHA-256, MD5",
+            "AES, ECC, TKIP, CCMP",
+            "MD5, SHA-1, SHA-512, SHA-256",
+            "WPA2, WPA3, PEAP, EAP-TLS"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "RSA, Diffie-Hellman, ElGamal, and ECC are asymmetric (public-key) approaches."
+        },
+        {
+          "question": "Which property is NOT a standard property of cryptographic hash functions in the lecture?",
+          "options": [
+            "Output has a fixed length",
+            "Input can be any length",
+            "Function is reversible with a key",
+            "Function is one-way",
+            "Collisions are very unlikely"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Cryptographic hashes are one-way; they are not designed to be reversible."
+        },
+        {
+          "question": "What is microsegmentation (hypersegregation) used for in cloud security?",
+          "options": [
+            "Encrypt all traffic using a single global key",
+            "Create granular isolated networks using software-defined topology",
+            "Replace IAM with MAC address filtering",
+            "Disable all east-west traffic permanently",
+            "Convert SaaS apps into IaaS instances"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Microsegmentation enables smaller, more isolated networks and finer control without extra hardware."
+        },
+        {
+          "question": "Which action best addresses VM sprawl risk?",
+          "options": [
+            "Disable all logging to reduce storage costs",
+            "Log, monitor, and audit cloud resource usage",
+            "Use only non-credentialed scans on VMs",
+            "Move all VMs into a public subnet",
+            "Turn off patching to reduce reboots"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "VM sprawl is reduced by policies that log/audit resources and ensure instances are monitored and maintained."
+        },
+        {
+          "question": "Why should secure cookies be used with HTTPS according to the lecture?",
+          "options": [
+            "To prevent cookies from being sent over unencrypted HTTP",
+            "To increase DNS resolution speed",
+            "To avoid DHCP address conflicts",
+            "To make VLAN trunks unnecessary",
+            "To replace code signing for software"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Using HTTPS helps ensure cookies are not transmitted over unencrypted HTTP."
+        },
+        {
+          "question": "What does a vulnerability scanner typically look for?",
+          "options": [
+            "Only physical theft indicators",
+            "Default passwords, missing patches, open ports, misconfigurations",
+            "Only encrypted traffic patterns",
+            "Only zero-day exploits in memory",
+            "Only DNS zone transfer failures"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Scanners commonly check for weak credentials, missing patches, open ports, and misconfigurations."
+        },
+        {
+          "question": "Which scan category tests application source code without running the application?",
+          "options": [
+            "Network scanner",
+            "Application scanner",
+            "Web application scanner",
+            "Packet sniffer",
+            "Firewall policy auditor"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Application scanners can analyze source code to test from the inside without executing it."
+        },
+        {
+          "question": "What is the main characteristic of an intrusive vulnerability scan?",
+          "options": [
+            "It attempts to exploit and may crash the target",
+            "It never interacts with target systems",
+            "It uses only passive DNS logs",
+            "It requires no network connectivity",
+            "It only checks compliance documents"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Intrusive scans try to exploit weaknesses and can disrupt or crash targets."
+        },
+        {
+          "question": "What is the difference between a false positive and a false negative?",
+          "options": [
+            "False positive misses a vulnerability; false negative invents one",
+            "False positive invents a vulnerability; false negative misses one",
+            "Both mean the scan crashed the target",
+            "Both only occur in credentialed scans",
+            "Both refer to encryption key failures"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "False positives report issues that are not real; false negatives fail to report real issues."
+        },
+        {
+          "question": "Why do credentialed scans often produce better results than non-credentialed scans?",
+          "options": [
+            "They avoid using passwords entirely",
+            "They reduce false positives and false negatives",
+            "They only scan the DMZ, not the LAN",
+            "They disable OS fingerprinting features",
+            "They encrypt scan traffic using DNSSEC"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "With authorized access, scanners can gather richer data and tend to be more accurate."
+        },
+        {
+          "question": "Which tool maps MAC addresses to IP addresses on a local device?",
+          "options": ["ping", "arp", "tracert", "nslookup", "ipconfig"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "arp shows the table of known IP-to-MAC mappings."
+        },
+        {
+          "question": "What does tracert (traceroute) primarily show?",
+          "options": [
+            "DNS record signatures",
+            "The hop-by-hop path packets take",
+            "The list of installed OS patches",
+            "The DHCP lease duration",
+            "The VLAN membership of switch ports"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "It traces the route and records hops to identify where traffic is getting stuck."
+        },
+        {
+          "question": "Which feature is explicitly listed as part of Nmap’s core functionality in the lecture?",
+          "options": [
+            "Power conditioning measurement",
+            "OS fingerprinting (remote OS identification)",
+            "RAID parity calculation",
+            "DNSSEC zone signing",
+            "Code signing validation"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Nmap supports remote OS identification (OS fingerprinting), along with scans and sweeps."
+        },
+        {
+          "question": "What is a primary goal of SIEM systems as described in the lecture?",
+          "options": [
+            "Replace VPN with DNSSEC",
+            "Aggregate logs and detect deviations from normal",
+            "Assign IP addresses and gateways",
+            "Create VLAN trunk links dynamically",
+            "Encrypt disks using WPS PINs"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "SIEM aggregates log data and helps detect anomalies to support monitoring and response."
+        },
+        {
+          "question": "What is AIS (Automated Indicator Sharing) intended to do?",
+          "options": [
+            "Provide offline storage for backups",
+            "Enable real-time exchange of cyber threat indicators",
+            "Generate CVSS scores for new vulnerabilities",
+            "Replace TAXII with proprietary formats",
+            "Perform password cracking across endpoints"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "AIS is designed for rapid sharing of threat indicators between government and private sector."
+        },
+        {
+          "question": "Which relationship among STIX, TAXII, and CybOX matches the lecture?",
+          "options": [
+            "TAXII defines transport; STIX defines content; CybOX is incorporated into STIX",
+            "STIX defines transport; TAXII defines content; CybOX replaces both",
+            "CybOX defines transport; TAXII defines content; STIX replaces both",
+            "All three are proprietary vendor formats",
+            "All three are encryption algorithms for HTTPS"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "STIX structures CTI content, TAXII transports CTI over HTTPS, and CybOX schemas are incorporated into STIX."
+        },
+        {
+          "question": "What is the purpose of CVSS according to the lecture?",
+          "options": [
+            "Name vulnerabilities using unique identifiers",
+            "Convey common attributes and severity of vulnerabilities",
+            "Encrypt vulnerability databases at rest",
+            "Provide VPN tunnels into cloud environments",
+            "Replace patching with compensating controls"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "CVSS is a scoring framework to communicate vulnerability severity and help prioritize remediation."
+        },
+        {
+          "question": "Which organization is designated as the custodian of CVSS in the lecture?",
+          "options": ["NIST", "FIRST", "MITRE", "DHS", "IETF"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "FIRST is identified as the custodian to promote global adoption of CVSS."
+        },
+        {
+          "question": "In the CVSS context, what is an 'authority'?",
+          "options": [
+            "A firewall that blocks traffic by default",
+            "An entity that grants and manages access and privileges",
+            "A hash function used to verify integrity",
+            "A port scanner that enumerates services",
+            "A RAID controller used for mirroring"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The lecture defines authority as a system entity that grants and manages access/privileges."
+        },
+        {
+          "question": "What does a CVSS vector string represent?",
+          "options": [
+            "A list of DNS zones and their signatures",
+            "A summary of chosen metric values in compact form",
+            "A physical cable map of network topology",
+            "A log of DHCP leases over time",
+            "A binary image of a disk for forensics"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Vector strings compactly encode the metric selections (metric:value pairs separated by slashes)."
+        },
+        {
+          "question": "Which statement best distinguishes NVD from CVE as described in the lecture?",
+          "options": [
+            "CVE provides scoring; NVD provides names only",
+            "NVD uses CVE IDs and adds details like CVSS scores and resources",
+            "NVD is a private database; CVE is internal-only",
+            "CVE replaces the need for patching",
+            "NVD is only for cloud misconfigurations"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "CVE provides identifiers; NVD builds on CVE and provides added vulnerability details and scoring."
+        },
+        {
+          "question": "Which sequence matches the asset management operational process described by NIST in the lecture?",
+          "options": [
+            "Encrypt → sign → hash → compress → archive",
+            "Discover actual state → define desired state → find non-compliance → remediate/accept → repeat",
+            "Scan ports → patch routers → disable DNS → rotate keys → reimage hosts",
+            "Provision apps → deprovision apps → stage → backup → archive",
+            "Collect RAM → analyze logs → report results → destroy evidence → close case"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The lecture lists discovery, desired state definition, non-compliance identification, remediation/acceptance, and iteration."
+        },
+        {
+          "question": "In MDM (especially BYOD), what baseline assumption is stated in the lecture?",
+          "options": [
+            "Mobile devices are trusted by default",
+            "Mobile devices are untrusted until properly secured",
+            "Mobile devices cannot be monitored from the cloud",
+            "Mobile devices must never be encrypted",
+            "Mobile devices eliminate the attack surface"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The lecture states administrators should assume mobile devices are untrusted until secured."
+        },
+        {
+          "question": "Which set of actions is explicitly listed for when a device is lost under MDM?",
+          "options": [
+            "Disable device, encrypt data, strengthen authentication",
+            "Enable WPS, open VLAN trunks, allow Telnet",
+            "Remove TLS, disable backups, stop logging",
+            "Increase hop count, allow zone transfers, stop patching",
+            "Switch to HTTP, disable IAM, remove firewalls"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The lecture lists disabling the device, encrypting its data, and enhancing access controls."
+        },
+        {
+          "question": "Which patch management technique is preferred for mobile devices in the lecture?",
+          "options": [
+            "Passive network monitoring",
+            "Agent-based patching",
+            "Agentless scanning only",
+            "Manual patching without verification",
+            "Patch deferral until audits"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Agent-based approaches are described as preferred for mobile devices."
+        },
+        {
+          "question": "What is threat-vulnerability (T-V) pairing used for in risk assessment?",
+          "options": [
+            "To replace CVSS with a single numeric score",
+            "To match threats with exploitable weaknesses and form a baseline risk view",
+            "To encrypt backups before off-site transport",
+            "To sign DNS zones and disable transfers",
+            "To identify VLAN trunks and assign switch ports"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "T-V pairing matches threats to vulnerabilities to estimate baseline risk before controls."
+        },
+        {
+          "question": "What is digital forensics as defined in the lecture?",
+          "options": [
+            "A method to design VLAN segmentation",
+            "Recovery and investigation of information on digital devices related to crime",
+            "A tool that assigns severity scores to vulnerabilities",
+            "A protocol to exchange CTI over HTTPS",
+            "A framework to patch operating systems automatically"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Digital forensics focuses on recovering and investigating digital information tied to criminal activity."
+        },
+        {
+          "question": "In the lecture, what are Indicators of Compromise (IOCs)?",
+          "options": [
+            "Evidence that a cybersecurity incident has occurred",
+            "A scoring method for vulnerability urgency",
+            "A replacement for encryption keys",
+            "A firewall rule format for cloud platforms",
+            "A method of RAID data striping"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "IOCs are evidence traces that indicate an incident (e.g., logs, pcaps, memory artifacts)."
+        },
+        {
+          "question": "Which order correctly lists the four phases of the digital forensics process (NIST 800-86) in the lecture?",
+          "options": [
+            "Collection → Examination → Analysis → Reporting",
+            "Detection → Containment → Recovery → Lessons learned",
+            "Reconnaissance → Delivery → C2 → Actions",
+            "Inventory → Baseline → Patch → Audit",
+            "Hashing → Signing → Encrypting → Backing up"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The lecture lists Collection, Examination, Analysis, and Reporting."
+        },
+        {
+          "question": "Why is evidence collection order based on volatility (RFC 3227 concept)?",
+          "options": [
+            "Volatile data is lost or overwritten quickly",
+            "Low-volatility data is easiest to fake",
+            "Tape backups change faster than RAM",
+            "Switch ports erase logs instantly",
+            "DNS signatures expire every second"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "More volatile data (like RAM) disappears quickly, so it should be collected first."
+        },
+        {
+          "question": "Which item is considered among the most volatile evidence sources in the lecture’s example order?",
+          "options": [
+            "Archival tape backups",
+            "Non-volatile fixed disks",
+            "Memory registers and RAM",
+            "Physical network topology diagrams",
+            "Off-site backup rotation logs"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Memory (registers, caches, RAM) is among the most volatile and can be lost on shutdown."
+        },
+        {
+          "question": "What is the main goal of maintaining a rigorous chain of custody?",
+          "options": [
+            "Increase scan speed by reducing log volume",
+            "Prevent claims that evidence was altered after collection",
+            "Replace the need for disk imaging tools",
+            "Enable WPS pairing for incident systems",
+            "Make CVSS scores legally admissible"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Chain of custody documents handling so the integrity of evidence can be defended."
+        },
+        {
+          "question": "Why should analysis be performed on copies rather than original evidence media?",
+          "options": [
+            "To preserve original timestamps and prevent alteration",
+            "To reduce encryption strength during processing",
+            "To allow users to keep working on infected machines",
+            "To force tools to generate fewer alerts",
+            "To avoid creating bit-level images"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Working on copies protects the original from accidental modification and preserves metadata."
+        },
+        {
+          "question": "What is the key defensive idea behind the Cyber Kill Chain model in the lecture?",
+          "options": [
+            "Defenders must allow Step 7 to observe attackers",
+            "Stopping the attacker at any step breaks the chain",
+            "Only reconnaissance can be detected reliably",
+            "Kill Chain is used only for insider threats",
+            "The model applies only to physical security"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "If the attacker is stopped at any stage, the chain is broken and the intrusion fails."
+        },
+        {
+          "question": "Why does the lecture warn about using the 'wrong exploit' during the exploitation step?",
+          "options": [
+            "It can unintentionally cause DoS or reboots and attract attention",
+            "It automatically signs malware with valid certificates",
+            "It forces DNS servers to accept zone transfers",
+            "It converts SSH sessions back into Telnet",
+            "It increases RIP hop counts above the limit"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "A wrong exploit may fail and also trigger disruptions that alert defenders."
+        },
+        {
+          "question": "Which set lists the four core features of the Diamond Model intrusion event?",
+          "options": [
+            "Adversary, capability, infrastructure, victim",
+            "Threat, vulnerability, impact, likelihood",
+            "User, device, subnet, firewall",
+            "Patch, scan, audit, remediate",
+            "Key, plaintext, ciphertext, signature"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "The Diamond Model core features are adversary, capability, infrastructure, and victim."
+        },
+        {
+          "question": "Which item is a Diamond Model meta-feature listed in the lecture?",
+          "options": [
+            "Timestamp",
+            "Subnet mask",
+            "RAID parity",
+            "WPA2 key length",
+            "CVSS authority"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Meta-features include timestamp, phase, result, direction, methodology, and resources."
+        }
+      ]
     }
   ]
 }
