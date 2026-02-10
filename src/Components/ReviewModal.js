@@ -5,15 +5,17 @@ export default function ReviewModal({ questions, userAnswers, dispatch }) {
   const modalRef = useRef(null);
 
   useEffect(() => {
-    const onKeyDown = (e) => {
-      if (e.key === "Escape") close();
-    };
-    window.addEventListener("keydown", onKeyDown);
+  const onKeyDown = (e) => {
+    if (e.key === "Escape") {
+      dispatch({ type: "closeReview" });
+    }
+  };
 
-    modalRef.current?.focus();
+  window.addEventListener("keydown", onKeyDown);
+  modalRef.current?.focus();
 
-    return () => window.removeEventListener("keydown", onKeyDown);
-  }, [close]);
+  return () => window.removeEventListener("keydown", onKeyDown);
+}, [dispatch]);
 
   const onOverlayMouseDown = (e) => {
     if (e.target === e.currentTarget) close();
