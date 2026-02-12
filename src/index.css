@@ -58,13 +58,20 @@ body {
   right: 2rem;
 }
 
-.footer {
-  width: 100%;
-  display: grid;
-  justify-content: 1fr auto 1fr;
-  align-items: center;
-  column-gap: 0.75rem;
+.footer{
+  width:100%;
+  display:grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items:center;
+  column-gap:0.75rem;
 }
+
+.footer .timer,
+.footer .btn-ui{
+  float: none;
+}
+
+
 
 .footer .btn-left {
   justify-self: start;
@@ -524,7 +531,6 @@ progress {
     grid-area: timer;
     justify-self: center;
     text-align: center;
-    width: 100%;
   }
 
   h1 {
