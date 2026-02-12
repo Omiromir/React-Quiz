@@ -1,6 +1,6 @@
 function Footer({children}) {
     return (
-        <footer>
+        <footer className="footer">
             {children}
         </footer>
     )

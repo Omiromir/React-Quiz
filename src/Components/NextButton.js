@@ -8,7 +8,7 @@ function NextButton({ dispatch, answer, index, numQuestions }) {
 
     return (
         <button
-            className="btn btn-ui"
+            className="btn btn-ui btn-right"
             onClick={() => dispatch({ type: isLast ? "finish" : "nextQuestion" })}
         >
             {isLast ? "Finish" : "Next"}

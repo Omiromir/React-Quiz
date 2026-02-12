@@ -12,6 +12,8 @@ import Footer from "./Components/Footer";
 import Timer from "./Components/Timer";
 import ReviewModal from "./Components/ReviewModal";
 import TestSelectionScreen from "./Components/TestSelectionScreen";
+import PrevButton from "./Components/PrevButton";
+import QuestionNavigator from "./Components/QuestionNavigator";
 
 const SECS_PER_QUESTION = 60;
 
@@ -49,7 +51,7 @@ const reducer = (state, action) => {
       };
     case "startTest":
       const selectedTest = state.tests.find(
-        (test) => test.id === action.testId
+        (test) => test.id === action.testId,
       );
 
       localStorage.removeItem("quizState");
@@ -84,23 +86,76 @@ const reducer = (state, action) => {
         ...state,
         status: "error",
       };
-    case "newAnswer":
-      const question = state.questions[state.index];
+    case "newAnswer": {
+      const qIndex = state.index;
+
+      const updatedUserAnswers = state.userAnswers.some(
+        (a) => a.questionIndex === qIndex,
+      )
+        ? state.userAnswers.map((a) =>
+            a.questionIndex === qIndex ? { ...a, selected: action.payload } : a,
+          )
+        : [
+            ...state.userAnswers,
+            { questionIndex: qIndex, selected: action.payload },
+          ];
+
+      const newPoints = updatedUserAnswers.reduce((sum, a) => {
+        const q = state.questions[a.questionIndex];
+        return sum + (a.selected === q.correctOption ? q.points : 0);
+      }, 0);
 
       return {
         ...state,
         answer: action.payload,
-        points:
-          action.payload === question.correctOption
-            ? state.points + question.points
-            : state.points,
-        userAnswers: [
-          ...state.userAnswers,
-          { questionIndex: state.index, selected: action.payload },
-        ],
+        userAnswers: updatedUserAnswers,
+        points: newPoints,
       };
-    case "nextQuestion":
-      return { ...state, index: state.index + 1, answer: null };
+    }
+
+    case "prevQuestion": {
+      const prevIndex = state.index - 1;
+      if (prevIndex < 0) return state;
+
+      const prevSaved = state.userAnswers.find(
+        (a) => a.questionIndex === prevIndex,
+      );
+
+      return {
+        ...state,
+        index: prevIndex,
+        answer: prevSaved ? prevSaved.selected : null,
+      };
+    }
+
+    case "nextQuestion": {
+      const nextIndex = state.index + 1;
+      if (nextIndex >= state.questions.length) return state;
+
+      const nextSaved = state.userAnswers.find(
+        (a) => a.questionIndex === nextIndex,
+      );
+
+      return {
+        ...state,
+        index: nextIndex,
+        answer: nextSaved ? nextSaved.selected : null,
+      };
+    }
+    case "goToQuestion": {
+      const target = action.payload;
+
+      if (target < 0 || target >= state.questions.length) return state;
+
+      const saved = state.userAnswers.find((a) => a.questionIndex === target);
+
+      return {
+        ...state,
+        index: target,
+        answer: saved ? saved.selected : null,
+      };
+    }
+
     case "finish":
       return {
         ...state,
@@ -168,7 +223,7 @@ export default function App() {
 
   const maxPossiblePoints = questions.reduce(
     (prev, cur) => prev + cur.points,
-    0
+    0,
   );
 
   useEffect(() => {
@@ -203,7 +258,7 @@ export default function App() {
       userAnswers,
       reviewMode,
       hasStarted,
-      selectedTest
+      selectedTest,
     };
 
     console.log("Saving state to localStorage");
@@ -219,7 +274,7 @@ export default function App() {
     userAnswers,
     reviewMode,
     hasStarted,
-    selectedTest
+    selectedTest,
   ]);
 
   if (!selectedTest) {
@@ -228,7 +283,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <Header dispatch={dispatch} hasStarted={hasStarted} />
+      <Header dispatch={dispatch} hasStarted={hasStarted} status={status} />
       <Main>
         {status === "loading" && <Loader />}
         {status === "error" && <Error />}
@@ -248,12 +303,24 @@ export default function App() {
               maxPoints={maxPossiblePoints}
               answer={answer}
             />
+            <QuestionNavigator
+              numQuestions={numQuestions}
+              index={index}
+              userAnswers={userAnswers}
+              dispatch={dispatch}
+            />
             <Question
               question={questions[index]}
               dispatch={dispatch}
               answer={answer}
             />
             <Footer>
+              <PrevButton
+                dispatch={dispatch}
+                answer={answer}
+                index={index}
+                numQuestions={numQuestions}
+              />
               <Timer secondsRemaining={secondsRemaining} dispatch={dispatch} />
               <NextButton
                 dispatch={dispatch}
