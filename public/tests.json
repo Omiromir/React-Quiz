@@ -1441,189 +1441,189 @@
         {
           "question": "Which pair correctly matches process focus and product focus?",
           "options": [
-            "QA: prevent defects; QC: detect defects",
-            "QA: detect defects; QC: prevent defects",
-            "QA: write code; QC: review code",
             "QA: deploy builds; QC: monitor builds",
-            "QA: train users; QC: support users"
+            "QA: train users; QC: support users",
+            "QA: prevent defects; QC: detect defects",
+            "QA: write code; QC: review code",
+            "QA: detect defects; QC: prevent defects"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Quality assurance (QA) is process-focused and aims to prevent defects; quality control (QC) is product-focused and detects defects through checks like testing and inspection."
         },
         {
           "question": "Which document specifies quality procedures, methods, and standards for a project?",
           "options": [
-            "Software quality assurance plan",
-            "Software requirements specification",
-            "System architecture specification",
             "User acceptance test script",
-            "Release configuration checklist"
+            "System architecture specification",
+            "Release configuration checklist",
+            "Software requirements specification",
+            "Software quality assurance plan"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "An SQA plan (often SQAP) defines how quality will be assured: standards to follow, reviews to perform, tools to use, roles, checkpoints, and reporting."
         },
         {
           "question": "Which pair correctly matches verification and validation?",
           "options": [
-            "Verify meets spec; validate meets need",
-            "Verify meets need; validate meets spec",
             "Verify finds bugs; validate hides bugs",
-            "Verify runs faster; validate runs slower",
-            "Verify ships code; validate writes code"
+            "Verify meets spec; validate meets need",
+            "Verify ships code; validate writes code",
+            "Verify meets need; validate meets spec",
+            "Verify runs faster; validate runs slower"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Verification checks the product against specifications (built correctly). Validation checks the product against user needs (built the right thing)."
         },
         {
           "question": "Which pair correctly matches functional and non-functional testing?",
           "options": [
-            "Functional: feature behavior; Non-functional: quality attribute",
-            "Functional: quality attribute; Non-functional: feature behavior",
             "Functional: hardware check; Non-functional: compiler check",
-            "Functional: user training; Non-functional: user support",
-            "Functional: database backup; Non-functional: database restore"
+            "Functional: database backup; Non-functional: database restore",
+            "Functional: quality attribute; Non-functional: feature behavior",
+            "Functional: feature behavior; Non-functional: quality attribute",
+            "Functional: user training; Non-functional: user support"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Functional testing checks expected feature behavior. Non-functional testing evaluates attributes like performance, reliability, scalability, and stability."
         },
         {
           "question": "Which black-box technique reduces tests by grouping similar inputs?",
           "options": [
-            "Equivalence partitioning",
-            "Branch coverage testing",
-            "Loop coverage testing",
             "Mutation analysis testing",
-            "Dataflow analysis testing"
+            "Branch coverage testing",
+            "Equivalence partitioning",
+            "Dataflow analysis testing",
+            "Loop coverage testing"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Equivalence partitioning divides inputs into classes expected to behave similarly; testing one representative per class reduces the test set."
         },
         {
           "question": "Which black-box technique targets values near range edges?",
           "options": [
-            "Boundary value analysis",
             "Statement coverage testing",
-            "Path coverage testing",
             "Pairwise combination testing",
-            "Thread interleaving testing"
+            "Thread interleaving testing",
+            "Path coverage testing",
+            "Boundary value analysis"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Boundary value analysis focuses on values at and around boundaries (min/max, just inside/outside), where defects often occur."
         },
         {
           "question": "Which white-box goal requires each statement to execute at least once?",
           "options": [
+            "Installation coverage goal",
             "Statement coverage goal",
-            "Equivalence coverage goal",
-            "Usability coverage goal",
             "Compatibility coverage goal",
-            "Installation coverage goal"
+            "Usability coverage goal",
+            "Equivalence coverage goal"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Statement coverage is a white-box objective ensuring every statement runs at least once, increasing thoroughness against dead code or untested logic."
         },
         {
           "question": "Which white-box technique ensures both outcomes of a decision run?",
           "options": [
-            "Branch coverage testing",
-            "Boundary value analysis",
-            "Exploratory session testing",
             "Regression suite testing",
-            "Acceptance criteria testing"
+            "Boundary value analysis",
+            "Acceptance criteria testing",
+            "Branch coverage testing",
+            "Exploratory session testing"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Branch (conditional) testing exercises each possible outcome of a condition (e.g., true and false paths in an if statement)."
         },
         {
           "question": "Which case is explicitly included in loop testing?",
           "options": [
-            "Skip loop execution",
             "Run loop only twice",
+            "Run loop in debugger",
+            "Skip loop execution",
             "Run loop until crash",
-            "Run loop in parallel",
-            "Run loop in debugger"
+            "Run loop in parallel"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Loop testing includes skipping the loop (zero iterations), executing once, and executing more than once to uncover boundary and logic defects."
         },
         {
           "question": "Which pair correctly matches smoke testing and sanity testing?",
           "options": [
-            "Smoke: build stable; Sanity: change sensible",
-            "Smoke: change sensible; Sanity: build stable",
             "Smoke: deep coverage; Sanity: no coverage",
+            "Smoke: build stable; Sanity: change sensible",
             "Smoke: only security; Sanity: only performance",
+            "Smoke: change sensible; Sanity: build stable",
             "Smoke: user training; Sanity: user feedback"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Smoke testing quickly checks build stability for further testing. Sanity testing is narrower and checks that a specific change behaves sensibly."
         },
         {
           "question": "Which pair correctly matches retesting and regression testing?",
           "options": [
-            "Retest: confirm fix; Regression: check side effects",
-            "Retest: check side effects; Regression: confirm fix",
+            "Retest: by users; Regression: by customers",
             "Retest: random cases; Regression: only failed cases",
             "Retest: after release; Regression: before coding",
-            "Retest: by users; Regression: by customers"
+            "Retest: check side effects; Regression: confirm fix",
+            "Retest: confirm fix; Regression: check side effects"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Retesting reruns the same failing case(s) to confirm the fix. Regression testing checks that changes did not break previously working features."
         },
         {
           "question": "Which statement matches the idea that testing cannot prove perfection?",
           "options": [
-            "Testing shows defects exist",
-            "Testing proves defects absent",
             "Testing replaces requirements work",
             "Testing removes design work",
-            "Testing guarantees full correctness"
+            "Testing shows defects exist",
+            "Testing guarantees full correctness",
+            "Testing proves defects absent"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Testing can reveal defects, but it cannot prove that no defects exist in nontrivial software."
         },
         {
           "question": "Which phrase best describes a software defect?",
           "options": [
-            "Deviation from expected behavior",
-            "Guaranteed security vulnerability",
             "Cosmetic layout preference only",
+            "User mistake outside the system",
             "Compiler warning in comments",
-            "User mistake outside the system"
+            "Deviation from expected behavior",
+            "Guaranteed security vulnerability"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "A defect is any deviation from expected behavior or requirements; organizations may call these bugs, issues, problems, or incidents."
         },
         {
           "question": "Which pair correctly matches severity and priority in defect management?",
           "options": [
-            "Severity: impact; Priority: urgency",
-            "Severity: urgency; Priority: impact",
-            "Severity: owner; Priority: reporter",
             "Severity: module; Priority: version",
-            "Severity: browser; Priority: device"
+            "Severity: browser; Priority: device",
+            "Severity: impact; Priority: urgency",
+            "Severity: owner; Priority: reporter",
+            "Severity: urgency; Priority: impact"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Severity describes how badly the defect affects the system. Priority describes how urgently it should be fixed from a business/project perspective."
         },
         {
           "question": "Which defect status indicates the reported issue is not valid?",
-          "options": ["Rejected", "New", "Fixed", "Deferred", "Duplicate"],
-          "correctOption": 0,
+          "options": ["Duplicate", "Rejected", "Deferred", "Fixed", "New"],
+          "correctOption": 1,
           "points": 10,
           "explanation": "If analysis concludes the report is not a valid defect (e.g., works as designed, cannot reproduce, not in scope), it is marked as rejected."
         }
@@ -1638,10 +1638,10 @@
           "question": "Which phrase best describes the Software Testing Life Cycle (STLC)?",
           "options": [
             "Sequence of testing activities",
-            "Single post-release testing step",
-            "One-time code debugging session",
             "Deployment-only approval process",
-            "Monitoring-only incident workflow"
+            "Monitoring-only incident workflow",
+            "Single post-release testing step",
+            "One-time code debugging session"
           ],
           "correctOption": 0,
           "points": 10,
@@ -1650,169 +1650,169 @@
         {
           "question": "Which pair correctly matches entry criteria and exit criteria?",
           "options": [
-            "Entry: prerequisites; Exit: completion conditions",
-            "Entry: completion conditions; Exit: prerequisites",
-            "Entry: coding tasks; Exit: coding tasks",
             "Entry: UI design; Exit: UI design",
+            "Entry: completion conditions; Exit: prerequisites",
+            "Entry: prerequisites; Exit: completion conditions",
+            "Entry: coding tasks; Exit: coding tasks",
             "Entry: bug count; Exit: bug count"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Entry criteria are prerequisites before a phase begins; exit criteria are conditions that must be satisfied to conclude that phase."
         },
         {
           "question": "Which statement best captures the purpose of a Requirement Traceability Matrix (RTM)?",
           "options": [
+            "Map builds to release notes",
             "Map requirements to test cases",
-            "Map developers to code modules",
             "Map users to training sessions",
             "Map servers to IP addresses",
-            "Map builds to release notes"
+            "Map developers to code modules"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "RTM links each requirement to corresponding test cases so coverage can be tracked and missing tests can be detected."
         },
         {
           "question": "Which activity belongs to the test planning phase?",
           "options": [
-            "Estimate effort and cost",
+            "Design new feature wireframes",
             "Write production migration script",
-            "Create marketing release banner",
+            "Estimate effort and cost",
             "Configure customer billing rules",
-            "Design new feature wireframes"
+            "Create marketing release banner"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Test planning includes defining strategy, estimating effort/cost, planning resources, identifying environment needs, limitations, and schedules."
         },
         {
           "question": "Which deliverable is produced during test planning?",
           "options": [
-            "Test plan or strategy",
-            "Final production build",
+            "Source code refactor patch",
             "Database normalization report",
+            "Test plan or strategy",
             "User onboarding handbook",
-            "Source code refactor patch"
+            "Final production build"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "The test plan/strategy document is a key output of test planning and guides the overall testing approach."
         },
         {
           "question": "Which set best matches common outputs of the test case development phase?",
           "options": [
-            "Test cases and test data",
-            "Production code and binaries",
-            "User stories and personas",
+            "Servers and network topology",
             "Release notes and changelog",
-            "Servers and network topology"
+            "Test cases and test data",
+            "User stories and personas",
+            "Production code and binaries"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "After the plan is ready, the team creates and reviews test cases/scripts and identifies/creates test data."
         },
         {
           "question": "Which phrase best describes test environment setup?",
           "options": [
-            "Hardware and software conditions",
-            "Customer and stakeholder interviews",
-            "Source code style enforcement",
             "Marketing and sales preparation",
-            "Bug triage and prioritization"
+            "Bug triage and prioritization",
+            "Hardware and software conditions",
+            "Source code style enforcement",
+            "Customer and stakeholder interviews"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Environment setup defines the software and hardware conditions under which the work product will be tested, and is critical for reliable execution."
         },
         {
           "question": "Which activity belongs to the test execution phase?",
           "options": [
-            "Log defects for failures",
-            "Rewrite requirements document",
+            "Publish product advertisements",
             "Design system architecture",
+            "Log defects for failures",
             "Negotiate vendor contracts",
-            "Publish product advertisements"
+            "Rewrite requirements document"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "During execution, testers run cases, document results, log defects, send defects to development for fixes, and perform retesting."
         },
         {
           "question": "Which action is explicitly listed during execution to preserve traceability?",
           "options": [
-            "Map defects into RTM",
-            "Merge branches into main",
-            "Refactor modules for speed",
+            "Rewrite UI components fully",
             "Encrypt all test screenshots",
-            "Rewrite UI components fully"
+            "Map defects into RTM",
+            "Refactor modules for speed",
+            "Merge branches into main"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Execution updates traceability by mapping defects back to test cases in the RTM, making coverage and defect impact visible."
         },
         {
           "question": "Which deliverable is produced during test cycle closure?",
           "options": [
+            "Runtime crash dump archive",
             "Test closure report",
-            "Prototype user interface",
-            "Source code unit library",
             "Server procurement request",
-            "Runtime crash dump archive"
+            "Prototype user interface",
+            "Source code unit library"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Closure evaluates completion criteria, prepares metrics, documents learnings, and produces a test closure report with qualitative/quantitative results."
         },
         {
           "question": "Which testing level is placed at the base of a testing pyramid?",
           "options": [
+            "Acceptance testing level",
             "Unit testing level",
             "UI testing level",
-            "Manual testing level",
-            "Acceptance testing level",
-            "Exploratory testing level"
+            "Exploratory testing level",
+            "Manual testing level"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "The base is unit testing: small scope, isolated code units, minimal external dependencies, and high volume."
         },
         {
           "question": "Which testing type is described as the top layer of the automation pyramid?",
           "options": [
-            "UI and exploratory tests",
             "Unit and component tests",
-            "Static analysis rule checks",
             "Database migration validations",
+            "UI and exploratory tests",
+            "Static analysis rule checks",
             "Network configuration audits"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "The top layer includes UI and exploratory tests; they are more complex, have more dependencies, and should be fewer than tests at the base."
         },
         {
           "question": "Which statement best describes the ice-cream cone testing anti-pattern?",
           "options": [
-            "Many UI tests, few unit tests",
-            "Many unit tests, few UI tests",
-            "Only unit tests, no integration",
             "Only security tests, no functional",
-            "Only manual tests, no automation"
+            "Many UI tests, few unit tests",
+            "Only manual tests, no automation",
+            "Many unit tests, few UI tests",
+            "Only unit tests, no integration"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "The ice-cream cone anti-pattern inverts the pyramid: effort shifts upward to UI/end-to-end and manual testing, leaving too few automated unit tests."
         },
         {
           "question": "Which quadrant contains business-facing tests that support the team?",
           "options": [
-            "Q2 quadrant",
             "Q1 quadrant",
+            "Q2 quadrant",
             "Q3 quadrant",
-            "Q4 quadrant",
-            "Outside the model"
+            "Outside the model",
+            "Q4 quadrant"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Q2 covers business-facing tests that support the team, including functional testing, story tests, prototypes, and simulations using a mix of manual and automated approaches."
         },
@@ -1820,14 +1820,14 @@
           "question": "Which quadrant contains technology-facing tests that critique the product?",
           "options": [
             "Q4 quadrant",
-            "Q1 quadrant",
-            "Q2 quadrant",
+            "Outside the model",
             "Q3 quadrant",
-            "Outside the model"
+            "Q1 quadrant",
+            "Q2 quadrant"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Q4 covers technology-facing critique tests like performance/load, security testing, and *ility tests (stability, reliability, scalability, maintainability, compatibility)."
+          "explanation": "Q4 covers technology-facing critique tests like performance/load, security testing, *ility tests (stability, reliability, scalability, maintainability, compatibility)."
         }
       ]
     },
@@ -1839,195 +1839,195 @@
         {
           "question": "Which phrase best describes Selenium in test automation?",
           "options": [
-            "Automates web browsers",
+            "Monitors server uptime",
             "Compiles source programs",
-            "Optimizes database indexes",
+            "Automates web browsers",
             "Encrypts network traffic",
-            "Monitors server uptime"
+            "Optimizes database indexes"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Selenium is used to control a web browser through code for automated functional testing across browsers and operating systems."
         },
         {
           "question": "Which item is a component of the Selenium suite?",
           "options": [
+            "Selenium Kernel",
+            "Selenium Firewall",
             "Selenium WebDriver",
             "Selenium Database",
-            "Selenium Compiler",
-            "Selenium Kernel",
-            "Selenium Firewall"
+            "Selenium Compiler"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "The suite includes Selenium IDE, Selenium RC, Selenium WebDriver, and Selenium Grid."
         },
         {
           "question": "Which component provides a hub to access browsers on remote machines?",
           "options": [
+            "Selenium WebDriver API",
             "Selenium Grid server",
             "Selenium IDE add-on",
-            "Selenium RC server",
-            "Selenium WebDriver API",
-            "Selenium Studio plugin"
+            "Selenium Studio plugin",
+            "Selenium RC server"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Selenium Grid allows tests to run against browser instances on remote machines; a hub coordinates access to those nodes."
         },
         {
           "question": "Which transport is named between language bindings and drivers in the WebDriver architecture?",
           "options": [
+            "SSH tunnel over ICMP",
             "JSON Wire over HTTP",
-            "SOAP RPC over TCP",
-            "FTP stream over UDP",
             "SMTP mail over SSL",
-            "SSH tunnel over ICMP"
+            "SOAP RPC over TCP",
+            "FTP stream over UDP"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "The architecture slide shows language bindings/core libraries communicating via JSON Wire Protocol over HTTP to browser drivers."
         },
         {
           "question": "Which statement best matches Selenium RC capability?",
           "options": [
-            "Accept HTTP browser commands",
-            "Run GPU performance benchmarks",
-            "Encrypt API payload streams",
+            "Create virtual network subnets",
             "Manage database replication",
-            "Create virtual network subnets"
+            "Run GPU performance benchmarks",
+            "Accept HTTP browser commands",
+            "Encrypt API payload streams"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Selenium RC is a Java server that accepts commands for the browser via HTTP, enabling tests from different programming languages."
         },
         {
           "question": "Which statement best matches Selenium WebDriver role?",
           "options": [
-            "Use browser-specific drivers",
-            "Require RC server always",
             "Target desktop applications",
+            "Use browser-specific drivers",
             "Generate reports automatically",
-            "Automate CAPTCHA challenges"
+            "Automate CAPTCHA challenges",
+            "Require RC server always"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "WebDriver sends commands to the browser through browser-specific drivers (e.g., ChromeDriver, GeckoDriver) and does not require starting an RC server."
         },
         {
           "question": "Which item is an example of a browser driver for Firefox?",
           "options": [
-            "GeckoDriver",
-            "ChromeDriver",
-            "SafariDriver",
             "EdgeDriver",
-            "HTMLUnitDriver"
+            "SafariDriver",
+            "GeckoDriver",
+            "HTMLUnitDriver",
+            "ChromeDriver"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "GeckoDriver is the commonly used driver for Firefox; ChromeDriver is for Chrome, and others exist for other browsers."
         },
         {
           "question": "Which item is listed as a headless browser example?",
           "options": [
-            "HTMLUnitDriver",
-            "Internet Explorer",
-            "Google Chrome",
             "Mozilla Firefox",
-            "Microsoft Edge"
+            "Microsoft Edge",
+            "HTMLUnitDriver",
+            "Google Chrome",
+            "Internet Explorer"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "HTMLUnit is given as an example of a headless browser/driver, meaning it runs without a visible UI."
         },
         {
           "question": "Which benefit is explicitly attributed to Selenium WebDriver?",
           "options": [
-            "Parallel test execution",
-            "Automatic defect triage",
             "Built-in CAPTCHA solving",
             "Automatic report generation",
+            "Parallel test execution",
+            "Automatic defect triage",
             "Native desktop app testing"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "A stated advantage is supporting parallel execution, which reduces total time when running tests concurrently."
         },
         {
           "question": "Which limitation is explicitly associated with Selenium WebDriver scope?",
           "options": [
+            "Solves images by itself",
             "Tests web apps only",
             "Tests desktop apps only",
-            "Generates reports by itself",
-            "Solves images by itself",
-            "Automates CAPTCHAs reliably"
+            "Automates CAPTCHAs reliably",
+            "Generates reports by itself"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "WebDriver targets web-based applications; desktop/Windows app testing needs additional tools and it does not natively solve CAPTCHA or auto-generate reports."
         },
         {
           "question": "Which item is stated as not automatable with Selenium WebDriver?",
           "options": [
+            "Checkbox selections",
+            "Page navigation steps",
             "CAPTCHA challenges",
             "HTML form fields",
-            "Button click actions",
-            "Page navigation steps",
-            "Checkbox selections"
+            "Button click actions"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "CAPTCHA/reCAPTCHA cannot be automated using Selenium WebDriver as stated; normal UI interactions can be automated."
         },
         {
           "question": "Which call is used in WebDriverManager flow to fetch the correct driver?",
           "options": [
-            "chromedriver().setup()",
-            "chromedriver().compile()",
             "chromedriver().deploy()",
+            "chromedriver().setup()",
             "chromedriver().encrypt()",
+            "chromedriver().compile()",
             "chromedriver().profile()"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "The setup() call automatically places the correct browser driver where the code can find it before initializing the driver."
         },
         {
           "question": "Which symbol is used in CSS to select an element by id?",
           "options": [
-            "# character prefix",
             ". character prefix",
-            "// path prefix",
             "@ attribute prefix",
+            "# character prefix",
+            "// path prefix",
             "** wildcard prefix"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "CSS id selectors use #id, while class selectors use .class."
         },
         {
           "question": "Which statement correctly distinguishes XPath from CSS selectors?",
           "options": [
-            "XPath supports bidirectional traversal",
-            "CSS supports bidirectional traversal",
             "XPath is always faster",
-            "CSS supports text() queries",
-            "XPath cannot use attributes"
+            "XPath cannot use attributes",
+            "CSS supports bidirectional traversal",
+            "XPath supports bidirectional traversal",
+            "CSS supports text() queries"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "XPath can traverse both ways (parent↔child), while CSS traversal is typically parent-to-child; CSS is commonly faster and XPath can use text() via XPath functions."
         },
         {
           "question": "Which statement correctly distinguishes static and dynamic HTML tables?",
           "options": [
-            "Static has fixed rows/cols",
-            "Dynamic has fixed rows/cols",
-            "Static changes every refresh",
+            "Static requires JavaScript only",
             "Dynamic never changes size",
-            "Static requires JavaScript only"
+            "Static changes every refresh",
+            "Static has fixed rows/cols",
+            "Dynamic has fixed rows/cols"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Static tables have a fixed number of rows and columns, while dynamic tables can change row/column count based on data."
         }
@@ -2041,101 +2041,101 @@
         {
           "question": "Which wait applies globally once set and remains active while the browser stays open?",
           "options": [
-            "Explicit wait rule",
+            "Implicit wait rule",
             "Fluent wait rule",
             "Polling wait loop",
-            "Implicit wait rule",
-            "Static sleep delay"
+            "Static sleep delay",
+            "Explicit wait rule"
           ],
-          "correctOption": 3,
+          "correctOption": 0,
           "points": 10,
           "explanation": "Implicit wait sets a default timeout for element searches and stays in effect for the whole WebDriver session unless changed."
         },
         {
           "question": "What is the default time value for an implicit wait before you set it?",
           "options": [
-            "One second",
             "Five seconds",
-            "Ten seconds",
+            "Zero seconds",
             "Thirty seconds",
-            "Zero seconds"
+            "Ten seconds",
+            "One second"
           ],
-          "correctOption": 4,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Implicit wait defaults to 0, meaning WebDriver will not wait and will fail immediately if an element is not found."
         },
         {
           "question": "Which wait is targeted to specific elements by waiting until a condition becomes true?",
           "options": [
-            "Implicit wait rule",
-            "Fluent wait rule",
-            "Static sleep delay",
             "Polling wait loop",
-            "Explicit wait rule"
+            "Explicit wait rule",
+            "Static sleep delay",
+            "Fluent wait rule",
+            "Implicit wait rule"
           ],
-          "correctOption": 4,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Explicit waits use a condition (until(...)) for a particular element or state, proceeding as soon as the condition is satisfied."
         },
         {
           "question": "Why can using only an implicit wait slow down execution in pages with mixed load times?",
           "options": [
+            "It waits the same time for all elements",
             "It forces page refresh each time",
             "It blocks JavaScript execution fully",
-            "It waits the same time for all elements",
-            "It prevents element visibility checks",
-            "It disables condition-based polling"
+            "It disables condition-based polling",
+            "It prevents element visibility checks"
           ],
-          "correctOption": 2,
+          "correctOption": 0,
           "points": 10,
           "explanation": "Implicit wait applies to every element lookup, so even fast-loading elements can incur unnecessary waiting when the timeout is high."
         },
         {
           "question": "Which wait type defines both a maximum timeout and how often WebDriver re-checks a condition?",
           "options": [
-            "Explicit wait rule",
-            "Fluent wait rule",
+            "Page load wait",
             "Implicit wait rule",
-            "Static sleep delay",
-            "Page load wait"
+            "Fluent wait rule",
+            "Explicit wait rule",
+            "Static sleep delay"
           ],
-          "correctOption": 1,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Fluent wait sets a total timeout and a polling interval, repeatedly checking the condition until it becomes true or time expires."
         },
         {
           "question": "Which statement best describes fluent wait behavior during the timeout window?",
           "options": [
-            "It checks once, then stops",
             "It refreshes the page repeatedly",
-            "It ignores missing elements",
             "It retries at fixed intervals",
-            "It pauses all browser threads"
+            "It checks once, then stops",
+            "It pauses all browser threads",
+            "It ignores missing elements"
           ],
-          "correctOption": 3,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Fluent wait repeatedly searches for the condition at regular intervals until the element/state appears or the timeout is reached."
         },
         {
           "question": "Which design pattern models each page as a class that stores locators and page actions?",
           "options": [
-            "Factory Pattern",
-            "Observer Pattern",
+            "Decorator Pattern",
             "Page Object Model",
+            "Observer Pattern",
             "Adapter Pattern",
-            "Decorator Pattern"
+            "Factory Pattern"
           ],
-          "correctOption": 2,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Page Object Model (POM) represents each page as a class that stores locators and exposes page actions, reducing duplication and easing maintenance."
         },
         {
           "question": "Which benefit most directly explains why Page Object Model reduces test maintenance cost?",
           "options": [
-            "It guarantees parallel execution",
-            "It centralizes UI locators per page",
             "It replaces assertions automatically",
+            "It centralizes UI locators per page",
             "It removes the need for locators",
+            "It guarantees parallel execution",
             "It prevents browser updates"
           ],
           "correctOption": 1,
@@ -2145,91 +2145,91 @@
         {
           "question": "Which feature initializes page elements using @FindBy without calling findElement repeatedly?",
           "options": [
-            "Fluent Wait support",
             "Page Factory support",
-            "Implicit Wait support",
+            "Fluent Wait support",
             "Select Class support",
-            "Actions Class support"
+            "Actions Class support",
+            "Implicit Wait support"
           ],
-          "correctOption": 1,
+          "correctOption": 0,
           "points": 10,
           "explanation": "Page Factory initializes page objects and elements via annotations like @FindBy and initElements(), reducing repeated locator code."
         },
         {
           "question": "Which Java class is used to load key-value pairs from a .properties file for test data/config?",
           "options": [
-            "java.io.File",
+            "java.util.Properties",
+            "java.nio.Path",
             "java.util.Scanner",
             "java.util.HashMap",
-            "java.util.Properties",
-            "java.nio.Path"
+            "java.io.File"
           ],
-          "correctOption": 3,
+          "correctOption": 0,
           "points": 10,
           "explanation": "Properties loads configuration as key-value pairs (often via FileInputStream), enabling externalized test data without hard-coding values."
         },
         {
           "question": "Which Selenium API is used for advanced keyboard and mouse interactions like drag-and-drop?",
           "options": [
-            "Alert API",
-            "Wait API",
-            "Actions API",
             "Cookie API",
-            "Select API"
+            "Actions API",
+            "Select API",
+            "Alert API",
+            "Wait API"
           ],
-          "correctOption": 2,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Actions supports composite user interactions such as dragAndDrop, doubleClick, clickAndHold, moveToElement, and contextClick."
         },
         {
           "question": "Which Actions method performs a right-click on a target element?",
           "options": [
-            "doubleClick()",
-            "moveToElement()",
             "clickAndHold()",
+            "contextClick()",
+            "moveToElement()",
             "release()",
-            "contextClick()"
+            "doubleClick()"
           ],
-          "correctOption": 4,
+          "correctOption": 1,
           "points": 10,
           "explanation": "contextClick() triggers the context menu action (right-click) on an element."
         },
         {
           "question": "Which Selenium class is used to work with an HTML <select> dropdown element?",
           "options": [
+            "Actions class",
             "Wait class",
             "Select class",
-            "Actions class",
             "Alert class",
             "Driver class"
           ],
-          "correctOption": 1,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Select wraps an HTML SELECT tag and provides helper methods to select/deselect options."
         },
         {
           "question": "Which Select method chooses an option based on the text shown to the user?",
           "options": [
+            "deselectAll()",
             "selectByVisibleText()",
             "selectByIndex()",
             "selectByValue()",
-            "deselectByIndex()",
-            "deselectAll()"
+            "deselectByIndex()"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "selectByVisibleText() selects an option using the displayed label text in the dropdown."
         },
         {
           "question": "Which set lists valid ways to switch into an iframe before locating elements inside it?",
           "options": [
-            "By CSS, by XPath, by className",
-            "By URL, by title, by history",
             "By index, by name/id, by WebElement",
             "By cookie, by header, by cache",
-            "By suite, by test, by method"
+            "By URL, by title, by history",
+            "By suite, by test, by method",
+            "By CSS, by XPath, by className"
           ],
-          "correctOption": 2,
+          "correctOption": 0,
           "points": 10,
           "explanation": "WebDriver can switch to a frame using an index, a name/id string, or a WebElement reference."
         }
@@ -2243,11 +2243,11 @@
         {
           "question": "Which description matches the core idea of TestNG?",
           "options": [
-            "A browser automation protocol for HTTP",
-            "A package manager for Java projects",
-            "A JUnit-inspired framework with extra features",
             "A database driver for SQL queries",
-            "A UI toolkit for desktop apps"
+            "A UI toolkit for desktop apps",
+            "A JUnit-inspired framework with extra features",
+            "A package manager for Java projects",
+            "A browser automation protocol for HTTP"
           ],
           "correctOption": 2,
           "points": 10,
@@ -2256,88 +2256,88 @@
         {
           "question": "Which annotation runs once before all tests in a suite start?",
           "options": [
-            "@BeforeTest",
-            "@BeforeClass",
+            "@BeforeSuite",
             "@BeforeMethod",
+            "@BeforeClass",
             "@BeforeGroups",
-            "@BeforeSuite"
+            "@BeforeTest"
           ],
-          "correctOption": 4,
+          "correctOption": 0,
           "points": 10,
           "explanation": "@BeforeSuite executes before any tests in the entire suite run."
         },
         {
           "question": "Which Log4j API feature is listed as an advantage over SLF4J?",
           "options": [
-            "It selects dropdown options by visible text",
             "It records browser video by default",
-            "It waits for elements using ExpectedConditions",
+            "It generates page objects from HTML automatically",
             "It supports logging messages, not only strings",
-            "It generates page objects from HTML automatically"
+            "It selects dropdown options by visible text",
+            "It waits for elements using ExpectedConditions"
           ],
-          "correctOption": 3,
+          "correctOption": 2,
           "points": 10,
           "explanation": "The Log4j API supports logging Message objects (not just String text), among other advantages like lambda support and richer APIs."
         },
         {
           "question": "In a Log4j2 configuration file, which element is intended to hold one or more appenders?",
           "options": [
-            "Configuration element",
-            "Loggers element",
-            "Root element",
             "ThreadContext element",
-            "Appenders element"
+            "Appenders element",
+            "Root element",
+            "Configuration element",
+            "Loggers element"
           ],
-          "correctOption": 4,
+          "correctOption": 1,
           "points": 10,
           "explanation": "The Appenders element contains one or more appender definitions (e.g., console output), while Loggers/Root control routing and levels."
         },
         {
           "question": "Which annotation marks a method as a test case?",
           "options": [
-            "@Test",
-            "@BeforeMethod",
             "@AfterMethod",
+            "@Test",
             "@BeforeClass",
-            "@AfterClass"
+            "@AfterClass",
+            "@BeforeMethod"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "@Test identifies a method as a test case to be executed by TestNG."
         },
         {
           "question": "What do assertions primarily verify in automated tests?",
           "options": [
-            "Drivers download without errors",
-            "Browsers launch in headless mode",
+            "Reports render as HTML files",
             "Selectors are unique in the DOM",
             "Expected results match actual results",
-            "Reports render as HTML files"
+            "Drivers download without errors",
+            "Browsers launch in headless mode"
           ],
-          "correctOption": 3,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Assertions compare actual outcomes to expected outcomes; failing assertions indicate a test failure."
         },
         {
           "question": "Where are TestNG parameters typically defined for runtime injection?",
           "options": [
-            "In the compiled JAR manifest",
-            "In the Selenium Server config",
+            "In the operating system PATH",
             "In the TestNG XML suite file",
-            "In the browser localStorage",
-            "In the operating system PATH"
+            "In the Selenium Server config",
+            "In the compiled JAR manifest",
+            "In the browser localStorage"
           ],
-          "correctOption": 2,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Parameters are passed at runtime via the TestNG XML file, not directly inside the test case files."
         },
         {
           "question": "Which statement best defines parallel testing?",
           "options": [
-            "Running tests only after deployment",
-            "Running tests concurrently on multiple threads",
             "Running tests without any assertions",
+            "Running tests concurrently on multiple threads",
             "Running tests with one shared browser",
+            "Running tests only after deployment",
             "Running tests with fixed data only"
           ],
           "correctOption": 1,
@@ -2347,76 +2347,76 @@
         {
           "question": "Which benefit is most directly tied to parallel execution?",
           "options": [
-            "Automatic elimination of flaky tests",
-            "Guaranteed determinism in all runs",
             "Automatic locator healing on failure",
+            "Reduced overall execution time",
+            "Guaranteed determinism in all runs",
             "Removal of the need for test data",
-            "Reduced overall execution time"
+            "Automatic elimination of flaky tests"
           ],
-          "correctOption": 4,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Running independent tests concurrently reduces total wall-clock time compared to running them one after another."
         },
         {
           "question": "Which statement best describes what a listener is used for in test automation?",
           "options": [
-            "Encrypt all network requests automatically",
-            "Compile test code into native machine code",
-            "Modify default behavior for logs and reports",
             "Generate locators from screenshots automatically",
-            "Replace waits with fixed sleep statements"
+            "Modify default behavior for logs and reports",
+            "Replace waits with fixed sleep statements",
+            "Encrypt all network requests automatically",
+            "Compile test code into native machine code"
           ],
-          "correctOption": 2,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Listeners are interfaces that hook into events to change default behavior, commonly to capture logs, screenshots, and reports."
         },
         {
           "question": "Which component is used to fire WebDriver events and support register/unregister of event handlers?",
           "options": [
-            "WebDriverWait",
-            "ExpectedConditions",
-            "RemoteWebDriver",
             "EventFiringWebDriver",
+            "ExpectedConditions",
+            "WebDriverWait",
+            "RemoteWebDriver",
             "PageFactory"
           ],
-          "correctOption": 3,
+          "correctOption": 0,
           "points": 10,
           "explanation": "EventFiringWebDriver wraps a driver and triggers callbacks for registered WebDriver event listeners."
         },
         {
           "question": "Which callback name is invoked when a test method fails in a TestNG listener?",
           "options": [
-            "onTestSuccess",
-            "onStart",
-            "onTestFailure",
             "onFinish",
-            "onTestSkipped"
+            "onStart",
+            "onTestSkipped",
+            "onTestFailure",
+            "onTestSuccess"
           ],
-          "correctOption": 2,
+          "correctOption": 3,
           "points": 10,
           "explanation": "onTestFailure is called when a test fails, enabling custom actions like extra logging or screenshots."
         },
         {
           "question": "Which Reporter method call matches a valid TestNG Reporter API signature?",
           "options": [
-            "Reporter.write(String s)",
+            "Reporter.note(String s)",
+            "Reporter.log(String s)",
             "Reporter.print(String s)",
             "Reporter.debug(String s)",
-            "Reporter.note(String s)",
-            "Reporter.log(String s)"
+            "Reporter.write(String s)"
           ],
-          "correctOption": 4,
+          "correctOption": 1,
           "points": 10,
           "explanation": "TestNG provides Reporter.log(...) overloads; the simplest form is Reporter.log(String s) to store logs in the report."
         },
         {
           "question": "Which pairing best matches logging levels described for practice in automation?",
           "options": [
-            "Log4J for high-level, Reporter for low-level",
+            "Drivers for low-level, XML for high-level",
             "Reporter for high-level, Log4J for low-level",
             "Reporter for low-level, Waits for high-level",
             "Extent for low-level, Assertions for high-level",
-            "Drivers for low-level, XML for high-level"
+            "Log4J for high-level, Reporter for low-level"
           ],
           "correctOption": 1,
           "points": 10,
@@ -2425,11 +2425,11 @@
         {
           "question": "Which output format is associated with ExtentReports?",
           "options": [
-            "Binary reports inside JAR files",
             "CSV-only reports with no visuals",
+            "Encrypted reports in browser cache",
             "HTML reports with charts and logs",
-            "Registry-based reports on Windows",
-            "Encrypted reports in browser cache"
+            "Binary reports inside JAR files",
+            "Registry-based reports on Windows"
           ],
           "correctOption": 2,
           "points": 10,
@@ -2445,37 +2445,37 @@
         {
           "question": "What is cross-browser testing primarily used to check?",
           "options": [
-            "Execution time under peak traffic",
-            "Security posture against common attacks",
+            "Database integrity across transactions",
             "Functionality across browsers and devices",
+            "Execution time under peak traffic",
             "API contract across endpoints",
-            "Database integrity across transactions"
+            "Security posture against common attacks"
           ],
-          "correctOption": 2,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Cross-browser testing checks whether a web app/site/page works as intended for end users across multiple browsers and devices."
         },
         {
           "question": "Cross-browser testing is most directly categorized as which testing type?",
           "options": [
-            "Mutation testing",
+            "Compatibility testing",
             "Load testing",
-            "Static analysis testing",
             "Fuzz testing",
-            "Compatibility testing"
+            "Static analysis testing",
+            "Mutation testing"
           ],
-          "correctOption": 4,
+          "correctOption": 0,
           "points": 10,
           "explanation": "It is a form of compatibility testing, ensuring the application integrates and behaves correctly with different interfacing environments."
         },
         {
           "question": "Which set is explicitly mentioned as areas covered by compatibility testing?",
           "options": [
-            "Requirements, design, and code style",
+            "Latency, throughput, and jitter",
             "Hardware, operating systems, and devices",
-            "Threat models, exploits, and patches",
             "Tokens, cookies, and sessions",
-            "Latency, throughput, and jitter"
+            "Threat models, exploits, and patches",
+            "Requirements, design, and code style"
           ],
           "correctOption": 1,
           "points": 10,
@@ -2484,128 +2484,128 @@
         {
           "question": "Which statement best describes BrowserStack in testing workflows?",
           "options": [
-            "A local IDE plugin for writing unit tests",
-            "A database for storing defect reports",
             "A static analyzer for Java source code",
             "A cloud-based tool for cross-browser testing",
-            "A network sniffer for packet inspection"
+            "A network sniffer for packet inspection",
+            "A database for storing defect reports",
+            "A local IDE plugin for writing unit tests"
           ],
-          "correctOption": 3,
+          "correctOption": 1,
           "points": 10,
           "explanation": "BrowserStack is presented as a cloud-based testing tool used to run cross-browser tests for web and mobile applications."
         },
         {
           "question": "Which is listed as a BrowserStack capability related to mobile applications?",
           "options": [
+            "Low-level logging via Log4J",
+            "Cross-browser testing on desktop",
             "Native app testing on mobile",
             "Hybrid application testing",
-            "Cross-browser testing on desktop",
-            "Parallel execution via TestNG XML",
-            "Low-level logging via Log4J"
+            "Parallel execution via TestNG XML"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "BrowserStack features include native app testing on mobile devices."
         },
         {
           "question": "What is a hybrid-driven framework defined as?",
           "options": [
-            "A framework combining code and compiled artifacts",
             "A framework combining unit and integration tests",
             "A framework combining data-driven and keyword-driven",
+            "A framework combining logs and reports",
             "A framework combining UI and API gateways",
-            "A framework combining logs and reports"
+            "A framework combining code and compiled artifacts"
           ],
-          "correctOption": 2,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Hybrid-driven development combines data-driven and keyword-driven approaches, externalizing both keywords and test data."
         },
         {
           "question": "What is the defining idea of a data-driven framework?",
           "options": [
+            "Separating test data from test scripts",
             "Separating UI from business logic",
-            "Separating code from compiled artifacts",
             "Separating tests from assertions",
             "Separating logs from reports",
-            "Separating test data from test scripts"
+            "Separating code from compiled artifacts"
           ],
-          "correctOption": 4,
+          "correctOption": 0,
           "points": 10,
           "explanation": "Data-driven development/testing separates datasets from test code so inputs can be changed without modifying the automation logic."
         },
         {
           "question": "Which set of sources is listed for storing external test data in a data-driven approach?",
           "options": [
-            "PNG, JPG, MP4, or WAV files",
             "Excel, CSV, XML, or database tables",
-            "HTML, CSS, SCSS, or LESS files",
             "DNS, DHCP, NTP, or SNMP configs",
-            "JWT, OAuth, SAML, or Kerberos tokens"
+            "HTML, CSS, SCSS, or LESS files",
+            "JWT, OAuth, SAML, or Kerberos tokens",
+            "PNG, JPG, MP4, or WAV files"
           ],
-          "correctOption": 1,
+          "correctOption": 0,
           "points": 10,
           "explanation": "External data sources mentioned include Excel, .csv, .xml, and database tables."
         },
         {
           "question": "Which step is part of the described data-driven testing flow?",
           "options": [
-            "Replace WebDriver with a mock object",
+            "Compare actual results with expected output",
             "Generate locators from a DOM snapshot",
             "Rotate encryption keys after each run",
-            "Compare actual results with expected output",
-            "Compile tests into a native binary"
+            "Compile tests into a native binary",
+            "Replace WebDriver with a mock object"
           ],
-          "correctOption": 3,
+          "correctOption": 0,
           "points": 10,
           "explanation": "The workflow includes entering input data through scripts and comparing actual results against expected outputs."
         },
         {
           "question": "Which description best matches Apache MetaModel?",
           "options": [
+            "A library launching browsers in parallel",
             "A library unifying access to different datastores",
-            "A library generating Selenium page objects",
-            "A library asserting expected vs actual results",
             "A library converting PPTX into PDF files",
-            "A library launching browsers in parallel"
+            "A library asserting expected vs actual results",
+            "A library generating Selenium page objects"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Apache MetaModel encapsulates differences between datastores and offers a unified model of schemas, tables, columns, and relationships with richer querying."
         },
         {
           "question": "Keyword-driven automation is also described using which alternative term?",
           "options": [
-            "Mutation-driven test automation",
-            "Graph-driven test automation",
             "Table-driven test automation",
+            "Graph-driven test automation",
             "Token-driven test automation",
+            "Mutation-driven test automation",
             "Thread-driven test automation"
           ],
-          "correctOption": 2,
+          "correctOption": 0,
           "points": 10,
           "explanation": "Keyword-driven development is often regarded as table-driven test automation or action-word based testing."
         },
         {
           "question": "In a keyword-driven table, what does 'Action on the Test Object' represent?",
           "options": [
-            "A selector type such as CSS or XPath",
             "A browser type such as Chrome or Firefox",
-            "A wait strategy such as implicit or fluent",
+            "An operation such as click or open browser",
             "A report type such as HTML or XML",
-            "An operation such as click or open browser"
+            "A selector type such as CSS or XPath",
+            "A wait strategy such as implicit or fluent"
           ],
-          "correctOption": 4,
+          "correctOption": 1,
           "points": 10,
           "explanation": "The action field represents what will be performed on the object (e.g., Click, Open Browser, Read/Write)."
         },
         {
           "question": "Which resource stores web element definitions for keyword-driven execution?",
           "options": [
-            "A screenshot folder in the project root",
-            "An object repository in a properties file",
             "A compiled JAR file in the build output",
+            "An object repository in a properties file",
             "A browser profile in the OS user folder",
-            "A Jenkins pipeline in a YAML file"
+            "A Jenkins pipeline in a YAML file",
+            "A screenshot folder in the project root"
           ],
           "correctOption": 1,
           "points": 10,
@@ -2614,26 +2614,26 @@
         {
           "question": "What distinguishes data-driven testing from keyword-driven testing in the described comparison?",
           "options": [
-            "DDT uses keywords to drive actions, KDT uses data rows to drive repeated runs",
-            "DDT runs only manually, KDT runs only automatically",
             "DDT needs no external files, KDT needs no external files",
             "DDT uses data rows to drive repeated runs, KDT uses keywords to drive actions",
+            "DDT runs only manually, KDT runs only automatically",
+            "DDT uses keywords to drive actions, KDT uses data rows to drive repeated runs",
             "DDT is for mobile only, KDT is for web only"
           ],
-          "correctOption": 3,
+          "correctOption": 1,
           "points": 10,
           "explanation": "In the comparison, data-driven testing repeats scripts based on rows of data, while keyword-driven testing uses keywords that represent actions to drive execution."
         },
         {
           "question": "Which statement best defines Apache POI in Java-based test automation?",
           "options": [
-            "An API to create and modify MS Office files",
-            "A framework to parallelize TestNG suites",
-            "A library to capture WebDriver events",
+            "A driver to run tests on cloud devices",
             "A tool to generate HTML extent reports",
-            "A driver to run tests on cloud devices"
+            "An API to create and modify MS Office files",
+            "A library to capture WebDriver events",
+            "A framework to parallelize TestNG suites"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Apache POI is an open-source API that lets Java programs create, modify, and display Microsoft Office files, commonly used for Excel-based test data."
         }
@@ -2647,78 +2647,78 @@
         {
           "question": "What is database testing primarily focused on verifying?",
           "options": [
-            "Schema objects and data integrity",
-            "UI layout and visual alignment",
             "Source code formatting rules",
+            "CPU instruction and cache behavior",
+            "Schema objects and data integrity",
             "Network routing and firewall rules",
-            "CPU instruction and cache behavior"
+            "UI layout and visual alignment"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Database testing verifies database objects (schema, tables, triggers, procedures) and checks data integrity and consistency, often using SQL queries."
         },
         {
           "question": "Which outcome is a direct reason database testing is considered critical?",
           "options": [
+            "Replace the need for API testing",
             "Prevent data loss and invalid records",
             "Eliminate all production defects",
-            "Replace the need for API testing",
-            "Guarantee zero downtime releases",
-            "Avoid writing any SQL queries"
+            "Avoid writing any SQL queries",
+            "Guarantee zero downtime releases"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "It helps prevent data loss, inconsistent/invalid stored data, aborted transaction issues, and reduces risk of unauthorized access to stored information."
         },
         {
           "question": "Which set contains common database items validated during database testing?",
           "options": [
+            "Cables, ports, NICs, modems",
             "Tables, columns, triggers, indexes",
-            "Buttons, icons, themes, fonts",
             "Threads, locks, heaps, stacks",
-            "Routers, switches, DNS, DHCP",
-            "Cables, ports, NICs, modems"
+            "Buttons, icons, themes, fonts",
+            "Routers, switches, DNS, DHCP"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Database testing commonly validates schema, tables, columns, keys/indexes, triggers, stored procedures, and server-level behavior."
         },
         {
           "question": "Which ACID property enforces all-or-nothing behavior for a transaction?",
           "options": [
+            "Availability",
             "Atomicity",
-            "Consistency",
-            "Isolation",
             "Durability",
-            "Availability"
+            "Consistency",
+            "Isolation"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Atomicity means a transaction fully completes or fully rolls back; partial updates are not allowed."
         },
         {
           "question": "Which ACID property focuses on preserving correctness before and after a transaction?",
           "options": [
-            "Consistency",
             "Atomicity",
             "Isolation",
-            "Durability",
-            "Elasticity"
+            "Elasticity",
+            "Consistency",
+            "Durability"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Consistency ensures database rules and integrity constraints remain valid after a transaction finishes."
         },
         {
           "question": "What is the main goal of data mapping validation in database testing?",
           "options": [
-            "Confirm UI fields match DB fields",
+            "Confirm tests match tool versions",
             "Confirm UI colors match branding",
+            "Confirm UI fields match DB fields",
             "Confirm servers match OS versions",
-            "Confirm code style matches policy",
-            "Confirm tests match tool versions"
+            "Confirm code style matches policy"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Data mapping checks that front-end fields are consistently mapped to the correct back-end table/column fields and that user actions trigger correct CRUD operations."
         },
@@ -2726,10 +2726,10 @@
           "question": "Structural database testing is best described as testing which area?",
           "options": [
             "Internal DB elements not seen by users",
-            "End-user flows through the UI screens",
-            "Only system logs and monitoring alerts",
             "Only the browser rendering pipeline",
-            "Only the application source code style"
+            "Only the application source code style",
+            "Only system logs and monitoring alerts",
+            "End-user flows through the UI screens"
           ],
           "correctOption": 0,
           "points": 10,
@@ -2738,52 +2738,52 @@
         {
           "question": "Schema testing mainly validates which relationship?",
           "options": [
-            "Front-end mapping to back-end schema",
-            "Browser caching to UI components",
-            "API routing to load balancer rules",
+            "Logs mapping to monitoring dashboards",
             "Unit tests mapping to code branches",
-            "Logs mapping to monitoring dashboards"
+            "Front-end mapping to back-end schema",
+            "API routing to load balancer rules",
+            "Browser caching to UI components"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Schema testing verifies that tables/views/columns and their formats are compatible with how the application maps and uses them from the UI."
         },
         {
           "question": "Which check is most directly related to key and index validation?",
           "options": [
-            "Primary and foreign key constraints exist",
-            "Dropdown labels match expected text",
-            "Page loads within four seconds always",
             "All endpoints return only JSON payloads",
-            "All tests run only in headless mode"
+            "Dropdown labels match expected text",
+            "Primary and foreign key constraints exist",
+            "All tests run only in headless mode",
+            "Page loads within four seconds always"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Key/index checks confirm PK/FK constraints exist, FK references are valid, data types match across related keys, and naming conventions are followed."
         },
         {
           "question": "Which pair is commonly validated when checking database keys?",
           "options": [
+            "CPU usage matches memory usage",
+            "URL matches browser version",
             "Primary key type matches foreign key type",
             "Font size matches button size",
-            "URL matches browser version",
-            "CPU usage matches memory usage",
             "IP address matches subnet mask"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "A frequent defect is mismatched PK/FK data types; validation ensures the referenced and referencing keys use compatible data types."
         },
         {
           "question": "Which item is a typical focus of stored procedure testing?",
           "options": [
-            "Exception handling and coding standards",
-            "Image compression and rendering speed",
             "Browser extensions and plug-in policy",
+            "Exception handling and coding standards",
+            "UI theme and color palette selection",
             "DNS resolution and route propagation",
-            "UI theme and color palette selection"
+            "Image compression and rendering speed"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Stored procedure testing checks coding standards, exception/error handling, logic coverage with input data, and correctness of updates/results."
         },
@@ -2791,10 +2791,10 @@
           "question": "Trigger testing most directly verifies which behavior?",
           "options": [
             "Correct execution on DML operations",
-            "Correct display on mobile screens",
-            "Correct sorting in UI tables",
+            "Correct compilation in build tools",
             "Correct caching in CDN layers",
-            "Correct compilation in build tools"
+            "Correct sorting in UI tables",
+            "Correct display on mobile screens"
           ],
           "correctOption": 0,
           "points": 10,
@@ -2803,39 +2803,39 @@
         {
           "question": "Functional database testing is best described from which viewpoint?",
           "options": [
+            "Only server hardware throughput",
             "End-user transactions and expected outcomes",
             "Database engine source code internals",
-            "Only index tree structures",
-            "Only server hardware throughput",
-            "Only network packet correctness"
+            "Only network packet correctness",
+            "Only index tree structures"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Functional database testing validates that user-driven operations that interact with the database behave correctly (field rules, computed fields, mappings, outcomes)."
         },
         {
           "question": "ETL is correctly expanded as which sequence?",
           "options": [
-            "Extract, Transform, Load",
-            "Encode, Transmit, Log",
             "Evaluate, Test, Launch",
-            "Execute, Track, Label",
-            "Export, Transfer, Link"
+            "Encode, Transmit, Log",
+            "Export, Transfer, Link",
+            "Extract, Transform, Load",
+            "Execute, Track, Label"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "ETL testing verifies that data extracted from a source, transformed by business rules, and loaded into the destination remains accurate across stages."
         },
         {
           "question": "Which performance testing type targets the breaking point under extreme workload?",
           "options": [
-            "Stress testing",
+            "Usability testing",
             "Load testing",
-            "Endurance testing",
             "Spike testing",
-            "Usability testing"
+            "Stress testing",
+            "Endurance testing"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Stress testing pushes the system beyond expected load to find the breaking point and observe failure behavior."
         }
@@ -2849,13 +2849,13 @@
         {
           "question": "Behavior-driven development is mainly intended to improve what?",
           "options": [
+            "Network bandwidth for file transfers",
             "Shared understanding of system behavior",
-            "GPU usage during rendering tasks",
             "Database replication across regions",
-            "Compiler optimization for bytecode",
-            "Network bandwidth for file transfers"
+            "GPU usage during rendering tasks",
+            "Compiler optimization for bytecode"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "BDD expresses behavior in simple language so technical and non-technical participants share the same understanding of expected outcomes."
         },
@@ -2875,137 +2875,137 @@
         {
           "question": "In test-driven development, what typically happens first in an iteration?",
           "options": [
-            "Write tests that initially fail",
-            "Write production code immediately",
             "Deploy the build to production",
-            "Design the UI theme and layout",
-            "Collect monitoring metrics only"
+            "Write tests that initially fail",
+            "Collect monitoring metrics only",
+            "Write production code immediately",
+            "Design the UI theme and layout"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "TDD begins by writing tests for new functionality; they fail at first because the application code is not implemented yet."
         },
         {
           "question": "Which cycle best matches the TDD workflow?",
           "options": [
-            "Write tests, write code, refactor",
-            "Design UI, deploy build, monitor",
-            "Write docs, ship code, announce",
             "Add servers, tune network, retest",
+            "Write tests, write code, refactor",
+            "Write docs, ship code, announce",
+            "Design UI, deploy build, monitor",
             "Mock APIs, skip tests, release"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "TDD repeats: create failing tests, implement code to pass, then refactor while keeping tests passing."
         },
         {
           "question": "Which item is presented as a benefit of TDD?",
           "options": [
-            "Low-level regression test suite",
+            "Guaranteed perfect requirements",
             "Automatic elimination of all bugs",
-            "No need to refactor any code",
             "No need to maintain test cases",
-            "Guaranteed perfect requirements"
+            "Low-level regression test suite",
+            "No need to refactor any code"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "TDD produces a growing set of unit tests that act as a regression suite and can drive cleaner design through refactoring."
         },
         {
           "question": "Which item is presented as a drawback of TDD?",
           "options": [
-            "Tests become maintenance overhead",
-            "Tests always run faster than UI tests",
-            "Tests remove the need for debugging",
+            "Tests prevent requirement changes",
             "Tests guarantee complete coverage",
-            "Tests prevent requirement changes"
+            "Tests become maintenance overhead",
+            "Tests remove the need for debugging",
+            "Tests always run faster than UI tests"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Tests must be maintained and often rewritten when requirements change, creating ongoing cost if not managed well."
         },
         {
           "question": "Which mapping correctly matches Given, When, Then?",
           "options": [
-            "Given: context; When: action; Then: outcome",
-            "Given: outcome; When: context; Then: action",
             "Given: action; When: outcome; Then: context",
+            "Given: compile; When: deploy; Then: monitor",
             "Given: setup; When: teardown; Then: compile",
-            "Given: compile; When: deploy; Then: monitor"
+            "Given: context; When: action; Then: outcome",
+            "Given: outcome; When: context; Then: action"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Given sets preconditions, When performs an action, Then states the expected result."
         },
         {
           "question": "Cucumber is best described as which type of tool?",
           "options": [
-            "A BDD testing framework using Gherkin",
-            "A database engine for relational queries",
-            "A browser driver for native automation",
             "A logging library for Java programs",
-            "A compiler plugin for unit coverage"
+            "A browser driver for native automation",
+            "A BDD testing framework using Gherkin",
+            "A compiler plugin for unit coverage",
+            "A database engine for relational queries"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Cucumber supports BDD by running scenarios written in Gherkin and binding them to executable step definitions."
         },
         {
           "question": "Gherkin is best described as what kind of language?",
           "options": [
-            "A plain-text grammar for scenarios",
-            "A binary protocol for HTTP transport",
-            "A bytecode format for JVM execution",
+            "A schema language for database keys",
             "A markup language for UI styling",
-            "A schema language for database keys"
+            "A bytecode format for JVM execution",
+            "A plain-text grammar for scenarios",
+            "A binary protocol for HTTP transport"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Gherkin is a simple grammar that lets teams write human-readable scenarios that tools can still parse and execute."
         },
         {
           "question": "Which term represents a collection of scenarios under one business capability?",
-          "options": ["Feature", "Fixture", "Module", "Package", "Pipeline"],
-          "correctOption": 0,
+          "options": ["Package", "Feature", "Module", "Pipeline", "Fixture"],
+          "correctOption": 1,
           "points": 10,
           "explanation": "A Feature describes the capability being specified and tested; it typically contains multiple scenarios."
         },
         {
           "question": "Which term describes repeating the same scenario for multiple datasets in Gherkin?",
           "options": [
-            "Scenario Outline",
-            "Background Block",
-            "Hook Section",
             "Step Binding",
-            "Runner Profile"
+            "Background Block",
+            "Runner Profile",
+            "Scenario Outline",
+            "Hook Section"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Scenario Outline runs the same scenario multiple times using example rows as datasets."
         },
         {
           "question": "Which statement correctly distinguishes Scenario Outline and Data Tables?",
           "options": [
-            "Outline reruns scenario; table feeds one step",
-            "Outline feeds one step; table reruns scenario",
             "Outline is for hooks; table is for runners",
+            "Outline reruns scenario; table feeds one step",
             "Outline is for logs; table is for reports",
+            "Outline feeds one step; table reruns scenario",
             "Outline is for UI; table is for API only"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Scenario Outline uses Examples to rerun the whole scenario for each row; Data Tables provide structured data for a single step and need code to interpret."
         },
         {
           "question": "A step definition is best described as what?",
           "options": [
+            "A network rule for API routing",
             "Code that matches a step pattern",
-            "A database row for test input",
             "A UI selector stored in a file",
             "A build job triggered by Jenkins",
-            "A network rule for API routing"
+            "A database row for test input"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Step definitions bind Gherkin steps to executable code using patterns/annotations, so the scenario can drive actions and assertions."
         },
@@ -3015,8 +3015,8 @@
             "Run setup and teardown per scenario",
             "Generate random test cases automatically",
             "Replace assertions with screenshots",
-            "Eliminate the need for a test runner",
-            "Force all tests to run in parallel"
+            "Force all tests to run in parallel",
+            "Eliminate the need for a test runner"
           ],
           "correctOption": 0,
           "points": 10,
@@ -3025,13 +3025,13 @@
         {
           "question": "Which set lists typical steps when converting a Selenium test into BDD style?",
           "options": [
-            "Add deps, write feature, add runner",
             "Compile code, disable tests, deploy",
-            "Capture packets, spoof DNS, retest",
             "Change OS, change browser, rerun",
+            "Capture packets, spoof DNS, retest",
+            "Add deps, write feature, add runner",
             "Remove waits, remove checks, ship"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "A typical flow is adding Cucumber dependencies, writing feature files, creating a runner, implementing steps, then executing via JUnit or Maven."
         }
@@ -3045,26 +3045,26 @@
         {
           "question": "API testing is best defined as testing which layer directly?",
           "options": [
-            "Interfaces between systems and services",
-            "Pixel alignment of UI components",
-            "Compiler output and build artifacts",
             "Operating system kernel functions",
-            "Physical network cabling layout"
+            "Interfaces between systems and services",
+            "Compiler output and build artifacts",
+            "Physical network cabling layout",
+            "Pixel alignment of UI components"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "API testing validates APIs directly (functionality, reliability, performance, security) and checks logic between UI and database/service layers."
         },
         {
           "question": "Which benefit is specifically linked to API testing being GUI-independent?",
           "options": [
+            "Avoid checking response codes",
             "Start testing before UI is ready",
-            "Eliminate the need for test cases",
             "Guarantee perfect user experience",
-            "Remove the need for authorization",
-            "Avoid checking response codes"
+            "Eliminate the need for test cases",
+            "Remove the need for authorization"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Because it does not depend on GUI, API testing can begin earlier, giving faster feedback on core functionality and integration logic."
         },
@@ -3072,9 +3072,9 @@
           "question": "Which pair is commonly analyzed in an API test response?",
           "options": [
             "Status code and response body",
-            "Font size and button spacing",
-            "CPU cache and thread priority",
             "Cable type and port speed",
+            "CPU cache and thread priority",
+            "Font size and button spacing",
             "Screen DPI and brightness"
           ],
           "correctOption": 0,
@@ -3084,13 +3084,13 @@
         {
           "question": "Which testing type checks how many calls an API can handle?",
           "options": [
-            "Load testing",
-            "Functional testing",
             "Validation testing",
+            "Functional testing",
+            "Load testing",
             "Compatibility testing",
             "Exploratory testing"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Load testing evaluates behavior under expected or increasing request volumes to reveal bottlenecks and capacity limits."
         },
@@ -3098,10 +3098,10 @@
           "question": "Which testing type focuses on consistent results across time and platforms?",
           "options": [
             "Reliability testing",
-            "Usability testing",
-            "Mutation testing",
             "Smoke testing",
-            "Unit testing"
+            "Mutation testing",
+            "Unit testing",
+            "Usability testing"
           ],
           "correctOption": 0,
           "points": 10,
@@ -3110,118 +3110,118 @@
         {
           "question": "Which security activity attacks an API from an outsider perspective with limited knowledge?",
           "options": [
-            "Penetration testing",
-            "Reliability testing",
-            "Schema validation",
             "Regression testing",
-            "Endurance testing"
+            "Endurance testing",
+            "Penetration testing",
+            "Schema validation",
+            "Reliability testing"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Penetration testing simulates an external attacker to identify exploitable weaknesses and observe attack vectors."
         },
         {
           "question": "CRUD is correctly expanded as which set of operations?",
           "options": [
-            "Create, Read, Update, Delete",
-            "Compile, Run, Upload, Download",
             "Cache, Route, Undo, Debug",
+            "Create, Read, Update, Delete",
             "Connect, Retry, Upgrade, Deploy",
+            "Compile, Run, Upload, Download",
             "Code, Review, Unit, Deliver"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "CRUD names the four basic data operations an application typically supports: create, read, update, and delete."
         },
         {
           "question": "Which HTTP method is the typical match for a CREATE operation?",
-          "options": ["POST", "GET", "DELETE", "PUT", "HEAD"],
-          "correctOption": 0,
+          "options": ["PUT", "HEAD", "GET", "POST", "DELETE"],
+          "correctOption": 3,
           "points": 10,
           "explanation": "Create is commonly implemented with HTTP POST, which submits data to create a new resource."
         },
         {
           "question": "Which HTTP method is the typical match for a READ operation?",
-          "options": ["GET", "POST", "PUT", "DELETE", "CONNECT"],
-          "correctOption": 0,
+          "options": ["DELETE", "CONNECT", "GET", "POST", "PUT"],
+          "correctOption": 2,
           "points": 10,
           "explanation": "Read is commonly implemented with HTTP GET to retrieve resource representations."
         },
         {
           "question": "Which statement correctly distinguishes PUT and PATCH?",
           "options": [
+            "PUT is for auth; PATCH is for cache",
+            "PUT is for read; PATCH is for delete",
             "PUT replaces fully; PATCH updates partially",
             "PUT updates partially; PATCH replaces fully",
-            "PUT is for delete; PATCH is for create",
-            "PUT is for read; PATCH is for delete",
-            "PUT is for auth; PATCH is for cache"
+            "PUT is for delete; PATCH is for create"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "PUT is used when updating an entire resource representation, while PATCH is used for partial updates."
         },
         {
           "question": "Which status code category represents client errors?",
           "options": [
+            "5xx category",
+            "1xx category",
             "4xx category",
             "2xx category",
-            "1xx category",
-            "3xx category",
-            "5xx category"
+            "3xx category"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "4xx indicates client-side errors (bad request, unauthorized, forbidden, not found), while 5xx indicates server-side errors."
         },
         {
           "question": "Which statement matches a listed REST characteristic?",
           "options": [
-            "Uses HTTP verbs like GET and POST",
+            "Requires WSDL for all services",
             "Requires XML messages for every call",
-            "Depends on binary messaging formats",
+            "Uses HTTP verbs like GET and POST",
             "Avoids URLs to identify resources",
-            "Requires WSDL for all services"
+            "Depends on binary messaging formats"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "REST commonly uses HTTP verbs (GET, POST, PUT, DELETE) and often uses URLs to identify resources; XML is not mandatory."
         },
         {
           "question": "Which comparison matches the listed SOAP versus REST distinction?",
           "options": [
-            "SOAP uses XML; REST often uses JSON",
             "SOAP uses JSON; REST requires XML",
+            "SOAP only uses HTTP; REST uses SMTP",
+            "SOAP uses XML; REST often uses JSON",
             "SOAP is URL-based; REST is WSDL-based",
-            "SOAP is stateless; REST is stateful",
-            "SOAP only uses HTTP; REST uses SMTP"
+            "SOAP is stateless; REST is stateful"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "SOAP relies on XML messaging and often uses WSDL; REST is typically lighter, URL-based, and commonly uses JSON (though it can support other formats)."
         },
         {
           "question": "Swagger UI is mainly used to do what?",
           "options": [
+            "Measure CPU performance under load",
             "Visualize and interact with API endpoints",
-            "Encrypt requests with built-in certificates",
-            "Generate database tables from JSON schema",
             "Replace authorization with mock tokens",
-            "Measure CPU performance under load"
+            "Generate database tables from JSON schema",
+            "Encrypt requests with built-in certificates"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Swagger UI renders interactive API documentation from an OpenAPI specification, allowing users to explore endpoints and send requests."
         },
         {
           "question": "In Rest Assured, which block is used to place assertions on the response?",
           "options": [
+            "Method() section",
+            "When() section",
             "Then() section",
             "Given() section",
-            "When() section",
-            "Method() section",
             "Param() section"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Given sets up request details, When triggers the request, Method is the HTTP verb call, and Then contains assertions such as statusCode and body matching."
         }
