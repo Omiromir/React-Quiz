@@ -304,6 +304,7 @@ export default function App() {
               answer={answer}
             />
             <QuestionNavigator
+              questions={questions}
               numQuestions={numQuestions}
               index={index}
               userAnswers={userAnswers}

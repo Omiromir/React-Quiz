@@ -1,16 +1,29 @@
 export default function QuestionNavigator({
+  questions,
   numQuestions,
   index,
   userAnswers,
   dispatch,
 }) {
-  const answeredSet = new Set(userAnswers.map((a) => a.questionIndex));
+  const answerMap = new Map(
+    userAnswers.map((a) => [a.questionIndex, a.selected]),
+  );
 
   return (
     <div className="question-nav">
       {Array.from({ length: numQuestions }, (_, i) => {
         const isCurrent = i === index;
-        const isAnswered = answeredSet.has(i);
+        const selected = answerMap.get(i);
+
+        const hasAnswer = selected !== undefined && selected !== null;
+        const isCorrect =
+          hasAnswer && Number(selected) === Number(questions[i].correctOption);
+
+        const stateClass = !hasAnswer
+          ? "is-unanswered"
+          : isCorrect
+            ? "is-correct"
+            : "is-wrong";
 
         return (
           <button
@@ -18,11 +31,10 @@ export default function QuestionNavigator({
             type="button"
             className={[
               "question-nav__btn",
+              stateClass,
               isCurrent ? "is-current" : "",
-              isAnswered ? "is-answered" : "is-unanswered",
             ].join(" ")}
             onClick={() => dispatch({ type: "goToQuestion", payload: i })}
-            aria-current={isCurrent ? "true" : "false"}
           >
             {i + 1}
           </button>

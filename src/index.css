@@ -58,20 +58,18 @@ body {
   right: 2rem;
 }
 
-.footer{
-  width:100%;
-  display:grid;
+.footer {
+  width: 100%;
+  display: grid;
   grid-template-columns: 1fr auto 1fr;
-  align-items:center;
-  column-gap:0.75rem;
+  align-items: center;
+  column-gap: 0.75rem;
 }
 
 .footer .timer,
-.footer .btn-ui{
+.footer .btn-ui {
   float: none;
 }
-
-
 
 .footer .btn-left {
   justify-self: start;
@@ -489,6 +487,29 @@ progress {
   padding: 0.8rem;
 }
 
+.question-nav__btn.is-correct {
+  background-color: #4caf50;
+  border-color: #4caf50;
+  color: var(--color-light);
+}
+
+.question-nav__btn.is-wrong {
+  background-color: #f44336;
+  border-color: #f44336;
+  color: var(--color-light);
+}
+
+.question-nav__btn.is-unanswered {
+  background-color: var(--color-darkest);
+  border-color: var(--color-dark);
+  color: var(--color-light);
+  opacity: 0.9;
+}
+
+.question-nav__btn.is-current {
+  box-shadow: 0 0 0 2px var(--color-theme);
+}
+
 @media (max-width: 768px) {
   body {
     padding: 1.6rem;
@@ -512,7 +533,7 @@ progress {
   }
 
   .footer {
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "left right"
       "timer timer";
