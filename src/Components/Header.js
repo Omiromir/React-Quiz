@@ -6,9 +6,9 @@ function Header({ dispatch, hasStarted, status }) {
       {hasStarted && status === "active" && (
         <button
           className="btn btn-ui btn-header"
-          onClick={() => dispatch({ type: "restart" })}
+          onClick={() => dispatch({ type: "BackMenu" })}
         >
-          Go back to menu
+          Pause the test
         </button>
       )}
     </header>

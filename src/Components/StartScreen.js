@@ -1,6 +1,6 @@
 function StartScreen({ numQuestions, dispatch, hasStarted }) {
   const handleBackToMenu = () => {
-    dispatch({ type: "BackMenu" });
+    dispatch({ type: "restart" });
   };
 
   return (

@@ -166,7 +166,6 @@ const reducer = (state, action) => {
     case "BackMenu":
       return {
         ...state,
-        selectedTest: null,
         status: "ready",
       };
     case "restart":
