@@ -3235,156 +3235,156 @@
         {
           "question": "Which definition best matches software engineering?",
           "options": [
-            "Engineering discipline for end-to-end software production",
+            "Hardware discipline for building embedded circuits",
             "Scientific field for proving computation theorems",
             "Business practice for selling packaged applications",
-            "Hardware discipline for building embedded circuits",
-            "Design hobby for writing scripts without constraints"
+            "Design hobby for writing scripts without constraints",
+            "Engineering discipline for end-to-end software production"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Software engineering covers specification through maintenance using professional methods."
         },
         {
           "question": "Which set lists the fundamental software process activities?",
           "options": [
-            "Specification, development, validation, evolution",
-            "Compilation, deployment, marketing, monetization",
-            "Modeling, purchasing, licensing, outsourcing",
             "Analysis, installation, encryption, decryption",
-            "Debugging, refactoring, packaging, advertising"
+            "Modeling, purchasing, licensing, outsourcing",
+            "Specification, development, validation, evolution",
+            "Debugging, refactoring, packaging, advertising",
+            "Compilation, deployment, marketing, monetization"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "All software processes include specifying, developing, validating, and evolving the system."
         },
         {
           "question": "In this context, what does the term software include?",
           "options": [
-            "Programs and supporting documentation together",
+            "User stories and sprint plans together",
             "Programs and physical processors together",
             "Data sets and network hardware together",
-            "User stories and sprint plans together",
+            "Programs and supporting documentation together",
             "Source code and office policies together"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Software is the programs plus the associated documentation needed to use and maintain them."
         },
         {
           "question": "In a generic product, who owns the requirements specification?",
           "options": [
-            "The developer organization owns the specification",
             "The customer organization owns the specification",
             "The regulator organization owns the specification",
             "The end-user community owns the specification",
-            "The vendor’s competitors own the specification"
+            "The vendor’s competitors own the specification",
+            "The developer organization owns the specification"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "For generic products, the developer defines and owns the specification for the market."
         },
         {
           "question": "In a customized product, who owns the requirements specification?",
           "options": [
-            "The customer organization owns the specification",
-            "The developer organization owns the specification",
-            "The operations team owns the specification",
+            "The finance department owns the specification",
             "The testing team owns the specification",
-            "The finance department owns the specification"
+            "The operations team owns the specification",
+            "The customer organization owns the specification",
+            "The developer organization owns the specification"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "For customized systems, the customer defines and owns the specification."
         },
         {
           "question": "For long-lived systems, which cost trend is most typical?",
           "options": [
-            "Evolution costs exceed development costs over time",
-            "Development costs exceed evolution costs over time",
             "Hardware costs exceed all software costs over time",
+            "Development costs exceed evolution costs over time",
+            "Evolution costs exceed development costs over time",
             "Testing costs become zero after first release",
             "Documentation costs dominate every project phase"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Maintenance and evolution often cost several times more than initial development for long-life systems."
         },
         {
           "question": "A typical software project cost split is closest to which ratio?",
           "options": [
-            "About 60% development and 40% testing",
             "About 40% development and 60% testing",
-            "About 80% development and 20% testing",
             "About 50% development and 50% testing",
+            "About 60% development and 40% testing",
+            "About 80% development and 20% testing",
             "About 20% development and 80% testing"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "A common rough breakdown is around 60% development and 40% testing."
         },
         {
           "question": "Which statement best defines maintainability as a software attribute?",
           "options": [
+            "The system can avoid any future modification needs",
             "The system can evolve with changing requirements",
             "The system can run with minimal CPU usage",
             "The system can resist deliberate network attacks",
-            "The system can satisfy every stakeholder instantly",
-            "The system can avoid any future modification needs"
+            "The system can satisfy every stakeholder instantly"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Maintainability is about how easily the software can be changed to meet new needs."
         },
         {
           "question": "Which statement best matches dependability and security as an attribute?",
           "options": [
-            "The system delivers correct service and resists attacks",
-            "The system runs fast and uses minimal resources",
-            "The system is easy to learn and easy to use",
+            "The system looks modern and uses trendy frameworks",
             "The system ships features quickly with little planning",
-            "The system looks modern and uses trendy frameworks"
+            "The system delivers correct service and resists attacks",
+            "The system is easy to learn and easy to use",
+            "The system runs fast and uses minimal resources"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Dependability and security emphasize reliability, safety, and protection from harm or attack."
         },
         {
           "question": "Which statement best defines efficiency as a software attribute?",
           "options": [
-            "The system avoids wasteful use of resources",
-            "The system avoids changes to user requirements",
+            "The system avoids all stakeholder communication",
             "The system avoids any external dependencies",
-            "The system avoids all runtime configuration",
-            "The system avoids all stakeholder communication"
+            "The system avoids changes to user requirements",
+            "The system avoids wasteful use of resources",
+            "The system avoids all runtime configuration"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Efficiency concerns CPU, memory, bandwidth, and other resource usage."
         },
         {
           "question": "Which statement best defines acceptability as a software attribute?",
           "options": [
-            "The system is usable and fits user environment",
-            "The system is mathematically proven correct always",
-            "The system is free of any performance limits",
             "The system is identical across every organization",
+            "The system is mathematically proven correct always",
+            "The system is usable and fits user environment",
+            "The system is free of any performance limits",
             "The system is built without any trade-offs"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Acceptability includes usability, understandability, and compatibility with the user context."
         },
         {
           "question": "Which item is NOT listed as a key software engineering challenge?",
           "options": [
-            "Building trustworthy systems under frequent change",
-            "Delivering software quickly to meet business needs",
             "Handling diverse platforms and system types",
             "Eliminating all uncertainty from requirements",
+            "Delivering software quickly to meet business needs",
+            "Building trustworthy systems under frequent change",
             "Managing security and trust concerns at scale"
           ],
-          "correctOption": 3,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Requirements uncertainty cannot be eliminated completely; it must be managed and reduced."
         },
@@ -3393,8 +3393,8 @@
           "options": [
             "Embedded control systems in devices",
             "Batch processing systems for reports",
-            "Modeling and simulation for science",
             "Stand-alone desktop productivity tools",
+            "Modeling and simulation for science",
             "Entertainment systems for games media"
           ],
           "correctOption": 0,
@@ -3404,52 +3404,52 @@
         {
           "question": "Which combination best characterizes web and internet software engineering?",
           "options": [
-            "Reuse, incremental delivery, services, and rich interfaces",
-            "Formal proofs, fixed plans, and monolithic releases",
-            "Handwritten assembly, no libraries, and no frameworks",
             "Offline operation, single user, and no remote services",
+            "Reuse, incremental delivery, services, and rich interfaces",
+            "Handwritten assembly, no libraries, and no frameworks",
+            "Formal proofs, fixed plans, and monolithic releases",
             "Hardware fabrication, circuit testing, and device packaging"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Web development typically emphasizes reuse, incremental/agile delivery, service orientation, and rich UI."
         },
         {
           "question": "Which item is a core professional responsibility for software engineers?",
           "options": [
-            "Protecting confidential information from disclosure",
-            "Releasing code despite known safety hazards",
             "Copying proprietary code without permission",
+            "Maximizing profit regardless of public impact",
             "Using skills outside competence without learning",
-            "Maximizing profit regardless of public impact"
+            "Releasing code despite known safety hazards",
+            "Protecting confidential information from disclosure"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Professional ethics include confidentiality, competence, respect for IP, and avoiding misuse."
         },
         {
           "question": "Which ACM/IEEE principle explicitly prioritizes the public interest?",
           "options": [
-            "PUBLIC: act consistently with public interest",
-            "PRODUCT: maximize features above all else",
-            "MANAGEMENT: avoid ethical responsibility for teams",
             "COLLEAGUES: compete aggressively with teammates",
-            "SELF: ignore professional development needs"
+            "MANAGEMENT: avoid ethical responsibility for teams",
+            "SELF: ignore professional development needs",
+            "PUBLIC: act consistently with public interest",
+            "PRODUCT: maximize features above all else"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "The PUBLIC principle requires engineers to act in ways that protect and benefit the public."
         },
         {
           "question": "For a mental health patient system, what is a primary concern?",
           "options": [
-            "Patient privacy and safety-critical warnings",
+            "Unlimited feature growth with no constraints",
             "Real-time 3D graphics and rendering speed",
+            "Patient privacy and safety-critical warnings",
             "Offline-only operation with no networking",
-            "Maximum advertising reach across platforms",
-            "Unlimited feature growth with no constraints"
+            "Maximum advertising reach across platforms"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Such systems must protect sensitive data and support safety-related alerts."
         },
@@ -3457,10 +3457,10 @@
           "question": "An insulin pump is best classified as which system type?",
           "options": [
             "Safety-critical embedded control system",
-            "Batch processing financial reporting system",
-            "Entertainment interactive media system",
             "Standalone word processing desktop system",
-            "Compiler-style language processing system"
+            "Compiler-style language processing system",
+            "Batch processing financial reporting system",
+            "Entertainment interactive media system"
           ],
           "correctOption": 0,
           "points": 10,
@@ -3469,13 +3469,13 @@
         {
           "question": "A wilderness weather station system emphasizes which constraint most?",
           "options": [
-            "Operating reliably with limited remote power",
-            "Supporting millions of concurrent transactions",
-            "Delivering new features daily without testing",
             "Streaming high-definition video continuously",
-            "Training users with long classroom sessions"
+            "Training users with long classroom sessions",
+            "Delivering new features daily without testing",
+            "Supporting millions of concurrent transactions",
+            "Operating reliably with limited remote power"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Remote data collection systems must manage power and withstand harsh conditions."
         },
@@ -3483,10 +3483,10 @@
           "question": "What is a software process in software engineering terms?",
           "options": [
             "A structured set of activities to build software",
-            "A random set of tasks chosen during coding",
             "A final executable produced after compilation",
+            "A legal contract used to purchase software",
             "A hardware workflow for manufacturing devices",
-            "A legal contract used to purchase software"
+            "A random set of tasks chosen during coding"
           ],
           "correctOption": 0,
           "points": 10,
@@ -3496,9 +3496,9 @@
           "question": "Which item is typically included in a process description?",
           "options": [
             "Roles and responsibilities for process participants",
-            "CPU instruction timings for each source file",
-            "User interface color palette for each screen",
             "Marketing slogans for the product launch",
+            "User interface color palette for each screen",
+            "CPU instruction timings for each source file",
             "Office seating plan for the development team"
           ],
           "correctOption": 0,
@@ -3508,52 +3508,52 @@
         {
           "question": "Which statement best describes a plan-driven process?",
           "options": [
-            "Progress is measured against an upfront plan",
-            "Progress is measured only by customer mood",
             "Progress is measured by number of meetings held",
             "Progress is measured by lines of code written",
-            "Progress is measured by tool popularity online"
+            "Progress is measured by tool popularity online",
+            "Progress is measured only by customer mood",
+            "Progress is measured against an upfront plan"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Plan-driven processes plan activities in advance and track progress against the plan."
         },
         {
           "question": "In agile development, requirements are typically handled how?",
           "options": [
-            "Negotiated continuously as the product evolves",
             "Frozen completely before any coding starts",
+            "Copied unchanged from earlier unrelated projects",
+            "Negotiated continuously as the product evolves",
             "Defined only after final system deployment",
-            "Derived solely from regulatory checklists",
-            "Copied unchanged from earlier unrelated projects"
+            "Derived solely from regulatory checklists"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Agile expects change and continuously refines requirements during development."
         },
         {
           "question": "Which phase order best matches the waterfall model?",
           "options": [
-            "Requirements, design, implementation, testing, maintenance",
-            "Design, requirements, testing, implementation, maintenance",
-            "Implementation, testing, requirements, design, maintenance",
             "Requirements, implementation, maintenance, design, testing",
+            "Design, requirements, testing, implementation, maintenance",
+            "Requirements, design, implementation, testing, maintenance",
+            "Implementation, testing, requirements, design, maintenance",
             "Testing, requirements, design, maintenance, implementation"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "The waterfall model proceeds sequentially from requirements through maintenance."
         },
         {
           "question": "Which issue is a common risk in incremental development without discipline?",
           "options": [
-            "Architecture degrades without refactoring over time",
-            "Requirements become impossible to change later",
             "Early delivery becomes impossible by definition",
-            "Customer feedback cannot occur until the end",
-            "Testing must be postponed until maintenance phase"
+            "Requirements become impossible to change later",
+            "Architecture degrades without refactoring over time",
+            "Testing must be postponed until maintenance phase",
+            "Customer feedback cannot occur until the end"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Incremental delivery can lead to erosion of structure unless refactoring is done."
         },
@@ -3561,10 +3561,10 @@
           "question": "What is a typical trade-off when using reuse/configuration with COTS?",
           "options": [
             "Some requirements are compromised to fit components",
-            "All requirements are satisfied without negotiation",
-            "System evolution becomes fully under customer control",
             "Integration becomes unnecessary by using COTS",
-            "Testing becomes optional because components exist"
+            "System evolution becomes fully under customer control",
+            "Testing becomes optional because components exist",
+            "All requirements are satisfied without negotiation"
           ],
           "correctOption": 0,
           "points": 10,
@@ -3586,39 +3586,39 @@
         {
           "question": "Which pairing best matches two change strategies?",
           "options": [
+            "Anticipation uses marketing; tolerance uses new slogans",
+            "Anticipation uses outsourcing; tolerance uses no testing",
             "Anticipation uses prototyping; tolerance uses incremental delivery",
             "Anticipation uses refactoring; tolerance uses freeze-all planning",
-            "Anticipation uses contracts; tolerance uses zero documentation",
-            "Anticipation uses outsourcing; tolerance uses no testing",
-            "Anticipation uses marketing; tolerance uses new slogans"
+            "Anticipation uses contracts; tolerance uses zero documentation"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Prototyping helps anticipate change; incremental delivery helps tolerate ongoing change."
         },
         {
           "question": "Which statement best describes a throw-away prototype?",
           "options": [
-            "A quick model built to learn, then discarded",
             "A first release intended to be maintained forever",
             "A final product certified for safety deployment",
             "A complete system built only after full testing",
-            "A reused component integrated without any change"
+            "A reused component integrated without any change",
+            "A quick model built to learn, then discarded"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Throw-away prototypes are built to clarify requirements and are not intended for production."
         },
         {
           "question": "Which is a common difficulty of incremental delivery?",
           "options": [
+            "Accommodating requirement changes between increments",
             "Identifying shared services needed across increments",
-            "Obtaining early user feedback on partial releases",
             "Delivering useful functionality early in the schedule",
             "Reducing risk by prioritizing key requirements first",
-            "Accommodating requirement changes between increments"
+            "Obtaining early user feedback on partial releases"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Incremental development can make it harder to plan shared facilities and system-wide infrastructure."
         },
@@ -3628,8 +3628,8 @@
             "Measure, analyze, change, repeat",
             "Design, deploy, market, repeat",
             "Code, compile, compress, repeat",
-            "Plan, ignore, blame, repeat",
-            "Purchase, install, license, repeat"
+            "Purchase, install, license, repeat",
+            "Plan, ignore, blame, repeat"
           ],
           "correctOption": 0,
           "points": 10,
@@ -3638,143 +3638,143 @@
         {
           "question": "Which item is an example of a process metric?",
           "options": [
-            "Number of defects found per release",
             "Brand popularity of the programming language",
-            "Color scheme used in the user interface",
+            "Number of defects found per release",
             "Number of fonts used in documentation",
+            "Color scheme used in the user interface",
             "Amount of coffee consumed by the team"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Defect counts, effort, time, and resource use are typical process metrics."
         },
         {
           "question": "In the CMMI maturity model, which level is the highest?",
           "options": [
-            "Optimising process improvement level",
+            "Managed measured process level",
             "Initial ad-hoc process level",
-            "Repeatable managed process level",
             "Defined standard process level",
-            "Managed measured process level"
+            "Repeatable managed process level",
+            "Optimising process improvement level"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "The highest CMMI maturity level is Optimising, focused on continuous improvement."
         },
         {
           "question": "Which agile value pairing is stated in the Agile Manifesto?",
           "options": [
-            "Individuals and interactions over processes and tools",
+            "Following a plan over responding to change",
+            "Strict phases over continuous integration",
             "Comprehensive documentation over working software",
             "Contract negotiation over customer collaboration",
-            "Following a plan over responding to change",
-            "Strict phases over continuous integration"
+            "Individuals and interactions over processes and tools"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "The manifesto values people and collaboration, and prioritizes working software and adaptability."
         },
         {
           "question": "Which practice is characteristic of agile development?",
           "options": [
-            "Delivering working increments frequently",
+            "Maximizing documentation before writing code",
             "Freezing requirements before any design starts",
             "Postponing testing until after deployment",
-            "Rejecting stakeholder involvement during sprints",
-            "Maximizing documentation before writing code"
+            "Delivering working increments frequently",
+            "Rejecting stakeholder involvement during sprints"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Agile emphasizes frequent delivery of working software with ongoing stakeholder involvement."
         },
         {
           "question": "Which XP practice requires writing tests before code?",
           "options": [
-            "Test-driven development practice",
-            "Big design upfront practice",
-            "Change freeze control practice",
             "Document-first delivery practice",
+            "Test-driven development practice",
+            "Change freeze control practice",
+            "Big design upfront practice",
             "Single-integration release practice"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Test-driven development creates tests first, then implements code to make tests pass."
         },
         {
           "question": "Which statement best describes pair programming?",
           "options": [
+            "Two customers write the entire implementation",
+            "Two managers approve each line of code",
             "Two developers work together at one workstation",
             "Two teams work separately without communication",
-            "Two releases are merged only at project end",
-            "Two managers approve each line of code",
-            "Two customers write the entire implementation"
+            "Two releases are merged only at project end"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Pair programming puts two developers together to improve quality and shared understanding."
         },
         {
           "question": "In Scrum, who is responsible for prioritizing the product backlog?",
           "options": [
-            "The product owner role",
-            "The scrum master role",
-            "The development team role",
             "The quality assurance role",
-            "The operations support role"
+            "The operations support role",
+            "The development team role",
+            "The product owner role",
+            "The scrum master role"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "The Product Owner manages and prioritizes the Product Backlog."
         },
         {
           "question": "In Scrum, what is a primary responsibility of the Scrum Master?",
           "options": [
-            "Removing impediments and supporting Scrum practice",
-            "Setting final product requirements unilaterally",
             "Writing all code for each sprint deliverable",
-            "Approving budgets and negotiating legal contracts",
-            "Creating hardware deployment diagrams for servers"
+            "Setting final product requirements unilaterally",
+            "Creating hardware deployment diagrams for servers",
+            "Removing impediments and supporting Scrum practice",
+            "Approving budgets and negotiating legal contracts"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "The Scrum Master facilitates Scrum, helps remove blockers, and supports the team’s process."
         },
         {
           "question": "A Scrum sprint is typically which duration range?",
           "options": [
+            "Twenty to forty weeks long",
+            "Two to four years long",
             "Two to four weeks long",
             "Two to four months long",
-            "Two to four days long",
-            "Twenty to forty weeks long",
-            "Two to four years long"
+            "Two to four days long"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Scrum sprints commonly run for about 2–4 weeks."
         },
         {
           "question": "What is the main purpose of a Scrum of Scrums?",
           "options": [
-            "Coordinating work across multiple Scrum teams",
-            "Replacing product backlog with fixed contracts",
             "Eliminating integration by separating codebases",
+            "Replacing product backlog with fixed contracts",
             "Moving all decisions to a single manager",
+            "Coordinating work across multiple Scrum teams",
             "Preventing requirements changes during delivery"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Scrum of Scrums synchronizes and resolves dependencies across teams."
         },
         {
           "question": "When is a plan-driven approach usually more suitable?",
           "options": [
-            "For safety-critical systems with heavy regulation",
-            "For small co-located teams with rapid feedback",
             "For innovative products with unclear requirements",
             "For prototypes exploring new user experiences",
-            "For startups prioritizing speed over documentation"
+            "For startups prioritizing speed over documentation",
+            "For small co-located teams with rapid feedback",
+            "For safety-critical systems with heavy regulation"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Large, safety-critical, regulated, or long-lived systems often require plan-driven or hybrid approaches."
         },
@@ -3782,9 +3782,9 @@
           "question": "What is requirements engineering primarily concerned with?",
           "options": [
             "Establishing required services and constraints",
-            "Choosing the best compiler and IDE settings",
             "Implementing algorithms and data structures",
             "Training users after the system is deployed",
+            "Choosing the best compiler and IDE settings",
             "Selecting hardware parts for device assembly"
           ],
           "correctOption": 0,
@@ -3795,10 +3795,10 @@
           "question": "Which description best matches user requirements?",
           "options": [
             "High-level services stated for customer readers",
-            "Detailed functions stated for developer readers",
-            "Mathematical proofs stated for verifier readers",
             "Database schemas stated for administrator readers",
-            "Source code interfaces stated for programmer readers"
+            "Mathematical proofs stated for verifier readers",
+            "Source code interfaces stated for programmer readers",
+            "Detailed functions stated for developer readers"
           ],
           "correctOption": 0,
           "points": 10,
@@ -3808,10 +3808,10 @@
           "question": "Which description best matches system requirements?",
           "options": [
             "Detailed functions and constraints in a structured form",
+            "GUI mockups showing only visual layout decisions",
             "Marketing vision statements with broad aspirations",
             "Informal notes from ad-hoc brainstorming sessions",
-            "Unit test suites defining internal code behavior",
-            "GUI mockups showing only visual layout decisions"
+            "Unit test suites defining internal code behavior"
           ],
           "correctOption": 0,
           "points": 10,
@@ -3820,104 +3820,104 @@
         {
           "question": "Which item is a functional requirement example?",
           "options": [
-            "The system can search and list appointments",
-            "The system maintains 99.99% availability weekly",
-            "The system complies with applicable privacy laws",
             "The system is developed using a mandated standard",
-            "The system uses less than 200 MB of memory"
+            "The system complies with applicable privacy laws",
+            "The system uses less than 200 MB of memory",
+            "The system maintains 99.99% availability weekly",
+            "The system can search and list appointments"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Functional requirements describe services the system provides and how it reacts to inputs."
         },
         {
           "question": "Which item is a non-functional requirement example?",
           "options": [
-            "The system responds within two seconds per query",
             "The system stores each patient record as JSON",
-            "The system prints a daily appointment list",
             "The system assigns a unique staff identifier",
-            "The system schedules an appointment for a patient"
+            "The system schedules an appointment for a patient",
+            "The system responds within two seconds per query",
+            "The system prints a daily appointment list"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Non-functional requirements constrain qualities like performance, reliability, security, and process."
         },
         {
           "question": "Which item is best described as a domain requirement?",
           "options": [
+            "Database must be PostgreSQL version fifteen",
+            "Code must be written in a specific IDE",
             "Insulin dose must not exceed safe limits",
             "User interface must use a dark theme",
-            "Code must be written in a specific IDE",
-            "Database must be PostgreSQL version fifteen",
             "Sprints must be exactly three weeks long"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Domain requirements come from the application domain and constrain the system’s behavior."
         },
         {
           "question": "Which classification of non-functional requirements is correct?",
           "options": [
-            "Product, organizational, and external categories",
-            "Functional, transactional, and graphical categories",
-            "Compile-time, runtime, and link-time categories",
             "User, manager, and investor categories",
-            "Static, dynamic, and polymorphic categories"
+            "Compile-time, runtime, and link-time categories",
+            "Static, dynamic, and polymorphic categories",
+            "Functional, transactional, and graphical categories",
+            "Product, organizational, and external categories"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Non-functional requirements can be classified as product, organizational, or external constraints."
         },
         {
           "question": "Which requirement is most verifiable for usability?",
           "options": [
-            "Training time under four hours for new users",
             "Interface is easy to use for everyone",
-            "Users will love the interface immediately",
             "System is intuitive without any instruction",
-            "Usability is perfect across all situations"
+            "Usability is perfect across all situations",
+            "Training time under four hours for new users",
+            "Users will love the interface immediately"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Replacing vague goals with measurable criteria makes requirements verifiable."
         },
         {
           "question": "Which elicitation technique involves observing real work practices?",
           "options": [
-            "Ethnography observation technique",
             "Closed questionnaire technique",
-            "Formal proof technique",
+            "Version control technique",
+            "Ethnography observation technique",
             "Code inspection technique",
-            "Version control technique"
+            "Formal proof technique"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Ethnography studies how people actually work to uncover tacit requirements."
         },
         {
           "question": "Which interview style tends to elicit richer qualitative detail?",
           "options": [
-            "Open-ended question interview style",
-            "Closed yes-no question interview style",
             "Binary choice-only interview style",
+            "Closed yes-no question interview style",
+            "Open-ended question interview style",
             "Scripted monologue-only interview style",
             "Silent observation-only interview style"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Open-ended questions encourage stakeholders to explain context, goals, and exceptions."
         },
         {
           "question": "Which set lists common requirements validation checks?",
           "options": [
+            "Secrecy, obscurity, complexity, opacity, ambiguity",
+            "Throughput, latency, jitter, bandwidth, routing",
             "Validity, consistency, realism, verifiability, completeness",
             "Profitability, popularity, novelty, branding, aesthetics",
-            "Throughput, latency, jitter, bandwidth, routing",
-            "Syntax, parsing, linking, compiling, packaging",
-            "Secrecy, obscurity, complexity, opacity, ambiguity"
+            "Syntax, parsing, linking, compiling, packaging"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Validation checks that requirements reflect real needs, are consistent, feasible, complete enough, and testable."
         },
@@ -3925,10 +3925,10 @@
           "question": "Fixing requirements errors after delivery is often how much more expensive?",
           "options": [
             "Roughly one hundred times more expensive",
+            "Roughly one tenth the earlier cost",
             "Roughly ten times more expensive",
             "Roughly two times more expensive",
-            "Roughly the same cost as before",
-            "Roughly one tenth the earlier cost"
+            "Roughly the same cost as before"
           ],
           "correctOption": 0,
           "points": 10,
@@ -3937,91 +3937,91 @@
         {
           "question": "What is a primary purpose of requirements traceability?",
           "options": [
-            "Linking requirements to design, code, and tests",
             "Replacing validation with informal stakeholder trust",
+            "Removing the need for version management tools",
             "Preventing any future requirements changes entirely",
-            "Ensuring every requirement is implemented twice",
-            "Removing the need for version management tools"
+            "Linking requirements to design, code, and tests",
+            "Ensuring every requirement is implemented twice"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Traceability supports impact analysis and controlled change by tracking where requirements are realized."
         },
         {
           "question": "Which section is commonly part of a requirements document?",
           "options": [
-            "A glossary defining key domain terms",
+            "A server rack diagram showing cable routes",
             "A build log listing compiler warnings",
             "A marketing plan for feature promotion",
             "A payroll sheet listing employee salaries",
-            "A server rack diagram showing cable routes"
+            "A glossary defining key domain terms"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Requirements documents often include introductions, glossaries, user/system requirements, and supporting material."
         },
         {
           "question": "What is the main purpose of system modeling?",
           "options": [
-            "Creating abstract views for stakeholder understanding",
-            "Creating final code without any intermediate models",
-            "Creating implementation details instead of requirements",
             "Creating documents to replace stakeholder discussion",
-            "Creating diagrams to guarantee zero defects"
+            "Creating implementation details instead of requirements",
+            "Creating diagrams to guarantee zero defects",
+            "Creating final code without any intermediate models",
+            "Creating abstract views for stakeholder understanding"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Models provide simplified perspectives to analyze, communicate, and reason about a system."
         },
         {
           "question": "Which set lists the four key modeling perspectives?",
           "options": [
-            "Context, interaction, structure, behavior",
-            "Compile, link, load, execute",
             "Budget, staffing, marketing, sales",
+            "Compile, link, load, execute",
+            "Context, interaction, structure, behavior",
             "CPU, memory, disk, network",
             "Syntax, semantics, pragmatics, phonetics"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Modeling commonly considers external context, interactions, structural organization, and behavior over time."
         },
         {
           "question": "Which UML diagram is best for showing actors and system goals?",
           "options": [
-            "Use case diagram representation",
-            "Class diagram representation",
-            "State diagram representation",
             "Deployment diagram representation",
-            "Package diagram representation"
+            "Use case diagram representation",
+            "Package diagram representation",
+            "State diagram representation",
+            "Class diagram representation"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Use case diagrams show interactions between external actors and the system’s use cases."
         },
         {
           "question": "In a sequence diagram, how is time typically represented?",
           "options": [
-            "Time progresses vertically from top to bottom",
             "Time progresses horizontally from left to right",
+            "Time is shown through hardware deployment nodes",
             "Time is omitted to reduce diagram complexity",
             "Time is encoded only through color selection",
-            "Time is shown through hardware deployment nodes"
+            "Time progresses vertically from top to bottom"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Sequence diagrams place objects across the top and show time flowing downward."
         },
         {
           "question": "In a class diagram, what does generalization represent?",
           "options": [
-            "It represents inheritance from superclass to subclass",
             "It represents communication through database queries",
             "It represents transitions between states on events",
             "It represents links between actors and use cases",
-            "It represents forks and joins in workflows"
+            "It represents forks and joins in workflows",
+            "It represents inheritance from superclass to subclass"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Generalization models inheritance relationships between classes."
         },
@@ -4029,10 +4029,10 @@
           "question": "In a class diagram, what does aggregation represent?",
           "options": [
             "A part-of relationship between whole and part",
-            "A sequence of messages exchanged over time",
             "A mandatory dependency on a specific platform",
+            "A requirement that every object has one state",
             "A complete replacement of one class by another",
-            "A requirement that every object has one state"
+            "A sequence of messages exchanged over time"
           ],
           "correctOption": 0,
           "points": 10,
@@ -4041,26 +4041,26 @@
         {
           "question": "Which pairing best matches diagram to behavior type?",
           "options": [
-            "Activity diagram for data-driven flow; state diagram for event-driven change",
-            "State diagram for data-driven flow; activity diagram for event-driven change",
+            "Sequence diagram for data-driven flow; context diagram for event-driven change",
             "Class diagram for data-driven flow; use case diagram for event-driven change",
+            "Activity diagram for data-driven flow; state diagram for event-driven change",
             "Use case diagram for data-driven flow; class diagram for event-driven change",
-            "Sequence diagram for data-driven flow; context diagram for event-driven change"
+            "State diagram for data-driven flow; activity diagram for event-driven change"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Activity diagrams model workflows; state diagrams model event-triggered state transitions."
         },
         {
           "question": "What does a context model primarily show?",
           "options": [
-            "System boundary and external interacting systems",
-            "Internal class attributes and method signatures",
+            "Source code style rules for each module",
             "Runtime state transitions for a single object",
-            "Detailed message order for one scenario",
-            "Source code style rules for each module"
+            "Internal class attributes and method signatures",
+            "System boundary and external interacting systems",
+            "Detailed message order for one scenario"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Context models define what is outside the system and the external systems it interacts with."
         },
@@ -4068,10 +4068,10 @@
           "question": "Which limitation is commonly associated with model-driven engineering?",
           "options": [
             "Strong dependency on specialized tooling",
+            "Removal of need for requirements engineering",
             "Complete inability to represent interactions",
             "Automatic elimination of all platform concerns",
-            "Guaranteed perfect alignment with agile values",
-            "Removal of need for requirements engineering"
+            "Guaranteed perfect alignment with agile values"
           ],
           "correctOption": 0,
           "points": 10,
@@ -4080,104 +4080,104 @@
         {
           "question": "Which transformation order is typical in model-driven architecture?",
           "options": [
-            "CIM to PIM to PSM to code",
-            "PIM to CIM to PSM to code",
             "PSM to PIM to CIM to code",
+            "CIM to PIM to PSM to code",
             "CIM to PSM to PIM to code",
-            "Code to PSM to PIM to CIM"
+            "Code to PSM to PIM to CIM",
+            "PIM to CIM to PSM to code"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "MDA typically refines from a computation-independent model to platform-independent, then platform-specific, then code."
         },
         {
           "question": "Why might an incomplete model still be acceptable early on?",
           "options": [
-            "It supports discussion despite missing details",
+            "It guarantees full requirement consistency",
             "It enables direct code generation immediately",
             "It eliminates later validation activities",
-            "It guarantees full requirement consistency",
-            "It prevents any future design change"
+            "It prevents any future design change",
+            "It supports discussion despite missing details"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Early models can be partial if their purpose is communication and exploration."
         },
         {
           "question": "What does software architecture primarily define?",
           "options": [
-            "Defining major components and their interactions",
+            "Defining marketing plans for distribution",
             "Defining exact code for every function",
             "Defining training material for end users",
-            "Defining marketing plans for distribution",
-            "Defining laptop operating systems for developers"
+            "Defining laptop operating systems for developers",
+            "Defining major components and their interactions"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Architecture captures the high-level system structure, components, and interactions."
         },
         {
           "question": "Why are architectural decisions expensive to change later?",
           "options": [
+            "They affect only one module in isolation",
+            "They only affect unit tests and test data files",
             "They affect many components and cross-cutting concerns",
             "They only affect color choices and screen layout",
-            "They only affect unit tests and test data files",
-            "They affect only one module in isolation",
             "They affect only compiler flags and build scripts"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Core architectural changes ripple across components, interfaces, deployment, and quality properties."
         },
         {
           "question": "In the 4+1 architectural view model, which view focuses on runtime processes?",
           "options": [
-            "Process view of runtime concurrency",
-            "Logical view of key abstractions",
-            "Development view of code organization",
+            "Scenario view of validating use cases",
             "Physical view of deployment hardware",
-            "Scenario view of validating use cases"
+            "Development view of code organization",
+            "Process view of runtime concurrency",
+            "Logical view of key abstractions"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "The process view describes how the system is composed of interacting processes at run time."
         },
         {
           "question": "Why can adopting MDA/MDE be difficult in practice?",
           "options": [
-            "It needs specialized tools and heavy upfront models",
-            "It cannot represent system context in any form",
+            "It guarantees perfect alignment with agile values",
             "It removes the need for requirements engineering",
+            "It needs specialized tools and heavy upfront models",
             "It prevents any change once modeling begins",
-            "It guarantees perfect alignment with agile values"
+            "It cannot represent system context in any form"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Tooling needs and extensive upfront modeling can make adoption difficult and conflict with agile practices."
         },
         {
           "question": "Which architectural choice most directly supports security layering?",
           "options": [
-            "Layered structure with protected inner layers",
             "Pipe-and-filter structure for interactive tasks",
-            "Flat structure with unrestricted global access",
             "Single component structure for all functions",
+            "Flat structure with unrestricted global access",
+            "Layered structure with protected inner layers",
             "Random structure changed each iteration"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Layering can protect critical assets by placing them in inner layers with controlled access."
         },
         {
           "question": "Which statement best matches the fault–error–failure relationship?",
           "options": [
+            "Error and failure are identical by definition",
             "Fault can cause error; error can cause failure",
             "Failure can cause error; error can cause fault",
             "Error can cause fault; fault can cause failure",
-            "Fault and failure always occur together",
-            "Error and failure are identical by definition"
+            "Fault and failure always occur together"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "A fault may lead to an error state, and an error may lead to an externally visible failure."
         },
@@ -4185,10 +4185,10 @@
           "question": "Which UML model best shows event-driven state transitions of an object?",
           "options": [
             "State diagram showing states and transitions",
-            "Activity diagram showing workflow steps",
-            "Class diagram showing static relationships",
+            "Context model showing system boundary",
             "Use case diagram showing actor goals",
-            "Context model showing system boundary"
+            "Activity diagram showing workflow steps",
+            "Class diagram showing static relationships"
           ],
           "correctOption": 0,
           "points": 10,
@@ -4198,10 +4198,10 @@
           "question": "In socio-technical systems, what is a major single cause of failures?",
           "options": [
             "Human operational mistakes during system use",
-            "Perfectly correct software specifications",
-            "Hardware that never ages or degrades",
             "Formal methods applied too early",
-            "Redundancy used in every subsystem"
+            "Redundancy used in every subsystem",
+            "Hardware that never ages or degrades",
+            "Perfectly correct software specifications"
           ],
           "correctOption": 0,
           "points": 10,
@@ -4210,91 +4210,91 @@
         {
           "question": "Using COTS most directly shifts design focus toward what activity?",
           "options": [
-            "Configuring features to meet requirements",
-            "Proving correctness through formal methods",
             "Eliminating all stakeholder communication",
             "Avoiding any modeling before implementation",
-            "Replacing testing with vendor reputation"
+            "Proving correctness through formal methods",
+            "Replacing testing with vendor reputation",
+            "Configuring features to meet requirements"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "With COTS, design often becomes selecting and configuring existing capabilities rather than coding everything."
         },
         {
           "question": "Which pairing best matches model type to perspective?",
           "options": [
-            "Context model for environment; interaction model for exchanges",
-            "Context model for states; interaction model for classes",
-            "Context model for workflow; interaction model for deployment",
+            "Context model for tests; interaction model for budgets",
             "Context model for code; interaction model for licensing",
-            "Context model for tests; interaction model for budgets"
+            "Context model for workflow; interaction model for deployment",
+            "Context model for states; interaction model for classes",
+            "Context model for environment; interaction model for exchanges"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "Context models show boundaries and external systems, while interaction models show exchanges with users or systems."
         },
         {
           "question": "Why is defect-testing data often unsuitable for reliability testing?",
           "options": [
-            "It mismatches the real operational input distribution",
-            "It forbids failures during any test execution",
-            "It ignores time between failures as a measure",
+            "It ignores specifications during test design",
             "It replaces test cases with formal proofs",
-            "It ignores specifications during test design"
+            "It mismatches the real operational input distribution",
+            "It ignores time between failures as a measure",
+            "It forbids failures during any test execution"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Reliability testing needs an operational profile that reflects real usage patterns, unlike many defect tests."
         },
         {
           "question": "Which definition best matches availability?",
           "options": [
-            "Probability system is operational at a time point",
-            "Probability system runs failure-free over an interval",
-            "Probability requirements are complete at delivery",
             "Probability code compiles without warnings today",
-            "Probability users approve the interface immediately"
+            "Probability system runs failure-free over an interval",
+            "Probability system is operational at a time point",
+            "Probability users approve the interface immediately",
+            "Probability requirements are complete at delivery"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Availability is the likelihood the system is up and able to deliver useful service at a given time."
         },
         {
           "question": "Which statement best distinguishes reliability and availability?",
           "options": [
-            "Reliability is failure-free over time; availability is up now",
             "Reliability is up now; availability is failure-free over time",
-            "Reliability equals security only; availability equals safety only",
+            "Reliability is failure-free over time; availability is up now",
             "Reliability and availability are identical in every system",
+            "Reliability equals security only; availability equals safety only",
             "Reliability is subjective always; availability is subjective always"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Reliability concerns failure-free operation over a period, while availability concerns being operational at a point in time."
         },
         {
           "question": "Which statement about reuse levels is correct?",
           "options": [
-            "Abstraction reuse reuses successful design ideas",
             "Object reuse reuses only entire application systems",
-            "Component reuse reuses only database schemas",
+            "Abstraction reuse reuses successful design ideas",
             "System reuse reuses only single library objects",
+            "Component reuse reuses only database schemas",
             "Reuse always eliminates integration and adaptation"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Abstraction-level reuse means reusing design knowledge and patterns that worked well before."
         },
         {
           "question": "Which statement best distinguishes redundancy and diversity?",
           "options": [
-            "Redundancy adds backups; diversity varies implementations",
-            "Redundancy varies implementations; diversity adds backups",
-            "Redundancy adds testing; diversity reduces testing",
+            "Redundancy and diversity mean the same thing",
             "Redundancy only hardware; diversity only software",
-            "Redundancy and diversity mean the same thing"
+            "Redundancy adds backups; diversity varies implementations",
+            "Redundancy adds testing; diversity reduces testing",
+            "Redundancy varies implementations; diversity adds backups"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Redundancy provides backup components, while diversity reduces common-mode failures by varying implementations."
         },
@@ -4302,9 +4302,9 @@
           "question": "Which pattern matches a shared central data store used by subsystems?",
           "options": [
             "Repository pattern with a central store",
-            "Layered pattern with strict service levels",
             "Client–server pattern with remote requests",
             "Pipe-and-filter pattern with streaming transforms",
+            "Layered pattern with strict service levels",
             "MVC pattern with separated presentation"
           ],
           "correctOption": 0,
@@ -4315,9 +4315,9 @@
           "question": "Which reliability metric best fits infrequent demand services?",
           "options": [
             "POFOD probability of failure on demand",
-            "ROCOF rate of occurrence of failures",
-            "MTTF mean time to failure",
             "AVAIL fraction of time operational",
+            "MTTF mean time to failure",
+            "ROCOF rate of occurrence of failures",
             "LOC lines of code total"
           ],
           "correctOption": 0,
@@ -4328,10 +4328,10 @@
           "question": "Compared with a use case overview, what does a sequence diagram add?",
           "options": [
             "Ordering of object interactions over time",
-            "List of stakeholders and organizational politics",
-            "Hardware nodes and network topology layout",
+            "Regulatory approvals and certification plan",
             "Static class attributes and inheritance trees",
-            "Regulatory approvals and certification plan"
+            "Hardware nodes and network topology layout",
+            "List of stakeholders and organizational politics"
           ],
           "correctOption": 0,
           "points": 10,
@@ -4340,182 +4340,182 @@
         {
           "question": "Which characteristic is typical of dependable development processes?",
           "options": [
-            "Repeatable and auditable development activities",
+            "Unstandardized and untracked change activities",
             "Ad-hoc and undocumented development activities",
-            "Single-person skill dependent development activities",
             "Unmeasured and unreviewed development activities",
-            "Unstandardized and untracked change activities"
+            "Repeatable and auditable development activities",
+            "Single-person skill dependent development activities"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Dependable processes are defined, repeatable, auditable, and supported by systematic verification and documentation."
         },
         {
           "question": "Which statement best captures what safety means?",
           "options": [
-            "Avoiding harm even under abnormal conditions",
+            "Avoiding reuse to prevent dependencies",
             "Avoiding failures under normal conditions",
-            "Avoiding change during system evolution",
             "Avoiding documentation during development",
-            "Avoiding reuse to prevent dependencies"
+            "Avoiding harm even under abnormal conditions",
+            "Avoiding change during system evolution"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Safety is about preventing injury or damage, which is not the same as simply meeting the specification."
         },
         {
           "question": "How can a system be reliable yet unsafe?",
           "options": [
-            "It follows an incorrect specification consistently",
-            "It follows a correct specification inconsistently",
-            "It has no specification and no implementation",
             "It has perfect availability and perfect security",
-            "It has no users and no environment"
+            "It has no users and no environment",
+            "It follows an incorrect specification consistently",
+            "It has no specification and no implementation",
+            "It follows a correct specification inconsistently"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "A system can behave exactly as specified, but still be unsafe if the specification omits safety constraints."
         },
         {
           "question": "Which pairing best matches safety-critical system type to example?",
           "options": [
-            "Primary: insulin pump; secondary: medical records system",
             "Primary: web store; secondary: video game system",
+            "Primary: insulin pump; secondary: medical records system",
             "Primary: batch payroll; secondary: compiler system",
             "Primary: CAD tool; secondary: email client system",
             "Primary: spreadsheet; secondary: photo editor system"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Primary safety-critical systems directly threaten life on failure; secondary can trigger harmful failures elsewhere."
         },
         {
           "question": "What is a hazard in safety engineering terms?",
           "options": [
-            "A condition that could lead to an accident",
             "A bug that always causes immediate failure",
-            "A test case that proves a program correct",
             "A requirement that guarantees full availability",
-            "A security patch applied after deployment"
+            "A test case that proves a program correct",
+            "A security patch applied after deployment",
+            "A condition that could lead to an accident"
           ],
-          "correctOption": 0,
+          "correctOption": 4,
           "points": 10,
           "explanation": "A hazard is a system condition with the potential to cause an accident."
         },
         {
           "question": "Risk is best described as which combination?",
           "options": [
-            "Combination of hazard probability and severity",
-            "Combination of usability and performance metrics",
             "Combination of schedule and budget constraints",
             "Combination of encryption and authentication methods",
+            "Combination of usability and performance metrics",
+            "Combination of hazard probability and severity",
             "Combination of code style and documentation detail"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Risk combines how likely a hazard is and how severe the consequences could be."
         },
         {
           "question": "In hazard assessment, what does ALARP represent?",
           "options": [
+            "Risk eliminated by definition through compliance",
+            "Risk increased to maximize test coverage",
             "Risk reduced as low as reasonably practicable",
             "Risk accepted as large and unavoidable permanently",
-            "Risk eliminated by definition through compliance",
-            "Risk ignored until after system deployment",
-            "Risk increased to maximize test coverage"
+            "Risk ignored until after system deployment"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "ALARP is a middle category where risk must be reduced as far as reasonably practicable."
         },
         {
           "question": "Which set lists core strategies for achieving safety?",
           "options": [
-            "Hazard avoidance, hazard removal, damage limitation",
-            "Feature growth, market fit, brand expansion",
-            "Compilation, linking, loading, execution",
+            "Recruitment, promotion, compensation, retention",
             "Refactoring, optimization, parallelization, caching",
-            "Recruitment, promotion, compensation, retention"
+            "Feature growth, market fit, brand expansion",
+            "Hazard avoidance, hazard removal, damage limitation",
+            "Compilation, linking, loading, execution"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Safety strategies include avoiding hazards, detecting/removing hazards, and limiting damage when accidents occur."
         },
         {
           "question": "Fault tree analysis is best described as which technique?",
           "options": [
-            "Top-down deductive analysis from a hazard",
-            "Bottom-up inductive analysis from code units",
-            "Random sampling of inputs for usability tests",
             "Black-box analysis based on marketing surveys",
-            "Graphical style guide for UML notation"
+            "Random sampling of inputs for usability tests",
+            "Graphical style guide for UML notation",
+            "Top-down deductive analysis from a hazard",
+            "Bottom-up inductive analysis from code units"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "Fault tree analysis starts from a hazard and decomposes combinations of faults that could cause it."
         },
         {
           "question": "What is the primary purpose of a safety case?",
           "options": [
+            "Providing budget evidence that a system is cheap",
+            "Providing code evidence that a system is optimized",
             "Providing structured evidence that a system is safe",
             "Providing marketing evidence that a system is popular",
-            "Providing code evidence that a system is optimized",
-            "Providing budget evidence that a system is cheap",
             "Providing UI evidence that a system is attractive"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "A safety case is a structured argument with evidence used to justify safety to regulators and stakeholders."
         },
         {
           "question": "Which pairing best matches technique to description?",
           "options": [
-            "Model checking explores states; static analysis inspects code",
-            "Model checking inspects code; static analysis explores states",
+            "Model checking is marketing; static analysis is sales",
             "Model checking replaces tests; static analysis replaces specs",
+            "Model checking explores states; static analysis inspects code",
             "Model checking is only manual; static analysis is only human",
-            "Model checking is marketing; static analysis is sales"
+            "Model checking inspects code; static analysis explores states"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "Model checking explores possible states for property violations, while static analysis examines source code for faults."
         },
         {
           "question": "What does ROCOF measure in reliability engineering?",
           "options": [
-            "Rate at which failures occur during operation",
             "Chance a demand fails at the time of request",
-            "Fraction of time the system is operational",
+            "Rate at which failures occur during operation",
+            "Total number of lines of code in system",
             "Average time needed to repair after failure",
-            "Total number of lines of code in system"
+            "Fraction of time the system is operational"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "ROCOF is the rate of occurrence of failures during system operation."
         },
         {
           "question": "How is MTTF related to ROCOF in basic terms?",
           "options": [
-            "MTTF is the reciprocal of ROCOF",
-            "MTTF is the sum of ROCOF values",
-            "MTTF is the square of ROCOF value",
             "MTTF is unrelated to ROCOF always",
-            "MTTF is smaller when ROCOF is zero"
+            "MTTF is the reciprocal of ROCOF",
+            "MTTF is smaller when ROCOF is zero",
+            "MTTF is the sum of ROCOF values",
+            "MTTF is the square of ROCOF value"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Mean time to failure is the reciprocal of the failure rate in simple models."
         },
         {
           "question": "What is the core idea of N-version programming?",
           "options": [
-            "Run independent versions and vote on outputs",
-            "Run one version and retry after failures",
             "Run one version and ignore invalid inputs",
-            "Run one version and log errors for later",
-            "Run one version and disable redundancy"
+            "Run one version and disable redundancy",
+            "Run one version and retry after failures",
+            "Run independent versions and vote on outputs",
+            "Run one version and log errors for later"
           ],
-          "correctOption": 0,
+          "correctOption": 3,
           "points": 10,
           "explanation": "N-version programming uses multiple independently developed implementations and majority voting to tolerate faults."
         },
@@ -4523,10 +4523,10 @@
           "question": "Triple Modular Redundancy (TMR) primarily relies on what mechanism?",
           "options": [
             "Three replicas with majority vote output",
-            "Two replicas with manual operator selection",
             "Single replica with perfect formal proof",
+            "One replica with timeouts only",
             "Multiple retries with random input reshaping",
-            "One replica with timeouts only"
+            "Two replicas with manual operator selection"
           ],
           "correctOption": 0,
           "points": 10,
@@ -4535,26 +4535,26 @@
         {
           "question": "What is an operational profile in reliability testing?",
           "options": [
-            "Distribution of inputs representing real usage",
-            "List of defects found during unit testing",
-            "Set of coding standards for a project",
             "Sequence of UML diagrams for architecture",
-            "Schedule of sprint tasks for a release"
+            "Set of coding standards for a project",
+            "Distribution of inputs representing real usage",
+            "Schedule of sprint tasks for a release",
+            "List of defects found during unit testing"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
           "explanation": "An operational profile models how the system is actually used so reliability tests reflect real demand patterns."
         },
         {
           "question": "Which limitation is commonly associated with formal methods?",
           "options": [
+            "Perfect alignment with minimal project documentation",
             "High cost and difficulty scaling to large systems",
             "Guaranteed understanding by all nontechnical stakeholders",
             "Elimination of need for all testing activities",
-            "Automatic correction of all specification errors always",
-            "Perfect alignment with minimal project documentation"
+            "Automatic correction of all specification errors always"
           ],
-          "correctOption": 0,
+          "correctOption": 1,
           "points": 10,
           "explanation": "Formal methods can detect errors early, but they are expensive, hard to scale, and difficult for many stakeholders to use."
         }
