@@ -3228,9 +3228,9 @@
       ]
     },
     {
-      "id": "Capstone preparation final",
-      "name": "Capstone preparation final",
-      "description": "Final quiz for SQUAT capstone preparation",
+      "id": "Capstone preparation final 1",
+      "name": "Capstone preparation final 1",
+      "description": "Final quiz for capstone preparation",
       "questions": [
         {
           "question": "Which definition best matches software engineering?",
@@ -3504,7 +3504,14 @@
           "correctOption": 0,
           "points": 10,
           "explanation": "Process descriptions often define activities, outcomes, roles, and entry/exit conditions."
-        },
+        }
+      ]
+    },
+    {
+      "id": "Capstone preparation final 2",
+      "name": "Capstone preparation final 2",
+      "description": "Final quiz for capstone preparation",
+      "questions": [
         {
           "question": "Which statement best describes a plan-driven process?",
           "options": [
@@ -3777,7 +3784,14 @@
           "correctOption": 4,
           "points": 10,
           "explanation": "Large, safety-critical, regulated, or long-lived systems often require plan-driven or hybrid approaches."
-        },
+        }
+      ]
+    },
+    {
+      "id": "Capstone preparation final 3",
+      "name": "Capstone preparation final 3",
+      "description": "Final quiz for capstone preparation",
+      "questions": [
         {
           "question": "What is requirements engineering primarily concerned with?",
           "options": [
@@ -4037,7 +4051,14 @@
           "correctOption": 0,
           "points": 10,
           "explanation": "Aggregation models a whole–part relationship, typically a weaker form of composition."
-        },
+        }
+      ]
+    },
+    {
+      "id": "Capstone preparation final 4",
+      "name": "Capstone preparation final 4",
+      "description": "Final quiz for capstone preparation",
+      "questions": [
         {
           "question": "Which pairing best matches diagram to behavior type?",
           "options": [
@@ -4297,7 +4318,14 @@
           "correctOption": 2,
           "points": 10,
           "explanation": "Redundancy provides backup components, while diversity reduces common-mode failures by varying implementations."
-        },
+        }
+      ]
+    },
+    {
+      "id": "Capstone preparation final 5",
+      "name": "Capstone preparation final 5",
+      "description": "Final quiz for capstone preparation",
+      "questions": [
         {
           "question": "Which pattern matches a shared central data store used by subsystems?",
           "options": [
@@ -4557,468 +4585,6 @@
           "correctOption": 1,
           "points": 10,
           "explanation": "Formal methods can detect errors early, but they are expensive, hard to scale, and difficult for many stakeholders to use."
-        }
-      ]
-    },
-    {
-      "id": "SQUAT Final questions",
-      "name": "SQUAT Final questions",
-      "description": "Final exam questions for SQUAT course",
-      "questions": [
-        {
-          "question": "Which activity is primarily Quality Assurance rather than Software Testing?",
-          "options": [
-            "Design boundary value test set",
-            "Execute regression suite on build",
-            "Log defects from failed cases",
-            "Run smoke flow after deploy",
-            "Audit process compliance to SQAP"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "QA is process-focused and preventive (audits, standards, process compliance). Testing is product-focused and detective (executing tests to find failures)."
-        },
-        {
-          "question": "A team checks that every requirement has at least one mapped test case. This is best classified as:",
-          "options": [
-            "Acceptance testing by customer",
-            "System testing of end flows",
-            "Verification of specified coverage",
-            "Stress testing under overload",
-            "Validation of user satisfaction"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Mapping requirements to tests confirms conformance to specification (verification). Validation is about meeting real user needs in context."
-        },
-        {
-          "question": "A stakeholder says: “The feature matches the spec, but it’s unusable for real work.” This most directly indicates failure of:",
-          "options": [
-            "Unit testing of core methods",
-            "Integration testing of services",
-            "Verification against requirements",
-            "Load testing of endpoints",
-            "Validation against user needs"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Matching the spec implies verification succeeded. “Unusable for real work” indicates validation failed (real needs not met)."
-        },
-        {
-          "question": "A test runs a single class method with mocks for all dependencies. This is best classified as:",
-          "options": [
-            "Integration testing of components",
-            "Acceptance testing of business value",
-            "Performance testing of throughput",
-            "Unit testing of isolated logic",
-            "System testing of full workflow"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Unit tests target the smallest testable unit in isolation, often using mocks/stubs for external dependencies."
-        },
-        {
-          "question": "A test verifies the interaction between a service and a real database schema. This is best classified as:",
-          "options": [
-            "Integration testing of dependencies",
-            "Sanity testing of a small patch",
-            "Smoke testing of build stability",
-            "Unit testing of isolated logic",
-            "Acceptance testing by end users"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Integration tests validate that multiple components work together (service + DB), including contracts, mapping, and persistence behavior."
-        },
-        {
-          "question": "A test executes an end-to-end workflow through UI, API, and DB in a production-like environment. This is best classified as:",
-          "options": [
-            "Component testing of one module",
-            "Unit testing of single functions",
-            "Mutation testing of assertions",
-            "System testing of full behavior",
-            "Static testing of source code"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "System testing validates the fully integrated system end-to-end against requirements in an environment close to real use."
-        },
-        {
-          "question": "A customer executes predefined scenarios to decide if the product is acceptable for release. This is best classified as:",
-          "options": [
-            "Regression testing of side effects",
-            "Acceptance testing of readiness",
-            "Unit testing of class behavior",
-            "Smoke testing of stability",
-            "Integration testing of interfaces"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Acceptance testing confirms the product meets acceptance criteria from the customer/business perspective before release."
-        },
-        {
-          "question": "After a new build, you run a short set of critical flows to decide if deeper testing should start. This is:",
-          "options": [
-            "Load testing for capacity limits",
-            "Smoke testing for build stability",
-            "Sanity testing for narrow change",
-            "Regression testing for side effects",
-            "Retesting for defect verification"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Smoke testing is a quick build verification: if core flows fail, the build is not stable enough for further testing."
-        },
-        {
-          "question": "After a small bug fix, you run only checks around the changed area to confirm it behaves sensibly. This is:",
-          "options": [
-            "Smoke testing for build stability",
-            "Acceptance testing for final approval",
-            "Regression testing for full coverage",
-            "Sanity testing for change confidence",
-            "Stress testing for breaking point"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Sanity testing is narrow and change-focused, confirming the fix/change is reasonable without running a full regression."
-        },
-        {
-          "question": "A failed test case is executed again after developers claim the fix is done. This is:",
-          "options": [
-            "Retesting to confirm the fix",
-            "Sanity to sample random flows",
-            "Load to measure capacity trend",
-            "Smoke to verify build stability",
-            "Regression to detect side effects"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Retesting re-runs the same failing case to verify the defect fix worked. Regression checks what else broke."
-        },
-        {
-          "question": "A change in a shared payment library triggers running previously passing tests across checkout, refunds, and invoices. This is:",
-          "options": [
-            "Smoke testing for build stability",
-            "Regression testing for side effects",
-            "Acceptance testing for release decision",
-            "Sanity testing for local change",
-            "Retesting for defect verification"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "A shared dependency change risks widespread side effects, so you run regression across affected functional areas."
-        },
-        {
-          "question": "Which deliverable most directly supports requirement-to-test coverage tracking?",
-          "options": [
-            "Exploratory testing charter",
-            "Requirement Traceability Matrix",
-            "Defect severity rubric",
-            "Build deployment runbook",
-            "Test environment checklist"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "RTM maps requirements to test cases and their status, making coverage gaps visible."
-        },
-        {
-          "question": "Which STLC phase most commonly produces the test closure report and lessons learned?",
-          "options": [
-            "Test execution phase",
-            "Requirement analysis phase",
-            "Test design phase",
-            "Test cycle closure phase",
-            "Environment setup phase"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Cycle closure evaluates exit criteria, summarizes metrics, analyzes defect distribution, and documents lessons learned."
-        },
-        {
-          "question": "Which condition is best treated as an exit criterion for test execution?",
-          "options": [
-            "All requirements written by analysts",
-            "All planned tests executed as defined",
-            "All environments provisioned by DevOps",
-            "All UI labels reviewed by design",
-            "All page objects fully refactored"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Exit criteria for execution relate to completion/quality thresholds (e.g., planned tests executed, defect thresholds met), not upstream work."
-        },
-        {
-          "question": "Input field accepts integers from 1 to 100 inclusive. Which set best matches equivalence partitioning representatives?",
-          "options": [
-            "49, 50, 51",
-            "0, 50, 101",
-            "1, 2, 3",
-            "25, 75, 100",
-            "100, 101, 102"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Equivalence classes are: <1 invalid, 1–100 valid, >100 invalid. Representatives: 0 (invalid), 50 (valid), 101 (invalid)."
-        },
-        {
-          "question": "Input field accepts integers from 1 to 100 inclusive. Which set best matches boundary value analysis?",
-          "options": [
-            "10, 20, 80, 90",
-            "2, 3, 4, 5",
-            "0, 1, 100, 101",
-            "1, 2, 99, 100",
-            "0, 50, 100, 150"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Boundary value analysis targets just outside/at boundaries: min-1, min, max, max+1 → 0, 1, 100, 101."
-        },
-        {
-          "question": "A button has a stable data-test attribute but a dynamic id that changes each run. Which locator is most robust?",
-          "options": [
-            "XPath by sibling index position",
-            "CSS by data-test attribute",
-            "XPath by absolute DOM path",
-            "ID locator using dynamic value",
-            "CSS by nth-child position"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Prefer stable attributes meant for testing (e.g., data-test). Absolute paths and positional selectors are brittle; dynamic ids break ID locators."
-        },
-        {
-          "question": "You must locate an element by visible text content only. Which locator strategy is most appropriate?",
-          "options": [
-            "CSS using class selector",
-            "XPath using text matching",
-            "CSS using tag selector",
-            "ID using generated identifier",
-            "ID using static identifier"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "CSS cannot directly match text content; XPath can match text using functions like contains(text(), ...)."
-        },
-        {
-          "question": "A CSS selector '#login' targets what kind of attribute?",
-          "options": [
-            "Element role attribute match",
-            "Element id attribute match",
-            "Element tag attribute match",
-            "Element class attribute match",
-            "Element name attribute match"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "# in CSS selects by id; . selects by class."
-        },
-        {
-          "question": "Which wait applies to every findElement call after it is set, until changed again?",
-          "options": [
-            "Static sleep per fixed duration",
-            "Page load wait per navigation",
-            "Fluent wait per polling strategy",
-            "Implicit wait on driver instance",
-            "Explicit wait per element condition"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Implicit wait is a driver-wide setting affecting all element searches. Explicit/fluent waits are targeted to conditions."
-        },
-        {
-          "question": "Which symptom most strongly indicates a StaleElementReferenceException cause?",
-          "options": [
-            "Driver executable path is missing",
-            "Selector syntax is not valid",
-            "DOM re-render replaced the element",
-            "Wait timeout reached without match",
-            "Element is outside the viewport"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Stale element occurs when a previously located element reference is no longer attached to the current DOM (re-render/navigation)."
-        },
-        {
-          "question": "Which fix is most appropriate for repeated StaleElementReferenceException on a changing page?",
-          "options": [
-            "Replace clicks with Thread.sleep calls",
-            "Disable JavaScript execution in browser",
-            "Re-locate element inside explicit wait",
-            "Increase implicit wait to sixty seconds",
-            "Use absolute XPath from html root"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Re-find the element after DOM updates, typically using an explicit wait that retries until the element is present/visible/clickable."
-        },
-        {
-          "question": "Which exception is most directly associated with an explicit wait exceeding its timeout?",
-          "options": [
-            "TimeoutException on unmet condition",
-            "InvalidSelectorException on wrong CSS",
-            "NoSuchElementException on locator parse",
-            "ElementNotInteractableException on hidden click",
-            "StaleElementReferenceException on ref reuse"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Explicit waits throw TimeoutException when the expected condition is not satisfied before the timeout."
-        },
-        {
-          "question": "Which statement best distinguishes assertion and verification in UI automation frameworks?",
-          "options": [
-            "Assertion stops test; verification continues",
-            "Assertion is optional; verification is required",
-            "Assertion is manual; verification is automatic",
-            "Assertion logs only; verification throws error",
-            "Assertion continues; verification stops test"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Assertions typically fail fast (stop the test method). Verifications often record failure and continue to collect more findings."
-        },
-        {
-          "question": "Which Page Object Model practice most improves maintainability after UI locator changes?",
-          "options": [
-            "Keep waits inside every test",
-            "Keep assertions inside driver wrapper",
-            "Keep locators inside page classes",
-            "Keep data inside compiled binaries",
-            "Keep locators inside every test"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "POM centralizes locators and page actions; locator changes are fixed in one place rather than across many tests."
-        },
-        {
-          "question": "Which design choice is the clearest POM anti-pattern that increases duplication?",
-          "options": [
-            "Hiding low-level actions in pages",
-            "Returning next page object after action",
-            "Calling findElement directly in tests",
-            "Naming methods by business intent",
-            "Calling page methods from tests"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Direct findElement usage in tests spreads locator logic across test files, defeating POM’s main maintainability advantage."
-        },
-        {
-          "question": "In TestNG, which priority order runs first when priorities are -1, 0, and 2?",
-          "options": [
-            "0 first, then -1, then 2",
-            "-1 first, then 0, then 2",
-            "2 first, then 0, then -1",
-            "0 first, then 2, then -1",
-            "-1 first, then 2, then 0"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Lower numeric priority runs earlier. Negative priorities run before zero and positive priorities."
-        },
-        {
-          "question": "Which @Test configuration best targets only smoke tests for selective execution?",
-          "options": [
-            "@Test(threadPoolSize={\"smoke\"})",
-            "@Test(alwaysRun={\"smoke\"})",
-            "@Test(groups={\"smoke\"})",
-            "@Test(dependsOnMethods={\"smoke\"})",
-            "@Test(priority={\"smoke\"})"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Groups label tests for inclusion/exclusion via XML or command line. Priority controls order, not selection."
-        },
-        {
-          "question": "Which setting most directly creates risk if tests run in parallel but share one WebDriver instance?",
-          "options": [
-            "Parallel execution with shared driver",
-            "Grouped execution with isolated driver",
-            "Single-thread execution with new driver",
-            "Priority execution with isolated driver",
-            "Sequential execution with shared driver"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Parallel methods using one driver cause race conditions: one test changes browser state while another reads it."
-        },
-        {
-          "question": "Which mapping correctly places tests into Agile Testing Quadrants?",
-          "options": [
-            "Unit: Q1; Story: Q2; Exploratory: Q3; Performance: Q4",
-            "Unit: Q1; Story: Q3; Exploratory: Q2; Performance: Q4",
-            "Unit: Q4; Story: Q3; Exploratory: Q2; Performance: Q1",
-            "Unit: Q2; Story: Q1; Exploratory: Q4; Performance: Q3",
-            "Unit: Q3; Story: Q4; Exploratory: Q1; Performance: Q2"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Q1 = tech-facing supports team (unit). Q2 = business-facing supports team (story/functional). Q3 = business-facing critiques product (exploratory/usability). Q4 = tech-facing critiques product (performance/security)."
-        },
-        {
-          "question": "Which test type best fits Quadrant Q3 rather than Q2?",
-          "options": [
-            "Automated story acceptance checks",
-            "API contract tests in CI pipeline",
-            "Exploratory usability session testing",
-            "Unit tests for domain logic",
-            "Component tests for service contract"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Q3 focuses on business-facing critique (usability, exploratory, user feedback). Q2 supports development with business-facing functional checks."
-        },
-        {
-          "question": "Which statement most accurately distinguishes load testing from stress testing?",
-          "options": [
-            "Load tests unit logic; stress tests integration",
-            "Load exceeds limits; stress checks expected volume",
-            "Load checks expected volume; stress exceeds limits",
-            "Load tests security; stress tests usability",
-            "Load avoids metrics; stress uses metrics"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Load testing evaluates behavior under expected workloads. Stress testing pushes beyond expected capacity to find the breaking point and failure modes."
-        },
-        {
-          "question": "Which metric outcome is most directly used to judge performance testing success?",
-          "options": [
-            "Count of Java classes in project",
-            "Number of groups in TestNG XML",
-            "Number of requirements in RTM",
-            "Count of locators in page object",
-            "Response time under defined workload"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Performance testing evaluates measurable runtime behavior like response time, throughput, resource use, and stability under load."
-        },
-        {
-          "question": "Which item is one of the ISO 9000 quality management principles?",
-          "options": [
-            "Fixed scope over customer value",
-            "Evidence-based decision making",
-            "Defect-free release guarantee",
-            "Mandatory automated UI testing",
-            "Zero change request tolerance"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "ISO 9000 principles include customer focus, leadership, engagement of people, process approach, improvement, evidence-based decisions, and relationship management."
-        },
-        {
-          "question": "In TMMi, which maturity level introduces quantitative measurement of the testing process?",
-          "options": [
-            "Level 5 optimizing process",
-            "Level 1 initial process",
-            "Level 4 measured process",
-            "Level 2 managed process",
-            "Level 3 defined process"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "TMMi Level 4 is the measured level, where quantitative metrics and measurement-driven control are introduced."
         }
       ]
     }
