@@ -1228,8 +1228,8 @@
       ]
     },
     {
-      "id": "InfoBez Final preparation 1",
-      "name": "InfoBez Final preparation 1",
+      "id": "Infobez Final preparation 1",
+      "name": "Infobez Final preparation 1",
       "description": "A quiz on infobez",
       "questions": [
         {
@@ -1243,7 +1243,7 @@
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Integrity ensures data is not modified without detection during transmission."
+          "explanation": "Integrity ensures data is not modified without detection."
         },
         {
           "question": "Which encryption approach is MOST appropriate for high-speed VPN traffic?",
@@ -1256,7 +1256,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Symmetric encryption is efficient for bulk, high-throughput traffic (typical for VPN payloads)."
+          "explanation": "Symmetric encryption is fast and suited for bulk traffic."
         },
         {
           "question": "Why are asymmetric algorithms typically NOT used for bulk data encryption?",
@@ -1269,14 +1269,14 @@
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Public-key operations are slower, so they are usually used for key exchange/signatures, not bulk encryption."
+          "explanation": "Asymmetric crypto is much slower than symmetric crypto for large data."
         },
         {
           "question": "Which hashing algorithm should be avoided due to known weaknesses?",
           "options": ["SHA-512", "SHA-256", "SHA-3", "SHA-384", "MD5"],
           "correctOption": 4,
           "points": 10,
-          "explanation": "MD5 is considered broken for collision resistance and should not be used for security-critical hashing."
+          "explanation": "MD5 is broken for collision resistance and is unsafe for security use."
         },
         {
           "question": "What is the PRIMARY purpose of salting passwords before hashing?",
@@ -1289,7 +1289,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Salt makes identical passwords hash differently and defeats precomputed/rainbow-table attacks."
+          "explanation": "A salt makes precomputed hash tables ineffective and prevents identical-hash matching."
         },
         {
           "question": "Which technique hides sensitive information by replacing it with realistic but fake data?",
@@ -1302,14 +1302,14 @@
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Substitution replaces real sensitive values with plausible fake ones while preserving format/utility."
+          "explanation": "Substitution replaces true values with plausible fake values."
         },
         {
           "question": "Which Diffie-Hellman group provides the STRONGEST security?",
           "options": ["Group 16", "Group 1", "Group 2", "Group 5", "Group 14"],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Higher-numbered/stronger parameter groups provide stronger security than legacy groups."
+          "explanation": "Higher-numbered groups (like 16) generally correspond to stronger parameters."
         },
         {
           "question": "What is the MAIN advantage of steganography compared to encryption?",
@@ -1322,14 +1322,14 @@
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Steganography aims to conceal that a message exists at all."
+          "explanation": "Steganography aims to hide that communication is happening at all."
         },
         {
           "question": "Which CVSS metric is commonly used to rate vulnerability severity?",
           "options": ["CIA", "CVE", "CWE", "IDS", "CVSS Base Score"],
           "correctOption": 4,
           "points": 10,
-          "explanation": "CVSS Base Score is the commonly cited severity measure in reports."
+          "explanation": "The CVSS Base Score is the standard severity score in reports."
         },
         {
           "question": "In a vulnerability assessment report, CVE identifiers are useful because they:",
@@ -1342,14 +1342,14 @@
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "CVE IDs provide a standardized reference to look up details, fixes, and advisories."
+          "explanation": "A CVE provides a universal identifier for consistent lookup across sources."
         },
         {
           "question": "Which tool is commonly used for automated vulnerability scanning in the labs?",
           "options": ["Wireshark", "Netstat", "Nessus", "Tcpdump", "Nmap only"],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Nessus is a common automated vulnerability scanner used for assessment workflows."
+          "explanation": "Nessus is a common automated vulnerability scanner."
         },
         {
           "question": "What type of data must be collected FIRST after a security incident?",
@@ -1362,21 +1362,21 @@
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Volatile data (RAM, running connections, processes) disappears on reboot/power-off, so collect it first."
+          "explanation": "Volatile memory is lost quickly, so it is collected before powering down."
         },
         {
           "question": "Which Linux command displays currently running processes in a user-oriented format?",
           "options": ["ps axu", "ps -e", "top -d", "jobs", "htop"],
           "correctOption": 0,
           "points": 10,
-          "explanation": "ps axu shows processes for all users with user-oriented columns."
+          "explanation": "ps axu shows processes with user-oriented columns and all users' processes."
         },
         {
           "question": "Which log file records failed login attempts on a Linux system?",
           "options": ["auth.log", "syslog", "kern.log", "wtmp", "btmp"],
           "correctOption": 4,
           "points": 10,
-          "explanation": "btmp is used for failed login attempts (wtmp is for successful login history)."
+          "explanation": "btmp tracks failed login attempts."
         },
         {
           "question": "Which OWASP Top 10 category relates to improper access control enforcement?",
@@ -1389,7 +1389,7 @@
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Broken Access Control covers failures to enforce authorization rules properly."
+          "explanation": "Broken Access Control covers failures to enforce authorization correctly."
         },
         {
           "question": "In cloud computing, who is typically responsible for securing the physical infrastructure?",
@@ -1402,14 +1402,14 @@
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Physical data center security is typically handled by the cloud provider."
+          "explanation": "Cloud providers secure the underlying physical facilities and hardware."
         },
         {
           "question": "Which cloud service model provides the MOST control over operating systems?",
           "options": ["SaaS", "PaaS", "FaaS", "DBaaS", "IaaS"],
           "correctOption": 4,
           "points": 10,
-          "explanation": "IaaS gives customers the most control, including OS-level management."
+          "explanation": "IaaS gives customers control over the OS and many configuration choices."
         },
         {
           "question": "What is the PRIMARY purpose of HMAC?",
@@ -1422,7 +1422,7 @@
           ],
           "correctOption": 4,
           "points": 10,
-          "explanation": "HMAC verifies integrity and authenticates the message origin using a shared secret."
+          "explanation": "HMAC provides integrity plus authentication of the message origin (shared secret)."
         },
         {
           "question": "Which command is BEST suited to identify active network connections after an incident?",
@@ -1435,7 +1435,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "netstat -ano (or equivalents) helps list active connections and listening ports."
+          "explanation": "netstat -ano helps enumerate active connections and listening services."
         },
         {
           "question": "Why are IoT devices often registered with a centralized server?",
@@ -1448,13 +1448,13 @@
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Central registration supports centralized visibility, management, and policy enforcement."
+          "explanation": "Registration supports centralized inventory, monitoring, management, and policy control."
         }
       ]
     },
     {
-      "id": "InfoBez Final preparation 2",
-      "name": "InfoBez Final preparation 2",
+      "id": "Infobez Final preparation 2",
+      "name": "Infobez Final preparation 2",
       "description": "A quiz on infobez",
       "questions": [
         {
@@ -1468,7 +1468,7 @@
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Non-repudiation provides proof of origin/action so a user cannot plausibly deny it."
+          "explanation": "Non-repudiation prevents a party from credibly denying an action."
         },
         {
           "question": "Which cryptographic algorithm category is MOST commonly used for disk encryption?",
@@ -1481,7 +1481,7 @@
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Disk encryption typically uses symmetric block ciphers for performance and security."
+          "explanation": "Disk encryption typically uses symmetric block ciphers (for performance and security)."
         },
         {
           "question": "Why is key management critical in cryptographic systems?",
@@ -1494,7 +1494,7 @@
           ],
           "correctOption": 4,
           "points": 10,
-          "explanation": "Even strong algorithms fail if keys are exposed, reused improperly, or unmanaged."
+          "explanation": "Weak key handling can break security even when algorithms are strong."
         },
         {
           "question": "Which CVSS characteristic reflects the potential damage caused by a vulnerability?",
@@ -1507,10 +1507,10 @@
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Impact describes confidentiality/integrity/availability damage if exploited."
+          "explanation": "Impact reflects the damage to confidentiality, integrity, and availability."
         },
         {
-          "question": "In the Cyber Hygiene report, what does the term “vulnerability age” represent?",
+          "question": "In the Cyber Hygiene report, what does the term \"vulnerability age\" represent?",
           "options": [
             "Time between initial detection and latest detection",
             "Time since the vulnerability was patched",
@@ -1520,7 +1520,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Vulnerability age measures how long the vuln persists across scans (from first seen to last seen)."
+          "explanation": "Vulnerability age is defined here as the time between first and most recent detection."
         },
         {
           "question": "Which incident response activity focuses on identifying the root cause of an attack?",
@@ -1533,14 +1533,14 @@
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Analysis focuses on understanding what happened, how, and why (root cause)."
+          "explanation": "Analysis focuses on understanding what happened and why (root cause)."
         },
         {
           "question": "Which Linux log file records authentication-related events?",
           "options": ["kern.log", "syslog", "auth.log", "btmp", "wtmp"],
           "correctOption": 2,
           "points": 10,
-          "explanation": "auth.log records authentication/authorization events on many Linux distributions."
+          "explanation": "auth.log commonly stores authentication and authorization events."
         },
         {
           "question": "According to the report methodology, when is a system classified as a host?",
@@ -1553,7 +1553,7 @@
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "A listening service implies the system is reachable and providing a network service."
+          "explanation": "A host is defined here as having an open port with a listening service."
         },
         {
           "question": "Which OWASP Top 10 risk involves excessive data exposure through APIs?",
@@ -1566,7 +1566,7 @@
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Cryptographic Failures covers issues that can cause unintended exposure of sensitive data."
+          "explanation": "This key maps excessive exposure to Cryptographic Failures (insufficient protection of sensitive data)."
         },
         {
           "question": "What is the PRIMARY reason encoding is used together with encryption?",
@@ -1579,14 +1579,152 @@
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Encoding ensures data stays compatible with transport/storage formats (encryption alone may produce non-text/binary)."
+          "explanation": "Encoding helps represent encrypted data safely across systems/protocols."
         },
         {
           "question": "Which cloud service model provides application-level services without OS management?",
           "options": ["IaaS", "PaaS", "Private", "Hybrid", "SaaS"],
           "correctOption": 4,
           "points": 10,
-          "explanation": "SaaS provides the application; the customer does not manage the OS."
+          "explanation": "SaaS provides the application; the provider manages the OS and platform."
+        },
+        {
+          "question": "Which security concept ensures that a user cannot deny performing an action?",
+          "options": [
+            "Confidentiality",
+            "Availability",
+            "Non-repudiation",
+            "Authorization",
+            "Obfuscation"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Non-repudiation supports accountability using proofs like signatures and logs."
+        },
+        {
+          "question": "Which cryptographic algorithm category is MOST commonly used for disk encryption?",
+          "options": [
+            "Hash algorithms",
+            "Symmetric block ciphers",
+            "Asymmetric algorithms",
+            "Stream ciphers only",
+            "Encoding algorithms"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Disk encryption is generally implemented with symmetric block ciphers."
+        },
+        {
+          "question": "Why is key management critical in cryptographic systems?",
+          "options": [
+            "It reduces algorithm complexity",
+            "It avoids vulnerability scanning",
+            "It shortens encryption time",
+            "It removes the need for hashing",
+            "It prevents unauthorized key usage"
+          ],
+          "correctOption": 4,
+          "points": 10,
+          "explanation": "Protecting, rotating, and controlling keys prevents unauthorized decryption/signing."
+        },
+        {
+          "question": "Which CVSS characteristic reflects the potential damage caused by a vulnerability?",
+          "options": [
+            "Attack Complexity",
+            "Privileges Required",
+            "Scope",
+            "Impact",
+            "Vector String"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Impact summarizes potential harm if the vulnerability is exploited."
+        },
+        {
+          "question": "In the Cyber Hygiene report, what does the term \"vulnerability age\" represent?",
+          "options": [
+            "Time between initial detection and latest detection",
+            "Time since the vulnerability was patched",
+            "Time since the CVE was published",
+            "Time since the last scan was executed",
+            "Time since the host was discovered"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "This key defines vulnerability age as time since the CVE was published."
+        },
+        {
+          "question": "Which incident response activity focuses on identifying the root cause of an attack?",
+          "options": [
+            "Containment",
+            "Eradication",
+            "Recovery",
+            "Analysis",
+            "Preparation"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Analysis is where evidence is examined to determine cause and scope."
+        },
+        {
+          "question": "Which Linux log file records authentication-related events?",
+          "options": ["kern.log", "syslog", "auth.log", "btmp", "wtmp"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "auth.log records authentication-related entries on many Linux systems."
+        },
+        {
+          "question": "According to the report methodology, when is a system classified as a host?",
+          "options": [
+            "When it responds to ICMP requests",
+            "When it has at least one open port with a listening service",
+            "When it has a registered DNS record",
+            "When it appears in previous scan history",
+            "When it contains a vulnerability with CVSS > 7"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The methodology defines a host by presence of a listening service on an open port."
+        },
+        {
+          "question": "Which OWASP Top 10 risk involves excessive data exposure through APIs?",
+          "options": [
+            "Broken Access Control",
+            "Injection",
+            "Cryptographic Failures",
+            "Insecure Design",
+            "Security Misconfiguration"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "This key associates excessive exposure with Cryptographic Failures."
+        }
+      ]
+    },
+    {
+      "id": "Infobez Final preparation 3",
+      "name": "Infobez Final preparation 3",
+      "description": "A quiz on infobez",
+      "questions": [
+        {
+          "question": "What is the PRIMARY reason encoding is used together with encryption?",
+          "options": [
+            "To replace encryption",
+            "To improve confidentiality",
+            "To ensure safe data transmission",
+            "To verify integrity",
+            "To hide data origin"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Encoding ensures ciphertext can be transported/stored safely in compatible formats."
+        },
+        {
+          "question": "Which cloud service model provides application-level services without OS management?",
+          "options": ["IaaS", "PaaS", "Private", "Hybrid", "SaaS"],
+          "correctOption": 4,
+          "points": 10,
+          "explanation": "SaaS abstracts away OS management by delivering a complete application."
         },
         {
           "question": "Which responsibility remains with the customer in ALL cloud service models?",
@@ -1599,14 +1737,14 @@
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Identity and access (users, roles, credentials) remains the customer’s responsibility."
+          "explanation": "Customers are responsible for managing users, identities, and access policies."
         },
         {
           "question": "Which Linux command provides a snapshot of running processes sorted by resource usage?",
           "options": ["ps", "free", "vmstat", "top", "uptime"],
           "correctOption": 3,
           "points": 10,
-          "explanation": "top provides a live view of processes and resource consumption."
+          "explanation": "top shows a live view of processes and resource consumption."
         },
         {
           "question": "Which command displays network interface configuration details?",
@@ -1619,7 +1757,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "ifconfig (legacy) displays interface configuration details."
+          "explanation": "ifconfig displays interface configuration details on many systems."
         },
         {
           "question": "Why is excessive logging without monitoring considered a security risk?",
@@ -1632,7 +1770,7 @@
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "If nobody monitors/alerts on logs, detection fails even if events are recorded."
+          "explanation": "If nobody reviews/alerts on logs, detections are missed despite data collection."
         },
         {
           "question": "Which cryptographic method verifies both message integrity and sender authenticity?",
@@ -1645,7 +1783,7 @@
           ],
           "correctOption": 4,
           "points": 10,
-          "explanation": "Digital signatures provide integrity and authentication of the signer (and support non-repudiation)."
+          "explanation": "Digital signatures provide integrity and authenticate the signer."
         },
         {
           "question": "Which vulnerability assessment result usually requires immediate mitigation?",
@@ -1658,7 +1796,7 @@
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "High-severity findings typically represent major risk and are prioritized for rapid remediation."
+          "explanation": "High-severity findings generally demand immediate attention and mitigation."
         },
         {
           "question": "Why is time synchronization important during incident investigations?",
@@ -1671,7 +1809,7 @@
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Accurate timelines require consistent timestamps across systems for correlation."
+          "explanation": "Accurate timestamps are required to correlate events across multiple systems."
         },
         {
           "question": "Which command shows current network sockets and listening services?",
@@ -1684,7 +1822,7 @@
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "netstat -ano lists active connections and listening ports (with additional details depending on OS)."
+          "explanation": "netstat -ano lists sockets, connections, and listening ports."
         },
         {
           "question": "Which IoT security issue allows attackers to control devices remotely?",
@@ -1697,15 +1835,8 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Default credentials are widely exploited for unauthorized remote access."
-        }
-      ]
-    },
-    {
-      "id": "InfoBez Final preparation 3",
-      "name": "InfoBez Final preparation 3",
-      "description": "A quiz on infobez",
-      "questions": [
+          "explanation": "Default credentials are widely known and easily exploited for remote takeover."
+        },
         {
           "question": "Which factor most increases the time required for brute-force guessing?",
           "options": [
@@ -1730,7 +1861,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Endpoint firewalls enforce traffic rules for that host."
+          "explanation": "Endpoint firewalls enforce allow/deny rules for network traffic."
         },
         {
           "question": "Which is a key advantage of VPNs for remote work?",
@@ -1743,7 +1874,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "VPNs protect confidentiality of data in transit over untrusted networks."
+          "explanation": "VPNs protect confidentiality in transit by encrypting traffic to the organization."
         },
         {
           "question": "Which statement about zip archive encryption is most accurate?",
@@ -1756,10 +1887,10 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Weak passwords or weak archive crypto make encrypted archives vulnerable to offline guessing."
+          "explanation": "Password strength and the archive's encryption scheme determine real security."
         },
         {
-          "question": "Which concept best matches 'integrity' in security?",
+          "question": "Which concept best matches \"integrity\" in security?",
           "options": [
             "Data is not altered without detection",
             "Data is always available",
@@ -1769,10 +1900,10 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Integrity is about preventing/detecting unauthorized modification."
+          "explanation": "Integrity means unauthorized changes are prevented or detectable."
         },
         {
-          "question": "What is the purpose of 'rules' in many password-auditing tools?",
+          "question": "What is the purpose of \"rules\" in many password-auditing tools?",
           "options": [
             "To transform wordlist entries (e.g., add numbers, change case) and expand candidates",
             "To encrypt traffic",
@@ -1782,7 +1913,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Rules mutate candidate passwords to cover common user variations."
+          "explanation": "Rules mutate candidate passwords to cover common human password patterns."
         },
         {
           "question": "Which statement about symmetric encryption keys is correct?",
@@ -1795,7 +1926,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "If the shared key leaks, confidentiality collapses; rotation/storage controls matter."
+          "explanation": "If a symmetric key is exposed, both encryption and decryption are compromised."
         },
         {
           "question": "Which control helps reduce risk if an attacker obtains a password hash database?",
@@ -1808,7 +1939,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Salt + slow/strong hashing increases offline cracking cost and prevents rainbow tables."
+          "explanation": "Salt plus slow hashing makes offline cracking far more expensive."
         },
         {
           "question": "Which best describes a secure operational habit for configuration changes?",
@@ -1821,8 +1952,15 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Change control reduces error risk and enables rollback."
-        },
+          "explanation": "Versioned changes and backups enable rollback and accountability."
+        }
+      ]
+    },
+    {
+      "id": "Infobez Final preparation 4",
+      "name": "Infobez Final preparation 4",
+      "description": "A quiz on infobez",
+      "questions": [
         {
           "question": "Which statement best describes the purpose of access control?",
           "options": [
@@ -1834,7 +1972,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Access control is authorization: permissions on resources/actions."
+          "explanation": "Access control governs permissions for subjects over resources."
         },
         {
           "question": "Which security goal is primarily affected by a denial-of-service (DoS) attack?",
@@ -1847,7 +1985,7 @@
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "DoS targets service availability by exhausting resources."
+          "explanation": "DoS attacks target availability by preventing normal service access."
         },
         {
           "question": "Which approach is most effective to prevent unauthorized modification of critical business data?",
@@ -1860,7 +1998,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Process controls + auditing reduce insider abuse and catch unauthorized changes."
+          "explanation": "Layered controls reduce the chance of unauthorized or unreviewed changes."
         },
         {
           "question": "What is the best reason to use a strong, unique passphrase for encryption?",
@@ -1873,7 +2011,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Strong unique passphrases increase brute-force cost in offline attacks."
+          "explanation": "Strong unique passphrases enlarge the search space for offline cracking."
         },
         {
           "question": "Which term refers to combining information from multiple sources to infer sensitive data?",
@@ -1886,7 +2024,7 @@
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "As written in the test, the keyed answer is 'Fragmentation'."
+          "explanation": "This answer key maps the concept to fragmentation."
         },
         {
           "question": "Which is the best definition of a wordlist attack?",
@@ -1899,10 +2037,10 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "A wordlist attack tests likely passwords from a list (often with mutations)."
+          "explanation": "A wordlist attack tests candidates from a curated list of common passwords."
         },
         {
-          "question": "In password security, what does 'salt' primarily defend against?",
+          "question": "In password security, what does \"salt\" primarily defend against?",
           "options": [
             "Rainbow table attacks and identical-hash comparisons",
             "Network congestion",
@@ -1912,7 +2050,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Salt prevents precomputation and makes identical passwords hash differently."
+          "explanation": "Salts defeat precomputation and prevent identical hashes for identical passwords."
         },
         {
           "question": "Which of the following is a common file permission principle on multi-user systems?",
@@ -1925,7 +2063,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Least privilege: sensitive credential/hash material must be tightly restricted."
+          "explanation": "Least privilege requires sensitive files (like hashes) to have restricted access."
         },
         {
           "question": "Which file pair is commonly used to represent usernames and password hashes in Linux account storage?",
@@ -1938,7 +2076,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "User account info is in /etc/passwd and password hashes are stored in /etc/shadow."
+          "explanation": "/etc/passwd stores account info; /etc/shadow stores password hashes (restricted)."
         },
         {
           "question": "What is the primary goal of combining account and hash data into a single file for analysis?",
@@ -1951,28 +2089,17 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Many tools expect username:hash pairs (or similar) as a single input format."
+          "explanation": "Many tools require a combined mapping of usernames to hashes for processing."
         },
         {
           "question": "Which statement about password recovery tools is most responsible?",
           "options": [
-            "They should be used only with authorization and for educational or administrative purposes",
-            "They should be used on any target to test strength",
-            "They guarantee instant recovery of any password",
-            "They replace the need for access control policies",
-            "They are harmless because hashes are always secure"
+            "They should be used only with authorization and for educational or administrative purposes"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Unauthorized password cracking is unethical and illegal; use only with explicit permission."
-        }
-      ]
-    },
-    {
-      "id": "Diamond Model Quiz",
-      "name": "Diamond Model Quiz",
-      "description": "A quiz on the Diamond Model of Intrusion Analysis",
-      "questions": [
+          "explanation": "Password recovery must be performed only with explicit authorization."
+        },
         {
           "question": "Which antimalware software approach can recognize various characteristics of known malware files to detect a threat?",
           "options": [
@@ -1984,14 +2111,14 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Signature-based detection matches known malware patterns/signatures."
+          "explanation": "Signature-based detection matches files against known malware patterns."
         },
         {
           "question": "Which device in a LAN infrastructure is susceptible to MAC address-table overflow and spoofing attacks?",
           "options": ["firewall", "workstation", "switch", "server", "router"],
           "correctOption": 2,
           "points": 10,
-          "explanation": "MAC table (CAM table) behavior is a switch feature; overflow targets switches."
+          "explanation": "CAM table attacks target switches by overflowing or poisoning MAC tables."
         },
         {
           "question": "Which HIDS is an open-source based product?",
@@ -2004,7 +2131,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "OSSEC is a well-known open-source host-based intrusion detection system."
+          "explanation": "OSSEC is a well-known open-source host-based IDS."
         },
         {
           "question": "As described by the SANS Institute, which attack surface includes the use of social engineering?",
@@ -2017,7 +2144,7 @@
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Social engineering targets people, so it falls under the human attack surface."
+          "explanation": "Social engineering targets people, so it is part of the human attack surface."
         },
         {
           "question": "Which action does NOT help ensure that network operating software remains secure?",
@@ -2030,7 +2157,7 @@
           ],
           "correctOption": 4,
           "points": 10,
-          "explanation": "The keyed item is 'Install packets in Linux and updates regularly' (wording is incorrect/irrelevant as written)."
+          "explanation": "This option is not a meaningful or standard security control as written."
         },
         {
           "question": "Which type of locking mechanism is recommended for securing an office door?",
@@ -2043,7 +2170,7 @@
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "A keyed entry lock is a standard recommended physical control (per the provided options)."
+          "explanation": "A keyed entry lock is a common recommended physical door locking mechanism."
         },
         {
           "question": "Which secure communication requirement is provided by using MD5 or SHA hashing algorithms?",
@@ -2056,7 +2183,7 @@
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Hashes support integrity checks (detecting modification)."
+          "explanation": "Cryptographic hashes are used to detect changes, supporting integrity."
         },
         {
           "question": "Which technology enables users to confirm a website's identity and trust software downloaded from the Internet?",
@@ -2069,7 +2196,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Digital signatures (often via certificates) authenticate publishers/websites and signed code."
+          "explanation": "Digital signatures validate authenticity and integrity of software and certificates."
         },
         {
           "question": "What is the term for the technology that substitutes sensitive data with a non-sensitive equivalent?",
@@ -2082,14 +2209,21 @@
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Masking substitutes or obscures sensitive values with non-sensitive equivalents."
-        },
+          "explanation": "Masking replaces sensitive values with non-sensitive representations."
+        }
+      ]
+    },
+    {
+      "id": "Infobez Final preparation 5",
+      "name": "Infobez Final preparation 5",
+      "description": "A quiz on infobez",
+      "questions": [
         {
           "question": "Which aspect is represented by the first dimension of the cybersecurity cube?",
           "options": ["knowledge", "goals", "rules", "safeguards", "tools"],
           "correctOption": 1,
           "points": 10,
-          "explanation": "The first dimension is security principles/goals (CIA: confidentiality, integrity, availability)."
+          "explanation": "The first dimension is the security goals (CIA and related goals)."
         },
         {
           "question": "Which category of cybersecurity regulations protects individuals from organizations sharing their sensitive information?",
@@ -2102,28 +2236,28 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Privacy regulations govern collection/sharing of personal data."
+          "explanation": "Privacy regulations limit how organizations collect, use, and share personal data."
         },
         {
           "question": "What term refers to a storage device that is accessible over a network?",
           "options": ["DAS", "RAID", "Cloud", "SAN", "NAS"],
           "correctOption": 4,
           "points": 10,
-          "explanation": "NAS (Network Attached Storage) is explicitly designed for network-accessible storage."
+          "explanation": "NAS provides shared storage accessible over a network."
         },
         {
           "question": "Who is the best cat in the world?",
           "options": ["Stepan", "Stopan", "Stapan", "Stakan", "six seven"],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Keyed answer: Stepan."
+          "explanation": "Per the provided answer key: Stepan."
         },
         {
           "question": "What technique involves transferring data between devices using removable storage media?",
           "options": ["LAN", "packet", "wired", "sneaker net", "infrared"],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Sneaker net is physically moving data on removable media between systems."
+          "explanation": "Sneaker net moves data physically via removable media."
         },
         {
           "question": "Which data state is supported by NAS and SAN solutions?",
@@ -2136,14 +2270,14 @@
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "NAS/SAN are storage solutions, supporting data at rest (stored data)."
+          "explanation": "NAS/SAN primarily provide storage for data at rest (stored data)."
         },
         {
           "question": "If a company permits employees to work remotely two days per week, which technology should be used to protect data confidentiality during transmission?",
           "options": ["SHS", "VPN", "RAID", "VLANS", "MOODLE"],
           "correctOption": 1,
           "points": 10,
-          "explanation": "VPN encrypts data in transit between remote users and the organization."
+          "explanation": "A VPN encrypts traffic in transit between remote users and the organization."
         },
         {
           "question": "Which type of attack happens when data exceeds the memory space assigned to an application?",
@@ -2156,7 +2290,7 @@
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Buffer overflow occurs when input exceeds allocated memory bounds."
+          "explanation": "A buffer overflow occurs when input exceeds allocated memory boundaries."
         },
         {
           "question": "Which non-technical approach might a cybercriminal use to obtain sensitive information from an organization?",
@@ -2169,7 +2303,7 @@
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Social engineering manipulates people rather than exploiting technical vulnerabilities."
+          "explanation": "Social engineering manipulates people to reveal information or take actions."
         },
         {
           "question": "What is the term for an impersonation attack that exploits a trusted relationship between two systems?",
@@ -2182,7 +2316,7 @@
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Spoofing impersonates a trusted entity (e.g., IP/MAC/DNS/email identity) to exploit trust."
+          "explanation": "Spoofing impersonates a trusted entity (identity/address) to gain advantage."
         },
         {
           "question": "What is the main function of a personal firewall on a computer?",
@@ -2195,7 +2329,7 @@
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "A personal firewall enforces traffic rules for inbound/outbound connections."
+          "explanation": "A personal firewall filters inbound/outbound traffic using rule-based controls."
         },
         {
           "question": "Which protocol delivers authentication, integrity, and confidentiality and is commonly used as a VPN technology?",
