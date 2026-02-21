@@ -1228,3177 +1228,981 @@
       ]
     },
     {
-      "id": "Capstone preparation final 1",
-      "name": "Capstone preparation final 1",
-      "description": "Final quiz for capstone preparation",
+      "id": "InfoBez Final preparation 1",
+      "name": "InfoBez Final preparation 1",
+      "description": "A quiz on infobez",
       "questions": [
         {
-          "question": "Which definition best matches software engineering?",
+          "question": "Which cryptographic property ensures that a message has not been altered in transit?",
           "options": [
-            "Hardware discipline for building embedded circuits",
-            "Scientific field for proving computation theorems",
-            "Business practice for selling packaged applications",
-            "Design hobby for writing scripts without constraints",
-            "Engineering discipline for end-to-end software production"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Software engineering covers specification through maintenance using professional methods."
-        },
-        {
-          "question": "Which set lists the fundamental software process activities?",
-          "options": [
-            "Analysis, installation, encryption, decryption",
-            "Modeling, purchasing, licensing, outsourcing",
-            "Specification, development, validation, evolution",
-            "Debugging, refactoring, packaging, advertising",
-            "Compilation, deployment, marketing, monetization"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "All software processes include specifying, developing, validating, and evolving the system."
-        },
-        {
-          "question": "In this context, what does the term software include?",
-          "options": [
-            "User stories and sprint plans together",
-            "Programs and physical processors together",
-            "Data sets and network hardware together",
-            "Programs and supporting documentation together",
-            "Source code and office policies together"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Software is the programs plus the associated documentation needed to use and maintain them."
-        },
-        {
-          "question": "In a generic product, who owns the requirements specification?",
-          "options": [
-            "The customer organization owns the specification",
-            "The regulator organization owns the specification",
-            "The end-user community owns the specification",
-            "The vendor’s competitors own the specification",
-            "The developer organization owns the specification"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "For generic products, the developer defines and owns the specification for the market."
-        },
-        {
-          "question": "In a customized product, who owns the requirements specification?",
-          "options": [
-            "The finance department owns the specification",
-            "The testing team owns the specification",
-            "The operations team owns the specification",
-            "The customer organization owns the specification",
-            "The developer organization owns the specification"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "For customized systems, the customer defines and owns the specification."
-        },
-        {
-          "question": "For long-lived systems, which cost trend is most typical?",
-          "options": [
-            "Hardware costs exceed all software costs over time",
-            "Development costs exceed evolution costs over time",
-            "Evolution costs exceed development costs over time",
-            "Testing costs become zero after first release",
-            "Documentation costs dominate every project phase"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Maintenance and evolution often cost several times more than initial development for long-life systems."
-        },
-        {
-          "question": "A typical software project cost split is closest to which ratio?",
-          "options": [
-            "About 40% development and 60% testing",
-            "About 50% development and 50% testing",
-            "About 60% development and 40% testing",
-            "About 80% development and 20% testing",
-            "About 20% development and 80% testing"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "A common rough breakdown is around 60% development and 40% testing."
-        },
-        {
-          "question": "Which statement best defines maintainability as a software attribute?",
-          "options": [
-            "The system can avoid any future modification needs",
-            "The system can evolve with changing requirements",
-            "The system can run with minimal CPU usage",
-            "The system can resist deliberate network attacks",
-            "The system can satisfy every stakeholder instantly"
+            "Confidentiality",
+            "Integrity",
+            "Availability",
+            "Authorization",
+            "Obfuscation"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Maintainability is about how easily the software can be changed to meet new needs."
+          "explanation": "Integrity ensures data is not modified without detection during transmission."
         },
         {
-          "question": "Which statement best matches dependability and security as an attribute?",
+          "question": "Which encryption approach is MOST appropriate for high-speed VPN traffic?",
           "options": [
-            "The system looks modern and uses trendy frameworks",
-            "The system ships features quickly with little planning",
-            "The system delivers correct service and resists attacks",
-            "The system is easy to learn and easy to use",
-            "The system runs fast and uses minimal resources"
+            "Symmetric encryption",
+            "Asymmetric encryption",
+            "Hashing",
+            "Digital signatures",
+            "Steganography"
           ],
-          "correctOption": 2,
+          "correctOption": 0,
           "points": 10,
-          "explanation": "Dependability and security emphasize reliability, safety, and protection from harm or attack."
+          "explanation": "Symmetric encryption is efficient for bulk, high-throughput traffic (typical for VPN payloads)."
         },
         {
-          "question": "Which statement best defines efficiency as a software attribute?",
+          "question": "Why are asymmetric algorithms typically NOT used for bulk data encryption?",
           "options": [
-            "The system avoids all stakeholder communication",
-            "The system avoids any external dependencies",
-            "The system avoids changes to user requirements",
-            "The system avoids wasteful use of resources",
-            "The system avoids all runtime configuration"
+            "They do not support confidentiality",
+            "They require pre-shared keys",
+            "They use short key lengths",
+            "They are computationally slower",
+            "They cannot provide authentication"
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Efficiency concerns CPU, memory, bandwidth, and other resource usage."
+          "explanation": "Public-key operations are slower, so they are usually used for key exchange/signatures, not bulk encryption."
         },
         {
-          "question": "Which statement best defines acceptability as a software attribute?",
-          "options": [
-            "The system is identical across every organization",
-            "The system is mathematically proven correct always",
-            "The system is usable and fits user environment",
-            "The system is free of any performance limits",
-            "The system is built without any trade-offs"
-          ],
-          "correctOption": 2,
+          "question": "Which hashing algorithm should be avoided due to known weaknesses?",
+          "options": ["SHA-512", "SHA-256", "SHA-3", "SHA-384", "MD5"],
+          "correctOption": 4,
           "points": 10,
-          "explanation": "Acceptability includes usability, understandability, and compatibility with the user context."
+          "explanation": "MD5 is considered broken for collision resistance and should not be used for security-critical hashing."
         },
         {
-          "question": "Which item is NOT listed as a key software engineering challenge?",
+          "question": "What is the PRIMARY purpose of salting passwords before hashing?",
           "options": [
-            "Handling diverse platforms and system types",
-            "Eliminating all uncertainty from requirements",
-            "Delivering software quickly to meet business needs",
-            "Building trustworthy systems under frequent change",
-            "Managing security and trust concerns at scale"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Requirements uncertainty cannot be eliminated completely; it must be managed and reduced."
-        },
-        {
-          "question": "Which application type is described as the most numerous?",
-          "options": [
-            "Embedded control systems in devices",
-            "Batch processing systems for reports",
-            "Stand-alone desktop productivity tools",
-            "Modeling and simulation for science",
-            "Entertainment systems for games media"
+            "Prevent rainbow table attacks",
+            "Reduce hash length",
+            "Speed up authentication",
+            "Encrypt stored passwords",
+            "Simplify key management"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Embedded control software is extremely widespread across physical devices."
+          "explanation": "Salt makes identical passwords hash differently and defeats precomputed/rainbow-table attacks."
         },
         {
-          "question": "Which combination best characterizes web and internet software engineering?",
+          "question": "Which technique hides sensitive information by replacing it with realistic but fake data?",
           "options": [
-            "Offline operation, single user, and no remote services",
-            "Reuse, incremental delivery, services, and rich interfaces",
-            "Handwritten assembly, no libraries, and no frameworks",
-            "Formal proofs, fixed plans, and monolithic releases",
-            "Hardware fabrication, circuit testing, and device packaging"
+            "Encryption",
+            "Substitution",
+            "Hashing",
+            "Nulling",
+            "Steganography"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Web development typically emphasizes reuse, incremental/agile delivery, service orientation, and rich UI."
+          "explanation": "Substitution replaces real sensitive values with plausible fake ones while preserving format/utility."
         },
         {
-          "question": "Which item is a core professional responsibility for software engineers?",
-          "options": [
-            "Copying proprietary code without permission",
-            "Maximizing profit regardless of public impact",
-            "Using skills outside competence without learning",
-            "Releasing code despite known safety hazards",
-            "Protecting confidential information from disclosure"
-          ],
-          "correctOption": 4,
+          "question": "Which Diffie-Hellman group provides the STRONGEST security?",
+          "options": ["Group 16", "Group 1", "Group 2", "Group 5", "Group 14"],
+          "correctOption": 0,
           "points": 10,
-          "explanation": "Professional ethics include confidentiality, competence, respect for IP, and avoiding misuse."
+          "explanation": "Higher-numbered/stronger parameter groups provide stronger security than legacy groups."
         },
         {
-          "question": "Which ACM/IEEE principle explicitly prioritizes the public interest?",
+          "question": "What is the MAIN advantage of steganography compared to encryption?",
           "options": [
-            "COLLEAGUES: compete aggressively with teammates",
-            "MANAGEMENT: avoid ethical responsibility for teams",
-            "SELF: ignore professional development needs",
-            "PUBLIC: act consistently with public interest",
-            "PRODUCT: maximize features above all else"
+            "Faster processing",
+            "Stronger algorithms",
+            "Shorter keys",
+            "Hidden existence of the message",
+            "Easier key exchange"
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "The PUBLIC principle requires engineers to act in ways that protect and benefit the public."
+          "explanation": "Steganography aims to conceal that a message exists at all."
         },
         {
-          "question": "For a mental health patient system, what is a primary concern?",
+          "question": "Which CVSS metric is commonly used to rate vulnerability severity?",
+          "options": ["CIA", "CVE", "CWE", "IDS", "CVSS Base Score"],
+          "correctOption": 4,
+          "points": 10,
+          "explanation": "CVSS Base Score is the commonly cited severity measure in reports."
+        },
+        {
+          "question": "In a vulnerability assessment report, CVE identifiers are useful because they:",
           "options": [
-            "Unlimited feature growth with no constraints",
-            "Real-time 3D graphics and rendering speed",
-            "Patient privacy and safety-critical warnings",
-            "Offline-only operation with no networking",
-            "Maximum advertising reach across platforms"
+            "Replace mitigation strategies",
+            "Allow standardized vulnerability lookup",
+            "Block exploits automatically",
+            "Encrypt vulnerability data",
+            "Hide exploit details"
           ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "CVE IDs provide a standardized reference to look up details, fixes, and advisories."
+        },
+        {
+          "question": "Which tool is commonly used for automated vulnerability scanning in the labs?",
+          "options": ["Wireshark", "Netstat", "Nessus", "Tcpdump", "Nmap only"],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Such systems must protect sensitive data and support safety-related alerts."
+          "explanation": "Nessus is a common automated vulnerability scanner used for assessment workflows."
         },
         {
-          "question": "An insulin pump is best classified as which system type?",
+          "question": "What type of data must be collected FIRST after a security incident?",
           "options": [
-            "Safety-critical embedded control system",
-            "Standalone word processing desktop system",
-            "Compiler-style language processing system",
-            "Batch processing financial reporting system",
-            "Entertainment interactive media system"
+            "Disk images",
+            "Archived backups",
+            "Cloud logs",
+            "Volatile memory data",
+            "Firewall rules"
           ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Volatile data (RAM, running connections, processes) disappears on reboot/power-off, so collect it first."
+        },
+        {
+          "question": "Which Linux command displays currently running processes in a user-oriented format?",
+          "options": ["ps axu", "ps -e", "top -d", "jobs", "htop"],
           "correctOption": 0,
           "points": 10,
-          "explanation": "It is an embedded medical device where failures can directly harm people."
+          "explanation": "ps axu shows processes for all users with user-oriented columns."
         },
         {
-          "question": "A wilderness weather station system emphasizes which constraint most?",
+          "question": "Which log file records failed login attempts on a Linux system?",
+          "options": ["auth.log", "syslog", "kern.log", "wtmp", "btmp"],
+          "correctOption": 4,
+          "points": 10,
+          "explanation": "btmp is used for failed login attempts (wtmp is for successful login history)."
+        },
+        {
+          "question": "Which OWASP Top 10 category relates to improper access control enforcement?",
           "options": [
-            "Streaming high-definition video continuously",
-            "Training users with long classroom sessions",
-            "Delivering new features daily without testing",
-            "Supporting millions of concurrent transactions",
-            "Operating reliably with limited remote power"
+            "Injection",
+            "Cryptographic Failures",
+            "Insecure Design",
+            "Broken Access Control",
+            "Security Logging Failures"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Broken Access Control covers failures to enforce authorization rules properly."
+        },
+        {
+          "question": "In cloud computing, who is typically responsible for securing the physical infrastructure?",
+          "options": [
+            "Client",
+            "Cloud provider",
+            "Shared responsibility",
+            "Application developer",
+            "End user"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Physical data center security is typically handled by the cloud provider."
+        },
+        {
+          "question": "Which cloud service model provides the MOST control over operating systems?",
+          "options": ["SaaS", "PaaS", "FaaS", "DBaaS", "IaaS"],
+          "correctOption": 4,
+          "points": 10,
+          "explanation": "IaaS gives customers the most control, including OS-level management."
+        },
+        {
+          "question": "What is the PRIMARY purpose of HMAC?",
+          "options": [
+            "Encrypt data",
+            "Compress files",
+            "Hide metadata",
+            "Exchange keys",
+            "Provide integrity and origin authentication"
           ],
           "correctOption": 4,
           "points": 10,
-          "explanation": "Remote data collection systems must manage power and withstand harsh conditions."
+          "explanation": "HMAC verifies integrity and authenticates the message origin using a shared secret."
         },
         {
-          "question": "What is a software process in software engineering terms?",
+          "question": "Which command is BEST suited to identify active network connections after an incident?",
           "options": [
-            "A structured set of activities to build software",
-            "A final executable produced after compilation",
-            "A legal contract used to purchase software",
-            "A hardware workflow for manufacturing devices",
-            "A random set of tasks chosen during coding"
+            "netstat -ano",
+            "ip addr",
+            "route -n",
+            "traceroute",
+            "ifconfig"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "A software process is a structured set of activities used to develop a system."
+          "explanation": "netstat -ano (or equivalents) helps list active connections and listening ports."
         },
         {
-          "question": "Which item is typically included in a process description?",
+          "question": "Why are IoT devices often registered with a centralized server?",
           "options": [
-            "Roles and responsibilities for process participants",
-            "Marketing slogans for the product launch",
-            "User interface color palette for each screen",
-            "CPU instruction timings for each source file",
-            "Office seating plan for the development team"
+            "To encrypt wireless traffic",
+            "To avoid MAC filtering",
+            "To enable centralized monitoring and control",
+            "To reduce device cost",
+            "To increase bandwidth"
           ],
-          "correctOption": 0,
+          "correctOption": 2,
           "points": 10,
-          "explanation": "Process descriptions often define activities, outcomes, roles, and entry/exit conditions."
+          "explanation": "Central registration supports centralized visibility, management, and policy enforcement."
         }
       ]
     },
     {
-      "id": "Capstone preparation final 2",
-      "name": "Capstone preparation final 2",
-      "description": "Final quiz for capstone preparation",
+      "id": "InfoBez Final preparation 2",
+      "name": "InfoBez Final preparation 2",
+      "description": "A quiz on infobez",
       "questions": [
         {
-          "question": "Which statement best describes a plan-driven process?",
+          "question": "Which security concept ensures that a user cannot deny performing an action?",
           "options": [
-            "Progress is measured by number of meetings held",
-            "Progress is measured by lines of code written",
-            "Progress is measured by tool popularity online",
-            "Progress is measured only by customer mood",
-            "Progress is measured against an upfront plan"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Plan-driven processes plan activities in advance and track progress against the plan."
-        },
-        {
-          "question": "In agile development, requirements are typically handled how?",
-          "options": [
-            "Frozen completely before any coding starts",
-            "Copied unchanged from earlier unrelated projects",
-            "Negotiated continuously as the product evolves",
-            "Defined only after final system deployment",
-            "Derived solely from regulatory checklists"
+            "Confidentiality",
+            "Availability",
+            "Non-repudiation",
+            "Authorization",
+            "Obfuscation"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Agile expects change and continuously refines requirements during development."
+          "explanation": "Non-repudiation provides proof of origin/action so a user cannot plausibly deny it."
         },
         {
-          "question": "Which phase order best matches the waterfall model?",
+          "question": "Which cryptographic algorithm category is MOST commonly used for disk encryption?",
           "options": [
-            "Requirements, implementation, maintenance, design, testing",
-            "Design, requirements, testing, implementation, maintenance",
-            "Requirements, design, implementation, testing, maintenance",
-            "Implementation, testing, requirements, design, maintenance",
-            "Testing, requirements, design, maintenance, implementation"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "The waterfall model proceeds sequentially from requirements through maintenance."
-        },
-        {
-          "question": "Which issue is a common risk in incremental development without discipline?",
-          "options": [
-            "Early delivery becomes impossible by definition",
-            "Requirements become impossible to change later",
-            "Architecture degrades without refactoring over time",
-            "Testing must be postponed until maintenance phase",
-            "Customer feedback cannot occur until the end"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Incremental delivery can lead to erosion of structure unless refactoring is done."
-        },
-        {
-          "question": "What is a typical trade-off when using reuse/configuration with COTS?",
-          "options": [
-            "Some requirements are compromised to fit components",
-            "Integration becomes unnecessary by using COTS",
-            "System evolution becomes fully under customer control",
-            "Testing becomes optional because components exist",
-            "All requirements are satisfied without negotiation"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Using existing components speeds delivery but can force requirement compromises and reduce control."
-        },
-        {
-          "question": "Which order best matches typical testing stages?",
-          "options": [
-            "Component testing, system testing, customer testing",
-            "System testing, component testing, customer testing",
-            "Customer testing, system testing, component testing",
-            "Component testing, customer testing, system testing",
-            "Customer testing, component testing, system testing"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Testing usually moves from components to the integrated system, then to customer acceptance."
-        },
-        {
-          "question": "Which pairing best matches two change strategies?",
-          "options": [
-            "Anticipation uses marketing; tolerance uses new slogans",
-            "Anticipation uses outsourcing; tolerance uses no testing",
-            "Anticipation uses prototyping; tolerance uses incremental delivery",
-            "Anticipation uses refactoring; tolerance uses freeze-all planning",
-            "Anticipation uses contracts; tolerance uses zero documentation"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Prototyping helps anticipate change; incremental delivery helps tolerate ongoing change."
-        },
-        {
-          "question": "Which statement best describes a throw-away prototype?",
-          "options": [
-            "A first release intended to be maintained forever",
-            "A final product certified for safety deployment",
-            "A complete system built only after full testing",
-            "A reused component integrated without any change",
-            "A quick model built to learn, then discarded"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Throw-away prototypes are built to clarify requirements and are not intended for production."
-        },
-        {
-          "question": "Which is a common difficulty of incremental delivery?",
-          "options": [
-            "Accommodating requirement changes between increments",
-            "Identifying shared services needed across increments",
-            "Delivering useful functionality early in the schedule",
-            "Reducing risk by prioritizing key requirements first",
-            "Obtaining early user feedback on partial releases"
+            "Hash algorithms",
+            "Symmetric block ciphers",
+            "Asymmetric algorithms",
+            "Stream ciphers only",
+            "Encoding algorithms"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Incremental development can make it harder to plan shared facilities and system-wide infrastructure."
+          "explanation": "Disk encryption typically uses symmetric block ciphers for performance and security."
         },
         {
-          "question": "Which sequence best matches a basic process improvement cycle?",
+          "question": "Why is key management critical in cryptographic systems?",
           "options": [
-            "Measure, analyze, change, repeat",
-            "Design, deploy, market, repeat",
-            "Code, compile, compress, repeat",
-            "Purchase, install, license, repeat",
-            "Plan, ignore, blame, repeat"
+            "It reduces algorithm complexity",
+            "It avoids vulnerability scanning",
+            "It shortens encryption time",
+            "It removes the need for hashing",
+            "It prevents unauthorized key usage"
+          ],
+          "correctOption": 4,
+          "points": 10,
+          "explanation": "Even strong algorithms fail if keys are exposed, reused improperly, or unmanaged."
+        },
+        {
+          "question": "Which CVSS characteristic reflects the potential damage caused by a vulnerability?",
+          "options": [
+            "Attack Complexity",
+            "Privileges Required",
+            "Scope",
+            "Impact",
+            "Vector String"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Impact describes confidentiality/integrity/availability damage if exploited."
+        },
+        {
+          "question": "In the Cyber Hygiene report, what does the term “vulnerability age” represent?",
+          "options": [
+            "Time between initial detection and latest detection",
+            "Time since the vulnerability was patched",
+            "Time since the CVE was published",
+            "Time since the last scan was executed",
+            "Time since the host was discovered"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "Process improvement typically measures performance, analyzes causes, makes changes, and iterates."
+          "explanation": "Vulnerability age measures how long the vuln persists across scans (from first seen to last seen)."
         },
         {
-          "question": "Which item is an example of a process metric?",
+          "question": "Which incident response activity focuses on identifying the root cause of an attack?",
           "options": [
-            "Brand popularity of the programming language",
-            "Number of defects found per release",
-            "Number of fonts used in documentation",
-            "Color scheme used in the user interface",
-            "Amount of coffee consumed by the team"
+            "Containment",
+            "Eradication",
+            "Recovery",
+            "Analysis",
+            "Preparation"
+          ],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Analysis focuses on understanding what happened, how, and why (root cause)."
+        },
+        {
+          "question": "Which Linux log file records authentication-related events?",
+          "options": ["kern.log", "syslog", "auth.log", "btmp", "wtmp"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "auth.log records authentication/authorization events on many Linux distributions."
+        },
+        {
+          "question": "According to the report methodology, when is a system classified as a host?",
+          "options": [
+            "When it responds to ICMP requests",
+            "When it has at least one open port with a listening service",
+            "When it has a registered DNS record",
+            "When it appears in previous scan history",
+            "When it contains a vulnerability with CVSS >7"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Defect counts, effort, time, and resource use are typical process metrics."
+          "explanation": "A listening service implies the system is reachable and providing a network service."
         },
         {
-          "question": "In the CMMI maturity model, which level is the highest?",
+          "question": "Which OWASP Top 10 risk involves excessive data exposure through APIs?",
           "options": [
-            "Managed measured process level",
-            "Initial ad-hoc process level",
-            "Defined standard process level",
-            "Repeatable managed process level",
-            "Optimising process improvement level"
+            "Broken Access Control",
+            "Injection",
+            "Cryptographic Failures",
+            "Insecure Design",
+            "Security Misconfiguration"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Cryptographic Failures covers issues that can cause unintended exposure of sensitive data."
+        },
+        {
+          "question": "What is the PRIMARY reason encoding is used together with encryption?",
+          "options": [
+            "To replace encryption",
+            "To improve confidentiality",
+            "To ensure safe data transmission",
+            "To verify integrity",
+            "To hide data origin"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Encoding ensures data stays compatible with transport/storage formats (encryption alone may produce non-text/binary)."
+        },
+        {
+          "question": "Which cloud service model provides application-level services without OS management?",
+          "options": ["IaaS", "PaaS", "Private", "Hybrid", "SaaS"],
+          "correctOption": 4,
+          "points": 10,
+          "explanation": "SaaS provides the application; the customer does not manage the OS."
+        },
+        {
+          "question": "Which responsibility remains with the customer in ALL cloud service models?",
+          "options": [
+            "Hardware maintenance",
+            "Network routing",
+            "User account management",
+            "Physical security",
+            "Hypervisor updates"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "Identity and access (users, roles, credentials) remains the customer’s responsibility."
+        },
+        {
+          "question": "Which Linux command provides a snapshot of running processes sorted by resource usage?",
+          "options": ["ps", "free", "vmstat", "top", "uptime"],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "top provides a live view of processes and resource consumption."
+        },
+        {
+          "question": "Which command displays network interface configuration details?",
+          "options": [
+            "ifconfig",
+            "netstat -ano",
+            "route -n",
+            "traceroute",
+            "arp -a"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "ifconfig (legacy) displays interface configuration details."
+        },
+        {
+          "question": "Why is excessive logging without monitoring considered a security risk?",
+          "options": [
+            "Logs increase CPU usage",
+            "Logs slow down the network",
+            "Attacks may go unnoticed",
+            "Logs disable encryption",
+            "Logs prevent updates"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "If nobody monitors/alerts on logs, detection fails even if events are recorded."
+        },
+        {
+          "question": "Which cryptographic method verifies both message integrity and sender authenticity?",
+          "options": [
+            "Hashing",
+            "Encryption",
+            "Tokenization",
+            "Encoding",
+            "Digital signatures"
           ],
           "correctOption": 4,
           "points": 10,
-          "explanation": "The highest CMMI maturity level is Optimising, focused on continuous improvement."
+          "explanation": "Digital signatures provide integrity and authentication of the signer (and support non-repudiation)."
         },
         {
-          "question": "Which agile value pairing is stated in the Agile Manifesto?",
+          "question": "Which vulnerability assessment result usually requires immediate mitigation?",
           "options": [
-            "Following a plan over responding to change",
-            "Strict phases over continuous integration",
-            "Comprehensive documentation over working software",
-            "Contract negotiation over customer collaboration",
-            "Individuals and interactions over processes and tools"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "The manifesto values people and collaboration, and prioritizes working software and adaptability."
-        },
-        {
-          "question": "Which practice is characteristic of agile development?",
-          "options": [
-            "Maximizing documentation before writing code",
-            "Freezing requirements before any design starts",
-            "Postponing testing until after deployment",
-            "Delivering working increments frequently",
-            "Rejecting stakeholder involvement during sprints"
+            "Informational severity",
+            "Low severity",
+            "Medium severity",
+            "High severity",
+            "Experimental severity"
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Agile emphasizes frequent delivery of working software with ongoing stakeholder involvement."
+          "explanation": "High-severity findings typically represent major risk and are prioritized for rapid remediation."
         },
         {
-          "question": "Which XP practice requires writing tests before code?",
+          "question": "Why is time synchronization important during incident investigations?",
           "options": [
-            "Document-first delivery practice",
-            "Test-driven development practice",
-            "Change freeze control practice",
-            "Big design upfront practice",
-            "Single-integration release practice"
+            "For encryption accuracy",
+            "For log correlation",
+            "For faster recovery",
+            "For access control",
+            "For vulnerability scanning"
           ],
           "correctOption": 1,
           "points": 10,
-          "explanation": "Test-driven development creates tests first, then implements code to make tests pass."
+          "explanation": "Accurate timelines require consistent timestamps across systems for correlation."
         },
         {
-          "question": "Which statement best describes pair programming?",
+          "question": "Which command shows current network sockets and listening services?",
           "options": [
-            "Two customers write the entire implementation",
-            "Two managers approve each line of code",
-            "Two developers work together at one workstation",
-            "Two teams work separately without communication",
-            "Two releases are merged only at project end"
+            "ip addr",
+            "route -n",
+            "netstat -ano",
+            "traceroute",
+            "arp"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Pair programming puts two developers together to improve quality and shared understanding."
+          "explanation": "netstat -ano lists active connections and listening ports (with additional details depending on OS)."
         },
         {
-          "question": "In Scrum, who is responsible for prioritizing the product backlog?",
+          "question": "Which IoT security issue allows attackers to control devices remotely?",
           "options": [
-            "The quality assurance role",
-            "The operations support role",
-            "The development team role",
-            "The product owner role",
-            "The scrum master role"
+            "Default credentials",
+            "Strong authentication",
+            "Firmware signing",
+            "Encrypted channels",
+            "Network segmentation"
           ],
-          "correctOption": 3,
+          "correctOption": 0,
           "points": 10,
-          "explanation": "The Product Owner manages and prioritizes the Product Backlog."
-        },
-        {
-          "question": "In Scrum, what is a primary responsibility of the Scrum Master?",
-          "options": [
-            "Writing all code for each sprint deliverable",
-            "Setting final product requirements unilaterally",
-            "Creating hardware deployment diagrams for servers",
-            "Removing impediments and supporting Scrum practice",
-            "Approving budgets and negotiating legal contracts"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "The Scrum Master facilitates Scrum, helps remove blockers, and supports the team’s process."
-        },
-        {
-          "question": "A Scrum sprint is typically which duration range?",
-          "options": [
-            "Twenty to forty weeks long",
-            "Two to four years long",
-            "Two to four weeks long",
-            "Two to four months long",
-            "Two to four days long"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Scrum sprints commonly run for about 2–4 weeks."
-        },
-        {
-          "question": "What is the main purpose of a Scrum of Scrums?",
-          "options": [
-            "Eliminating integration by separating codebases",
-            "Replacing product backlog with fixed contracts",
-            "Moving all decisions to a single manager",
-            "Coordinating work across multiple Scrum teams",
-            "Preventing requirements changes during delivery"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Scrum of Scrums synchronizes and resolves dependencies across teams."
-        },
-        {
-          "question": "When is a plan-driven approach usually more suitable?",
-          "options": [
-            "For innovative products with unclear requirements",
-            "For prototypes exploring new user experiences",
-            "For startups prioritizing speed over documentation",
-            "For small co-located teams with rapid feedback",
-            "For safety-critical systems with heavy regulation"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Large, safety-critical, regulated, or long-lived systems often require plan-driven or hybrid approaches."
+          "explanation": "Default credentials are widely exploited for unauthorized remote access."
         }
       ]
     },
     {
-      "id": "Capstone preparation final 3",
-      "name": "Capstone preparation final 3",
-      "description": "Final quiz for capstone preparation",
+      "id": "InfoBez Final preparation 3",
+      "name": "InfoBez Final preparation 3",
+      "description": "A quiz on infobez",
       "questions": [
         {
-          "question": "What is requirements engineering primarily concerned with?",
+          "question": "Which factor most increases the time required for brute-force guessing?",
           "options": [
-            "Establishing required services and constraints",
-            "Implementing algorithms and data structures",
-            "Training users after the system is deployed",
-            "Choosing the best compiler and IDE settings",
-            "Selecting hardware parts for device assembly"
+            "Larger character set and longer length",
+            "Using lowercase only",
+            "Short length",
+            "Common dictionary words",
+            "Reusing passwords"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "It establishes what the system should do and the constraints on operation and development."
+          "explanation": "Search space grows exponentially with length and character set size."
         },
         {
-          "question": "Which description best matches user requirements?",
+          "question": "What does a firewall typically do on an endpoint?",
           "options": [
-            "High-level services stated for customer readers",
-            "Database schemas stated for administrator readers",
-            "Mathematical proofs stated for verifier readers",
-            "Source code interfaces stated for programmer readers",
-            "Detailed functions stated for developer readers"
+            "Monitors and controls inbound/outbound network connections based on rules",
+            "Encrypts all files automatically",
+            "Replaces user authentication",
+            "Acts as a CPU cooler",
+            "Creates VPN tunnels by itself in all cases"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "User requirements are higher-level, often natural language plus diagrams, written for customers."
+          "explanation": "Endpoint firewalls enforce traffic rules for that host."
         },
         {
-          "question": "Which description best matches system requirements?",
+          "question": "Which is a key advantage of VPNs for remote work?",
           "options": [
-            "Detailed functions and constraints in a structured form",
-            "GUI mockups showing only visual layout decisions",
-            "Marketing vision statements with broad aspirations",
-            "Informal notes from ad-hoc brainstorming sessions",
-            "Unit test suites defining internal code behavior"
+            "They can encrypt traffic between the user and the organization",
+            "They remove the need for passwords",
+            "They increase monitor resolution",
+            "They disable malware",
+            "They guarantee zero downtime"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "System requirements describe detailed functions, services, and constraints and may form part of a contract."
+          "explanation": "VPNs protect confidentiality of data in transit over untrusted networks."
         },
         {
-          "question": "Which item is a functional requirement example?",
+          "question": "Which statement about zip archive encryption is most accurate?",
           "options": [
-            "The system is developed using a mandated standard",
-            "The system complies with applicable privacy laws",
-            "The system uses less than 200 MB of memory",
-            "The system maintains 99.99% availability weekly",
-            "The system can search and list appointments"
+            "The strength depends heavily on password quality and encryption method",
+            "It is always unbreakable",
+            "Passwords do not affect security",
+            "It does not use any cryptography",
+            "It automatically prevents data loss"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Weak passwords or weak archive crypto make encrypted archives vulnerable to offline guessing."
+        },
+        {
+          "question": "Which concept best matches 'integrity' in security?",
+          "options": [
+            "Data is not altered without detection",
+            "Data is always available",
+            "Data is always confidential",
+            "Users cannot be identified",
+            "Networks are faster"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Integrity is about preventing/detecting unauthorized modification."
+        },
+        {
+          "question": "What is the purpose of 'rules' in many password-auditing tools?",
+          "options": [
+            "To transform wordlist entries (e.g., add numbers, change case) and expand candidates",
+            "To encrypt traffic",
+            "To change routing tables",
+            "To compress files",
+            "To assign VLANs"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Rules mutate candidate passwords to cover common user variations."
+        },
+        {
+          "question": "Which statement about symmetric encryption keys is correct?",
+          "options": [
+            "Key management is critical because the same key is used for encryption and decryption",
+            "Keys are publicly shared by design",
+            "Keys are optional",
+            "Keys are stored only in DNS",
+            "Keys are never rotated"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "If the shared key leaks, confidentiality collapses; rotation/storage controls matter."
+        },
+        {
+          "question": "Which control helps reduce risk if an attacker obtains a password hash database?",
+          "options": [
+            "Strong hashing with salt and appropriate cost factors",
+            "Storing plaintext passwords",
+            "Disabling salting",
+            "Using short passwords",
+            "Sharing the database publicly"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Salt + slow/strong hashing increases offline cracking cost and prevents rainbow tables."
+        },
+        {
+          "question": "Which best describes a secure operational habit for configuration changes?",
+          "options": [
+            "Document changes and keep backups/versions",
+            "Change configs without tracking",
+            "Disable logs to save space",
+            "Use shared admin accounts",
+            "Never test changes"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Change control reduces error risk and enables rollback."
+        },
+        {
+          "question": "Which statement best describes the purpose of access control?",
+          "options": [
+            "To define who can do what with which resources",
+            "To speed up the CPU",
+            "To replace encryption keys",
+            "To increase disk capacity",
+            "To disable auditing"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Access control is authorization: permissions on resources/actions."
+        },
+        {
+          "question": "Which security goal is primarily affected by a denial-of-service (DoS) attack?",
+          "options": [
+            "Confidentiality",
+            "Integrity",
+            "Availability",
+            "Nonrepudiation",
+            "Authentication"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "DoS targets service availability by exhausting resources."
+        },
+        {
+          "question": "Which approach is most effective to prevent unauthorized modification of critical business data?",
+          "options": [
+            "Separation of duties + approvals + auditing",
+            "Disable access logs",
+            "Use shared accounts",
+            "Allow all permissions",
+            "Turn off backups"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Process controls + auditing reduce insider abuse and catch unauthorized changes."
+        },
+        {
+          "question": "What is the best reason to use a strong, unique passphrase for encryption?",
+          "options": [
+            "It increases resistance to offline guessing attacks",
+            "It makes files smaller",
+            "It automatically provides integrity",
+            "It disables routing",
+            "It removes the need for keys"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Strong unique passphrases increase brute-force cost in offline attacks."
+        },
+        {
+          "question": "Which term refers to combining information from multiple sources to infer sensitive data?",
+          "options": [
+            "Correlation",
+            "Tokenization",
+            "Fragmentation",
+            "Load shedding",
+            "Overclocking"
+          ],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "As written in the test, the keyed answer is 'Fragmentation'."
+        },
+        {
+          "question": "Which is the best definition of a wordlist attack?",
+          "options": [
+            "Trying passwords from a predefined list of likely candidates",
+            "Intercepting packets in real time",
+            "Exploiting a buffer overflow",
+            "Spoofing an IP address",
+            "Performing a DNS cache poisoning"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "A wordlist attack tests likely passwords from a list (often with mutations)."
+        },
+        {
+          "question": "In password security, what does 'salt' primarily defend against?",
+          "options": [
+            "Rainbow table attacks and identical-hash comparisons",
+            "Network congestion",
+            "Packet loss",
+            "Disk failure",
+            "VLAN hopping"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Salt prevents precomputation and makes identical passwords hash differently."
+        },
+        {
+          "question": "Which of the following is a common file permission principle on multi-user systems?",
+          "options": [
+            "Sensitive hash files should be restricted to privileged access",
+            "All files should be world-readable",
+            "Permissions are unnecessary if encryption exists",
+            "Disable user separation",
+            "Use only guest accounts"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Least privilege: sensitive credential/hash material must be tightly restricted."
+        },
+        {
+          "question": "Which file pair is commonly used to represent usernames and password hashes in Linux account storage?",
+          "options": [
+            "/etc/passwd and /etc/shadow",
+            "/etc/hosts and /etc/resolv.conf",
+            "/var/log and /etc/group",
+            "/home and /tmp",
+            "/etc/sudoers and /etc/services"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "User account info is in /etc/passwd and password hashes are stored in /etc/shadow."
+        },
+        {
+          "question": "What is the primary goal of combining account and hash data into a single file for analysis?",
+          "options": [
+            "To provide a tool with both identity and hash information in one input",
+            "To permanently delete accounts",
+            "To turn hashes back into plaintext instantly",
+            "To disable encryption",
+            "To create backups automatically"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Many tools expect username:hash pairs (or similar) as a single input format."
+        },
+        {
+          "question": "Which statement about password recovery tools is most responsible?",
+          "options": [
+            "They should be used only with authorization and for educational or administrative purposes",
+            "They should be used on any target to test strength",
+            "They guarantee instant recovery of any password",
+            "They replace the need for access control policies",
+            "They are harmless because hashes are always secure"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Unauthorized password cracking is unethical and illegal; use only with explicit permission."
+        }
+      ]
+    },
+    {
+      "id": "Diamond Model Quiz",
+      "name": "Diamond Model Quiz",
+      "description": "A quiz on the Diamond Model of Intrusion Analysis",
+      "questions": [
+        {
+          "question": "Which antimalware software approach can recognize various characteristics of known malware files to detect a threat?",
+          "options": [
+            "signature-based",
+            "routing-based",
+            "heuristics-based",
+            "behavior-based",
+            "encrypted-based"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Signature-based detection matches known malware patterns/signatures."
+        },
+        {
+          "question": "Which device in a LAN infrastructure is susceptible to MAC address-table overflow and spoofing attacks?",
+          "options": ["firewall", "workstation", "switch", "server", "router"],
+          "correctOption": 2,
+          "points": 10,
+          "explanation": "MAC table (CAM table) behavior is a switch feature; overflow targets switches."
+        },
+        {
+          "question": "Which HIDS is an open-source based product?",
+          "options": [
+            "OSSEC",
+            "Tripwire",
+            "Cisco AMP",
+            "AlienVault USM",
+            "OSCEC"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "OSSEC is a well-known open-source host-based intrusion detection system."
+        },
+        {
+          "question": "As described by the SANS Institute, which attack surface includes the use of social engineering?",
+          "options": [
+            "network attack surface",
+            "human attack surface",
+            "Internet attack surface",
+            "software attack surface",
+            "firewall attack surface"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Social engineering targets people, so it falls under the human attack surface."
+        },
+        {
+          "question": "Which action does NOT help ensure that network operating software remains secure?",
+          "options": [
+            "Develop a policy to address application software and operating system updates",
+            "Implement data classification standards",
+            "Install patches and updates regularly",
+            "Conduct software testing prior to launch",
+            "Install packets in Linux and updates regularly"
           ],
           "correctOption": 4,
           "points": 10,
-          "explanation": "Functional requirements describe services the system provides and how it reacts to inputs."
+          "explanation": "The keyed item is 'Install packets in Linux and updates regularly' (wording is incorrect/irrelevant as written)."
         },
         {
-          "question": "Which item is a non-functional requirement example?",
+          "question": "Which type of locking mechanism is recommended for securing an office door?",
           "options": [
-            "The system stores each patient record as JSON",
-            "The system assigns a unique staff identifier",
-            "The system schedules an appointment for a patient",
-            "The system responds within two seconds per query",
-            "The system prints a daily appointment list"
+            "Cable lock",
+            "Security cage",
+            "Cipher lock",
+            "Keyed entry lock",
+            "Encryption lock"
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Non-functional requirements constrain qualities like performance, reliability, security, and process."
+          "explanation": "A keyed entry lock is a standard recommended physical control (per the provided options)."
         },
         {
-          "question": "Which item is best described as a domain requirement?",
+          "question": "Which secure communication requirement is provided by using MD5 or SHA hashing algorithms?",
           "options": [
-            "Database must be PostgreSQL version fifteen",
-            "Code must be written in a specific IDE",
-            "Insulin dose must not exceed safe limits",
-            "User interface must use a dark theme",
-            "Sprints must be exactly three weeks long"
+            "confidentiality",
+            "authentication",
+            "integrity",
+            "nonrepudiation",
+            "availability"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Domain requirements come from the application domain and constrain the system’s behavior."
+          "explanation": "Hashes support integrity checks (detecting modification)."
         },
         {
-          "question": "Which classification of non-functional requirements is correct?",
+          "question": "Which technology enables users to confirm a website's identity and trust software downloaded from the Internet?",
           "options": [
-            "User, manager, and investor categories",
-            "Compile-time, runtime, and link-time categories",
-            "Static, dynamic, and polymorphic categories",
-            "Functional, transactional, and graphical categories",
-            "Product, organizational, and external categories"
+            "digital signature",
+            "asymmetric key algorithm",
+            "encryption",
+            "hash algorithm",
+            "symmetric key algorithm"
           ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Digital signatures (often via certificates) authenticate publishers/websites and signed code."
+        },
+        {
+          "question": "What is the term for the technology that substitutes sensitive data with a non-sensitive equivalent?",
+          "options": [
+            "hiding",
+            "masking",
+            "retracting",
+            "whiteout",
+            "blanking"
+          ],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "Masking substitutes or obscures sensitive values with non-sensitive equivalents."
+        },
+        {
+          "question": "Which aspect is represented by the first dimension of the cybersecurity cube?",
+          "options": ["knowledge", "goals", "rules", "safeguards", "tools"],
+          "correctOption": 1,
+          "points": 10,
+          "explanation": "The first dimension is security principles/goals (CIA: confidentiality, integrity, availability)."
+        },
+        {
+          "question": "Which category of cybersecurity regulations protects individuals from organizations sharing their sensitive information?",
+          "options": [
+            "privacy",
+            "nonrepudiation",
+            "authentication",
+            "confidentiality",
+            "integrity"
+          ],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Privacy regulations govern collection/sharing of personal data."
+        },
+        {
+          "question": "What term refers to a storage device that is accessible over a network?",
+          "options": ["DAS", "RAID", "Cloud", "SAN", "NAS"],
           "correctOption": 4,
           "points": 10,
-          "explanation": "Non-functional requirements can be classified as product, organizational, or external constraints."
+          "explanation": "NAS (Network Attached Storage) is explicitly designed for network-accessible storage."
         },
         {
-          "question": "Which requirement is most verifiable for usability?",
+          "question": "Who is the best cat in the world?",
+          "options": ["Stepan", "Stopan", "Stapan", "Stakan", "six seven"],
+          "correctOption": 0,
+          "points": 10,
+          "explanation": "Keyed answer: Stepan."
+        },
+        {
+          "question": "What technique involves transferring data between devices using removable storage media?",
+          "options": ["LAN", "packet", "wired", "sneaker net", "infrared"],
+          "correctOption": 3,
+          "points": 10,
+          "explanation": "Sneaker net is physically moving data on removable media between systems."
+        },
+        {
+          "question": "Which data state is supported by NAS and SAN solutions?",
           "options": [
-            "Interface is easy to use for everyone",
-            "System is intuitive without any instruction",
-            "Usability is perfect across all situations",
-            "Training time under four hours for new users",
-            "Users will love the interface immediately"
+            "encrypted data",
+            "data in-transit",
+            "data in-process",
+            "stored data",
+            "decrypted data"
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Replacing vague goals with measurable criteria makes requirements verifiable."
+          "explanation": "NAS/SAN are storage solutions, supporting data at rest (stored data)."
         },
         {
-          "question": "Which elicitation technique involves observing real work practices?",
-          "options": [
-            "Closed questionnaire technique",
-            "Version control technique",
-            "Ethnography observation technique",
-            "Code inspection technique",
-            "Formal proof technique"
-          ],
-          "correctOption": 2,
+          "question": "If a company permits employees to work remotely two days per week, which technology should be used to protect data confidentiality during transmission?",
+          "options": ["SHS", "VPN", "RAID", "VLANS", "MOODLE"],
+          "correctOption": 1,
           "points": 10,
-          "explanation": "Ethnography studies how people actually work to uncover tacit requirements."
+          "explanation": "VPN encrypts data in transit between remote users and the organization."
         },
         {
-          "question": "Which interview style tends to elicit richer qualitative detail?",
+          "question": "Which type of attack happens when data exceeds the memory space assigned to an application?",
           "options": [
-            "Binary choice-only interview style",
-            "Closed yes-no question interview style",
-            "Open-ended question interview style",
-            "Scripted monologue-only interview style",
-            "Silent observation-only interview style"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Open-ended questions encourage stakeholders to explain context, goals, and exceptions."
-        },
-        {
-          "question": "Which set lists common requirements validation checks?",
-          "options": [
-            "Secrecy, obscurity, complexity, opacity, ambiguity",
-            "Throughput, latency, jitter, bandwidth, routing",
-            "Validity, consistency, realism, verifiability, completeness",
-            "Profitability, popularity, novelty, branding, aesthetics",
-            "Syntax, parsing, linking, compiling, packaging"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Validation checks that requirements reflect real needs, are consistent, feasible, complete enough, and testable."
-        },
-        {
-          "question": "Fixing requirements errors after delivery is often how much more expensive?",
-          "options": [
-            "Roughly one hundred times more expensive",
-            "Roughly one tenth the earlier cost",
-            "Roughly ten times more expensive",
-            "Roughly two times more expensive",
-            "Roughly the same cost as before"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Late discovery multiplies costs because it requires rework, retesting, redeployment, and user disruption."
-        },
-        {
-          "question": "What is a primary purpose of requirements traceability?",
-          "options": [
-            "Replacing validation with informal stakeholder trust",
-            "Removing the need for version management tools",
-            "Preventing any future requirements changes entirely",
-            "Linking requirements to design, code, and tests",
-            "Ensuring every requirement is implemented twice"
+            "SQL injection",
+            "RAM injection",
+            "RAM spoofing",
+            "Buffer overflow",
+            "Brute-Force attack"
           ],
           "correctOption": 3,
           "points": 10,
-          "explanation": "Traceability supports impact analysis and controlled change by tracking where requirements are realized."
+          "explanation": "Buffer overflow occurs when input exceeds allocated memory bounds."
         },
         {
-          "question": "Which section is commonly part of a requirements document?",
+          "question": "Which non-technical approach might a cybercriminal use to obtain sensitive information from an organization?",
           "options": [
-            "A server rack diagram showing cable routes",
-            "A build log listing compiler warnings",
-            "A marketing plan for feature promotion",
-            "A payroll sheet listing employee salaries",
-            "A glossary defining key domain terms"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Requirements documents often include introductions, glossaries, user/system requirements, and supporting material."
-        },
-        {
-          "question": "What is the main purpose of system modeling?",
-          "options": [
-            "Creating documents to replace stakeholder discussion",
-            "Creating implementation details instead of requirements",
-            "Creating diagrams to guarantee zero defects",
-            "Creating final code without any intermediate models",
-            "Creating abstract views for stakeholder understanding"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Models provide simplified perspectives to analyze, communicate, and reason about a system."
-        },
-        {
-          "question": "Which set lists the four key modeling perspectives?",
-          "options": [
-            "Budget, staffing, marketing, sales",
-            "Compile, link, load, execute",
-            "Context, interaction, structure, behavior",
-            "CPU, memory, disk, network",
-            "Syntax, semantics, pragmatics, phonetics"
+            "Man-in-the-middle",
+            "Ransomware",
+            "Social engineering",
+            "Pharming",
+            "Spamming"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Modeling commonly considers external context, interactions, structural organization, and behavior over time."
+          "explanation": "Social engineering manipulates people rather than exploiting technical vulnerabilities."
         },
         {
-          "question": "Which UML diagram is best for showing actors and system goals?",
+          "question": "What is the term for an impersonation attack that exploits a trusted relationship between two systems?",
           "options": [
-            "Deployment diagram representation",
-            "Use case diagram representation",
-            "Package diagram representation",
-            "State diagram representation",
-            "Class diagram representation"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Use case diagrams show interactions between external actors and the system’s use cases."
-        },
-        {
-          "question": "In a sequence diagram, how is time typically represented?",
-          "options": [
-            "Time progresses horizontally from left to right",
-            "Time is shown through hardware deployment nodes",
-            "Time is omitted to reduce diagram complexity",
-            "Time is encoded only through color selection",
-            "Time progresses vertically from top to bottom"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Sequence diagrams place objects across the top and show time flowing downward."
-        },
-        {
-          "question": "In a class diagram, what does generalization represent?",
-          "options": [
-            "It represents communication through database queries",
-            "It represents transitions between states on events",
-            "It represents links between actors and use cases",
-            "It represents forks and joins in workflows",
-            "It represents inheritance from superclass to subclass"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Generalization models inheritance relationships between classes."
-        },
-        {
-          "question": "In a class diagram, what does aggregation represent?",
-          "options": [
-            "A part-of relationship between whole and part",
-            "A mandatory dependency on a specific platform",
-            "A requirement that every object has one state",
-            "A complete replacement of one class by another",
-            "A sequence of messages exchanged over time"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Aggregation models a whole–part relationship, typically a weaker form of composition."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation final 4",
-      "name": "Capstone preparation final 4",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "Which pairing best matches diagram to behavior type?",
-          "options": [
-            "Sequence diagram for data-driven flow; context diagram for event-driven change",
-            "Class diagram for data-driven flow; use case diagram for event-driven change",
-            "Activity diagram for data-driven flow; state diagram for event-driven change",
-            "Use case diagram for data-driven flow; class diagram for event-driven change",
-            "State diagram for data-driven flow; activity diagram for event-driven change"
+            "Sniffing",
+            "Spamming",
+            "Spoofing",
+            "Man-in-the-middle",
+            "Ransomware"
           ],
           "correctOption": 2,
           "points": 10,
-          "explanation": "Activity diagrams model workflows; state diagrams model event-triggered state transitions."
+          "explanation": "Spoofing impersonates a trusted entity (e.g., IP/MAC/DNS/email identity) to exploit trust."
         },
         {
-          "question": "What does a context model primarily show?",
+          "question": "What is the main function of a personal firewall on a computer?",
           "options": [
-            "Source code style rules for each module",
-            "Runtime state transitions for a single object",
-            "Internal class attributes and method signatures",
-            "System boundary and external interacting systems",
-            "Detailed message order for one scenario"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Context models define what is outside the system and the external systems it interacts with."
-        },
-        {
-          "question": "Which limitation is commonly associated with model-driven engineering?",
-          "options": [
-            "Strong dependency on specialized tooling",
-            "Removal of need for requirements engineering",
-            "Complete inability to represent interactions",
-            "Automatic elimination of all platform concerns",
-            "Guaranteed perfect alignment with agile values"
+            "to monitor and control incoming and outgoing network traffic",
+            "to boost the speed of the Internet connection",
+            "to safeguard hardware from fire damage",
+            "to defend the computer against viruses and malware",
+            "to safeguard hardware from nature disaster"
           ],
           "correctOption": 0,
           "points": 10,
-          "explanation": "MDE can raise abstraction but often relies heavily on tools and can be hard to adopt."
+          "explanation": "A personal firewall enforces traffic rules for inbound/outbound connections."
         },
         {
-          "question": "Which transformation order is typical in model-driven architecture?",
-          "options": [
-            "PSM to PIM to CIM to code",
-            "CIM to PIM to PSM to code",
-            "CIM to PSM to PIM to code",
-            "Code to PSM to PIM to CIM",
-            "PIM to CIM to PSM to code"
-          ],
+          "question": "Which protocol delivers authentication, integrity, and confidentiality and is commonly used as a VPN technology?",
+          "options": ["SP", "IPsec", "MD5", "AES", "TCP"],
           "correctOption": 1,
           "points": 10,
-          "explanation": "MDA typically refines from a computation-independent model to platform-independent, then platform-specific, then code."
-        },
-        {
-          "question": "Why might an incomplete model still be acceptable early on?",
-          "options": [
-            "It guarantees full requirement consistency",
-            "It enables direct code generation immediately",
-            "It eliminates later validation activities",
-            "It prevents any future design change",
-            "It supports discussion despite missing details"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Early models can be partial if their purpose is communication and exploration."
-        },
-        {
-          "question": "What does software architecture primarily define?",
-          "options": [
-            "Defining marketing plans for distribution",
-            "Defining exact code for every function",
-            "Defining training material for end users",
-            "Defining laptop operating systems for developers",
-            "Defining major components and their interactions"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Architecture captures the high-level system structure, components, and interactions."
-        },
-        {
-          "question": "Why are architectural decisions expensive to change later?",
-          "options": [
-            "They affect only one module in isolation",
-            "They only affect unit tests and test data files",
-            "They affect many components and cross-cutting concerns",
-            "They only affect color choices and screen layout",
-            "They affect only compiler flags and build scripts"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Core architectural changes ripple across components, interfaces, deployment, and quality properties."
-        },
-        {
-          "question": "In the 4+1 architectural view model, which view focuses on runtime processes?",
-          "options": [
-            "Scenario view of validating use cases",
-            "Physical view of deployment hardware",
-            "Development view of code organization",
-            "Process view of runtime concurrency",
-            "Logical view of key abstractions"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "The process view describes how the system is composed of interacting processes at run time."
-        },
-        {
-          "question": "Why can adopting MDA/MDE be difficult in practice?",
-          "options": [
-            "It guarantees perfect alignment with agile values",
-            "It removes the need for requirements engineering",
-            "It needs specialized tools and heavy upfront models",
-            "It prevents any change once modeling begins",
-            "It cannot represent system context in any form"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Tooling needs and extensive upfront modeling can make adoption difficult and conflict with agile practices."
-        },
-        {
-          "question": "Which architectural choice most directly supports security layering?",
-          "options": [
-            "Pipe-and-filter structure for interactive tasks",
-            "Single component structure for all functions",
-            "Flat structure with unrestricted global access",
-            "Layered structure with protected inner layers",
-            "Random structure changed each iteration"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Layering can protect critical assets by placing them in inner layers with controlled access."
-        },
-        {
-          "question": "Which statement best matches the fault–error–failure relationship?",
-          "options": [
-            "Error and failure are identical by definition",
-            "Fault can cause error; error can cause failure",
-            "Failure can cause error; error can cause fault",
-            "Error can cause fault; fault can cause failure",
-            "Fault and failure always occur together"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "A fault may lead to an error state, and an error may lead to an externally visible failure."
-        },
-        {
-          "question": "Which UML model best shows event-driven state transitions of an object?",
-          "options": [
-            "State diagram showing states and transitions",
-            "Context model showing system boundary",
-            "Use case diagram showing actor goals",
-            "Activity diagram showing workflow steps",
-            "Class diagram showing static relationships"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "State diagrams model how an object changes state in response to events."
-        },
-        {
-          "question": "In socio-technical systems, what is a major single cause of failures?",
-          "options": [
-            "Human operational mistakes during system use",
-            "Formal methods applied too early",
-            "Redundancy used in every subsystem",
-            "Hardware that never ages or degrades",
-            "Perfectly correct software specifications"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Operational failures caused by human mistakes are a major contributor in socio-technical systems."
-        },
-        {
-          "question": "Using COTS most directly shifts design focus toward what activity?",
-          "options": [
-            "Eliminating all stakeholder communication",
-            "Avoiding any modeling before implementation",
-            "Proving correctness through formal methods",
-            "Replacing testing with vendor reputation",
-            "Configuring features to meet requirements"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "With COTS, design often becomes selecting and configuring existing capabilities rather than coding everything."
-        },
-        {
-          "question": "Which pairing best matches model type to perspective?",
-          "options": [
-            "Context model for tests; interaction model for budgets",
-            "Context model for code; interaction model for licensing",
-            "Context model for workflow; interaction model for deployment",
-            "Context model for states; interaction model for classes",
-            "Context model for environment; interaction model for exchanges"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "Context models show boundaries and external systems, while interaction models show exchanges with users or systems."
-        },
-        {
-          "question": "Why is defect-testing data often unsuitable for reliability testing?",
-          "options": [
-            "It ignores specifications during test design",
-            "It replaces test cases with formal proofs",
-            "It mismatches the real operational input distribution",
-            "It ignores time between failures as a measure",
-            "It forbids failures during any test execution"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Reliability testing needs an operational profile that reflects real usage patterns, unlike many defect tests."
-        },
-        {
-          "question": "Which definition best matches availability?",
-          "options": [
-            "Probability code compiles without warnings today",
-            "Probability system runs failure-free over an interval",
-            "Probability system is operational at a time point",
-            "Probability users approve the interface immediately",
-            "Probability requirements are complete at delivery"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Availability is the likelihood the system is up and able to deliver useful service at a given time."
-        },
-        {
-          "question": "Which statement best distinguishes reliability and availability?",
-          "options": [
-            "Reliability is up now; availability is failure-free over time",
-            "Reliability is failure-free over time; availability is up now",
-            "Reliability and availability are identical in every system",
-            "Reliability equals security only; availability equals safety only",
-            "Reliability is subjective always; availability is subjective always"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Reliability concerns failure-free operation over a period, while availability concerns being operational at a point in time."
-        },
-        {
-          "question": "Which statement about reuse levels is correct?",
-          "options": [
-            "Object reuse reuses only entire application systems",
-            "Abstraction reuse reuses successful design ideas",
-            "System reuse reuses only single library objects",
-            "Component reuse reuses only database schemas",
-            "Reuse always eliminates integration and adaptation"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Abstraction-level reuse means reusing design knowledge and patterns that worked well before."
-        },
-        {
-          "question": "Which statement best distinguishes redundancy and diversity?",
-          "options": [
-            "Redundancy and diversity mean the same thing",
-            "Redundancy only hardware; diversity only software",
-            "Redundancy adds backups; diversity varies implementations",
-            "Redundancy adds testing; diversity reduces testing",
-            "Redundancy varies implementations; diversity adds backups"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Redundancy provides backup components, while diversity reduces common-mode failures by varying implementations."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation final 5",
-      "name": "Capstone preparation final 5",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "Which pattern matches a shared central data store used by subsystems?",
-          "options": [
-            "Repository pattern with a central store",
-            "Client–server pattern with remote requests",
-            "Pipe-and-filter pattern with streaming transforms",
-            "Layered pattern with strict service levels",
-            "MVC pattern with separated presentation"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The repository pattern centralizes shared data accessed by multiple components."
-        },
-        {
-          "question": "Which reliability metric best fits infrequent demand services?",
-          "options": [
-            "POFOD probability of failure on demand",
-            "AVAIL fraction of time operational",
-            "MTTF mean time to failure",
-            "ROCOF rate of occurrence of failures",
-            "LOC lines of code total"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "POFOD measures the chance of failure when a demand occurs, useful for intermittent critical functions."
-        },
-        {
-          "question": "Compared with a use case overview, what does a sequence diagram add?",
-          "options": [
-            "Ordering of object interactions over time",
-            "Regulatory approvals and certification plan",
-            "Static class attributes and inheritance trees",
-            "Hardware nodes and network topology layout",
-            "List of stakeholders and organizational politics"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Sequence diagrams show the detailed message ordering between objects for a scenario instance."
-        },
-        {
-          "question": "Which characteristic is typical of dependable development processes?",
-          "options": [
-            "Unstandardized and untracked change activities",
-            "Ad-hoc and undocumented development activities",
-            "Unmeasured and unreviewed development activities",
-            "Repeatable and auditable development activities",
-            "Single-person skill dependent development activities"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Dependable processes are defined, repeatable, auditable, and supported by systematic verification and documentation."
-        },
-        {
-          "question": "Which statement best captures what safety means?",
-          "options": [
-            "Avoiding reuse to prevent dependencies",
-            "Avoiding failures under normal conditions",
-            "Avoiding documentation during development",
-            "Avoiding harm even under abnormal conditions",
-            "Avoiding change during system evolution"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Safety is about preventing injury or damage, which is not the same as simply meeting the specification."
-        },
-        {
-          "question": "How can a system be reliable yet unsafe?",
-          "options": [
-            "It has perfect availability and perfect security",
-            "It has no users and no environment",
-            "It follows an incorrect specification consistently",
-            "It has no specification and no implementation",
-            "It follows a correct specification inconsistently"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "A system can behave exactly as specified, but still be unsafe if the specification omits safety constraints."
-        },
-        {
-          "question": "Which pairing best matches safety-critical system type to example?",
-          "options": [
-            "Primary: web store; secondary: video game system",
-            "Primary: insulin pump; secondary: medical records system",
-            "Primary: batch payroll; secondary: compiler system",
-            "Primary: CAD tool; secondary: email client system",
-            "Primary: spreadsheet; secondary: photo editor system"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Primary safety-critical systems directly threaten life on failure; secondary can trigger harmful failures elsewhere."
-        },
-        {
-          "question": "What is a hazard in safety engineering terms?",
-          "options": [
-            "A bug that always causes immediate failure",
-            "A requirement that guarantees full availability",
-            "A test case that proves a program correct",
-            "A security patch applied after deployment",
-            "A condition that could lead to an accident"
-          ],
-          "correctOption": 4,
-          "points": 10,
-          "explanation": "A hazard is a system condition with the potential to cause an accident."
-        },
-        {
-          "question": "Risk is best described as which combination?",
-          "options": [
-            "Combination of schedule and budget constraints",
-            "Combination of encryption and authentication methods",
-            "Combination of usability and performance metrics",
-            "Combination of hazard probability and severity",
-            "Combination of code style and documentation detail"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Risk combines how likely a hazard is and how severe the consequences could be."
-        },
-        {
-          "question": "In hazard assessment, what does ALARP represent?",
-          "options": [
-            "Risk eliminated by definition through compliance",
-            "Risk increased to maximize test coverage",
-            "Risk reduced as low as reasonably practicable",
-            "Risk accepted as large and unavoidable permanently",
-            "Risk ignored until after system deployment"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "ALARP is a middle category where risk must be reduced as far as reasonably practicable."
-        },
-        {
-          "question": "Which set lists core strategies for achieving safety?",
-          "options": [
-            "Recruitment, promotion, compensation, retention",
-            "Refactoring, optimization, parallelization, caching",
-            "Feature growth, market fit, brand expansion",
-            "Hazard avoidance, hazard removal, damage limitation",
-            "Compilation, linking, loading, execution"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Safety strategies include avoiding hazards, detecting/removing hazards, and limiting damage when accidents occur."
-        },
-        {
-          "question": "Fault tree analysis is best described as which technique?",
-          "options": [
-            "Black-box analysis based on marketing surveys",
-            "Random sampling of inputs for usability tests",
-            "Graphical style guide for UML notation",
-            "Top-down deductive analysis from a hazard",
-            "Bottom-up inductive analysis from code units"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Fault tree analysis starts from a hazard and decomposes combinations of faults that could cause it."
-        },
-        {
-          "question": "What is the primary purpose of a safety case?",
-          "options": [
-            "Providing budget evidence that a system is cheap",
-            "Providing code evidence that a system is optimized",
-            "Providing structured evidence that a system is safe",
-            "Providing marketing evidence that a system is popular",
-            "Providing UI evidence that a system is attractive"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "A safety case is a structured argument with evidence used to justify safety to regulators and stakeholders."
-        },
-        {
-          "question": "Which pairing best matches technique to description?",
-          "options": [
-            "Model checking is marketing; static analysis is sales",
-            "Model checking replaces tests; static analysis replaces specs",
-            "Model checking explores states; static analysis inspects code",
-            "Model checking is only manual; static analysis is only human",
-            "Model checking inspects code; static analysis explores states"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Model checking explores possible states for property violations, while static analysis examines source code for faults."
-        },
-        {
-          "question": "What does ROCOF measure in reliability engineering?",
-          "options": [
-            "Chance a demand fails at the time of request",
-            "Rate at which failures occur during operation",
-            "Total number of lines of code in system",
-            "Average time needed to repair after failure",
-            "Fraction of time the system is operational"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "ROCOF is the rate of occurrence of failures during system operation."
-        },
-        {
-          "question": "How is MTTF related to ROCOF in basic terms?",
-          "options": [
-            "MTTF is unrelated to ROCOF always",
-            "MTTF is the reciprocal of ROCOF",
-            "MTTF is smaller when ROCOF is zero",
-            "MTTF is the sum of ROCOF values",
-            "MTTF is the square of ROCOF value"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Mean time to failure is the reciprocal of the failure rate in simple models."
-        },
-        {
-          "question": "What is the core idea of N-version programming?",
-          "options": [
-            "Run one version and ignore invalid inputs",
-            "Run one version and disable redundancy",
-            "Run one version and retry after failures",
-            "Run independent versions and vote on outputs",
-            "Run one version and log errors for later"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "N-version programming uses multiple independently developed implementations and majority voting to tolerate faults."
-        },
-        {
-          "question": "Triple Modular Redundancy (TMR) primarily relies on what mechanism?",
-          "options": [
-            "Three replicas with majority vote output",
-            "Single replica with perfect formal proof",
-            "One replica with timeouts only",
-            "Multiple retries with random input reshaping",
-            "Two replicas with manual operator selection"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "TMR uses three replicated components and uses majority voting to mask one faulty output."
-        },
-        {
-          "question": "What is an operational profile in reliability testing?",
-          "options": [
-            "Sequence of UML diagrams for architecture",
-            "Set of coding standards for a project",
-            "Distribution of inputs representing real usage",
-            "Schedule of sprint tasks for a release",
-            "List of defects found during unit testing"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "An operational profile models how the system is actually used so reliability tests reflect real demand patterns."
-        },
-        {
-          "question": "Which limitation is commonly associated with formal methods?",
-          "options": [
-            "Perfect alignment with minimal project documentation",
-            "High cost and difficulty scaling to large systems",
-            "Guaranteed understanding by all nontechnical stakeholders",
-            "Elimination of need for all testing activities",
-            "Automatic correction of all specification errors always"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Formal methods can detect errors early, but they are expensive, hard to scale, and difficult for many stakeholders to use."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation Lecture 1",
-      "name": "Capstone preparation Lecture 1",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "Which set correctly lists the four core software process activities?",
-          "options": [
-            "Specification, development, validation, evolution",
-            "Specification, deployment, operation, retirement",
-            "Planning, coding, debugging, publishing",
-            "Analysis, testing, marketing, maintenance",
-            "Design, coding, compiling, packaging"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Core activities are specifying needs, developing the system, validating it, and evolving it after delivery."
-        },
-        {
-          "question": "Which statement best characterizes software engineering as a discipline?",
-          "options": [
-            "It covers the full lifecycle of software systems",
-            "It focuses only on writing efficient algorithms",
-            "It replaces testing with developer intuition",
-            "It avoids process to maximize speed",
-            "It treats maintenance as out of scope"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Software engineering spans requirements, design, implementation, validation, and evolution."
-        },
-        {
-          "question": "Which attribute most directly concerns ease of changing a system over time?",
-          "options": [
-            "Maintainability",
-            "Portability",
-            "Novelty",
-            "Profitability",
-            "Popularity"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Maintainability is about how easily a system can be modified and evolved."
-        },
-        {
-          "question": "Which attribute most directly concerns trust that services work correctly and safely?",
-          "options": [
-            "Dependability and security",
-            "Aesthetic appeal",
-            "Feature density",
-            "Brand recognition",
-            "Algorithm novelty"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Dependability and security capture reliability, safety-related trust, and protection from threats."
-        },
-        {
-          "question": "Which statement best reflects typical long-term cost distribution for major software systems?",
-          "options": [
-            "Maintenance can exceed initial development cost",
-            "Development always exceeds maintenance cost",
-            "Hardware always dominates software cost",
-            "Licensing always dominates maintenance cost",
-            "Training always dominates development cost"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "For long-lived systems, evolution and maintenance often cost more than initial development."
-        },
-        {
-          "question": "Which system type most strongly emphasizes real-time constraints and safety risks?",
-          "options": [
-            "Embedded control system",
-            "Batch processing system",
-            "Standalone desktop tool",
-            "Document management system",
-            "Entertainment media player"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Embedded control often interacts with the physical world and may require real-time and safety assurance."
-        },
-        {
-          "question": "Which statement best distinguishes generic products from custom systems?",
-          "options": [
-            "Generic products target a market; custom systems target one client",
-            "Generic products are always free; custom systems are always paid",
-            "Generic products avoid requirements; custom systems avoid testing",
-            "Generic products require no maintenance; custom systems require none",
-            "Generic products forbid reuse; custom systems mandate reuse"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Generic products are built for a broad market; custom systems are commissioned for a specific customer."
-        },
-        {
-          "question": "Which professional issue most directly concerns respecting reuse obligations and ownership?",
-          "options": [
-            "Intellectual property rights",
-            "User interface consistency",
-            "Runtime performance tuning",
-            "Database normalization",
-            "Network bandwidth planning"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Licenses and ownership are handled under intellectual property rights responsibilities."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation Lecture 2",
-      "name": "Capstone preparation Lecture 2",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "Which statement best describes a software process model?",
-          "options": [
-            "It is an abstract description of a development process",
-            "It is a compiled program that builds the system",
-            "It is a test suite that proves correctness",
-            "It is a licensing rule for distribution",
-            "It is a database schema for requirements"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "A process model is a simplified representation used to understand and plan development."
-        },
-        {
-          "question": "Which process model most strongly assumes stable requirements and sequential phases?",
-          "options": [
-            "Waterfall development",
-            "Incremental development",
-            "Reuse-oriented development",
-            "Continuous deployment",
-            "Exploratory prototyping"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Waterfall organizes work into staged phases that are costly to revisit after completion."
-        },
-        {
-          "question": "Which is a typical weakness of strict waterfall approaches?",
-          "options": [
-            "Late requirement changes become expensive to handle",
-            "Unit testing becomes impossible to perform",
-            "Documentation cannot be produced by the team",
-            "Integration becomes unnecessary by definition",
-            "User feedback becomes illegal to collect"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Waterfall handles change poorly once phases are signed off, causing major rework."
-        },
-        {
-          "question": "Which is a common benefit of incremental development?",
-          "options": [
-            "It reduces the cost of accommodating requirement change",
-            "It eliminates the need for integration testing",
-            "It guarantees complete requirements at the start",
-            "It prevents architectural erosion automatically",
-            "It removes the need for stakeholder feedback"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Incremental delivery supports change by adjusting future increments based on feedback."
-        },
-        {
-          "question": "Which is a realistic risk of delivering increments without structural maintenance?",
-          "options": [
-            "Architecture quality can degrade across releases",
-            "Security threats disappear due to fast iteration",
-            "All defects become visible in early increments",
-            "Costs always fall as the codebase grows",
-            "Requirements always stabilize after one release"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Without refactoring and architectural attention, incremental delivery can lead to erosion."
-        },
-        {
-          "question": "Which statement best characterizes reuse-oriented development?",
-          "options": [
-            "It emphasizes integrating and configuring existing components",
-            "It emphasizes rewriting all modules each release",
-            "It emphasizes avoiding requirements engineering entirely",
-            "It emphasizes postponing validation until final delivery",
-            "It emphasizes forbidding third-party dependencies"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Reuse-oriented development focuses on selecting, adapting, and integrating existing software assets."
-        },
-        {
-          "question": "Which test level best matches checking the whole system against user needs?",
-          "options": [
-            "Acceptance testing",
-            "Unit testing",
-            "Static analysis",
-            "Compiler optimization",
-            "Code formatting"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Acceptance testing evaluates the complete system against customer or user expectations."
-        },
-        {
-          "question": "Why can reliability measurement not rely only on defect-testing data?",
-          "options": [
-            "Defect tests often use inputs unlike real operational usage",
-            "Defect tests always require zero failures observed",
-            "Defect tests never depend on system specifications",
-            "Defect tests guarantee statistically valid estimates",
-            "Defect tests ignore performance and availability"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Reliability estimation needs inputs reflecting real usage frequencies, not mainly edge cases."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation Lecture 3",
-      "name": "Capstone preparation Lecture 3",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "Which statement best characterizes agile development practices?",
-          "options": [
-            "They deliver working software in short iterative cycles",
-            "They avoid testing to increase delivery speed",
-            "They require complete requirements before any coding",
-            "They forbid architecture decisions until the end",
-            "They guarantee zero changes after the first release"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Agile emphasizes iterative delivery with frequent feedback and continuous improvement."
-        },
-        {
-          "question": "Which statement best defines refactoring?",
-          "options": [
-            "It improves code structure without changing behavior",
-            "It adds new features without updating tests",
-            "It replaces requirements with user interviews",
-            "It converts UML diagrams into final binaries",
-            "It removes validation to reduce overhead"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Refactoring is internal restructuring that preserves externally visible behavior."
-        },
-        {
-          "question": "Which practice best matches test-driven development?",
-          "options": [
-            "Write a failing test, then implement to pass it",
-            "Write full code, then guess expected results",
-            "Skip unit tests, then run only acceptance tests",
-            "Write documentation, then delay tests to release",
-            "Write tests only after customers report bugs"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "TDD starts with tests that define behavior, then code is written to satisfy them."
-        },
-        {
-          "question": "Which role most directly protects the team from external disruptions in Scrum?",
-          "options": [
-            "Scrum Master",
-            "Product Owner",
-            "System Administrator",
-            "Chief Financial Officer",
-            "Database Operator"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The Scrum Master facilitates the process and helps shield the team from interruptions."
-        },
-        {
-          "question": "Which statement best describes a sprint outcome?",
-          "options": [
-            "A working increment of the product is produced",
-            "A complete system specification is finalized",
-            "A full certification package is always approved",
-            "A final architecture is frozen permanently",
-            "A test suite is discarded and rewritten monthly"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Each sprint aims to deliver a potentially shippable increment."
-        },
-        {
-          "question": "Why can large-scale agile development become difficult?",
-          "options": [
-            "Cross-team coordination and dependencies increase sharply",
-            "Unit testing becomes impossible with many developers",
-            "Requirements stop changing when teams grow",
-            "Documentation becomes illegal under agile methods",
-            "Integration disappears when iterations are short"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Coordination overhead and shared architecture constraints grow with system and team size."
-        },
-        {
-          "question": "Which statement best fits a user story?",
-          "options": [
-            "A brief description of a user goal and value",
-            "A complete formal proof of correctness",
-            "A detailed data schema for every table",
-            "A fixed contract clause banning scope change",
-            "A low-level algorithm for a sorting function"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "User stories capture small slices of value from the user's perspective."
-        },
-        {
-          "question": "Which statement best explains why architectural refactoring can be costly?",
-          "options": [
-            "It affects many components and cross-cutting dependencies",
-            "It affects only user interface colors and fonts",
-            "It affects only comments and formatting rules",
-            "It affects only a single isolated function",
-            "It affects only database indexes and keys"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Architecture changes ripple across many modules and interfaces, making rework broad."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation Lecture 4",
-      "name": "Capstone preparation Lecture 4",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "Which statement best defines functional requirements?",
-          "options": [
-            "They specify services and behaviors the system must provide",
-            "They specify programming languages the team must use",
-            "They specify hiring plans for the development team",
-            "They specify marketing targets for product launch",
-            "They specify office policies for stakeholder meetings"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Functional requirements describe what the system should do."
-        },
-        {
-          "question": "Which statement best defines non-functional requirements?",
-          "options": [
-            "They constrain qualities such as performance and security",
-            "They list all user actions in a use case",
-            "They describe class attributes and associations",
-            "They define compiler settings for builds",
-            "They state variable naming conventions only"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Non-functional requirements define quality attributes and constraints on the system."
-        },
-        {
-          "question": "Which pairing best distinguishes user and system requirements?",
-          "options": [
-            "User requirements are readable; system requirements are detailed",
-            "User requirements are executable; system requirements are informal",
-            "User requirements are optional; system requirements are optional",
-            "User requirements are code; system requirements are sketches",
-            "User requirements are tests; system requirements are comments"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "User requirements are high-level and understandable; system requirements are precise and detailed."
-        },
-        {
-          "question": "Which set lists common checks used in requirements validation?",
-          "options": [
-            "Validity, consistency, completeness, realism, verifiability",
-            "Popularity, novelty, aesthetics, speed, profitability",
-            "Inheritance, polymorphism, encapsulation, casting, overriding",
-            "Caching, routing, sharding, indexing, replication",
-            "Soldering, polishing, welding, molding, painting"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Validation checks whether requirements are correct, consistent, complete, realistic, and testable."
-        },
-        {
-          "question": "Which activity most directly resolves stakeholder conflicts about requirements?",
-          "options": [
-            "Negotiation and prioritization",
-            "Code optimization and profiling",
-            "Database indexing and partitioning",
-            "Memory allocation and garbage collection",
-            "Compiler linking and packaging"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Conflicting needs are resolved by negotiating trade-offs and setting priorities."
-        },
-        {
-          "question": "Which change-management step most directly evaluates impact and cost?",
-          "options": [
-            "Change analysis and costing",
-            "Change implementation and deployment",
-            "Change marketing and promotion",
-            "Change denial and archiving",
-            "Change coding and formatting"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Impact analysis estimates what must change and how expensive the change will be."
-        },
-        {
-          "question": "Why can non-functional requirements be difficult to assign to a single feature?",
-          "options": [
-            "They often emerge from the whole system design",
-            "They apply only to single functions by definition",
-            "They always depend on compiler flags only",
-            "They never affect architecture decisions",
-            "They remove the need for system testing"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Quality attributes like performance and security depend on system-wide structure and interactions."
-        },
-        {
-          "question": "Which statement best explains why requirements change is common?",
-          "options": [
-            "Business context and technical understanding evolve over time",
-            "All requirements are complete at project start",
-            "Stakeholders never revise priorities after approval",
-            "New systems always copy identical older systems",
-            "Testing automatically prevents requirement change"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Organizations, constraints, and understanding change, so requirements must be managed as evolving artifacts."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation Lecture 5",
-      "name": "Capstone preparation Lecture 5",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "Which model best represents a system boundary and its external environment?",
-          "options": [
-            "A context model",
-            "A class model",
-            "A state model",
-            "A timing model",
-            "A compiler model"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Context models show system boundaries and interactions with external systems."
-        },
-        {
-          "question": "Which UML diagram best shows actor goals and high-level interactions?",
-          "options": [
-            "A use case diagram",
-            "A class diagram",
-            "A state diagram",
-            "A package diagram",
-            "A deployment diagram"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Use case diagrams summarize actor interactions with the system boundary."
-        },
-        {
-          "question": "Which UML diagram best shows message ordering over time in a scenario?",
-          "options": [
-            "A sequence diagram",
-            "A class diagram",
-            "A package diagram",
-            "A context diagram",
-            "A data dictionary"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Sequence diagrams add temporal ordering of interactions between objects."
-        },
-        {
-          "question": "Which UML diagram best represents static structure of classes and associations?",
-          "options": [
-            "A class diagram",
-            "A sequence diagram",
-            "A state diagram",
-            "A use case diagram",
-            "A timing diagram"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Class diagrams describe classes and their static relationships."
-        },
-        {
-          "question": "Which UML diagram best represents event-driven state changes of an object?",
-          "options": [
-            "A state diagram",
-            "A class diagram",
-            "A use case diagram",
-            "A package diagram",
-            "A context diagram"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "State diagrams show states and transitions triggered by events."
-        },
-        {
-          "question": "Which statement best explains why state diagrams are not required for every object?",
-          "options": [
-            "Only objects with meaningful states need state modeling",
-            "All objects must have state diagrams by UML rule",
-            "State diagrams replace requirements documents entirely",
-            "State diagrams are used only for database tables",
-            "State diagrams guarantee correctness without testing"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "State modeling is useful when an object's behavior changes significantly across states."
-        },
-        {
-          "question": "Which statement best characterizes model-driven engineering?",
-          "options": [
-            "Models are primary artifacts and code may be generated",
-            "Source code is primary artifact and models are forbidden",
-            "Models replace validation and testing entirely",
-            "Models eliminate the need for requirements engineering",
-            "Models guarantee correct performance on all platforms"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "MDE treats models as central artifacts, sometimes generating code via transformations."
-        },
-        {
-          "question": "Which is a realistic limitation of heavy up-front modeling adoption?",
-          "options": [
-            "Tooling and transformations can require specialized support",
-            "Models cannot represent any system context at all",
-            "UML cannot represent classes and relationships",
-            "Code generation makes integration unnecessary",
-            "Operational profiles become irrelevant to testing"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "MDE often depends on tooling and can conflict with lightweight iterative approaches."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation Lecture 6",
-      "name": "Capstone preparation Lecture 6",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "Which statement best defines software architecture?",
-          "options": [
-            "It describes major components and their interactions",
-            "It describes variable names and formatting rules",
-            "It describes compiler flags and link options",
-            "It describes only database table definitions",
-            "It describes only unit test case lists"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Architecture captures the high-level structure and communication among system components."
-        },
-        {
-          "question": "In the 4+1 model, which view focuses on interacting runtime processes?",
-          "options": [
-            "Process view",
-            "Logical view",
-            "Development view",
-            "Physical view",
-            "Contract view"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The process view describes how the system is composed of runtime processes and their interactions."
-        },
-        {
-          "question": "Which architectural pattern best fits subsystems sharing large data via a central store?",
-          "options": [
-            "Repository architecture",
-            "Layered architecture",
-            "Client-server architecture",
-            "Pipe-and-filter architecture",
-            "Peer-to-peer architecture"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Repository architectures centralize shared data to support efficient exchange."
-        },
-        {
-          "question": "Which architectural choice most directly supports security by isolating critical assets?",
-          "options": [
-            "Layered design with critical assets in inner layers",
-            "Pipe-and-filter design for interactive user workflows",
-            "Repository design with unrestricted global access",
-            "Single-tier design with shared global state",
-            "Monolithic design without any access boundaries"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Layered architectures can place sensitive components deeper with controlled access paths."
-        },
-        {
-          "question": "Which pattern best matches batch transformations applied in a fixed sequence?",
-          "options": [
-            "Pipe-and-filter architecture",
-            "Client-server architecture",
-            "Repository architecture",
-            "MVC architecture",
-            "Layered architecture"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Pipe-and-filter fits staged data transformations typical in batch pipelines."
-        },
-        {
-          "question": "Which statement best explains why box-and-line diagrams can be risky as specifications?",
-          "options": [
-            "They can lack precise semantics without defined notation rules",
-            "They always include mathematically complete proofs",
-            "They always eliminate the need for requirements work",
-            "They always prevent architectural misunderstanding",
-            "They always guarantee correct performance outcomes"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Informal diagrams may be interpreted differently unless their notation and meaning are fixed."
-        },
-        {
-          "question": "Which component order best matches a typical compiler pipeline stage early on?",
-          "options": [
-            "Lexical analysis before syntax analysis",
-            "Code generation before lexical analysis",
-            "Optimization before syntax analysis",
-            "Linking before semantic analysis",
-            "Deployment before parsing"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Compilers typically tokenize input (lexical analysis) before building syntax structure (parsing)."
-        },
-        {
-          "question": "Which statement best explains why architectural refactoring is often costly?",
-          "options": [
-            "It can require coordinated changes across many components",
-            "It can require only renaming local variables",
-            "It can require only updating code comments",
-            "It can require only changing UI colors",
-            "It can require only reordering import statements"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Architecture affects many modules and interfaces, so changes tend to ripple widely."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation Lecture 7",
-      "name": "Capstone preparation Lecture 7",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "A design pattern description typically includes which set of elements?",
-          "options": [
-            "Name, problem, solution, consequences",
-            "Name, compiler, license, build flags",
-            "Actors, states, transitions, events",
-            "Inputs, outputs, throughput, latency",
-            "Tables, keys, indexes, triggers"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Patterns are documented with a name, the problem, the solution structure, and trade-offs."
-        },
-        {
-          "question": "Which statement best describes build-or-buy impacts on design work?",
-          "options": [
-            "It shifts focus toward configuring features to meet requirements",
-            "It shifts focus toward eliminating stakeholder communication",
-            "It shifts focus toward avoiding modeling entirely",
-            "It shifts focus toward proving full correctness formally",
-            "It shifts focus toward ignoring non-functional constraints"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "With COTS, the key work is matching needs to existing capabilities and configuring integration."
-        },
-        {
-          "question": "Which statement best describes abstraction-level reuse?",
-          "options": [
-            "It reuses successful design ideas and abstractions",
-            "It reuses entire enterprise systems unchanged",
-            "It reuses only database engines and schemas",
-            "It reuses only one object from a library",
-            "It reuses only compiler-generated code"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Abstraction reuse means applying proven concepts and designs, not copying entire systems."
-        },
-        {
-          "question": "Which activity most directly belongs to configuration management?",
-          "options": [
-            "Controlling versions and tracking component changes",
-            "Selecting colors and fonts for user interfaces",
-            "Choosing office policies for team meetings",
-            "Forecasting market share for product launches",
-            "Designing electrical circuits for device power"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Configuration management coordinates versions, builds, and controlled changes in evolving systems."
-        },
-        {
-          "question": "Which statement best describes the purpose of interface specification?",
-          "options": [
-            "It defines how a component is used without revealing internals",
-            "It defines how a compiler optimizes generated machine code",
-            "It defines how to remove all tests from a release",
-            "It defines how to skip requirements negotiation",
-            "It defines how to replace architecture with diagrams"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Interfaces provide stable contracts and hide representation details for safe component use."
-        },
-        {
-          "question": "Which statement best describes system-level reuse?",
-          "options": [
-            "It reuses an entire application system in a new context",
-            "It reuses one method from a utility library",
-            "It reuses one database index definition",
-            "It reuses one variable naming convention",
-            "It reuses one unit test assertion line"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "System reuse adopts whole systems (often configurable) rather than individual objects or components."
-        },
-        {
-          "question": "Which statement best characterizes open-source licensing impact on reuse?",
-          "options": [
-            "It can impose obligations on redistribution of derived works",
-            "It guarantees unlimited proprietary distribution rights",
-            "It eliminates any need to track third-party components",
-            "It forbids any modification of the original code",
-            "It prevents any commercial usage of the code"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Some licenses (e.g., copyleft) require sharing source or preserving license terms in derivatives."
-        },
-        {
-          "question": "Which statement best describes host-target development?",
-          "options": [
-            "Development occurs on one platform and execution occurs on another",
-            "Development and execution always occur on identical hardware",
-            "Development occurs only in production environments",
-            "Execution occurs only inside the compiler toolchain",
-            "Development occurs only without any external libraries"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Code is built on a host system and deployed to a target system with different constraints."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation Lecture 8",
-      "name": "Capstone preparation Lecture 8",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "Which statement best defines system dependability?",
-          "options": [
-            "It reflects trust that services are delivered as expected",
-            "It reflects number of features delivered each sprint",
-            "It reflects amount of code written per week",
-            "It reflects maximum CPU usage under load",
-            "It reflects popularity in app store rankings"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Dependability is about trust in correct, reliable, and safe service delivery."
-        },
-        {
-          "question": "Which set lists major dependability-related attributes?",
-          "options": [
-            "Availability, reliability, safety, security, resilience",
-            "Speed, novelty, branding, aesthetics, trendiness",
-            "Caching, routing, sharding, indexing, replication",
-            "Inheritance, polymorphism, encapsulation, casting, overloading",
-            "Parsing, linking, packaging, installing, theming"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Dependability includes being available, reliable, safe, secure, and able to recover under disruption."
-        },
-        {
-          "question": "In socio-technical systems, which cause often dominates system failures?",
-          "options": [
-            "Operational mistakes made by humans during use",
-            "Perfect hardware manufacturing with no variation",
-            "Compiler optimization causing all runtime crashes",
-            "Encryption preventing any system state changes",
-            "Redundancy automatically removing all faults"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Human operational errors are a major failure source in complex socio-technical settings."
-        },
-        {
-          "question": "Which statement best distinguishes redundancy from diversity?",
-          "options": [
-            "Redundancy adds backups; diversity varies implementations",
-            "Redundancy varies implementations; diversity adds backups",
-            "Redundancy forbids change; diversity forbids planning",
-            "Redundancy means no testing; diversity means more testing",
-            "Redundancy applies only to software; diversity applies only to hardware"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Redundancy duplicates components; diversity reduces common-mode failures via different implementations."
-        },
-        {
-          "question": "Which statement best explains why pure agile is often impractical for dependable systems work?",
-          "options": [
-            "Certification needs evidence and documentation beyond minimal artifacts",
-            "Iterative development is forbidden by agile methods",
-            "Verification and validation are banned by agile methods",
-            "Dependable systems cannot be tested realistically",
-            "Requirements never change in dependable systems"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Regulated or critical systems require documented assurance evidence, not only working increments."
-        },
-        {
-          "question": "Which statement best characterizes a socio-technical system?",
-          "options": [
-            "It combines software, hardware, people, and organizational processes",
-            "It contains only source code and test cases",
-            "It contains only hardware components and sensors",
-            "It contains only database records and schemas",
-            "It contains only web services and APIs"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Socio-technical systems include technology and the human/organizational context that operates it."
-        },
-        {
-          "question": "Which statement best describes resilience in critical systems?",
-          "options": [
-            "It sustains or restores service under disruption or attack",
-            "It maximizes user interface animations under load",
-            "It ensures requirements never change after approval",
-            "It guarantees failures never occur in any component",
-            "It eliminates need for monitoring and recovery"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Resilience emphasizes continued operation and recovery rather than complete failure prevention."
-        },
-        {
-          "question": "Which statement best describes formal methods in dependability contexts?",
-          "options": [
-            "They use precise specifications to reduce certain defect classes",
-            "They remove the need for requirements engineering",
-            "They guarantee absence of accidents in socio-technical systems",
-            "They replace all testing with customer interviews",
-            "They make operational profiles irrelevant to reliability"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Formal methods can increase assurance by proving properties, but do not eliminate all risks."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation Lecture 9",
-      "name": "Capstone preparation Lecture 9",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "Which chain best matches fault, error, and failure relationships?",
-          "options": [
-            "A fault may cause an error; an error may cause a failure",
-            "A failure may cause an error; an error may cause a fault",
-            "A fault always causes a failure; failure always causes error",
-            "An error always causes a fault; fault always causes failure",
-            "A failure always causes a fault; fault always causes error"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Faults can create erroneous states, and errors can propagate into observable failures, but not always."
-        },
-        {
-          "question": "Which statement best distinguishes reliability from availability?",
-          "options": [
-            "Reliability is failure-free over time; availability is up at a point in time",
-            "Reliability is up at a point in time; availability is failure-free over time",
-            "Reliability is subjective only; availability is objective only",
-            "Reliability equals uptime only; availability equals correctness only",
-            "Reliability equals security only; availability equals privacy only"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Reliability is about continuous correct operation; availability includes uptime and recovery at a moment."
-        },
-        {
-          "question": "Which metric best fits rare and intermittent demands such as emergency shutdown?",
-          "options": [
-            "Probability of failure on demand (POFOD)",
-            "Rate of occurrence of failures (ROCOF)",
-            "Mean time to repair (MTTR)",
-            "Availability fraction only",
-            "Defect density per module"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "POFOD measures failure probability when a demand occurs, matching intermittent-demand services."
-        },
-        {
-          "question": "Which metric best fits high-volume transaction processing systems?",
-          "options": [
-            "Rate of occurrence of failures (ROCOF)",
-            "Probability of failure on demand (POFOD)",
-            "Availability fraction only",
-            "Mean time to install (MTTI)",
-            "Lines of code per feature"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "ROCOF measures failure rate per time unit in systems handling many similar requests."
-        },
-        {
-          "question": "Which statement best explains why reliability testing needs special test data?",
-          "options": [
-            "Operational profiles require inputs distributed like real usage",
-            "Reliability testing ignores specifications by design",
-            "Reliability testing requires zero failures by definition",
-            "Reliability testing uses only formal proofs for evidence",
-            "Reliability testing depends only on code coverage values"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Reliability estimates depend on usage frequency, so test inputs must reflect operational distributions."
-        },
-        {
-          "question": "Which architecture best matches an independent emergency protection mechanism?",
-          "options": [
-            "A protection system that monitors and can trigger shutdown",
-            "A repository system that centralizes shared data",
-            "A pipe-and-filter system that chains transformations",
-            "A layered system that separates presentation from domain",
-            "A client-server system that serves browser requests"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Protection systems independently monitor and take emergency action to avoid catastrophe."
-        },
-        {
-          "question": "Which statement best describes N-version programming?",
-          "options": [
-            "Multiple independent versions vote on a computed result",
-            "One optimized version replaces all other components",
-            "One version runs faster by skipping validation",
-            "Multiple versions share one identical codebase",
-            "Multiple versions remove need for specifications"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "N-version uses diverse implementations and voting to reduce impact of individual faults."
-        },
-        {
-          "question": "Which statement best characterizes a key problem with software diversity?",
-          "options": [
-            "Teams can share the same specification misunderstandings",
-            "Teams always produce independent errors by default",
-            "Teams always choose different algorithms by policy",
-            "Teams always eliminate common-mode failures completely",
-            "Teams always reduce development cost below baseline"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Common spec errors and shared interpretations can cause correlated failures across versions."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation Lecture 10",
-      "name": "Capstone preparation Lecture 10",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "Which statement best distinguishes safety from reliability?",
-          "options": [
-            "Safety concerns harm risk; reliability concerns failure-free operation",
-            "Safety concerns uptime; reliability concerns user satisfaction",
-            "Safety concerns speed; reliability concerns code style",
-            "Safety concerns UI design; reliability concerns licensing",
-            "Safety concerns cost; reliability concerns team size"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Safety is about preventing unacceptable harm, while reliability is about failure-free service delivery."
-        },
-        {
-          "question": "Which statement best defines a hazard?",
-          "options": [
-            "A condition that could lead to an accident",
-            "A confirmed accident with recorded damage",
-            "A unit test that fails during execution",
-            "A performance bottleneck under heavy load",
-            "A documentation gap in a design review"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "A hazard is a potential source of harm, not the harm event itself."
-        },
-        {
-          "question": "Which option best describes ALARP risk treatment?",
-          "options": [
-            "Reduce risk as far as reasonably practicable",
-            "Accept risk whenever testing is expensive",
-            "Ignore risk once uptime exceeds a target",
-            "Eliminate risk by forbidding all software change",
-            "Maximize risk to accelerate delivery speed"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "ALARP means lowering risk until further reduction is not reasonably justified."
-        },
-        {
-          "question": "Which technique is deductive and top-down in safety analysis?",
-          "options": [
-            "Fault-tree analysis starting from an accident",
-            "Code review starting from style guidelines",
-            "Unit testing starting from one function",
-            "User interview starting from preferences",
-            "Benchmarking starting from latency targets"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Fault-tree analysis begins with a hazardous outcome and decomposes causes using logic."
-        },
-        {
-          "question": "Which statement best describes a safety case?",
-          "options": [
-            "A structured argument with evidence for acceptable safety",
-            "A marketing claim that safety is guaranteed",
-            "A bug list showing only closed issues",
-            "A source code archive stored for auditing",
-            "A performance report for peak throughput"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Safety cases present claims, arguments, and evidence that hazards are controlled adequately."
-        },
-        {
-          "question": "Why are some safety requirements written as prohibitions?",
-          "options": [
-            "They forbid unsafe states and unsafe events explicitly",
-            "They make validation unnecessary by definition",
-            "They guarantee reliability without redundancy",
-            "They replace hazard analysis with checklists",
-            "They prevent any need for operator training"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Safety requirements often specify what must never happen to avoid hazardous situations."
-        },
-        {
-          "question": "Which statement best characterizes static analysis in safety assurance?",
-          "options": [
-            "It examines code for defects without executing it",
-            "It proves all hazards are impossible in practice",
-            "It replaces all dynamic testing by definition",
-            "It estimates reliability using operational profiles",
-            "It generates new requirements automatically"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Static analysis checks properties of code without running it, catching certain fault classes early."
-        },
-        {
-          "question": "Which statement best characterizes model checking in safety-critical contexts?",
-          "options": [
-            "It explores system states to find violations of properties",
-            "It guarantees correctness for any real-world environment",
-            "It eliminates need for specifications and models",
-            "It measures availability by counting repair minutes",
-            "It improves performance by optimizing binaries"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Model checking systematically explores states of a model to detect property violations and deadlocks."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation message",
-      "name": "Capstone preparation message",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "Which of the following is NOT one of the essential attributes of good software?",
-          "options": [
-            "Maintainability",
-            "Dependability and security",
-            "Scalability",
-            "Acceptability"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "The essential attributes listed are maintainability, dependability/security, efficiency, and acceptability; scalability is not in that set."
-        },
-        {
-          "question": "A company develops a software system for internal use and controls all changes. This is an example of:",
-          "options": [
-            "A generic product",
-            "A customized product",
-            "An open source product",
-            "A COTS product"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Generic products are owned and evolved by the developing organization, which controls the specification and changes."
-        },
-        {
-          "question": "The principle stating engineers act in clients' and employers' interests consistent with the public interest is:",
-          "options": ["PUBLIC", "PRODUCT", "CLIENT AND EMPLOYER", "JUDGMENT"],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "That statement matches the 'Client and Employer' principle while requiring consistency with public interest."
-        },
-        {
-          "question": "What does the principle of competence in software engineering ethics require?",
-          "options": [
-            "Always use the latest technology",
-            "Not misrepresent competence or accept work outside it",
-            "Have a university degree",
-            "Work overtime to meet deadlines"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Competence requires truthful representation of skills and avoiding work beyond one’s ability."
-        },
-        {
-          "question": "In which process model are specification, development, and validation interleaved with frequent releases?",
-          "options": [
-            "Waterfall model",
-            "Incremental development",
-            "Integration and configuration",
-            "V-model"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Incremental development delivers working software in repeated increments with interleaved activities."
-        },
-        {
-          "question": "What is the main advantage of incremental development compared to waterfall?",
-          "options": [
-            "It requires less testing",
-            "It produces more documentation",
-            "It reduces cost of accommodating changing requirements",
-            "It is easier to manage large distributed teams"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Incremental delivery makes late requirement changes cheaper by deferring changes into later increments."
-        },
-        {
-          "question": "Which is an example of a reusable software type in integration and configuration?",
-          "options": [
-            "User requirements document",
-            "Waterfall model phases",
-            "Web services developed according to service standards",
-            "Unit test cases"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Reuse-oriented development commonly integrates reusable services/components such as standardized web services."
-        },
-        {
-          "question": "What is the purpose of system prototyping?",
-          "options": [
-            "Replace the final system",
-            "Demonstrate concepts and help with requirements elicitation",
-            "Generate automatic documentation",
-            "Measure the system's reliability"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Prototypes explore feasibility and clarify requirements by trying ideas early."
-        },
-        {
-          "question": "Which is one of the four values of the Agile Manifesto?",
-          "options": [
-            "Processes and tools over individuals and interactions",
-            "Comprehensive documentation over working software",
-            "Contract negotiation over customer collaboration",
-            "Responding to change over following a plan"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Agile values responding to change over strict adherence to a plan."
-        },
-        {
-          "question": "In Extreme Programming (XP), what are user stories?",
-          "options": [
-            "Detailed technical specifications",
-            "Short scenario requirements written on cards",
-            "UML diagrams showing user interactions",
-            "Bug reports from users"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "User stories are brief scenarios capturing requirements from a user perspective."
-        },
-        {
-          "question": "What is the role of the Scrum Master?",
-          "options": [
-            "Write all the code for the team",
-            "Facilitate, protect the team from distractions, remove impediments",
-            "Manage the backlog and prioritize features",
-            "Test the software at the end of each sprint"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "The Scrum Master supports the process and removes blockers so the team can deliver."
-        },
-        {
-          "question": "Which is a problem with scaling agile methods to large systems?",
-          "options": [
-            "Agile methods require too much documentation",
-            "Large systems may require up-front design and face external regulations",
-            "Agile teams cannot have more than 5 people",
-            "Large systems cannot be tested"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Large/regulated systems often need more up-front analysis and assurance evidence than pure agile assumes."
-        },
-        {
-          "question": "A requirement stating the system shall generate a daily patient appointment list is a:",
-          "options": [
-            "Non-functional requirement",
-            "Functional requirement",
-            "Domain requirement",
-            "Organizational requirement"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "It specifies a service the system must provide, which is functional."
-        },
-        {
-          "question": "A requirement stating the system shall be available 99.9% between 8am and 8pm is a:",
-          "options": [
-            "Functional requirement",
-            "Verifiable non-functional requirement",
-            "Goal",
-            "Domain requirement"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Availability is a quality attribute with a measurable target, so it is a verifiable non-functional requirement."
-        },
-        {
-          "question": "Which elicitation technique is best for understanding actual work practices including social factors?",
-          "options": [
-            "Interviewing",
-            "Questionnaire",
-            "Ethnography",
-            "Brainstorming"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Ethnography observes real work to uncover tacit and social/organizational practices."
-        },
-        {
-          "question": "Requirements validation checks all of the following EXCEPT:",
-          "options": [
-            "Validity",
-            "Consistency",
-            "Completeness",
-            "Profitability"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Validation focuses on correctness/quality of requirements, not business profitability."
-        },
-        {
-          "question": "Which UML diagram shows static structure including classes, attributes, and associations?",
-          "options": [
-            "Sequence diagram",
-            "Use case diagram",
-            "Class diagram",
-            "State diagram"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Class diagrams represent static structure and relationships."
-        },
-        {
-          "question": "In a class diagram, what does generalization represent?",
-          "options": [
-            "A has-a relationship",
-            "An is-a relationship",
-            "A uses relationship",
-            "A temporal relationship"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Generalization indicates inheritance (is-a)."
-        },
-        {
-          "question": "Which UML diagram best models how a microwave responds to button presses and changes internal state?",
-          "options": [
-            "Activity diagram",
-            "Sequence diagram",
-            "Use case diagram",
-            "State diagram"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "State diagrams model event-driven state transitions."
-        },
-        {
-          "question": "In Model-Driven Architecture (MDA), what is a Platform Independent Model (PIM)?",
-          "options": [
-            "A model of the business domain",
-            "A model describing operation without reference to platform",
-            "A model specific to Java or .NET",
-            "A model of the hardware architecture"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "A PIM abstracts the system’s behavior independently of a specific technology platform."
-        },
-        {
-          "question": "Which architectural pattern fits components processing data and passing results along a sequence?",
-          "options": [
-            "Repository pattern",
-            "Client-server",
-            "Pipe-and-filter",
-            "Layered architecture"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Pipe-and-filter structures computation as a chain of processing stages."
-        },
-        {
-          "question": "In the 4+1 view model, which view shows key abstractions as objects or object classes?",
-          "options": [
-            "Logical view",
-            "Process view",
-            "Development view",
-            "Physical view"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "The logical view captures major abstractions and relationships."
-        },
-        {
-          "question": "To achieve high performance, which architectural strategy is recommended?",
-          "options": [
-            "Use fine-grain components with frequent communication",
-            "Localize critical operations and minimize communications",
-            "Put all components on separate servers",
-            "Use a single layer for all functionality"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Performance improves when you reduce inter-component communication and keep critical work localized."
-        },
-        {
-          "question": "Which pattern uses a central data structure accessed and updated by all components?",
-          "options": ["MVC", "Pipe-and-filter", "Layered", "Repository"],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Repository architectures center shared data in one store."
-        },
-        {
-          "question": "Which is NOT a common activity in an object-oriented design process?",
-          "options": [
-            "Define context and modes of use",
-            "Design the system architecture",
-            "Write all code before creating any models",
-            "Specify object interfaces"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "OO design typically uses models/interfaces before or alongside coding, not coding everything first."
-        },
-        {
-          "question": "What is the primary purpose of the Observer design pattern?",
-          "options": [
-            "Provide a simplified interface to a complex subsystem",
-            "Separate state from displays and allow multiple displays",
-            "Allow an object to alter behavior when internal state changes",
-            "Encapsulate a request as an object"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Observer decouples a subject from multiple observers that update when the subject changes."
-        },
-        {
-          "question": "At which reuse level do you directly reuse objects from a library?",
-          "options": [
-            "Abstraction level",
-            "Object level",
-            "Component level",
-            "System level"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Object-level reuse means using library objects/classes directly."
-        },
-        {
-          "question": "Which open source license is reciprocal and requires derived software to be open source?",
-          "options": [
-            "BSD License",
-            "MIT License",
-            "GNU General Public License (GPL)",
-            "Apache License"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "GPL is a copyleft license requiring redistribution of derivatives under similar terms."
-        },
-        {
-          "question": "Which dependability property is a judgment of likelihood the system will cause damage to people or environment?",
-          "options": ["Reliability", "Availability", "Safety", "Security"],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Safety concerns risk of harm and accidents."
-        },
-        {
-          "question": "What is the relationship between reliability and safety?",
-          "options": [
-            "A reliable system is always safe",
-            "A safe system is always reliable",
-            "Reliability is necessary but not sufficient for safety",
-            "They are completely unrelated"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Reliability helps, but safety also depends on hazards, context, and preventing unacceptable harm."
-        },
-        {
-          "question": "What is the purpose of diversity in dependable systems?",
-          "options": [
-            "Provide backup copies of components",
-            "Implement the same function differently to avoid common-mode failures",
-            "Make the system more complex",
-            "Reduce development costs"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Diversity aims to prevent the same fault from causing simultaneous failures across replicas."
-        },
-        {
-          "question": "What is the main benefit of formal methods in dependable systems engineering?",
-          "options": [
-            "They are easy for customers to understand",
-            "They reduce certain programming errors and can find specification errors",
-            "They are cheaper than testing",
-            "They work well with agile methods"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Formal methods provide precise specifications and analysis that can expose spec/design defects and certain code errors."
-        },
-        {
-          "question": "If code contains a fault but that part is never executed, what is the result?",
-          "options": [
-            "An error will occur",
-            "A failure will occur",
-            "No error or failure necessarily occurs",
-            "The system will crash immediately"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "A fault only causes errors/failures if it is activated (executed under relevant conditions)."
-        },
-        {
-          "question": "For a credit card processing system handling millions of transactions per day, which metric is most appropriate?",
-          "options": ["POFOD", "ROCOF", "AVAIL", "MTTF"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "High transaction-rate systems are best assessed by failure rate over time (ROCOF)."
-        },
-        {
-          "question": "What is an operational profile in reliability testing?",
-          "options": [
-            "A profile of development team members",
-            "Test data with frequencies matching normal usage inputs",
-            "A document describing system operation",
-            "A diagram showing system states"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Operational profiles reflect real input distributions so reliability estimates match real-world use."
-        },
-        {
-          "question": "Which practice is recommended for dependable programming?",
-          "options": [
-            "Use goto for complex logic",
-            "Use unbounded arrays for flexibility",
-            "Check all inputs for validity and reasonableness",
-            "Avoid exception handlers to keep code simple"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Input validation (range/size/representation/reasonableness) prevents many failures and security issues."
-        },
-        {
-          "question": "What is the key insight of normal accidents theory in complex systems?",
-          "options": [
-            "Accidents always have a single cause",
-            "Single-point failure design is sufficient",
-            "Accidents usually result from combinations of malfunctions",
-            "Software failures cannot cause accidents"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "In complex systems, accidents often emerge from interacting failures rather than a single isolated cause."
-        },
-        {
-          "question": "In hazard assessment, what does ALARP stand for?",
-          "options": [
-            "A Little Additional Risk is Permitted",
-            "As Low As Reasonably Practicable",
-            "Always Look for Additional Risk Patterns",
-            "A Legal Assessment of Risk Protection"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "ALARP means reducing risk to the lowest level that is reasonably practicable."
-        },
-        {
-          "question": "Fault-tree analysis (FTA) is best described as:",
-          "options": [
-            "An inductive bottom-up technique starting from failures",
-            "A deductive top-down technique starting from hazards",
-            "A type of statistical testing",
-            "A code review technique"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "FTA starts with a hazard/accident and decomposes causes using logic (AND/OR)."
-        },
-        {
-          "question": "What is the purpose of a safety case?",
-          "options": [
-            "Prove the software has no bugs",
-            "Provide a structured argument with evidence of adequate safety",
-            "Replace all other documentation",
-            "Insure the company against accidents"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "A safety case is an evidence-based justification that risks are controlled to an acceptable level."
-        }
-      ]
-    },
-    {
-      "id": "Capstone preparation Lecture 11",
-      "name": "Capstone preparation Lecture 11",
-      "description": "Final quiz for capstone preparation",
-      "questions": [
-        {
-          "question": "A design pattern description typically includes which set of elements?",
-          "options": [
-            "Name, problem, solution, consequences",
-            "Name, code, compiler version, license",
-            "Actors, states, transitions, events",
-            "Inputs, outputs, throughput, latency"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Design patterns are documented by naming the pattern, stating the problem, describing the solution structure, and listing consequences/trade-offs."
-        },
-        {
-          "question": "Why is “pure agile” often impractical for dependable systems engineering?",
-          "options": [
-            "Dependable systems cannot be tested",
-            "Agile cannot use iterative development",
-            "Certification needs process/product documentation and upfront requirements analysis; agile minimizes documentation and interleaves specs with code",
-            "Agile bans verification and validation"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Regulated dependable systems require evidence, documentation, and upfront analysis that pure agile typically de-emphasizes."
-        },
-        {
-          "question": "In the 4 + 1 view model, which view focuses on how the system is composed of interacting processes at run-time?",
-          "options": [
-            "Logical view",
-            "Development view",
-            "Process view",
-            "Physical view"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "The process view describes run-time processes/threads and how they interact."
-        },
-        {
-          "question": "Which is a realistic reason MDA/MDE adoption can be limited (and makes “agile + MDA” tricky)?",
-          "options": [
-            "Models cannot represent system context",
-            "Transformations require specialized tool support and extensive up-front modeling can conflict with agile values",
-            "MDA eliminates the need for requirements engineering",
-            "UML does not support class diagrams"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "MDA/MDE can demand heavy upfront modeling and specialized transformation tooling, which can clash with lightweight iterative practices."
-        },
-        {
-          "question": "Which architectural choice most directly aligns with security guidance?",
-          "options": [
-            "Prefer pipe-and-filter for interactive systems",
-            "Use fine-grain replaceable components for all modules",
-            "Prefer box-and-line diagrams because they have precise semantics",
-            "Use layered architecture with critical assets in inner layers"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Layering helps isolate critical assets in inner layers and control access paths, supporting security."
-        },
-        {
-          "question": "Which chain is most consistent with fault, error, and failure terminology?",
-          "options": [
-            "Fault leads to failure and then error",
-            "Fault may lead to error; error may lead to failure",
-            "Failure may lead to fault; fault may lead to error",
-            "Error leads to fault and then failure"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "A fault can cause an erroneous state, and an error can propagate into an externally visible failure, but not always."
-        },
-        {
-          "question": "In early-stage requirements discussions, which statement best matches the intended use of graphical models?",
-          "options": [
-            "Only behavioral models are useful; structural models confuse stakeholders",
-            "Models must be complete and correct because they will be used to generate code",
-            "Models should avoid UML because UML is only for implementation",
-            "Incomplete or incorrect models can be acceptable if they facilitate stakeholder discussion"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Early models are often used to communicate and explore, so they can be partial as long as they support discussion."
-        },
-        {
-          "question": "Which UML model is best suited to show how an object changes state in response to events?",
-          "options": [
-            "Use case diagram",
-            "Package diagram",
-            "Class diagram",
-            "State diagram"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "State diagrams capture event-driven transitions between states for an object."
-        },
-        {
-          "question": "In socio-technical systems, which factor is often the largest single cause of system failures?",
-          "options": [
-            "Operational failure due to human mistakes",
-            "Hardware reaching end-of-life",
-            "Software specification errors",
-            "Lack of formal methods"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Human operational errors frequently dominate failures in socio-technical contexts."
-        },
-        {
-          "question": "“Build or buy” (COTS) most directly changes the main concern of design into which focus?",
-          "options": [
-            "Deciding how to use configuration features to meet requirements",
-            "Eliminating stakeholder communication",
-            "Avoiding UML models entirely",
-            "Proving program correctness formally"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "With COTS, design effort shifts toward selecting and configuring existing capabilities to satisfy requirements."
-        },
-        {
-          "question": "Which pairing best matches context modeling and interaction modeling?",
-          "options": [
-            "Context model is behavioral; interaction model is structural",
-            "Context model is data-driven; interaction model is event-driven",
-            "Context model is structural; interaction model is dynamic",
-            "Context model is dynamic; interaction model is structural"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Context models describe structure around the system boundary; interaction models describe dynamic usage/interactions."
-        },
-        {
-          "question": "Why cannot statistical reliability testing data simply reuse normal defect-testing data?",
-          "options": [
-            "Reliability testing ignores specifications",
-            "Defect testing data is usually atypical of real operational usage patterns",
-            "Defect testing always uses formal proofs",
-            "Reliability testing requires no failures at all"
-          ],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Reliability estimates require input frequencies matching operational profiles; defect tests often overuse edge cases."
-        },
-        {
-          "question": "Which dependability property is defined as probability the system will be up and running and able to deliver useful services?",
-          "options": ["Safety", "Availability", "Resilience", "Reliability"],
-          "correctOption": 1,
-          "points": 10,
-          "explanation": "Availability measures the likelihood the system is operational and can deliver service at a point in time."
-        },
-        {
-          "question": "Why can refactoring the architecture be especially expensive in agile projects?",
-          "options": [
-            "It is cheaper than refactoring code",
-            "It only affects UI components",
-            "It is prohibited by UML",
-            "It affects many components and cross-cutting dependencies"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Architectural changes ripple across interfaces and components, increasing coordination and rework cost."
-        },
-        {
-          "question": "Which statement about reuse levels is correct?",
-          "options": [
-            "Object-level reuse means only reusing databases",
-            "Component-level reuse means reusing entire application systems",
-            "Abstraction-level reuse means reusing knowledge of successful abstractions in design",
-            "System-level reuse means reusing a single object from a library"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Abstraction-level reuse reuses proven design concepts and abstractions, not just code artifacts."
-        },
-        {
-          "question": "Which statement best distinguishes reliability from availability?",
-          "options": [
-            "Reliability is probability of failure-free operation over time; availability is probability system is operational at a point in time",
-            "Both mean the same thing in critical systems",
-            "Reliability is subjective; availability is always subjective",
-            "Reliability is up-time; availability is failure-free operation"
-          ],
-          "correctOption": 0,
-          "points": 10,
-          "explanation": "Reliability concerns failure-free behavior over an interval; availability concerns being operational now (including repair/recovery)."
-        },
-        {
-          "question": "Which option best captures the difference between redundancy and diversity for dependability improvement?",
-          "options": [
-            "Both mean more testing",
-            "Diversity applies only to hardware; redundancy applies only to software",
-            "Redundancy adds backup components; diversity uses different implementations to reduce common-mode failures",
-            "Redundancy uses different implementations; diversity adds a backup copy"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Redundancy duplicates capability; diversity reduces correlated failures by implementing the same function differently."
-        },
-        {
-          "question": "Subsystems exchanging large amounts of shared data via a central store most precisely describes which pattern?",
-          "options": [
-            "Layered architecture",
-            "Client-server architecture",
-            "Pipe-and-filter architecture",
-            "Repository architecture"
-          ],
-          "correctOption": 3,
-          "points": 10,
-          "explanation": "Repository architectures centralize data so subsystems can share it efficiently through a common store."
-        },
-        {
-          "question": "A system with intermittent and infrequent demands (e.g., emergency shutdown) is best assessed using which metric?",
-          "options": ["MTTF", "Availability only", "POFOD", "ROCOF"],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "For rare-demand functions, probability of failure on demand (POFOD) best captures risk when the demand occurs."
-        },
-        {
-          "question": "A sequence diagram adds which information beyond a use-case overview?",
-          "options": [
-            "Hardware deployment nodes and network topology",
-            "A list of system stakeholders and constraints",
-            "Object-to-object interaction ordering over time for a scenario instance",
-            "Static class attributes and associations"
-          ],
-          "correctOption": 2,
-          "points": 10,
-          "explanation": "Sequence diagrams show the time-ordered message flow among objects for a particular scenario."
+          "explanation": "IPsec provides confidentiality, integrity, and authentication at the IP layer."
         }
       ]
     }
